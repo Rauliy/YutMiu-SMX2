@@ -1,0 +1,57 @@
+YutMiu Project
+
+Lluvia de Ideas
+
+1- Hacer como una especie de Spotify pero sin anuncios
+2- Hacer una web como Youtube
+3-Hacer una especie de chat 
+4-Hacer un foro de opiniones como Reddit
+
+Al final vamos a combinar algunas de estas ideas, vamos ha hacer una web de música en streaming y que los usuarios puedan ir comentando y 
+recomendando músicas y dar sus opiniones respecto a la música que han escuchado o que les han recomendado. Básicamente 
+hemos escogido hacer esto porque a ambos nos gusta la música, y además nos pareció buena idea que hubiese un chat con comentarios 
+y opiniones de lo que la gente escucha y ve.
+
+Nombre del proyecto y Logo del proyecto.
+Logo del Proyecto
+
+1-Nos vamos a inspirar en el Logo de Apple Music, Spotify y Youtube
+ 
+La foto de nuestro logo esta en el github.
+
+Nombre del Proyecto:
+
+Estos eran los posibles nombres que ibamos a utilizar:
+1-Spotidenai 
+2-Reendy
+3-ReMiu
+4-YutMiu
+ 
+ Al final hemos seleccionado YutMiu, que combina Youtube, Música y una web que se llama Reddit, es una web que es de publicar opiniones y preguntar dudas
+que tengas sobre apps webs o errores que te pasen en tu dia a dia a la vez, hemos seleccionado este nombre porque vemos que es un nombre que engancha bastante
+y tiene chispa a la hora de nombrarlo, además es para hacerle competencia a Youtube Music.
+
+Objetivos:
+Objetivos del Proyecto.
+Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda disfrutar y gaudir de este proyecto, ya que lo que buscamos es que la gente la utilice
+y no solo ara que sea para un proyecto sino que queremos que se utilice de verdad, yo creo que si le ponemos empeño lo podremos lograr.
+
+Objetivo del Publico.
+
+Nosotros queremos llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas
+que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico 
+y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
+
+Material Necesario.
+Vamos a utilizar una app externa que funciona mediante comandos que se llama FFMpeg
+También necesitaremos una base de datos, un docker, y máquinas virtuales que hagan de servidores para dar seguridad y estabilidad a nuestra web.
+
+Módulos.
+Los módulos que vamos a aplicar en este proyecto son: Aplicaciones Web Seguridad, sistemas operativos en xarxas.
+
+Recursos:
+https://punkymo.gitbook.io/miwiki/servicios/imagenes-videos/ffmpeg-+-yt-dlp
+https://ffmpeg.org/
+
+GitHub: https //github.com/Rauliy/Ginganguli-SMX2
+Trello: https://trello.com/b/4pWqtiDt/smx2lingangulis
