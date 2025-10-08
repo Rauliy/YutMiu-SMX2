@@ -9,3 +9,100 @@ y recomendando músicas y dar sus opiniones respecto a la música que han escuch
 recomendado, va a tener un gran catálogo de músicas y de muchos estilos para satisfacer más a las personas 
 que utilicen nuestra página, también nosotros queremos llegar a un público específico que le encante la música, 
 le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas
+
+¿Qué funcionalidades ofrecerá a los usuarios?
+
+Las funciones que vamos a implementar en nuestra página web van a ser:
+-Crear una cuenta para poder guardar tus musicas favoritas.
+-Si te vinculas podrás tener amigos que te podrán recomendar música.
+-Puedes hacer una lista personalizada de tus músicas favoritas.
+- Cada canción tendrá una sección de comentarios donde podrás escribir 
+tu opinión sobre cualquier canción y también poner del 1 al 5 cuanto te ha gustado.
+
+2. Identificación de entidades principales
+¿Qué elementos importantes hay en tu web que necesitan almacenarse?
+
+Los elementos que deben de almacenarse serían:
+-Todos los usuarios que se registren a nuestra página.
+-Las músicas que estén disponibles en nuestra web.
+-Todos los comentarios que hayan puesto los usuarios.
+-Cada valoración puesta en cada música.
+-Todas las listas de músicas que tengan los usuarios. 
+-Las recomendaciones de los usuarios.
+-Nombres de los usuarios.
+-Contraseñas de los usuarios.
+-Los emails de los usuarios registrados.
+
+¿Qué tema de información almacena? 
+
+Los temas de información que se almacenarán son: las músicas, las cuentas de los usuarios,
+nombres, contraseñas,emails y listas de músicas creadas por usuarios.
+
+¿Por qué necesitas guardarla en la base de datos? 
+
+Lo necesitamos para mejorar la experiencia de los usuarios y para que sus datos como: listas de música, 
+amigos, comentarios, valoraciones, recomendaciones se puedan guardar correctamente y cuando vuelvan a vincular la cuenta seguir teniendo toda esa información sin haber perdido nada.
+
+3. Datos que se deben guardar de cada entidad (atributos)
+Los datos que se deben guardar serán los siguientes:
+
+El nombre del usuario:
+Correo electrónico o/e teléfono
+Edad y para que lo quiere utilizar la web
+Contraseña
+Fecha de registro
+Musica publicada 
+Comentarios publicados
+Música que ha estado escuchando los últimos 7 días
+
+Datos de la web:
+Música que hay publicada.
+Comentarios publicados con fecha y hora.
+Usuarios registrados
+Usuarios conectados
+Gente que ha descubierto un easter egg con una canción especial
+Y un registro de las canciones más escuchadas y menos escuchadas
+Valoración mediante un sistema de puntuación que utilizaremos en la web.
+
+Para el tiempo→DATETIME
+Para la fecha y la hora→Date
+Puntuación de las canciones→Utilizaremos un sistema llamado Float o Decimal para números más precisos.
+Comentarios publicados→ Date y Text
+
+4. Relaciones entre las entidades
+
+¿Cómo se relacionan unas entidades con otras?
+En nuestra web implementaremos una función para poder hablar y compartir músicas.
+Para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar
+el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla,
+si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga.
+También se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
+
+5. Ejemplo de datos (simulación)
+Incluye un ejemplo de cada entidad con datos ficticios pero realistas.
+Ejemplo de registro en la tabla Usuario:
+Nombre: Juan Pérez
+Email: juanp@gmail.com
+Fecha de registro: 10/09/2025
+Amigos conectados: 2 amigos online
+Amigos deconectados:0 amigos offline
+Listas de música
+Horas que has estado utilizando la aplicación:367 horas
+Publicaciones subidas en los ultimos 7 dias: Comentario→ “Hola” 
+Chats de amigos
+
+6. Reflexiones, dificultades y dudas que tienes sobre la base de datos
+
+¿Qué partes te han resultado más difíciles de pensar?
+Las partes que más nos han resultado más difícil ha sido  a la hora de pensar
+cómo vamos a guardar toda esta información, qué información debemos guardar y sobre todo de qué forma
+guardamos los datos y en qué formato, en conclusión esto nos ha servido para aprender más sobre
+de qué forma se guardan los datos y de qué forma es más sencilla y recomendable guardar estos mismos
+además hemos aprendido a cómo gestionar almacenar y mirar que es lo más sencillo tanto como para los
+usuarios como para los profesores y como para nosotros mismos. 
+
+¿Qué no tienes claro sobre la información que hay que guardar?
+
+Somos una web de música, no tenemos mucho que guardar solo lo necesario de una web promedio de música como por 
+ejemplo: emails, nombres, contraseñas, amigos que tenga en la web, músicas guardadas por usuario y listas de música. 
+Si tenemos más ideas las implementaremos más adelante. 
