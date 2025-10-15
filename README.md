@@ -1,6 +1,6 @@
 # YutMiu-SMX2
 
-1.Índice
+# 1.Índice
 
 2.Introducción - ¿qué estamos haciendo?
 
