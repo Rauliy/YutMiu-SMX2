@@ -2,7 +2,7 @@
 
 # 1.Índice
 
-2.Introducción - ¿qué estamos haciendo?
+#2.Introducción - ¿qué estamos haciendo?
 
 3.Briefing de ideas
 
