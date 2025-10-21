@@ -7,7 +7,8 @@
 2-.Briefing de ideas
 
 3-.Mockup
-
+<img width="1129" height="634" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
+Este seria el mockup de nuestra web.
 4-.Arquitectura del software
 
 5-.Tecnologías a utilizar
