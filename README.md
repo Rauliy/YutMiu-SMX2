@@ -23,7 +23,7 @@
 10-.Webgrafia
 
 <details>
-<summary><h2># 1.Introducción - ¿qué estamos haciendo?</h2></summary>
+<summary><h2>1.Introducción - ¿qué estamos haciendo?</h2></summary>
 
 Somos un grupo de dos personas que queremos hacer una web de musica i que hemos estado buscando webs i aplicaciones con este tipo de contenido(musica, opiniones, valoraciones i que puedan valorar qualquier musica ).
 
@@ -43,7 +43,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 </details>
 
 <details>
-<summary><h2># 2.Briefing de ideas:</h2></summary>
+<summary><h2>2.Briefing de ideas:</h2></summary>
 
 Estas eran unas de las propuestas que teniamos antes de decidirnos
 1- Hacer como una especie de Spotify pero sin anuncios
@@ -60,25 +60,25 @@ música, y además nos pareció buena idea que hubiese un chat con comentarios y
 </details>
 
 <details>
-<summary><h2># 3.Mockup:</h2></summary>
+<summary><h2>3.Mockup:</h2></summary>
 <img width="1129" height="634" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
 Este seria el mockup de nuestra web.
 </details>
 
 <details>
-<summary><h2># 4.Arquitectura del software:</h2></summary>
+<summary><h2>4.Arquitectura del software:</h2></summary>
 
 
 </details>
 
 <details>
-<summary><h2># 5.Tecnologías a utilizar:</h2></summary>
+<summary><h2>5.Tecnologías a utilizar:</h2></summary>
 
 
 </details>
 
 <details>
-<summary><h2># 6.Red</h2></summary>
+<summary><h2>6.Red</h2></summary>
 a.Diagrama de la red:
 
 
@@ -93,7 +93,7 @@ c.Mapa lógico:
 </details>
 
 <details>
-<summary><h2># 7.Web</h2></summary>
+<summary><h2>7.Web</h2></summary>
 d.Diseño:
 
 
@@ -106,7 +106,7 @@ f.Mapa de navegabilidad:
 </details>
 
 <details>
-<summary><h2># 8.Servicios</h2></summary>
+<summary><h2>8.Servicios</h2></summary>
 g.DNS:
 
 
@@ -127,14 +127,16 @@ k.Copias de seguridad:
 </details>
 
 <details>
-<summary><h2># 9.Conclusiones:</h2></summary>
+<summary><h2>9.Conclusiones:</h2></summary>
 </details>
 
 <details>
-<summary><h2># 10.Webgrafia</h2></summary>
+<summary><h2>10.Webgrafia</h2></summary>
 </details>
 
 
-# 11.Bibliografía:
+<details>
+<summary><h2>11.Bibliografía:</h2></summary>
+</details>
 
 
