@@ -36,9 +36,9 @@ que le encante la música, le gusta mucho opinar y debatir e/o crear debates ent
 ¿Qué funcionalidades ofrecerá a los usuarios?
 
 Las funciones que vamos a implementar en nuestra página web van a ser:
--Crear una cuenta para poder guardar tus musicas favoritas.
--Si te vinculas podrás tener amigos que te podrán recomendar música.
--Puedes hacer una lista personalizada de tus músicas favoritas.
+- Crear una cuenta para poder guardar tus musicas favoritas.
+- Si te vinculas podrás tener amigos que te podrán recomendar música.
+- Puedes hacer una lista personalizada de tus músicas favoritas.
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuanto te ha gustado.
 </details>
 
@@ -46,13 +46,13 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 <summary><h2>2.Briefing de ideas:</h2></summary>
 
 Estas eran unas de las propuestas que teniamos antes de decidirnos
-1- Hacer como una especie de Spotify pero sin anuncios
+- 1-Hacer como una especie de Spotify pero sin anuncios
 
-2- Hacer una web como Youtube
+- 2-Hacer una web como Youtube
 
-3-Hacer una especie de chat 
+- 3-Hacer una especie de chat 
 
-4-Hacer un foro de opiniones como Reddit
+- 4-Hacer un foro de opiniones como Reddit
 
 Al final vamos a combinar algunas de estas ideas, vamos ha hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando 
 músicas y dar sus opiniones respecto a la música que han escuchado o que les han recomendado. Básicamente hemos escogido hacer esto porque a ambos nos gusta la 
