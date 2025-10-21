@@ -1,6 +1,6 @@
 # YutMiu-SMX2
 
-# .Índice:
+# Índice:
 
 1-.Introducción
 
