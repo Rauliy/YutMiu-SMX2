@@ -22,8 +22,8 @@
 
 10-.Webgrafia
 
-
-# 1.Introducción - ¿qué estamos haciendo?
+<details>
+<summary><h2># 1.Introducción - ¿qué estamos haciendo?</h2></summary>
 
 Somos un grupo de dos personas que queremos hacer una web de musica i que hemos estado buscando webs i aplicaciones con este tipo de contenido(musica, opiniones, valoraciones i que puedan valorar qualquier musica ).
 
@@ -40,9 +40,10 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 -Si te vinculas podrás tener amigos que te podrán recomendar música.
 -Puedes hacer una lista personalizada de tus músicas favoritas.
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuanto te ha gustado.
+</details>
 
-
-# 2.Briefing de ideas:
+<details>
+<summary><h2># 2.Briefing de ideas:</h2></summary>
 
 Estas eran unas de las propuestas que teniamos antes de decidirnos
 1- Hacer como una especie de Spotify pero sin anuncios
@@ -56,21 +57,28 @@ Estas eran unas de las propuestas que teniamos antes de decidirnos
 Al final vamos a combinar algunas de estas ideas, vamos ha hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando 
 músicas y dar sus opiniones respecto a la música que han escuchado o que les han recomendado. Básicamente hemos escogido hacer esto porque a ambos nos gusta la 
 música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
+</details>
 
-
-# 3.Mockup:
+<details>
+<summary><h2># 3.Mockup:</h2></summary>
 <img width="1129" height="634" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
 Este seria el mockup de nuestra web.
+</details>
 
-# 4.Arquitectura del software:
-
-
-
-# 5.Tecnologías a utilizar:
+<details>
+<summary><h2># 4.Arquitectura del software:</h2></summary>
 
 
+</details>
 
-# 6.Red
+<details>
+<summary><h2># 5.Tecnologías a utilizar:</h2></summary>
+
+
+</details>
+
+<details>
+<summary><h2># 6.Red</h2></summary>
 a.Diagrama de la red:
 
 
@@ -82,8 +90,10 @@ b.Mapa físico:
 c.Mapa lógico:
 
 
+</details>
 
-# 7.Web
+<details>
+<summary><h2># 7.Web</h2></summary>
 d.Diseño:
 
 
@@ -93,10 +103,10 @@ e.Mockup:
 
 
 f.Mapa de navegabilidad:
+</details>
 
-
-
-# 8.Servicios
+<details>
+<summary><h2># 8.Servicios</h2></summary>
 g.DNS:
 
 
@@ -114,16 +124,15 @@ j.Firewall:
 
 
 k.Copias de seguridad:
+</details>
 
+<details>
+<summary><h2># 9.Conclusiones:</h2></summary>
+</details>
 
-
-# 9.Conclusiones:
-
-
-
-
-# 10.Webgrafia
-
+<details>
+<summary><h2># 10.Webgrafia</h2></summary>
+</details>
 
 
 # 11.Bibliografía:
