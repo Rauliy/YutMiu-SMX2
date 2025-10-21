@@ -1,10 +1,20 @@
 # YutMiu-SMX2
 
-# 1.Índice:
+# .Índice:
+
+1.Introducción
+2.Briefing de ideas
+3.Mockup
+4.Arquitectura del software
+5.Tecnologías a utilizar
+6.Red
+7.Web
+8.Servicios
+9.Conclusiones
+10.Webgrafia
 
 
-
-# 2.Introducción - ¿qué estamos haciendo?
+# 1.Introducción - ¿qué estamos haciendo?
 
 Somos un grupo de dos personas que queremos hacer una web de musica i que hemos estado buscando webs i aplicaciones con este tipo de contenido(musica, opiniones, valoraciones i que puedan valorar qualquier musica ).
 
@@ -23,7 +33,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuanto te ha gustado.
 
 
-# 3.Briefing de ideas:
+# 2.Briefing de ideas:
 
 Estas eran unas de las propuestas que teniamos antes de decidirnos
 1- Hacer como una especie de Spotify pero sin anuncios
@@ -37,6 +47,11 @@ Estas eran unas de las propuestas que teniamos antes de decidirnos
 Al final vamos a combinar algunas de estas ideas, vamos ha hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando 
 músicas y dar sus opiniones respecto a la música que han escuchado o que les han recomendado. Básicamente hemos escogido hacer esto porque a ambos nos gusta la 
 música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
+
+
+# 3.Mockup:
+
+
 
 # 4.Arquitectura del software:
 
@@ -97,6 +112,11 @@ k.Copias de seguridad:
 
 
 
-# 10.Bibliografía:
+
+# 10.Webgrafia
+
+
+
+# 11.Bibliografía:
 
 
