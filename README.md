@@ -2,16 +2,25 @@
 
 # .Índice:
 
--1.Introducción
--2.Briefing de ideas
--3.Mockup
--4.Arquitectura del software
--5.Tecnologías a utilizar
--6.Red
--7.Web
--8.Servicios
--9.Conclusiones
--10.Webgrafia
+1-.Introducción
+
+2-.Briefing de ideas
+
+3-.Mockup
+
+4-.Arquitectura del software
+
+5-.Tecnologías a utilizar
+
+6-.Red
+
+7-.Web
+
+8-.Servicios
+
+9-.Conclusiones
+
+10-.Webgrafia
 
 
 # 1.Introducción - ¿qué estamos haciendo?
