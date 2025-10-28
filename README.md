@@ -23,7 +23,7 @@
 10-.Webgrafia
 
 <details>
-<summary><h2>1.Introducción - ¿qué estamos haciendo?</h2></summary>
+<summary><h2>1. Introducción</h2></summary>
 
 Somos un grupo de dos personas que queremos hacer una web de musica i que hemos estado buscando webs i aplicaciones con este tipo de contenido(musica, opiniones, valoraciones i que puedan valorar qualquier musica ).
 
@@ -69,11 +69,15 @@ Pagina Principal:
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/f819be13-d129-423d-9e3e-0f466092ac97" />
 Esta es nuestra primera pagina. Des de aqui podemos escuchar musica i configurar un par de cosas. Todas las demas opciones para tenerlas tendras que iniciar sesion.
 
+
+
 Inicio de sesion:
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/657f6ad2-14e6-4589-833b-ca42ceea8b21" />
 Esto sera nuestro inicio de sesion y de fondo intentaremos poner un video de nuestra web, ademas sino inicias sesion no podras publicar ni videos ni comentarios ni
 poner valoraciones a las canciones, solo podras escucharlas y hacer todas las acciones sobre retroceder o avanzar o ponerlo en bucle., una
 vez hayas iniciado sesion podras hacer todo.
+
+
 
 Pagina principal luego del inicio de sesion:
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
