@@ -61,8 +61,98 @@ música, y además nos pareció buena idea que hubiese un chat con comentarios y
 
 <details>
 <summary><h2>3.Mockup:</h2></summary>
-<img width="1129" height="634" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
+
 Este seria el mockup de nuestra web.
+
+Pagina Principal:
+<img width="685" height="383" alt="image" src="https://github.com/user-attachments/assets/f819be13-d129-423d-9e3e-0f466092ac97" />
+Esta es nuestra primera pagina. Des de aqui podemos escuchar musica i configurar un par de cosas. Todas las demas opciones para tenerlas tendras que iniciar sesion.
+
+Inicio de sesion:
+<img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/657f6ad2-14e6-4589-833b-ca42ceea8b21" />
+Esto sera nuestro inicio de sesion y de fondo intentaremos poner un video de nuestra web, ademas sino inicias sesion no podras publicar ni videos ni comentarios ni
+poner valoraciones a las canciones, solo podras escucharlas y hacer todas las acciones sobre retroceder o avanzar o ponerlo en bucle., una
+vez hayas iniciado sesion podras hacer todo.
+
+Pagina principal luego del inicio de sesion:
+<img width="1129" height="634" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
+Dentro de iniciar sesion podras utilizar todas las herramientas de nuestra web.
+El contenido que tendra sera:
+
+-Buscador
+-Boton para ver la lista de busqueda
+-Boton para ver tus amigos
+-Boton de opiniones
+-Boton de ajustes
+-Musicas recomendadas con boton 
+para entrar dento de cada musica
+-Boton para ver tu perfil
+
+Musicas:
+<img width="1127" height="629" alt="image" src="https://github.com/user-attachments/assets/028edfcc-5c9d-4b27-9489-d2ef485d32d6" />
+Esta opcion tambien estara disponible sin iniciar sesion, des de aqui solo podras escuchar la musica y ver el nombre de el artista
+i ver su letra las opciones de valoraciones solo estara disponible si inicias sesion.
+
+Opiniones:
+<img width="1130" height="634" alt="image" src="https://github.com/user-attachments/assets/4de2ce40-07b0-48b0-9039-47c50c6370a7" />
+Des de aqui podras ver comentarios de gente debatiendo sobre musicas y sus opiniones,tambien podras ver tustodas tus opiniones 
+y valoraciones que has hecho. Tambien podras eliminar valoracioneso opiniones que hayas hecho 
+
+Amigos
+<img width="1125" height="629" alt="image" src="https://github.com/user-attachments/assets/31656063-b799-4611-bcba-08e3f34a4911" />
+Dentro de aqui podras ver todos tus amigos, tambien des de esa pestaña podras ver el perfil de tus amigos.Tambien tendras un chat con cada 
+amigo y tambien podreis pasaros musicas. 
+
+Listas de musicas
+<img width="1126" height="628" alt="image" src="https://github.com/user-attachments/assets/33b7421b-3ec2-4d06-a578-8db2960ec105" />
+Aqui podras ver las musicas que hayas almazenado. Tambien podras hacer listas de musicas de lo que tu quieras.
+
+Buscador
+<img width="1128" height="632" alt="image" src="https://github.com/user-attachments/assets/1ba60730-1e27-4abb-9d32-daae5a2d67e6" />
+Tambien esta es otra opcion que estara disponible sin tener que iniciar sesion y podras buscar la musica que tu prefieras o la que este 
+disponible en nuestra web, tambien podras ver los artistas, el tipo de musica y una valoracion general de la musica.
+
+Tu perfil
+<img width="1129" height="631" alt="image" src="https://github.com/user-attachments/assets/a83cf8df-3fdc-43aa-b3d6-549731cd5316" />
+Aqui podras ver bastantes cosas como:
+
+-Tus musicas.
+-Tus amigos.
+-Tus listas de musica.
+Tambien hay un boton
+que te lleve a la 
+privacidad de la cuenta.
+
+Perfil de amigos
+<img width="1127" height="631" alt="image" src="https://github.com/user-attachments/assets/d844342d-d264-4ca9-98e7-670c661e145c" />
+Aqui podras ver el perfilde los amigos que tengas i podras ver:
+
+-Amigos que tengan tus amigos.
+-Musicas gustadas. 
+- Listas de musicas que tenga.
+-Comentarios i valoraciones que haya puesto.
+
+Configuracion
+<img width="1127" height="631" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
+Des de aqui podras modificar una variedad de contenido para que la experiencia con el usuario sea mejor, las opciones que hay son:
+
+-Poder cambiar los colores de la 
+pagina.
+-Poder gestionar a la privacidad
+de la cuenta.
+
+Tambien ofrecemos opciones 
+para la privacidad de el usuario
+que son:
+
+-Amigos no visibles.
+-Usuarios no puedan acceder
+a tus listas de musica.
+-No poder recibir solicitudes de 
+amistad.
+-No son visibles tus comentarios
+y varolaciones.
+
 </details>
 
 <details>
