@@ -90,6 +90,7 @@ para entrar dento de cada musica
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
 
 
+
 Musicas:
 Esta opcion tambien estara disponible sin iniciar sesion, des de aqui solo podras escuchar la musica y ver el nombre de el artista
 i ver su letra las opciones de valoraciones solo estara disponible si inicias sesion.
@@ -101,6 +102,7 @@ Opiniones:
 Des de aqui podras ver comentarios de gente debatiendo sobre musicas y sus opiniones,tambien podras ver tustodas tus opiniones 
 y valoraciones que has hecho. Tambien podras eliminar valoracioneso opiniones que hayas hecho. 
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/4de2ce40-07b0-48b0-9039-47c50c6370a7" />
+
 
 
 Amigos:
@@ -129,19 +131,17 @@ Aqui podras ver bastantes cosas como:
 - Tus musicas.
 - Tus amigos.
 - Tus listas de musica.
-Tambien hay un boton que te lleve a la 
-privacidad de la cuenta.
+- Tambien un boton que te lleve a la privacidad de la cuenta.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/a83cf8df-3fdc-43aa-b3d6-549731cd5316" />
 
 
 
 Perfil de amigos:
 Aqui podras ver el perfil de los amigos que tengas i podras ver:
-
--Amigos que tengan tus amigos.
--Musicas gustadas. 
+- Amigos que tengan tus amigos.
+- Musicas gustadas. 
 - Listas de musicas que tenga.
--Comentarios i valoraciones que haya puesto
+- Comentarios i valoraciones que haya puesto
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/d844342d-d264-4ca9-98e7-670c661e145c" />
 
 Configuracion:
