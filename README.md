@@ -25,13 +25,10 @@
 <details>
 <summary><h2>1. Introducción</h2></summary>
 
-Somos un grupo de dos personas que queremos hacer una web de musica i que hemos estado buscando webs i aplicaciones con este tipo de contenido(musica, opiniones, valoraciones i que puedan valorar qualquier musica ).
+Nuestra web va a tratar sobre música en streaming y donde los usuarios puedan ir comentando y recomendando sus canciones preferidas y dar sus opiniones respecto a la música que han escuchado 
+o que les han recomendado. Va a tener un gran catálogo de canciones de diferentes estilos para satisfacer a las personas que utilicen nuestra página. Queremos que nuestros usuarios disfruten compartiendo sus canciones favoritas, oiniones y debates entre ellos y leer opiniones sobre otras músicas.
 
-Descripción general del proyecto web:
-
-Nuestra web va a tratar sobre una web de música en streaming y que los usuarios puedan ir comentando y recomendando músicas y dar sus opiniones respecto a la música que han escuchado
-o que les han recomendado, va a tener un gran catálogo de músicas y de muchos estilos para satisfacer más a las personas que utilicen nuestra página, también nosotros queremos llegar a un público específico
-que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas.
+Somos un equipo de dos estudiantes que queremos hacer una web de música y hemos estado buscando webs y aplicaciones con este tipo de contenido para inspirarnos. Contenidos del tipo: música, opiniones y valoraciones de las canciones disponibles en la web.
 
 ¿Qué funcionalidades ofrecerá a los usuarios?
 
@@ -43,7 +40,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 </details>
 
 <details>
-<summary><h2>2.Briefing de ideas:</h2></summary>
+<summary><h2>2. Briefing</h2></summary>
 
 Estas eran unas de las propuestas que teniamos antes de decidirnos
 - 1-Hacer como una especie de Spotify pero sin anuncios
@@ -60,18 +57,19 @@ música, y además nos pareció buena idea que hubiese un chat con comentarios y
 </details>
 
 <details>
-<summary><h2>3.Mockup:</h2></summary>
+<summary><h2>3. Mockup</h2></summary>
 
-Este seria el mockup de nuestra web.
+Este sería el mockup de nuestra web.
 
-Pagina Principal:
-
+Página Principal:
+Esta es nuestra primera página, la homepage. Desde aqui podemos escuchar musica y configurar un par de cosas. Todas las demás opciones para tenerlas disponibles el usuario tendrá que iniciar sesión.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/f819be13-d129-423d-9e3e-0f466092ac97" />
-Esta es nuestra primera pagina. Des de aqui podemos escuchar musica i configurar un par de cosas. Todas las demas opciones para tenerlas tendras que iniciar sesion.
+
 
 
 
 Inicio de sesion:
+
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/657f6ad2-14e6-4589-833b-ca42ceea8b21" />
 Esto sera nuestro inicio de sesion y de fondo intentaremos poner un video de nuestra web, ademas sino inicias sesion no podras publicar ni videos ni comentarios ni
 poner valoraciones a las canciones, solo podras escucharlas y hacer todas las acciones sobre retroceder o avanzar o ponerlo en bucle., una
