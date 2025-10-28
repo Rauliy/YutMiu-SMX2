@@ -63,7 +63,7 @@ Este sería el mockup de nuestra web.
 
 Página Principal:
 Esta es nuestra primera página, la homepage. Desde aqui podemos escuchar musica y configurar un par de cosas. Todas las demás opciones para tenerlas disponibles el usuario tendrá que iniciar sesión.
-<img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/f819be13-d129-423d-9e3e-0f466092ac97" />
+<img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0cb4442b-076c-4e7e-9020-36a8b6a94b19" />
 
 
 
@@ -87,7 +87,7 @@ El contenido que tendra sera:
 - Musicas recomendadas con boton 
 para entrar dento de cada musica
 - Boton para ver tu perfil
-<img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/7b7e6fff-a37c-4407-8a4b-92c59367c581" />
+<img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0f30fc76-e67a-46ff-905c-f75596a9c838" />
 
 
 
