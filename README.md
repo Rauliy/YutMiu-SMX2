@@ -23,7 +23,7 @@
 10-.Webgrafia
 
 <details>
-<summary><h2>1. Introducción</h2></summary>
+<summary><h2>1. Introducción:</h2></summary>
 
 Nuestra web va a tratar sobre música en streaming y donde los usuarios puedan ir comentando y recomendando sus canciones preferidas y dar sus opiniones respecto a la música que han escuchado 
 o que les han recomendado. Va a tener un gran catálogo de canciones de diferentes estilos para satisfacer a las personas que utilicen nuestra página. Queremos que nuestros usuarios disfruten compartiendo sus canciones favoritas, oiniones y debates entre ellos y leer opiniones sobre otras músicas.
@@ -40,7 +40,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 </details>
 
 <details>
-<summary><h2>2. Briefing</h2></summary>
+<summary><h2>2. Briefing:</h2></summary>
 
 Estas eran unas de las propuestas que teniamos antes de decidirnos
 - 1-Hacer como una especie de Spotify pero sin anuncios
@@ -57,7 +57,7 @@ música, y además nos pareció buena idea que hubiese un chat con comentarios y
 </details>
 
 <details>
-<summary><h2>3. Mockup</h2></summary>
+<summary><h2>3. Mockup:</h2></summary>
 
 Este sería el mockup de nuestra web.
 
@@ -166,7 +166,7 @@ que son:
 
 <details>
 <summary><h2>4.Arquitectura del software:</h2></summary>
-
+U
 
 </details>
 
@@ -177,7 +177,7 @@ que son:
 </details>
 
 <details>
-<summary><h2>6.Red</h2></summary>
+<summary><h2>6.Red:</h2></summary>
 a.Diagrama de la red:
 
 
@@ -192,7 +192,7 @@ c.Mapa lógico:
 </details>
 
 <details>
-<summary><h2>7.Web</h2></summary>
+<summary><h2>7.Web:</h2></summary>
 d.Diseño:
 
 
@@ -205,7 +205,7 @@ f.Mapa de navegabilidad:
 </details>
 
 <details>
-<summary><h2>8.Servicios</h2></summary>
+<summary><h2>8.Servicios:</h2></summary>
 g.DNS:
 
 
@@ -230,12 +230,18 @@ k.Copias de seguridad:
 </details>
 
 <details>
-<summary><h2>10.Webgrafia</h2></summary>
+<summary><h2>10.Webgrafia:</h2></summary>
 </details>
 
 
 <details>
 <summary><h2>11.Bibliografía:</h2></summary>
 </details>
-
+Hemos utilizado estas webs:
+Esta Web la hemos utilizado para cojer iconos:
+https://icons.getbootstrap.com/
+Tambien nos hemos basado en muchas ideas de la pagina de Spootify:
+https://open.spotify.com/
+Y por ultimo hemos hecho el diseño del la web en el canva:
+https://www.canva.com/design/DAG1FzZUJu8/4GEBUf7oiEVidqma9VoWNw/view?utm_content=DAG1FzZUJu8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he356a4d6cf
 
