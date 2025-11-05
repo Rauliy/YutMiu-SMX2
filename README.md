@@ -54,6 +54,8 @@ Estas eran unas de las propuestas que teniamos antes de decidirnos
 Al final vamos a combinar algunas de estas ideas, vamos ha hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando 
 músicas y dar sus opiniones respecto a la música que han escuchado o que les han recomendado. Básicamente hemos escogido hacer esto porque a ambos nos gusta la 
 música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
+
+Nosotros queremos que nuestra web este enfocada en un público en concreto que le guste escuchar musica y dar sus opiniones sobre su música favorita o sobre una que este escuchando en ese momento, ádemas que le guste debatir con los demás usuarios sobre su cancion favorita de como esta compositada o como es la letra de la canción, queremos  gente respetuosa que sepan respetar a los usuarios y que les guste nuestro formato de listas de reproducción, la interfaz de canciones, nuestro sistema de debates, opiniones y la manera de valoración.   
 </details>
 
 <details>
@@ -157,7 +159,7 @@ para la privacidad de el usuario
 que son:
 
 - Amigos no visibles.
-- Usuarios no puedan acceder a tus listas de musica.
+- Usuarios no puedan acceder a tus listas de msica.
 - No poder recibir solicitudes de amistad.
 - No son visibles tus comentarios y varolaciones.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
