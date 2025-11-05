@@ -37,6 +37,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 - Si te vinculas podrás tener amigos que te podrán recomendar música.
 - Puedes hacer una lista personalizada de tus músicas favoritas.
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuanto te ha gustado.
+  
 </details>
 
 <details>
@@ -167,19 +168,25 @@ que son:
 </details>
 
 <details>
-<summary><h2>4.Arquitectura del software:</h2></summary>
-U
+<summary><h2>4.Materiales físicos y lógicos:</h2></summary>
+Lo que vamos a utilizar son dos ordenadores, un ordenador con tres maquinas vrtuales un windows server y otra maquina virtual con el TrueNas configurado, ademas de tener o cobian o otra aplicacion en ese ordenador para cada dia hacer copias de seguridad con un disco duro externo que tendremos conectado para asi evitar problemas y sobre todo la tercera maquina virtual tener un Ubuntu o un Linux server con el FFmpeg para las canciones en streaming y inconvenientes adémas de tenerlo guardado en el disco D del ordenador, en el otro ordenador tendremos la web los registros... todo lo que tenga que ver con la web
 
 </details>
 
 <details>
-<summary><h2>5.Tecnologías a utilizar:</h2></summary>
+<summary><h2>5.Arquitectura del software:</h2></summary>
 
 
 </details>
 
 <details>
-<summary><h2>6.Red:</h2></summary>
+<summary><h2>6.Tecnologías a utilizar:</h2></summary>
+
+
+</details>
+
+<details>
+<summary><h2>7.Red:</h2></summary>
 a.Diagrama de la red:
 
 
@@ -194,7 +201,7 @@ c.Mapa lógico:
 </details>
 
 <details>
-<summary><h2>7.Web:</h2></summary>
+<summary><h2>8.Web:</h2></summary>
 d.Diseño:
 
 
@@ -207,7 +214,7 @@ f.Mapa de navegabilidad:
 </details>
 
 <details>
-<summary><h2>8.Servicios:</h2></summary>
+<summary><h2>9.Servicios:</h2></summary>
 g.DNS:
 
 
@@ -228,16 +235,16 @@ k.Copias de seguridad:
 </details>
 
 <details>
-<summary><h2>9.Conclusiones:</h2></summary>
+<summary><h2>10.Conclusiones:</h2></summary>
 </details>
 
 <details>
-<summary><h2>10.Webgrafia:</h2></summary>
+<summary><h2>11.Webgrafia:</h2></summary>
 </details>
 
 
 <details>
-<summary><h2>11.Bibliografía:</h2></summary>
+<summary><h2>12.Bibliografía:</h2></summary>
 Hemos utilizado estas webs:
 Esta Web la hemos utilizado para cojer iconos:
 https://icons.getbootstrap.com/
