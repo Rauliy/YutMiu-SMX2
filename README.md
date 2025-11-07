@@ -165,9 +165,10 @@ que son:
 - No son visibles tus comentarios y varolaciones.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
 
+-Aqui tenemos el diagrama de flujo de la interfaz web.
 
 <img width="528" height="852" alt="image" src="https://github.com/user-attachments/assets/980bccd8-7082-4ea4-acad-ed31662ee8ca" />
-Aqui tenemos el diagrama de flujo de la interfaz web.
+
 
 </details>
 
