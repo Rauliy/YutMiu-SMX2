@@ -264,5 +264,8 @@ https://www.canva.com/design/DAG1FzZUJu8/4GEBUf7oiEVidqma9VoWNw/view?utm_content
 
 Esta web sirve para corregir nuestros errores ortográficos:
 https://quillbot.com/es/corrector-ortografico/d/8fda3fc1-36db-468a-92ae-1efa4166ce68
+
+Para hacer el diagrama de la red hemos utilizado microsoft visio:
+https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </details>
 
