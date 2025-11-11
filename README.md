@@ -24,7 +24,7 @@
 10-.Webgrafia
 
 <details>
-<summary><h2>1. Introducción:</h2></summary>
+<summary><h2>1. Introducción</h2></summary>
 
 Nuestra web va a tratar sobre música en streaming y donde los usuarios puedan ir comentando y recomendando sus canciones preferidas y dar sus opiniones respecto a la música que han escuchado 
 o que les han recomendado. Va a tener un gran catálogo de canciones de diferentes estilos para satisfacer a las personas que utilicen nuestra página. Queremos que nuestros usuarios disfruten compartiendo sus canciones favoritas, oiniones y debates entre ellos y leer opiniones sobre otras músicas.
@@ -42,7 +42,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 </details>
 
 <details>
-<summary><h2>2. Briefing:</h2></summary>
+<summary><h2>2. Briefing</h2></summary>
 
 Estas eran unas de las propuestas que teniamos antes de decidirnos
 - 1-Hacer como una especie de Spotify pero sin anuncios
@@ -61,7 +61,7 @@ Nosotros queremos que nuestra web este enfocada en un público en concreto que l
 </details>
 
 <details>
-<summary><h2>3. Mockup:</h2></summary>
+<summary><h2>3. Mockup</h2></summary>
 
 Este sería el mockup de nuestra web.
 
@@ -174,41 +174,38 @@ que son:
 </details>
 
 <details>
-<summary><h2>4.Materiales físicos y lógicos:</h2></summary>
+<summary><h2>4.Materiales físicos y lógicos</h2></summary>
 Lo que vamos a utilizar son dos ordenadores, dos ordenadores con tres máquinas virtuales: un Windows Server y otra máquina virtual con el TrueNAS configurado, además de tener o Cobian u otra aplicación en ese ordenador para cada día hacer copias de seguridad con un disco duro externo que tendremos conectado para así evitar problemas y, sobre todo, la tercera máquina virtual, tener un Ubuntu o un Linux Server con el FFmpeg para las canciones en streaming e inconvenientes, además de tenerlo guardado en el disco D del ordenador. En el otro ordenador tendremos la web, los registros... todo lo que tenga que ver con la web.
 
 </details>
 
 <details>
-<summary><h2>5.Arquitectura del software:</h2></summary>
+<summary><h2>5.Arquitectura del software</h2></summary>
 Nosotros, en nuestro caso, utilizaremos VSC (Visual Studio Code) para nuestra página web; luego utilizaremos VirtualBox para tener nuestro servidor de DHCP, de DNS... También utilizaremos Docker Desktop para poder hacer backups de nuestras cosas y levantar desde ahí servicios como MYSQL o APACHE; ADEMÁS, vamos a introducir un servidor de Linux para poder utilizar FFMPEG para escuchar y poder subir música a nuestra web en streaming.
 
 </details>
 
 <details>
-<summary><h2>6.Tecnologías a utilizar:</h2></summary>
+<summary><h2>6.Tecnologías a utilizar</h2></summary>
 
 
 </details>
 
 <details>
-<summary><h2>7.Red:</h2></summary>
+<summary><h2>7.Red</h2></summary>
+  Aqui podemos ver como vamos a montar 
 a.Diagrama de la red:
 <img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
 
 
 
-b.Mapa físico:
 
-
-
-c.Mapa lógico:
 
 
 </details>
 
 <details>
-<summary><h2>8.Web:</h2></summary>
+<summary><h2>8.Web</h2></summary>
 d.Diseño:
 
 
@@ -221,7 +218,7 @@ f.Mapa de navegabilidad:
 </details>
 
 <details>
-<summary><h2>9.Servicios:</h2></summary>
+<summary><h2>9.Servicios</h2></summary>
 g.DNS:
 
 
@@ -242,16 +239,16 @@ k.Copias de seguridad:
 </details>
 
 <details>
-<summary><h2>10.Conclusiones:</h2></summary>
+<summary><h2>10.Conclusiones</h2></summary>
 </details>
 
 <details>
-<summary><h2>11.Webgrafia:</h2></summary>
+<summary><h2>11.Webgrafia</h2></summary>
 </details>
 
 
 <details>
-<summary><h2>12.Bibliografía:</h2></summary>
+<summary><h2>12.Bibliografía</h2></summary>
 Hemos utilizado estas webs:
   
 Esta Web la hemos utilizado para coger iconos:
