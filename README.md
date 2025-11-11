@@ -1,4 +1,5 @@
 # YutMiu-SMX2
+<img width="197" height="187" alt="image" src="https://github.com/user-attachments/assets/3296b3ea-68eb-482f-ace5-3f9f45dc7233" />
 
 ## Índice:
 
