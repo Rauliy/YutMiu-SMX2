@@ -180,7 +180,7 @@ Lo que vamos a utilizar son dos ordenadores, un ordenador con tres maquinas vrtu
 
 <details>
 <summary><h2>5.Arquitectura del software:</h2></summary>
-
+Nosotros, en nuestro caso, utilizaremos VSC (Visual Studio Code) para nuestra página web; luego utilizaremos VirtualBox para tener nuestro servidor de DHCP, de DNS... También utilizaremos Docker Desktop para poder hacer backups de nuestras cosas y levantar desde ahí servicios como MYSQL o APACHE; ADEMÁS, vamos a introducir un servidor de Linux para poder utilizar FFMPEG para escuchar y poder subir música a nuestra web en streaming.
 
 </details>
 
