@@ -252,11 +252,17 @@ k.Copias de seguridad:
 <details>
 <summary><h2>12.Bibliografía:</h2></summary>
 Hemos utilizado estas webs:
+  
 Esta Web la hemos utilizado para cojer iconos:
 https://icons.getbootstrap.com/
+
 Tambien nos hemos basado en muchas ideas de la pagina de Spootify:
 https://open.spotify.com/
+
 Y por ultimo hemos hecho el diseño del la web en el canva:
 https://www.canva.com/design/DAG1FzZUJu8/4GEBUf7oiEVidqma9VoWNw/view?utm_content=DAG1FzZUJu8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he356a4d6cf
+
+Esta web sirve para corregir nuestros errores ortográficos:
+https://quillbot.com/es/corrector-ortografico/d/8fda3fc1-36db-468a-92ae-1efa4166ce68
 </details>
 
