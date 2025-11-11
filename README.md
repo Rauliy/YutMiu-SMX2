@@ -193,6 +193,7 @@ Lo que vamos a utilizar son dos ordenadores, un ordenador con tres maquinas vrtu
 <details>
 <summary><h2>7.Red:</h2></summary>
 a.Diagrama de la red:
+<img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
 
 
 
