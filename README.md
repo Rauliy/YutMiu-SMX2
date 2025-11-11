@@ -174,7 +174,7 @@ que son:
 
 <details>
 <summary><h2>4.Materiales físicos y lógicos:</h2></summary>
-Lo que vamos a utilizar son dos ordenadores, un ordenador con tres maquinas vrtuales un windows server y otra maquina virtual con el TrueNas configurado, ademas de tener o cobian o otra aplicacion en ese ordenador para cada dia hacer copias de seguridad con un disco duro externo que tendremos conectado para asi evitar problemas y sobre todo la tercera maquina virtual tener un Ubuntu o un Linux server con el FFmpeg para las canciones en streaming y inconvenientes adémas de tenerlo guardado en el disco D del ordenador, en el otro ordenador tendremos la web los registros... todo lo que tenga que ver con la web
+Lo que vamos a utilizar son dos ordenadores, un ordenador con tres maquinas vrtuales un windows server y otra maquina virtual con el TrueNas configurado, ademas de tener o cobian o otra aplicacion en ese ordenador para cada dia hacer copias de seguridad con un disco duro externo que tendremos conectado para asi evitar problemas y sobre todo la tercera maquina virtual tener un Ubuntu o un Linux server con el FFmpeg para las canciones en streaming y inconvenientes adémas de tenerlo guardado en el disco D del ordenador, en el otro ordenador tendremos la web los registros... todo lo que tenga que ver con la web.
 
 </details>
 
