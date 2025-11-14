@@ -45,6 +45,44 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 - Puedes hacer una lista personalizada de tus músicas favoritas.
 
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuánto te ha gustado.
+
+  Los datos que se deben guardar serán los siguientes:
+El nombre del usuario:
+Correo electrónico o/e teléfono
+Edad y para que lo quiere utilizar la web
+Contraseña
+Fecha de registro
+Musica publicada 
+Comentarios publicados
+Música que ha estado escuchando los últimos 7 días
+Datos de la web:
+Música que hay publicada.
+Comentarios publicados con fecha y hora.
+Usuarios registrados
+Usuarios conectados
+Gente que ha descubierto un easter egg con una canción especial
+Y un registro de las canciones más escuchadas y menos escuchadas
+Valoración mediante un sistema de puntuación que utilizaremos en la web.
+Para el tiempo→DATETIME
+Para la fecha y la hora→Date
+Puntuación de las canciones→Utilizaremos un sistema llamado Float o Decimal para números más precisos.
+Comentarios publicados→ Date y Text
+
+¿Cómo se relacionan unas entidades con otras?
+En nuestra web implementaremos una función para poder hablar y compartir músicas. Para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga. También se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
+
+Incluye un ejemplo de cada entidad con datos ficticios pero realistas.
+Ejemplo de registro en la tabla Usuario:
+Nombre: Juan Pérez
+Email: juanp@gmail.com
+Fecha de registro: 10/09/2025
+Amigos conectados: 2 amigos online
+Amigos deconectados:0 amigos offline
+Listas de música
+Horas que has estado utilizando la aplicación:367 horas
+Publicaciones subidas en los ultimos 7 dias: Comentario→ “Hola” 
+Chats de amigos
+
   
 </details>
 
@@ -64,9 +102,16 @@ Estas eran unas de las propuestas que teníamos antes de decidirnos.
 Al final vamos a combinar algunas de estas ideas; vamos a hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando músicas y dar sus opiniones respecto a la 
 música que han escuchado o que les han recomendado. Básicamente, hemos escogido hacer esto porque a ambos nos gusta la música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
 
-Nosotros queremos que nuestra web esté enfocada en un público en concreto que le guste escuchar música y dar sus opiniones sobre su música favorita o sobre una que esté escuchando en ese momento, además de que
-le guste debatir con los demás usuarios sobre su canción favorita, de cómo está compuesta o cómo es la letra de la canción, queremos gente respetuosa, que sepa respetar a los usuarios y que le guste nuestro formato de listas de reproducción,
-la interfaz de canciones, nuestro sistema de debates, opiniones y la manera de valoración.
+Objetivos del Proyecto.
+Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda disfrutar y gaudir de este proyecto, ya que lo que buscamos es que la gente la utilice y no solo ara que sea para un proyecto sino que queremos que se utilice de verdad, yo creo que si le ponemos empeño lo podremos lograr.
+Objetivo del Publico.
+
+Nosotros queremos llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
+
+Material Necesario.
+Vamos a utilizar una app externa que funciona mediante comandos que se llama FFMpeg
+También necesitaremos una base de datos, un docker, y máquinas virtuales que hagan de servidores para dar seguridad y estabilidad a nuestra web.
+
 </details>
 
 
