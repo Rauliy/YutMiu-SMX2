@@ -147,7 +147,8 @@ Nosotros, en nuestro caso, utilizaremos VSC (Visual Studio Code) para nuestra p�
 <details>
 <summary><h2>6.Red</h2></summary>
 Aquí podemos ver cómo vamos a organizar la web y los servidores correspondientes:
-a.Diagrama de la red:
+
+  a.Diagrama de la red:
 <img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
 
 Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web:
