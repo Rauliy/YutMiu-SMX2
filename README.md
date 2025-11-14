@@ -73,14 +73,23 @@ En nuestra web implementaremos una función para poder hablar y compartir músic
 
 Incluye un ejemplo de cada entidad con datos ficticios pero realistas.
 Ejemplo de registro en la tabla Usuario:
+
 Nombre: Juan Pérez
+
 Email: juanp@gmail.com
+
 Fecha de registro: 10/09/2025
+
 Amigos conectados: 2 amigos online
+
 Amigos deconectados:0 amigos offline
+
 Listas de música
+
 Horas que has estado utilizando la aplicación:367 horas
+
 Publicaciones subidas en los ultimos 7 dias: Comentario→ “Hola” 
+
 Chats de amigos
 
   
@@ -310,6 +319,8 @@ j.Firewall:
 
 
 k.Copias de seguridad:
+
+FFMPEG
 </details>
 
 <details>
