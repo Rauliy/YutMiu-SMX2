@@ -21,9 +21,9 @@
 
 9-.Conclusiones
 
-10.Webgrafia
+10-.Webgrafia
 
-11.Bibliografía
+11-.Bibliografía
 
 <details>
 <summary><h2>1. Introducción</h2></summary>
@@ -99,7 +99,7 @@ a.Diagrama de la red:
 <details>
 <summary><h2>7.Web</h2></summary>
 
-e.Mockup:
+b.Mockup:
 
 Este sería el mockup de nuestra web.
 
@@ -204,11 +204,10 @@ que son:
 - No son visibles tus comentarios y varolaciones.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
 
+c.Mapa de navegabilidad:
 -Aqui tenemos el diagrama de flujo de la interfaz web.
 
 <img width="528" height="852" alt="image" src="https://github.com/user-attachments/assets/980bccd8-7082-4ea4-acad-ed31662ee8ca" />
-
-f.Mapa de navegabilidad:
 </details>
 
 <details>
