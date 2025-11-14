@@ -205,7 +205,9 @@ que son:
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
 
 c.Mapa de navegabilidad:
+
 -Aqui tenemos el diagrama de flujo de la interfaz web.
+
 
 <img width="528" height="852" alt="image" src="https://github.com/user-attachments/assets/980bccd8-7082-4ea4-acad-ed31662ee8ca" />
 </details>
