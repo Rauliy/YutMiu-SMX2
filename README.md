@@ -146,12 +146,42 @@ Nosotros, en nuestro caso, utilizaremos VSC (Visual Studio Code) para nuestra p�
 
 <details>
 <summary><h2>6.Red</h2></summary>
-Aquí podemos ver cómo vamos a montar:
+Aquí podemos ver cómo vamos a organizar la web y los servidores correspondientes:
 a.Diagrama de la red:
 <img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
 
+Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web:
+<img width="916" height="596" alt="image" src="https://github.com/user-attachments/assets/e63019a5-c0ed-4552-b015-756c8797090d" />
 
+ Luego aqui teneis un listado de tareas sobre como nos lo vamos a monatar y organizar en nuestro proyecto:
+ Objetivo 1: Implementar un servidor web
 
+1.1
+ [Raul] Instalar y configurar el servidor básico.
+ CP1.2 – Que el servidor funcione en red.
+1.2
+ [Raul] Configurar los permisos de los usuarios y cosas de seguridad.
+ CP1.2 – Que el sistema operativo en red esté listo y seguro.
+1.3
+ [Ignasi] Instalar y configurar los servicios web: NGINX, base de datos, PHP y PHPMYADMIN.
+ CP3.1.1 – Que todo el servidor web funcione sin problemas.
+Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar todo listo para que los usuarios puedan subir canciones y playlists.
+
+Objetivo 2: Programar la front-page
+
+2.1
+ [Ignasi] Hacer la estructura del index.html con CSS.
+ CP2.1.6 – Que se vea bien y que funcione todo en el navegador.
+2.2
+[Ignasi] Crear el header y el footer que se vean en todas las páginas.
+ CP2.1.6 – Que todo sea consistente y fácil de usar.
+2.3
+ [Raul] Hacer el formulario de contacto.
+ CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
+Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede guay.
+
+Aqui teneis la Arquitectura del sistema:
+<img width="908" height="706" alt="image" src="https://github.com/user-attachments/assets/c40a3516-fc59-4ad2-a3d1-272e028e65b2" />
 
 
 
@@ -324,17 +354,20 @@ FFMPEG
 </details>
 
 <details>
-<summary><h2>9.Conclusiones</h2></summary>
+<summary><h2>9.Diagrama Gantt</h2></summary>
+Aqui podeis ver como lo hemos organizado y separado el Diagrama:
+<img width="1919" height="417" alt="image" src="https://github.com/user-attachments/assets/ee66626d-ab31-4546-bf3f-8af53b429077" />
+Y aqui os voy a dejar el enlace al Excel para que lo vayais viendo como se va actualizando a diario: https://alumnoifp-my.sharepoint.com/:x:/g/personal/rreyesf_student_ifp_es/EWDiyoYtqXtNhg-YJbDrquoBVqxon1pBstPxaSgkpy9Yhg?e=22Y8uM
 </details>
 
 <details>
-<summary><h2>10.Webgrafia</h2></summary>
+<summary><h2>10.Conclusiones</h2></summary>
 </details>
 
 
 <details>
 <summary><h2>11.Bibliografía</h2></summary>
-Hemos utilizado estas webs:
+Hemos utilizado estas webs para buscar informacion datos etc ect:
   
 Esta Web la hemos utilizado para coger iconos:
 https://icons.getbootstrap.com/
