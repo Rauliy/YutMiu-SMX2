@@ -7,7 +7,7 @@
 
 2-.Briefing 
 
-3-.Mockup
+3-.Materiales físicos y lógicos
 
 4-.Arquitectura del software
 
@@ -21,7 +21,9 @@
 
 9-.Conclusiones
 
-10-.Webgrafia
+10.Webgrafia
+
+11.Bibliografía
 
 <details>
 <summary><h2>1. Introducción</h2></summary>
@@ -60,8 +62,44 @@ música, y además nos pareció buena idea que hubiese un chat con comentarios y
 Nosotros queremos que nuestra web este enfocada en un público en concreto que le guste escuchar musica y dar sus opiniones sobre su música favorita o sobre una que este escuchando en ese momento, ádemas que le guste debatir con los demás usuarios sobre su cancion favorita de como esta compositada o como es la letra de la canción, queremos  gente respetuosa que sepan respetar a los usuarios y que les guste nuestro formato de listas de reproducción, la interfaz de canciones, nuestro sistema de debates, opiniones y la manera de valoración.   
 </details>
 
+
+</details>
+
 <details>
-<summary><h2>3. Mockup</h2></summary>
+<summary><h2>3.Materiales físicos y lógicos</h2></summary>
+Lo que vamos a utilizar son dos ordenadores, dos ordenadores con tres máquinas virtuales: un Windows Server y otra máquina virtual con el TrueNAS configurado, además de tener o Cobian u otra aplicación en ese ordenador para cada día hacer copias de seguridad con un disco duro externo que tendremos conectado para así evitar problemas y, sobre todo, la tercera máquina virtual, tener un Ubuntu o un Linux Server con el FFmpeg para las canciones en streaming e inconvenientes, además de tenerlo guardado en el disco D del ordenador. En el otro ordenador tendremos la web, los registros... todo lo que tenga que ver con la web.
+
+</details>
+
+<details>
+<summary><h2>4.Arquitectura del software</h2></summary>
+Nosotros, en nuestro caso, utilizaremos VSC (Visual Studio Code) para nuestra página web; luego utilizaremos VirtualBox para tener nuestro servidor de DHCP, de DNS... También utilizaremos Docker Desktop para poder hacer backups de nuestras cosas y levantar desde ahí servicios como MYSQL o APACHE; ADEMÁS, vamos a introducir un servidor de Linux para poder utilizar FFMPEG para escuchar y poder subir música a nuestra web en streaming.
+
+</details>
+
+<details>
+<summary><h2>5.Tecnologías a utilizar</h2></summary>
+
+
+</details>
+
+<details>
+<summary><h2>6.Red</h2></summary>
+  Aqui podemos ver como vamos a montar 
+a.Diagrama de la red:
+<img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
+
+
+
+
+
+
+</details>
+
+<details>
+<summary><h2>7.Web</h2></summary>
+
+e.Mockup:
 
 Este sería el mockup de nuestra web.
 
@@ -170,55 +208,11 @@ que son:
 
 <img width="528" height="852" alt="image" src="https://github.com/user-attachments/assets/980bccd8-7082-4ea4-acad-ed31662ee8ca" />
 
-
-</details>
-
-<details>
-<summary><h2>4.Materiales físicos y lógicos</h2></summary>
-Lo que vamos a utilizar son dos ordenadores, dos ordenadores con tres máquinas virtuales: un Windows Server y otra máquina virtual con el TrueNAS configurado, además de tener o Cobian u otra aplicación en ese ordenador para cada día hacer copias de seguridad con un disco duro externo que tendremos conectado para así evitar problemas y, sobre todo, la tercera máquina virtual, tener un Ubuntu o un Linux Server con el FFmpeg para las canciones en streaming e inconvenientes, además de tenerlo guardado en el disco D del ordenador. En el otro ordenador tendremos la web, los registros... todo lo que tenga que ver con la web.
-
-</details>
-
-<details>
-<summary><h2>5.Arquitectura del software</h2></summary>
-Nosotros, en nuestro caso, utilizaremos VSC (Visual Studio Code) para nuestra página web; luego utilizaremos VirtualBox para tener nuestro servidor de DHCP, de DNS... También utilizaremos Docker Desktop para poder hacer backups de nuestras cosas y levantar desde ahí servicios como MYSQL o APACHE; ADEMÁS, vamos a introducir un servidor de Linux para poder utilizar FFMPEG para escuchar y poder subir música a nuestra web en streaming.
-
-</details>
-
-<details>
-<summary><h2>6.Tecnologías a utilizar</h2></summary>
-
-
-</details>
-
-<details>
-<summary><h2>7.Red</h2></summary>
-  Aqui podemos ver como vamos a montar 
-a.Diagrama de la red:
-<img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
-
-
-
-
-
-
-</details>
-
-<details>
-<summary><h2>8.Web</h2></summary>
-d.Diseño:
-
-
-
-e.Mockup:
-
-
-
 f.Mapa de navegabilidad:
 </details>
 
 <details>
-<summary><h2>9.Servicios</h2></summary>
+<summary><h2>8.Servicios</h2></summary>
 g.DNS:
 
 
@@ -239,16 +233,16 @@ k.Copias de seguridad:
 </details>
 
 <details>
-<summary><h2>10.Conclusiones</h2></summary>
+<summary><h2>9.Conclusiones</h2></summary>
 </details>
 
 <details>
-<summary><h2>11.Webgrafia</h2></summary>
+<summary><h2>10.Webgrafia</h2></summary>
 </details>
 
 
 <details>
-<summary><h2>12.Bibliografía</h2></summary>
+<summary><h2>11.Bibliografía</h2></summary>
 Hemos utilizado estas webs:
   
 Esta Web la hemos utilizado para coger iconos:
