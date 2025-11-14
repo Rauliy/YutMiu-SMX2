@@ -156,32 +156,100 @@ Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web
  Luego aqui teneis un listado de tareas sobre como nos lo vamos a monatar y organizar en nuestro proyecto:
  Objetivo 1: Implementar un servidor web
 
-1.1
+- 1.1
  [Raul] Instalar y configurar el servidor básico.
  CP1.2 – Que el servidor funcione en red.
-1.2
+- 1.2
  [Raul] Configurar los permisos de los usuarios y cosas de seguridad.
  CP1.2 – Que el sistema operativo en red esté listo y seguro.
-1.3
+- 1.3
  [Ignasi] Instalar y configurar los servicios web: NGINX, base de datos, PHP y PHPMYADMIN.
  CP3.1.1 – Que todo el servidor web funcione sin problemas.
 Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar todo listo para que los usuarios puedan subir canciones y playlists.
 
 Objetivo 2: Programar la front-page
 
-2.1
+- 2.1
  [Ignasi] Hacer la estructura del index.html con CSS.
  CP2.1.6 – Que se vea bien y que funcione todo en el navegador.
-2.2
+- 2.2
 [Ignasi] Crear el header y el footer que se vean en todas las páginas.
  CP2.1.6 – Que todo sea consistente y fácil de usar.
-2.3
+- 2.3
  [Raul] Hacer el formulario de contacto.
  CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
 Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede guay.
 
 Aqui teneis la Arquitectura del sistema:
 <img width="908" height="706" alt="image" src="https://github.com/user-attachments/assets/c40a3516-fc59-4ad2-a3d1-272e028e65b2" />
+
+Ahora vamos presentar el diagrama de la base de datos:
+
+1. ¿Qué datos son necesarios para mi aplicación?
+
+Para que mi app funcione bien necesitamos guardar varias cosas:
+- Usuarios → toda la info de cada persona que se registre (nombre, email, contraseña…).
+
+- Canciones → título, artista, archivo de música, duración, fecha de publicación…
+
+- Playlists → nombre de la lista, quién la creó y qué canciones contiene.
+
+- Comentarios → quién comenta, sobre qué canción, qué dice y cuándo lo hace.
+
+- Valoraciones → quién da la nota a qué canción y qué puntuación le pone.
+
+- Amigos → las relaciones entre usuarios, es decir, quién es amigo de quién.
+
+
+
+2. ¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?
+Datos que voy a pedir al usuario:
+
+- Nombre de usuario
+
+- Email
+
+- Contraseña
+
+- Foto de perfil 
+
+Tipos de usuarios:
+
+- Usuario normal → puede escuchar música, comentar canciones, valorar y crear playlists.
+
+- Admin (opcional) → podría gestionar canciones, usuarios o comentarios si lo necesitamos.
+
+
+
+3. ¿Qué tipo de dato necesitaré para cada información?
+<img width="595" height="462" alt="image" src="https://github.com/user-attachments/assets/291d07c1-8219-4671-a624-3c2b5b285a73" />
+<img width="606" height="439" alt="image" src="https://github.com/user-attachments/assets/797fcdf7-66b8-4979-afda-ff94f5bdd02f" />
+
+
+
+4. ¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?
+- Usuarios → id_usuario
+
+- Canciones → id_cancion
+
+- Playlists → id_playlist
+
+- Comentarios → id_comentario
+
+- Valoraciones → id_valoracion
+
+- Amigos → id_amigo
+
+Relaciones principales:
+- Una playlist pertenece a un usuario, así que un usuario puede tener muchas playlists.
+
+- Una canción puede estar en muchas playlists, por eso necesitamos una tabla intermedia tipo “playlist_cancion”.
+
+- Un comentario pertenece a un usuario y a una canción, para saber quién dijo qué y dónde.
+
+- Una valoración pertenece a un usuario y a una canción, para calcular la nota media.
+
+- Una relación de amigos une dos usuarios, así podemos ver quién es amigo de quién.
 
 
 
