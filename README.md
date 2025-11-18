@@ -179,10 +179,10 @@ Objetivo 2: Programar la front-page
 - 2.3
  [Raul] Hacer el formulario de contacto.
  CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
-Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede guay.
+Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
 Aqui teneis la Arquitectura del sistema:
-<img width="908" height="706" alt="image" src="https://github.com/user-attachments/assets/c40a3516-fc59-4ad2-a3d1-272e028e65b2" />
+
 
 Ahora vamos presentar el diagrama de la base de datos:
 
