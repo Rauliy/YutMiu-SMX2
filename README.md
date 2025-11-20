@@ -182,6 +182,7 @@ Objetivo 2: Programar la front-page
 Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
 Aqui teneis la Arquitectura del sistema:
+<img width="889" height="733" alt="image" src="https://github.com/user-attachments/assets/fd9c22f9-5ab1-4b8d-8298-e299f00d108f" />
 
 
 Ahora vamos presentar el diagrama de la base de datos:
