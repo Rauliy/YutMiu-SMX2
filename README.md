@@ -221,7 +221,19 @@ Objetivo 2: Programar la front-page
 Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
 ##Aqui teneis la Arquitectura del sistema:
-<img width="889" height="733" alt="image" src="https://github.com/user-attachments/assets/fd9c22f9-5ab1-4b8d-8298-e299f00d108f" />
+## Tecnologías y Componentes del Sistema
+
+| Componente del sistema | Tecnología / Framework | Versión | Puerto | Descripción de uso o requisitos | Documentación |
+|------------------------|------------------------|---------|--------|---------------------------------|---------------|
+| **Hardware** | Procesador Intel + 8GB RAM | Última | 8080 / 3033 | Usaremos dos ordenadores de clase: uno con Windows Server 2016 y otro con Linux Debian. Cada máquina virtual tendrá unos 4GB de RAM para que vaya bien. | — |
+| **Sistema operativo** | Linux Debian y Windows Server | Última | 8080 / 3033 | Utilizaremos Linux Debian para casi todo lo del servidor (FFmpeg, Docker…) y Windows Server 2016 para pruebas y para algunos servicios extra. | https://www.debian.org / https://www.microsoft.com |
+| **Interfaz de usuario (Frontend)** | HTML, CSS | HTML 5 / CSS 3 | 8080 / 3033 | El frontend lo haremos con HTML y CSS porque son las tecnologías que dominamos más y con las que más cómodos estamos ahora mismo. | https://developer.mozilla.org |
+| **Lógica de negocio (Backend)** | PHP | PHP 8.3 | 8080 / 3033 | En el backend usaremos PHP ya que es lo que estamos aprendiendo y lo que más controlamos por ahora. HTML lo usaremos para la estructura básica. | https://www.php.net |
+| **Servidor web** | Apache, Nginx | Última | 8080 / 3033 | Apache lo usaremos porque viene integrado en Docker y funciona bien. También meteremos Nginx porque es rápido y estable para levantar servicios sin líos. | https://httpd.apache.org / https://nginx.org |
+| **Base de datos** | MySQL | Última | 8080 / 3033 | Usaremos MySQL porque es el más cómodo y Docker ya te lo deja medio listo para usar sin tener que configurarlo todo a mano. | https://www.mysql.com |
+| **Gestor de base de datos** | PHPMyAdmin | Última | 8080 / 3033 | Para gestionar y ver la base de datos utilizaremos PHPMyAdmin, porque es el que conocemos más y es súper fácil de usar desde el navegador. | https://www.phpmyadmin.net |
+| **Servicios de APIs** | REST | Última | 8080 / 3033 | Para conectar el frontend con el backend usaremos REST, que es lo más estándar y lo que más se utiliza hoy en día. | https://restfulapi.net |
+
 
 
 Ahora vamos presentar el diagrama de la base de datos:
