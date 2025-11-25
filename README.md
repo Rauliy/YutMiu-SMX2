@@ -34,7 +34,7 @@ Queremos que nuestros usuarios disfruten compartiendo sus canciones favoritas, o
 
 Somos un equipo de dos estudiantes que queremos hacer una web de música y hemos estado buscando webs y aplicaciones con este tipo de contenido para inspirarnos. Contenidos del tipo: música, opiniones y valoraciones de las canciones disponibles en la web.
 
-¿Qué funcionalidades ofrecerá a los usuarios?
+##¿Qué funcionalidades ofrecerá a los usuarios?
 
 Las funciones que vamos a implementar en nuestra página web van a ser:
 
@@ -68,11 +68,11 @@ Para la fecha y la hora→Date
 Puntuación de las canciones→Utilizaremos un sistema llamado Float o Decimal para números más precisos.
 Comentarios publicados→ Date y Text
 
-¿Cómo se relacionan unas entidades con otras?
+##¿Cómo se relacionan unas entidades con otras?
 En nuestra web implementaremos una función para poder hablar y compartir músicas. Para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga. También se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
 
-Incluye un ejemplo de cada entidad con datos ficticios pero realistas.
-Ejemplo de registro en la tabla Usuario:
+
+##Registro en la tabla Usuario:
 
 Nombre: Juan Pérez
 
@@ -111,13 +111,13 @@ Estas eran unas de las propuestas que teníamos antes de decidirnos.
 Al final vamos a combinar algunas de estas ideas; vamos a hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando músicas y dar sus opiniones respecto a la 
 música que han escuchado o que les han recomendado. Básicamente, hemos escogido hacer esto porque a ambos nos gusta la música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
 
-Objetivos del Proyecto.
+##Objetivos del Proyecto.
 Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda disfrutar y gaudir de este proyecto, ya que lo que buscamos es que la gente la utilice y no solo ara que sea para un proyecto sino que queremos que se utilice de verdad, yo creo que si le ponemos empeño lo podremos lograr.
 Objetivo del Publico.
 
 Nosotros queremos llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
 
-Material Necesario.
+##Material Necesario.
 Vamos a utilizar una app externa que funciona mediante comandos que se llama FFMpeg
 También necesitaremos una base de datos, un docker, y máquinas virtuales que hagan de servidores para dar seguridad y estabilidad a nuestra web.
 
@@ -181,7 +181,17 @@ Aquí podemos ver cómo vamos a organizar la web y los servidores correspondient
 <img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
 
 Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web:
-<img width="916" height="596" alt="image" src="https://github.com/user-attachments/assets/e63019a5-c0ed-4552-b015-756c8797090d" />
+## Lista de objetivos y funcionalidades del proyecto
+
+| ID  | Prioridad | Objetivo / Funcionalidad | Descripción                                                                                                                                                                                                 | Fecha Entrega   | Estado     |
+|-----|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------|
+| ID0 | Alta      | Registro de usuarios      | Esta opción es súper importante porque si inicias sesión podrás tener todas las funciones de la web: listas de música, amigos, valoraciones… Sin iniciar sesión solo podrás escuchar canciones.             | 20/02/2026      | Pendiente  |
+| ID1 | Alta      | Músicas (Reproducción)   | Es lo más básico de la web. Sin esto la web no sirve. Utilizaremos **FFmpeg** para poder subir y escuchar música en streaming. Es lo que hace que todo el sistema funcione.                                 | —               | Pendiente  |
+| ID2 | Alta      | Listas de música          | Los usuarios podrán guardar sus canciones favoritas en playlists personalizadas. Podrán tener varias listas diferentes según sus gustos.                                                                     | —               | Pendiente  |
+| ID3 | Media     | Amigos y chats            | Los usuarios podrán añadirse como amigos, hablar por chat y enviarse música por ahí. Esto hace la web más social y divertida.                                                                                | —               | Pendiente  |
+| ID4 | Media     | Valoraciones              | Los usuarios podrán poner notas a las canciones (de 1 a 5). Así se puede ver qué canciones molan más para la comunidad.                                                                                     | —               | Pendiente  |
+| ID5 | Alta      | Buscador                  | Función clave para que la gente encuentre música rápido. Podrá buscar canciones por título, artista, playlists, etc.                                                                                        | —               | Pendiente  |
+| ID6 | Alta      | Perfil de usuario         | Aquí el usuario podrá ver y editar su perfil: cambiar la descripción, foto, ver sus valoraciones, comentarios, etc. También podrá ver el perfil de sus amigos.                                               | —               | Pendiente  |
 
  Luego aqui teneis un listado de tareas sobre como nos lo vamos a monatar y organizar en nuestro proyecto:
  Objetivo 1: Implementar un servidor web
@@ -210,13 +220,13 @@ Objetivo 2: Programar la front-page
  CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
 Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
-Aqui teneis la Arquitectura del sistema:
+##Aqui teneis la Arquitectura del sistema:
 <img width="889" height="733" alt="image" src="https://github.com/user-attachments/assets/fd9c22f9-5ab1-4b8d-8298-e299f00d108f" />
 
 
 Ahora vamos presentar el diagrama de la base de datos:
 
-1. ¿Qué datos son necesarios para mi aplicación?
+##1. ¿Qué datos son necesarios para mi aplicación?
 
 Para que mi app funcione bien necesitamos guardar varias cosas:
 - Usuarios → toda la info de cada persona que se registre (nombre, email, contraseña…).
@@ -233,7 +243,7 @@ Para que mi app funcione bien necesitamos guardar varias cosas:
 
 
 
-2. ¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?
+##2. ¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?
 Datos que voy a pedir al usuario:
 
 - Nombre de usuario
@@ -311,7 +321,7 @@ Tipos de usuarios:
 
 
 
-4. ¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?
+##4. ¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?
 - Usuarios → id_usuario
 
 - Canciones → id_cancion
@@ -324,7 +334,7 @@ Tipos de usuarios:
 
 - Amigos → id_amigo
 
-Relaciones principales:
+###Relaciones principales:
 - Una playlist pertenece a un usuario, así que un usuario puede tener muchas playlists.
 
 - Una canción puede estar en muchas playlists, por eso necesitamos una tabla intermedia tipo “playlist_cancion”.
