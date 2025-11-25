@@ -181,9 +181,11 @@ Aquí podemos ver cómo vamos a organizar la web y los servidores correspondient
 <img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
 
 ##Estructura básica de la red
+
 <img width="606" height="340" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
 
-
+<details>
+<summary><strong>Tabla de tecnologías</strong></summary>
 Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web:
 ## Lista de objetivos y funcionalidades del proyecto
 
@@ -196,7 +198,7 @@ Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web
 | ID4 | Media     | Valoraciones              | Los usuarios podrán poner notas a las canciones (de 1 a 5). Así se puede ver qué canciones molan más para la comunidad.                                                                                     | —               | Pendiente  |
 | ID5 | Alta      | Buscador                  | Función clave para que la gente encuentre música rápido. Podrá buscar canciones por título, artista, playlists, etc.                                                                                        | —               | Pendiente  |
 | ID6 | Alta      | Perfil de usuario         | Aquí el usuario podrá ver y editar su perfil: cambiar la descripción, foto, ver sus valoraciones, comentarios, etc. También podrá ver el perfil de sus amigos.                                               | —               | Pendiente  |
-
+</details>
  Luego aqui teneis un listado de tareas sobre como nos lo vamos a monatar y organizar en nuestro proyecto:
  Objetivo 1: Implementar un servidor web
 
@@ -224,21 +226,21 @@ Objetivo 2: Programar la front-page
  CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
 Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
-##Aqui teneis la Arquitectura del sistema:
-## Tecnologías y Componentes del Sistema
+<details>
+<summary><strong>Tecnologías y Componentes del Sistema</strong></summary>
 
 | Componente del sistema | Tecnología / Framework | Versión | Puerto | Descripción de uso o requisitos | Documentación |
 |------------------------|------------------------|---------|--------|---------------------------------|---------------|
-| **Hardware** | Procesador Intel + 8GB RAM | Última | 8080 / 3033 | Usaremos dos ordenadores de clase: uno con Windows Server 2016 y otro con Linux Debian. Cada máquina virtual tendrá unos 4GB de RAM para que vaya bien. | — |
-| **Sistema operativo** | Linux Debian y Windows Server | Última | 8080 / 3033 | Utilizaremos Linux Debian para casi todo lo del servidor (FFmpeg, Docker…) y Windows Server 2016 para pruebas y para algunos servicios extra. | https://www.debian.org / https://www.microsoft.com |
-| **Interfaz de usuario (Frontend)** | HTML, CSS | HTML 5 / CSS 3 | 8080 / 3033 | El frontend lo haremos con HTML y CSS porque son las tecnologías que dominamos más y con las que más cómodos estamos ahora mismo. | https://developer.mozilla.org |
-| **Lógica de negocio (Backend)** | PHP | PHP 8.3 | 8080 / 3033 | En el backend usaremos PHP ya que es lo que estamos aprendiendo y lo que más controlamos por ahora. HTML lo usaremos para la estructura básica. | https://www.php.net |
-| **Servidor web** | Apache, Nginx | Última | 8080 / 3033 | Apache lo usaremos porque viene integrado en Docker y funciona bien. También meteremos Nginx porque es rápido y estable para levantar servicios sin líos. | https://httpd.apache.org / https://nginx.org |
-| **Base de datos** | MySQL | Última | 8080 / 3033 | Usaremos MySQL porque es el más cómodo y Docker ya te lo deja medio listo para usar sin tener que configurarlo todo a mano. | https://www.mysql.com |
-| **Gestor de base de datos** | PHPMyAdmin | Última | 8080 / 3033 | Para gestionar y ver la base de datos utilizaremos PHPMyAdmin, porque es el que conocemos más y es súper fácil de usar desde el navegador. | https://www.phpmyadmin.net |
-| **Servicios de APIs** | REST | Última | 8080 / 3033 | Para conectar el frontend con el backend usaremos REST, que es lo más estándar y lo que más se utiliza hoy en día. | https://restfulapi.net |
+| Hardware | Procesador Intel + 8GB RAM | Última | 8080 / 3033 | Dos ordenadores: uno con Windows Server 2016 y otro con Linux Debian. Cada máquina virtual con 4GB de RAM. | — |
+| Sistema operativo | Linux Debian y Windows Server | Última | 8080 / 3033 | Linux Debian para los servicios principales y Windows Server 2016 para pruebas. | https://www.debian.org / https://www.microsoft.com |
+| Interfaz de usuario (Frontend) | HTML, CSS | HTML5 / CSS3 | 8080 / 3033 | Frontend hecho con HTML y CSS, que es lo que más dominamos. | https://developer.mozilla.org |
+| Lógica de negocio (Backend) | PHP | PHP 8.3 | 8080 / 3033 | Backend hecho con PHP, que es lo que estamos aprendiendo. | https://www.php.net |
+| Servidor web | Apache, Nginx | Última | 8080 / 3033 | Usamos Apache porque viene en Docker y Nginx por estabilidad. | https://httpd.apache.org / https://nginx.org |
+| Base de datos | MySQL | Última | 8080 / 3033 | Usamos MySQL porque es simple de configurar y funciona bien con Docker. | https://www.mysql.com |
+| Gestor de base de datos | PHPMyAdmin | Última | 8080 / 3033 | PHPMyAdmin porque es el que mejor sabemos utilizar. | https://www.phpmyadmin.net |
+| Servicios de APIs | REST | Última | 8080 / 3033 | Para conectar frontend y backend usaremos REST. | https://restfulapi.net |
 
-
+</details>
 
 Ahora vamos presentar el diagrama de la base de datos:
 
@@ -279,62 +281,44 @@ Tipos de usuarios:
 
 
 3. ¿Qué tipo de dato necesitaré para cada información?
-## Tabla de datos y tipos (Base de datos)
 
-### Tabla: Usuarios
+<details>
+<summary><strong>Estructura de Base de Datoss</strong></summary>
+
 | Información       | Tipo MySQL         | Descripción |
 |------------------|--------------------|-------------|
-| `id_usuario`      | INT AUTO_INCREMENT | Clave primaria, identifica a cada usuario. |
-| `nombre_usuario`  | VARCHAR(50)        | Nombre que se muestra en la app. |
-| `email`           | VARCHAR(100)       | Correo único de cada usuario. |
+| `id_usuario`      | INT AUTO_INCREMENT | Clave primaria del usuario. |
+| `nombre_usuario`  | VARCHAR(50)        | Nombre público del usuario. |
+| `email`           | VARCHAR(100)       | Correo único. |
 | `contraseña`      | VARCHAR(255)       | Contraseña encriptada. |
-| `foto_perfil`     | VARCHAR(255)       | Ruta de la imagen que sube el usuario. |
-
----
-
-### Tabla: Canciones
+| `foto_perfil`     | VARCHAR(255)       | Ruta del archivo de la foto de perfil. |
 | Información     | Tipo MySQL         | Descripción |
 |----------------|--------------------|-------------|
-| `id_cancion`    | INT AUTO_INCREMENT | Clave primaria de la canción. |
+| `id_cancion`    | INT AUTO_INCREMENT | Clave primaria. |
 | `título`        | VARCHAR(100)       | Nombre de la canción. |
 | `artista`       | VARCHAR(100)       | Artista o grupo. |
 | `archivo`       | VARCHAR(255)       | Ruta del archivo .mp3. |
-| `duracion`      | TIME               | Duración de la canción. |
-
----
-
-### Tabla: Playlists
+| `duracion`      | TIME               | Duración. |
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
 | `id_playlist`      | INT AUTO_INCREMENT | Clave primaria. |
 | `nombre_playlist`  | VARCHAR(100)       | Nombre de la playlist. |
-
----
-
-### Tabla: Comentarios
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
-| `id_comentario`    | INT AUTO_INCREMENT | Clave primaria del comentario. |
-| `contenido`        | TEXT               | Contenido que escribe el usuario. |
+| `id_comentario`    | INT AUTO_INCREMENT | Clave primaria. |
+| `contenido`        | TEXT               | Texto del comentario. |
 | `fecha`            | DATETIME           | Fecha del comentario. |
-
----
-
-### Tabla: Valoraciones
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
 | `id_valoracion`    | INT AUTO_INCREMENT | Clave primaria. |
 | `puntuacion`       | TINYINT            | Nota del 1 al 5. |
-
----
-
-### Tabla: Amigos
 | Información | Tipo MySQL         | Descripción |
 |-------------|--------------------|-------------|
 | `id_amigo`  | INT AUTO_INCREMENT | Clave primaria. |
 | `usuario1`  | INT                | ID del primer usuario. |
 | `usuario2`  | INT                | ID del segundo usuario. |
 
+</details>
 
 
 ##4. ¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?
