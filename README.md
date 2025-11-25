@@ -134,7 +134,6 @@ También instalaremos Docker Desktop porque nos va a hacer falta para levantar l
 
 En el segundo ordenador trabajaremos todo lo relacionado con el diseño de la página web, y además vamos a montar Pi-hole, que lo usaremos como servidor DNS y DHCP para que toda la red del proyecto esté controlada y funcione como toca.
 
-En resumen, vamos a tirar bastante de máquinas virtuales y contenedores para tenerlo todo más ordenado y no liarla en los PCs principales.
 </details>
 
 <details>
@@ -146,8 +145,6 @@ Después, utilizaremos Pi-hole como servidor DNS y DHCP, ya que su configuració
 Para la parte de los servicios y el backend, utilizaremos Docker Desktop, que es donde desplegaremos elementos como MySQL o Apache, entre otros, sin necesidad de instalar nada directamente en el ordenador.
 Además, contaremos con un servidor Linux exclusivamente para FFmpeg, que nos permitirá cargar y administrar música en streaming en nuestro sitio web.
 Además de todo esto, deseamos establecer una VPN con Cloudflare, emplear Nginx como proxy inverso e intentar instalar Proxmox para gestionar máquinas virtuales de manera más profesional.
-
-Queremos que el proyecto se asemeje todo lo que pueda a la forma real de trabajar en una empresa, pero solo a nuestro nivel.
 </details>
 
 <details>
