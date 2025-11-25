@@ -180,6 +180,10 @@ Aquí podemos ver cómo vamos a organizar la web y los servidores correspondient
   a.Diagrama de la red:
 <img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
 
+##Estructura básica de la red
+<img width="606" height="340" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+
+
 Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web:
 ## Lista de objetivos y funcionalidades del proyecto
 
