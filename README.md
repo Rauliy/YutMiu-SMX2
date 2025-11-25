@@ -138,7 +138,7 @@ En el segundo ordenador trabajaremos todo lo relacionado con el diseño de la p�
 
 <details>
 <summary><h2>4.Arquitectura del software</h2></summary>
-La idea básica es estructurarlo de tal manera que cada segmento del proyecto tenga su propio espacio y no esté todo revuelto.
+La idea básica es estructurarlo de tal manera que cada parte del proyecto tenga su propio espacio y no esté todo mezclado.
 Utilizaremos Visual Studio Code para la programación de la web, ya que es lo más práctico para nosotros.
 Después, utilizaremos Pi-hole como servidor DNS y DHCP, ya que su configuración es sencilla y nos permite gestionar toda la red sin complicaciones.
 
@@ -170,10 +170,6 @@ Linux (en VirtualBox) → Servidor destinado a FFmpeg.
 VPN de Cloudflare → acceso a distancia y seguridad.
 
 Proxmox (si es posible) → administración avanzada de máquinas virtuales.
-
-GitHub → supervisión de versiones y documentación del proyecto.
-
-La idea es aprender estas tecnologías no solo teóricamente, sino también mientras las aplicamos en situaciones reales.
 
 </details>
 
