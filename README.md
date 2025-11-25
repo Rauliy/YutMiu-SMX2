@@ -128,19 +128,55 @@ También necesitaremos una base de datos, un docker, y máquinas virtuales que h
 
 <details>
 <summary><h2>3.Materiales físicos y lógicos</h2></summary>
-Lo que vamos a utilizar son dos ordenadores, dos ordenadores con tres máquinas virtuales: un Windows Server y otra máquina virtual con el TrueNAS configurado, además de tener o Cobian u otra aplicación en ese ordenador para cada día hacer copias de seguridad con un disco duro externo que tendremos conectado para así evitar problemas y, sobre todo, la tercera máquina virtual, tener un Ubuntu o un Linux Server con el FFmpeg para las canciones en streaming e inconvenientes, además de tenerlo guardado en el disco D del ordenador. En el otro ordenador tendremos la web, los registros... todo lo que tenga que ver con la web.
+Para este proyecto vamos a usar sobre todo dos ordenadores.
+En uno de ellos tendremos montado un servidor Linux en  VirtualBox, que es donde vamos a usar FFmpeg para convertir música antes de subirla a nuestra web.
+También instalaremos Docker Desktop porque nos va a hacer falta para levantar la web y otros servicios sin tener que instalarlos a mano uno por uno.
 
+En el segundo ordenador trabajaremos todo lo relacionado con el diseño de la página web, y además vamos a montar Pi-hole, que lo usaremos como servidor DNS y DHCP para que toda la red del proyecto esté controlada y funcione como toca.
+
+En resumen, vamos a tirar bastante de máquinas virtuales y contenedores para tenerlo todo más ordenado y no liarla en los PCs principales.
 </details>
 
 <details>
 <summary><h2>4.Arquitectura del software</h2></summary>
-Nosotros, en nuestro caso, utilizaremos VSC (Visual Studio Code) para nuestra página web; luego utilizaremos VirtualBox para tener nuestro servidor de DHCP, de DNS... También utilizaremos Docker Desktop para poder hacer backups de nuestras cosas y levantar desde ahí servicios como MYSQL o APACHE; ADEMÁS, vamos a introducir un servidor de Linux para poder utilizar FFMPEG para escuchar y poder subir música a nuestra web en streaming.
+La idea básica es estructurarlo de tal manera que cada segmento del proyecto tenga su propio espacio y no esté todo revuelto.
+Utilizaremos Visual Studio Code para la programación de la web, ya que es lo más práctico para nosotros.
+Después, utilizaremos Pi-hole como servidor DNS y DHCP, ya que su configuración es sencilla y nos permite gestionar toda la red sin complicaciones.
 
+Para la parte de los servicios y el backend, utilizaremos Docker Desktop, que es donde desplegaremos elementos como MySQL o Apache, entre otros, sin necesidad de instalar nada directamente en el ordenador.
+Además, contaremos con un servidor Linux exclusivamente para FFmpeg, que nos permitirá cargar y administrar música en streaming en nuestro sitio web.
+Además de todo esto, deseamos establecer una VPN con Cloudflare, emplear Nginx como proxy inverso e intentar instalar Proxmox para gestionar máquinas virtuales de manera más profesional.
+
+Queremos que el proyecto se asemeje todo lo que pueda a la forma real de trabajar en una empresa, pero solo a nuestro nivel.
 </details>
 
 <details>
 <summary><h2>5.Tecnologías a utilizar</h2></summary>
+A continuación, podréis observar una lista  más detallada de todas las tecnologías que utilizaremos :
 
+Visual Studio Code → para el desarrollo web.
+
+HTML, CSS y JavaScript → con el propósito de diseñar y hacer que el sitio funcione.
+
+Docker Desktop → para trabajar con Apache, MySQL, contenedores y servicios.
+
+MySQL → base de datos para web.
+
+Apache / Nginx → servidor de la web y proxy inverso.
+
+Pi-hole → servidor de DHCP y DNS.
+
+FFmpeg → administración y transformación de audio para su transmisión en línea.
+
+Linux (en VirtualBox) → Servidor destinado a FFmpeg.
+
+VPN de Cloudflare → acceso a distancia y seguridad.
+
+Proxmox (si es posible) → administración avanzada de máquinas virtuales.
+
+GitHub → supervisión de versiones y documentación del proyecto.
+
+La idea es aprender estas tecnologías no solo teóricamente, sino también mientras las aplicamos en situaciones reales.
 
 </details>
 
