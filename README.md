@@ -285,33 +285,56 @@ Tipos de usuarios:
 <details>
 <summary><strong>Estructura de Base de Datoss</strong></summary>
 
+## Tabla de datos y tipos (Base de datos)
+
+### Tabla: Usuarios
 | Información       | Tipo MySQL         | Descripción |
 |------------------|--------------------|-------------|
-| `id_usuario`      | INT AUTO_INCREMENT | Clave primaria del usuario. |
-| `nombre_usuario`  | VARCHAR(50)        | Nombre público del usuario. |
-| `email`           | VARCHAR(100)       | Correo único. |
+| `id_usuario`      | INT AUTO_INCREMENT | Clave primaria, identifica a cada usuario. |
+| `nombre_usuario`  | VARCHAR(50)        | Nombre que se muestra en la app. |
+| `email`           | VARCHAR(100)       | Correo único de cada usuario. |
 | `contraseña`      | VARCHAR(255)       | Contraseña encriptada. |
-| `foto_perfil`     | VARCHAR(255)       | Ruta del archivo de la foto de perfil. |
+| `foto_perfil`     | VARCHAR(255)       | Ruta de la imagen que sube el usuario. |
+
+---
+
+### Tabla: Canciones
 | Información     | Tipo MySQL         | Descripción |
 |----------------|--------------------|-------------|
-| `id_cancion`    | INT AUTO_INCREMENT | Clave primaria. |
+| `id_cancion`    | INT AUTO_INCREMENT | Clave primaria de la canción. |
 | `título`        | VARCHAR(100)       | Nombre de la canción. |
 | `artista`       | VARCHAR(100)       | Artista o grupo. |
 | `archivo`       | VARCHAR(255)       | Ruta del archivo .mp3. |
-| `duracion`      | TIME               | Duración. |
+| `duracion`      | TIME               | Duración de la canción. |
+
+---
+
+### Tabla: Playlists
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
 | `id_playlist`      | INT AUTO_INCREMENT | Clave primaria. |
 | `nombre_playlist`  | VARCHAR(100)       | Nombre de la playlist. |
+
+---
+
+### Tabla: Comentarios
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
-| `id_comentario`    | INT AUTO_INCREMENT | Clave primaria. |
-| `contenido`        | TEXT               | Texto del comentario. |
+| `id_comentario`    | INT AUTO_INCREMENT | Clave primaria del comentario. |
+| `contenido`        | TEXT               | Contenido que escribe el usuario. |
 | `fecha`            | DATETIME           | Fecha del comentario. |
+
+---
+
+### Tabla: Valoraciones
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
 | `id_valoracion`    | INT AUTO_INCREMENT | Clave primaria. |
 | `puntuacion`       | TINYINT            | Nota del 1 al 5. |
+
+---
+
+### Tabla: Amigos
 | Información | Tipo MySQL         | Descripción |
 |-------------|--------------------|-------------|
 | `id_amigo`  | INT AUTO_INCREMENT | Clave primaria. |
