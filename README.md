@@ -177,8 +177,10 @@ Proxmox (si es posible) → administración avanzada de máquinas virtuales.
 <summary><h2>6.Red</h2></summary>
 Aquí podemos ver cómo vamos a organizar la web y los servidores correspondientes:
 
-  a.Diagrama de la red:
-<img width="1259" height="648" alt="image" src="https://github.com/user-attachments/assets/86ae68fd-3d0f-4f9b-9e12-5af40a4fd466" />
+a.Diagrama de la red:
+
+<img width="848" height="644" alt="image" src="https://github.com/user-attachments/assets/c1e30176-401e-4faf-82a9-26dae8a072e3" />
+
 
 ##Estructura básica de la red
 
