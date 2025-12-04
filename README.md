@@ -184,7 +184,29 @@ a.Diagrama de la red:
 
 ##Estructura básica de la red
 
+Esto seria nuestra estructura sobre la web.
+
 <img width="606" height="340" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+
+Hemos organizado la importancia de cada tabla con core(Tabla principal), subtablas i utilidades.
+
+Core:
+-
+- En nuestra web la tabla de musica seria la tabla principal porque basicamente es la funcion principal de nuestra pagina web. 
+
+Subtablas:
+-
+- Artistas
+
+Utilidades:
+- 
+- 
+
+
+
+
+<img width="906" height="709" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
+
 
 <details>
 <summary><strong>Tabla de tecnologías</strong></summary>
