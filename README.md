@@ -599,7 +599,7 @@ Para hacer el diagrama de la red hemos utilizado microsoft visio:
 https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </details>
 
-
+<details>
 <summary><h2>12.Arduino</h2></summary>
 
 Investigar
@@ -607,6 +607,8 @@ Investigar
 - 2.1  ¿Qué es Arduino?
 
 Arduino es una plataforma de desarrollo basada en una placa electrónica de hardware libre que incorpora un microcontrolador re-programable y una serie de pines hembra.
+
+<img width="272" height="185" alt="image" src="https://github.com/user-attachments/assets/5e6d88be-25ce-46bc-8691-48e56818d974" />
 
 - 2.2 ¿Cuáles son sus características más importantes?
 
@@ -623,18 +625,23 @@ microcontrolador, voltaje, pines digitales, entradas analógicas, memoria, reloj
 Existen varios modelos de Arduino, entre los más conocidos están:
 Arduino Uno: Usa el microcontrolador ATmega328P, funciona a 5V, tiene 14 pines digitales, 6 entradas analógicas, 32 KB de memoria flash y trabaja a 16 MHz.
 
+<img width="259" height="194" alt="image" src="https://github.com/user-attachments/assets/a0225629-18e4-4936-ba68-208ca7a72400" />
 
 Arduino Mega: Usa el ATmega2560, también a 5V, con 54 pines digitales, 16 entradas analógicas, 256 KB de memoria y 16 MHz.
 
+<img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/37195086-6901-4f99-a660-e3d0a0f61721" />
 
 Arduino Nano: Más pequeño, con el mismo microcontrolador que el Uno (ATmega328P), 14 pines digitales, 8 analógicos, 32 KB y 16 MHz.
 
+<img width="231" height="219" alt="image" src="https://github.com/user-attachments/assets/bec78c4c-caef-40ed-a48f-5e81740007bf" />
 
 Arduino Leonardo: Usa el ATmega32u4, tiene 20 pines digitales, 12 analógicos, 32 KB de memoria y 16 MHz.
 
+<img width="259" height="194" alt="image" src="https://github.com/user-attachments/assets/5528287f-2a96-4b64-a27a-324096766cf6" />
 
 Arduino Due: Usa un microcontrolador ARM Cortex-M3 (ATSAM3X8E), funciona a 3.3V, tiene 54 pines digitales, 12 analógicos, 512 KB y una frecuencia de 84 MHz.
 
+<img width="306" height="165" alt="image" src="https://github.com/user-attachments/assets/88fda871-b89d-4f40-be8c-0cf622d285ff" />
 
 - 2.5 ¿Para qué sirve un Arduino?
 
