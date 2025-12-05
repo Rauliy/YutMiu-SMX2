@@ -25,6 +25,8 @@
 
 11-.Bibliografía
 
+12-.Arduino
+
 <details>
 <summary><h2>1. Introducción</h2></summary>
 
@@ -597,3 +599,65 @@ Para hacer el diagrama de la red hemos utilizado microsoft visio:
 https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </details>
 
+
+<summary><h2>12.Arduino</h2></summary>
+
+Investigar
+
+- 2.1  ¿Qué es Arduino?
+
+Arduino es una plataforma de desarrollo basada en una placa electrónica de hardware libre que incorpora un microcontrolador re-programable y una serie de pines hembra.
+
+- 2.2 ¿Cuáles son sus características más importantes?
+
+Las características más importantes de Arduino son su simplicidad, flexibilidad y facilidad de uso, tanto en hardware como en software. Es una plataforma de prototipado electrónico de código abierto, diseñada para facilitar la interacción entre el mundo físico y digital. 
+
+
+- 2.3 ¿Cuál es el origen de Arduino?
+
+Arduino nació en el año 2005 el Instituto de Diseño Interactivo de Ivrea, apareció por la necesidad de contar con un dispositivo para utilizar en las aulas que fuera de bajo coste.
+
+- 2.4 ¿Qué modelos de Arduino hay? Haz una tabla donde especifiques para cada modelo:
+microcontrolador, voltaje, pines digitales, entradas analógicas, memoria, reloj.
+
+Existen varios modelos de Arduino, entre los más conocidos están:
+Arduino Uno: Usa el microcontrolador ATmega328P, funciona a 5V, tiene 14 pines digitales, 6 entradas analógicas, 32 KB de memoria flash y trabaja a 16 MHz.
+
+
+Arduino Mega: Usa el ATmega2560, también a 5V, con 54 pines digitales, 16 entradas analógicas, 256 KB de memoria y 16 MHz.
+
+
+Arduino Nano: Más pequeño, con el mismo microcontrolador que el Uno (ATmega328P), 14 pines digitales, 8 analógicos, 32 KB y 16 MHz.
+
+
+Arduino Leonardo: Usa el ATmega32u4, tiene 20 pines digitales, 12 analógicos, 32 KB de memoria y 16 MHz.
+
+
+Arduino Due: Usa un microcontrolador ARM Cortex-M3 (ATSAM3X8E), funciona a 3.3V, tiene 54 pines digitales, 12 analógicos, 512 KB y una frecuencia de 84 MHz.
+
+
+- 2.5 ¿Para qué sirve un Arduino?
+
+Se utiliza como un microcontrolador reprogramable con una serie de pines que permiten establecer conexiones entre el controlador y los diferentes sensores, es decir el «cerebro» de algún circuito o maquinaria.
+
+- 2.6 ¿Qué lenguaje utiliza?
+
+Usa C y C++, el llenguatge de programació C, llenguatge C o llenguatge de programació de sistemes, va ser creat per Dennis Ritchie i Ken Thompson als Laboratoris Bell d'AT&T, a principis de la dècada dels 70 i el C++ es un lenguaje de programación que fue creado, como su predecesor C , en los laboratorios Bell (no confundir con Graham Bell) de AT&T . El autor principal es Bjarne Stroustrup.
+
+- 2.7 ¿Qué es el Arduino IDE?
+
+Es el entorno de desarrollo donde se escribe, compila y sube el código a la placa Arduino. Basicamente es donde puedes hacer todas las funciones de el arduino.
+
+Resumen acerca de arduino:
+
+Arduino es una pequeña placa electrónica que funciona como el "cerebro" de muchos proyectos. Sirve para controlar luces, motores, sensores y muchas otras cosas. Lo genial de Arduino es que cualquiera lo puede usar, incluso si no sabe mucho de electrónica, porque es fácil de entender y está pensado para aprender jugando y experimentando.
+
+Arduino fue creado en el año 2005 en Italia por un grupo de profesores que querían ayudar a sus estudiantes a aprender tecnología sin gastar mucho dinero. Desde entonces, se ha hecho muy famoso en todo el mundo.
+
+Una de las cosas más importantes de Arduino es que es abierto, lo que significa que puedes ver cómo está hecho, modificarlo y compartir tus ideas con otras personas. Además, funciona con un programa llamado Arduino IDE, que es donde escribimos las instrucciones para decirle a la placa qué hacer. Esas instrucciones se escriben en un lenguaje de programación llamado C o C++, que aunque suene complicado, se puede aprender poco a poco con práctica.
+
+Hay varios modelos de Arduino, como el Uno, Mega, Nano o Leonardo, y cada uno tiene diferentes tamaños, memoria y cantidad de conexiones. Algunos tienen más espacio para guardar instrucciones, otros tienen más pines para conectar cables, y algunos son tan pequeños que caben en tu mano.
+
+En resumen, Arduino es una herramienta súper útil para aprender a crear cosas electrónicas, como robots, juegos, alarmas o luces automáticas. Es como una caja de magia tecnológica para inventores jóvenes y curiosos.
+
+</details>
