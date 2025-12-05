@@ -196,7 +196,7 @@ Core:
 
 Subtablas:
 -
-- Artistas
+- Artistas: Los artistas estan en el apartado de subtablas por que no es una utilidad es solo una funcion
 
 Utilidades:
 - 
