@@ -196,14 +196,17 @@ Core:
 
 Subtablas:
 -
-- Artistas: Los artistas estan en el apartado de subtablas por que no es una utilidad es solo una funcion
+- Artistas: Los artistas estan en el apartado de subtablas por que no es una utilidad es solo un grupo especificos de personas y no es una utilidad.
 
 Utilidades:
 - 
-- 
+- Utilidades:
 
+- Valoraciones:
 
+- Buscardor:
 
+- Usuarios:
 
 <img width="906" height="709" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
