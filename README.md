@@ -202,13 +202,11 @@ Subtablas:
 
 Utilidades:
 - 
-- Utilidades:
+- Valoraciones: Este sera un apartado bastante importante en nuestro proyecto ya que es lo unico que nos diferencia entre otras webs de musica.
 
-- Valoraciones:
+- Buscardor: El buscados es fundamental a la hora de una web de musica y es una de las utilidades mas importantes de cualquier web de musica.
 
-- Buscardor:
-
-- Usuarios:
+- Usuarios: Este es el apartado mas importante de nuestra web ya que gracias a los usuarion podremos utilizar la gran variedad de herramientas que ofrecemos.
 
 <img width="906" height="709" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
