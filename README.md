@@ -665,4 +665,92 @@ Hay varios modelos de Arduino, como el Uno, Mega, Nano o Leonardo, y cada uno ti
 
 En resumen, Arduino es una herramienta súper útil para aprender a crear cosas electrónicas, como robots, juegos, alarmas o luces automáticas. Es como una caja de magia tecnológica para inventores jóvenes y curiosos.
 
+Práctica 1: LED
+-
+
+-1 Objetivo de la practica:
+
+Según el circuito funciona si el nivel de salida GPIO2 del ESP32-S3 WROOM es alto, el LED se enciende y cuando el nivel de
+salida es bajo, el LED se apaga. Por lo tanto, podemos dejar que el GPIO2 emita circularmente niveles altos y bajos
+para hacer que el LED parpadee.
+
+-2 Material y explicacion de cada componente:
+
+Los componentes son:
+- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+- Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto. 
+
+-  LED: El LED sirve para proporcionar luz al arduino.
+
+-  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
+
+-3 Esquema del circuito:
+
+
+
+-4 Codigo explicado:
+
+Para emprezar "#define LED_BUILTIN 2" sirve para definir el LED que tenemos en el Breadboard, luego el comando "void setup(){" lo que hace es estableces cuales serán 
+los pines de entrada o salida, configurar parámetros como velocidad o frecuencias i "pinMode(LED_BUILTIN, OUTPUT);" permite configurar a cada pin, de forma individual, como entrada o como salida.
+Tambien "void loop(){" es una función que permite el ciclo repetido de un bloque de código y "digitalWrite" establecer un valor de HIGH o LOW en un pin digital de Arduino siempre 
+y cuando se haya configurado como salida y "delay" lo que hace es simplemente esperar.
+
+<img width="454" height="209" alt="image" src="https://github.com/user-attachments/assets/dff9cb1a-6511-4a30-a063-7b0f944a4e8b" />
+
+-5 Video de la practica:
+
+
+
+-6 Imagen para la entrada del blog o proyecto:
+
+
+<img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/49af2129-00ef-448b-b2d0-dffe26ebe046" />
+
+
+Práctica 2: SEMÁFORO
+-
+
+-1 Objetivo de la practica:
+
+A partir de los conocimientos adquiridos en la anterior práctica hay que construir un prototipo de un semáforo
+en el que las luces parpadeen de forma intermitente pero nunca a la vez.
+
+-2 Material y explicacion de cada componente:
+
+- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+- Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+
+- LED: El LED sirve para proporcionar luz al arduino y utilizaremos 3 para simular los colores de un semaforo, los colores son rojo, verde y rojo.
+
+-  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
+
+-3 Esquema del circuito:
+
+
+
+-4 Codigo explicado:
+
+Primero los tres "#include" se utilizan para identificar los 3 LEDS, luego el comando "void setup(){" lo que hace es estableces cuales serán 
+los pines de entrada o salida, configurar parámetros como velocidad o frecuencias i "pinMode(LED_BUILTIN, OUTPUT);" permite configurar a cada pin, de forma individual por eso esta el mismo comando repetido 3 veces,
+i "void loop(){" es una función que permite el ciclo repetido de un bloque de código y "digitalWrite" establecer un valor de HIGH o LOW en un pin digital de Arduino siempre 
+y cuando se haya configurado como salida y configuraremos el mismo comando 3 veces por cada Led  "delay" lo que hace es simplemente esperar y lo configuraremos depende de cada LED.
+
+<img width="650" height="654" alt="image" src="https://github.com/user-attachments/assets/8c524e65-edd8-4e5a-8cd0-f4f531bab3cc" />
+
+-5 Video de la practica:
+
+
+
+-6 Imagen para la entrada del blog o proyecto:
+
+
+<img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/c6c688ee-8961-43aa-b9c8-6c2740634f5c" />
+
+
 </details>
