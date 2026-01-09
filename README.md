@@ -782,6 +782,7 @@ presiona el botón, se enciende el led y, cuando se suelte, se apagará.
 -4 Codigo explicado: uso de las variables, funciones y demas componentes del codigo:
 
 
+<img width="964" height="658" alt="image" src="https://github.com/user-attachments/assets/d952f2e9-9e5b-4acf-a176-e8e9508030cd" />
 
 -5 Video de la practica:
 
@@ -789,6 +790,7 @@ presiona el botón, se enciende el led y, cuando se suelte, se apagará.
 
 -6 Imagen para la entrada del blog o proyecto:
 
+<img width="1026" height="756" alt="image" src="https://github.com/user-attachments/assets/9d153aeb-3fc8-46c4-bf70-eab4f7803fe0" />
 
 
 Práctica 4: Mini table Lamp
