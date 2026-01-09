@@ -772,16 +772,22 @@ presiona el botón, se enciende el led y, cuando se suelte, se apagará.
 
 -  LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
 
--  Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED
+-  Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED.
 
 -3 Esquema del circuito:
 
 <img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/9071a546-c93d-4cfa-b9d1-ec2e1bba7bbd" />
 
 
--4 Codigo explicado: uso de las variables, funciones y demas componentes del codigo:
+-4 Codigo explicado: 
 
-
+Primero de todo utilizamos dos "include", uno para identificar el LED i el otro para identificar el push botton, luego de identificarlos tenemos que utilizar 
+el comando "void setup(){" lo que hace es estableces cuales serán los pines de entrada o salida y dentro de el void setup ponemos "pinMode" permite configurar a cada pin i en nuestro
+caso pondremos dos para configurar el LED(pinMode(PIN_LED, OUTPUT) i el push button(PIN_BUTTON, INPUT). Despues de poner el void setup i el pinmode 
+ponemos "void loop(){" es una función que permite el ciclo repetido de un bloque de código i ponemos  If que sirve para que tu programa haga una cosa o otra 
+dependiendo de cada situación, i dentro de else ponemos "digitalread" sirve para leer un valor de un pin y "digitalWrite" permite escribir valores lógicos digitales 
+en un pin de salida de una tarjeta Arduino, if hace poder encender el LED si lo mantenemos presionado. Tambien "else" se utiliza para definir un bloque de código que 
+se ejecutará si no se cumple la condición if y en este caso pondriamos "digitalWrite" i poner LOW para que no se encienda.
 <img width="964" height="658" alt="image" src="https://github.com/user-attachments/assets/d952f2e9-9e5b-4acf-a176-e8e9508030cd" />
 
 -5 Video de la practica:
@@ -804,13 +810,28 @@ presionar el botón nuevamente, el LED se apagará.
 
 -2 Material y explicacion de cada componente:
 
+Los componentes que se utilizan en este ejercicio son los mismos que se utilizan en el ejercicio 3 Button & Led.
 
+- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
+- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+- Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+
+-  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos uno de 220Ω i uno de 10kΩ.
+
+-  LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
+
+-  Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED
+  
 -3 Esquema del circuito:
 
+<img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/9071a546-c93d-4cfa-b9d1-ec2e1bba7bbd" />
 
+-4 Codigo explicado:
 
--4Codigo explicado: uso de las variables, funciones y demas componentes del codigo:
+Primero de todo ponemos "bool LedOn" que se utilizan para almacenar un estado de entre esos dos posibles, y así hacer que el código reaccione según
+detecte verdadero o falso, luego de eso ponemos "void setup(){" lo que hace es estableces cuales serán los pines de entrada o salida, dentro del void setup ponemos "pinMode" permite configurar a cada pin i en nuestrocaso pondremos dos para configurar el LED(pinMode(2, OUTPUT) i el push button(13, INPUT_PULLUP). Luego "void loop()" i "if "(digitalRead(13) == LOW){" que esto lo que hace es detectar si el botón está presionado, despues "delay(50);" que hara una pequeña espera, ledOn = !ledOn; lo que hace es cabiar el estado del LED de apagado a encendido o al reves, "digitalWrite(2, ledOn ? HIGH : LOW);" que hace apagar o encender el LED segun el estado de ledon, "while (digitalRead(13) == LOW);" espera a que el boton deje de estar pulsado para apagar el LED y para finalizar un "delay(50);"
 
 <img width="800" height="551" alt="image" src="https://github.com/user-attachments/assets/000593d5-8440-4da3-b455-2c07f8b59e27" />
 
@@ -821,6 +842,7 @@ presionar el botón nuevamente, el LED se apagará.
 
 -6 Imagen para la entrada del blog o proyecto:
 
+<img width="939" height="696" alt="image" src="https://github.com/user-attachments/assets/467d0a96-b3b2-472f-8557-f9b4ce525f8d" />
 
 
 </details>
