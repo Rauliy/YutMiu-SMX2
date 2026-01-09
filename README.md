@@ -752,5 +752,73 @@ y cuando se haya configurado como salida y configuraremos el mismo comando 3 vec
 
 <img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/c6c688ee-8961-43aa-b9c8-6c2740634f5c" />
 
+Práctica 3: Button & Led
+-
+
+-1 Objetivo de la practica:
+
+En esta práctica vamos a controlar el estado del led a través de un botón. Esto es, cuando se
+presiona el botón, se enciende el led y, cuando se suelte, se apagará.
+
+-2 Material y explicacion de cada componente:
+
+- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+- Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+
+-  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos uno de 220Ω i uno de 10kΩ.
+
+-  LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
+
+-  Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED
+
+-3 Esquema del circuito:
+
+<img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/9071a546-c93d-4cfa-b9d1-ec2e1bba7bbd" />
+
+
+-4 Codigo explicado: uso de las variables, funciones y demas componentes del codigo:
+
+
+
+-5 Video de la practica:
+
+
+
+-6 Imagen para la entrada del blog o proyecto:
+
+
+
+Práctica 4: Mini table Lamp
+-
+
+-1 Objetivo de la practica:
+
+Para esta práctica también usaremos un interruptor de botón, un LED para hacer una lámpara de
+mesa MINI, pero de manera diferente, esto es: al presionar el botón, el LED se encenderá y, al
+presionar el botón nuevamente, el LED se apagará.
+
+-2 Material y explicacion de cada componente:
+
+
+
+-3 Esquema del circuito:
+
+
+
+-4Codigo explicado: uso de las variables, funciones y demas componentes del codigo:
+
+<img width="800" height="551" alt="image" src="https://github.com/user-attachments/assets/000593d5-8440-4da3-b455-2c07f8b59e27" />
+
+
+-5 Video de la practica:
+
+
+
+-6 Imagen para la entrada del blog o proyecto:
+
+
 
 </details>
