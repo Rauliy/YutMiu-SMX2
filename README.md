@@ -668,30 +668,30 @@ En resumen, Arduino es una herramienta súper útil para aprender a crear cosas 
 Práctica 1: LED
 -
 
--1 Objetivo de la practica:
+- 1 Objetivo de la practica:
 
 Según el circuito funciona si el nivel de salida GPIO2 del ESP32-S3 WROOM es alto, el LED se enciende y cuando el nivel de
 salida es bajo, el LED se apaga. Por lo tanto, podemos dejar que el GPIO2 emita circularmente niveles altos y bajos
 para hacer que el LED parpadee.
 
--2 Material y explicacion de cada componente:
+- 2 Material y explicacion de cada componente:
 
 Los componentes son:
-- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
-- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
-- Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto. 
+-Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto. 
 
--  LED: El LED sirve para proporcionar luz al arduino.
+-LED: El LED sirve para proporcionar luz al arduino.
 
--  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
+-Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
 
--3 Esquema del circuito:
+- 3 Esquema del circuito:
 
 
 
--4 Codigo explicado:
+- 4 Codigo explicado:
 
 Para emprezar "#define LED_BUILTIN 2" sirve para definir el LED que tenemos en el Breadboard, luego el comando "void setup(){" lo que hace es estableces cuales serán 
 los pines de entrada o salida, configurar parámetros como velocidad o frecuencias i "pinMode(LED_BUILTIN, OUTPUT);" permite configurar a cada pin, de forma individual, como entrada o como salida.
@@ -700,11 +700,11 @@ y cuando se haya configurado como salida y "delay" lo que hace es simplemente es
 
 <img width="454" height="209" alt="image" src="https://github.com/user-attachments/assets/dff9cb1a-6511-4a30-a063-7b0f944a4e8b" />
 
--5 Video de la practica:
+- 5 Video de la practica:
 
 
 
--6 Imagen para la entrada del blog o proyecto:
+- 6 Imagen para la entrada del blog o proyecto:
 
 
 <img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/49af2129-00ef-448b-b2d0-dffe26ebe046" />
@@ -713,28 +713,28 @@ y cuando se haya configurado como salida y "delay" lo que hace es simplemente es
 Práctica 2: SEMÁFORO
 -
 
--1 Objetivo de la practica:
+- 1 Objetivo de la practica:
 
 A partir de los conocimientos adquiridos en la anterior práctica hay que construir un prototipo de un semáforo
 en el que las luces parpadeen de forma intermitente pero nunca a la vez.
 
--2 Material y explicacion de cada componente:
+- 2 Material y explicacion de cada componente:
 
-- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
-- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
-- Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+-Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
 
-- LED: El LED sirve para proporcionar luz al arduino y utilizaremos 3 para simular los colores de un semaforo, los colores son rojo, verde y rojo.
+-LED: El LED sirve para proporcionar luz al arduino y utilizaremos 3 para simular los colores de un semaforo, los colores son rojo, verde y rojo.
 
--  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
+-Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
 
--3 Esquema del circuito:
+- 3 Esquema del circuito:
 
 
 
--4 Codigo explicado:
+- 4 Codigo explicado:
 
 Primero los tres "#include" se utilizan para identificar los 3 LEDS, luego el comando "void setup(){" lo que hace es estableces cuales serán 
 los pines de entrada o salida, configurar parámetros como velocidad o frecuencias i "pinMode(LED_BUILTIN, OUTPUT);" permite configurar a cada pin, de forma individual por eso esta el mismo comando repetido 3 veces,
@@ -743,11 +743,11 @@ y cuando se haya configurado como salida y configuraremos el mismo comando 3 vec
 
 <img width="650" height="654" alt="image" src="https://github.com/user-attachments/assets/8c524e65-edd8-4e5a-8cd0-f4f531bab3cc" />
 
--5 Video de la practica:
+- 5 Video de la practica:
 
 
 
--6 Imagen para la entrada del blog o proyecto:
+- 6 Imagen para la entrada del blog o proyecto:
 
 
 <img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/c6c688ee-8961-43aa-b9c8-6c2740634f5c" />
@@ -755,31 +755,31 @@ y cuando se haya configurado como salida y configuraremos el mismo comando 3 vec
 Práctica 3: Button & Led
 -
 
--1 Objetivo de la practica:
+- 1 Objetivo de la practica:
 
 En esta práctica vamos a controlar el estado del led a través de un botón. Esto es, cuando se
 presiona el botón, se enciende el led y, cuando se suelte, se apagará.
 
--2 Material y explicacion de cada componente:
+- 2 Material y explicacion de cada componente:
 
-- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
-- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
-- Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+-Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
 
--  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos uno de 220Ω i uno de 10kΩ.
+-Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos uno de 220Ω i uno de 10kΩ.
 
--  LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
+-LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
 
--  Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED.
+-Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED.
 
--3 Esquema del circuito:
+- 3 Esquema del circuito:
 
 <img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/9071a546-c93d-4cfa-b9d1-ec2e1bba7bbd" />
 
 
--4 Codigo explicado: 
+- 4 Codigo explicado: 
 
 Primero de todo utilizamos dos "include", uno para identificar el LED i el otro para identificar el push botton, luego de identificarlos tenemos que utilizar 
 el comando "void setup(){" lo que hace es estableces cuales serán los pines de entrada o salida y dentro de el void setup ponemos "pinMode" permite configurar a cada pin i en nuestro
@@ -790,11 +790,11 @@ en un pin de salida de una tarjeta Arduino, if hace poder encender el LED si lo 
 se ejecutará si no se cumple la condición if y en este caso pondriamos "digitalWrite" i poner LOW para que no se encienda.
 <img width="964" height="658" alt="image" src="https://github.com/user-attachments/assets/d952f2e9-9e5b-4acf-a176-e8e9508030cd" />
 
--5 Video de la practica:
+- 5 Video de la practica:
 
 
 
--6 Imagen para la entrada del blog o proyecto:
+- 6 Imagen para la entrada del blog o proyecto:
 
 <img width="1026" height="756" alt="image" src="https://github.com/user-attachments/assets/9d153aeb-3fc8-46c4-bf70-eab4f7803fe0" />
 
@@ -802,33 +802,33 @@ se ejecutará si no se cumple la condición if y en este caso pondriamos "digita
 Práctica 4: Mini table Lamp
 -
 
--1 Objetivo de la practica:
+- 1 Objetivo de la practica:
 
 Para esta práctica también usaremos un interruptor de botón, un LED para hacer una lámpara de
 mesa MINI, pero de manera diferente, esto es: al presionar el botón, el LED se encenderá y, al
 presionar el botón nuevamente, el LED se apagará.
 
--2 Material y explicacion de cada componente:
+- 2 Material y explicacion de cada componente:
 
 Los componentes que se utilizan en este ejercicio son los mismos que se utilizan en el ejercicio 3 Button & Led.
 
-- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
-- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
-- Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+-Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
 
--  Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos uno de 220Ω i uno de 10kΩ.
+-Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos uno de 220Ω i uno de 10kΩ.
 
--  LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
+-LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
 
--  Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED
+-Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED
   
--3 Esquema del circuito:
+- 3 Esquema del circuito:
 
 <img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/9071a546-c93d-4cfa-b9d1-ec2e1bba7bbd" />
 
--4 Codigo explicado:
+- 4 Codigo explicado:
 
 Primero de todo ponemos "bool LedOn" que se utilizan para almacenar un estado de entre esos dos posibles, y así hacer que el código reaccione según
 detecte verdadero o falso, luego de eso ponemos "void setup(){" lo que hace es estableces cuales serán los pines de entrada o salida, dentro del void setup ponemos "pinMode" permite configurar a cada pin i en nuestrocaso pondremos dos para configurar el LED(pinMode(2, OUTPUT) i el push button(13, INPUT_PULLUP). Luego "void loop()" i "if "(digitalRead(13) == LOW){" que esto lo que hace es detectar si el botón está presionado, despues "delay(50);" que hara una pequeña espera, ledOn = !ledOn; lo que hace es cabiar el estado del LED de apagado a encendido o al reves, "digitalWrite(2, ledOn ? HIGH : LOW);" que hace apagar o encender el LED segun el estado de ledon, "while (digitalRead(13) == LOW);" espera a que el boton deje de estar pulsado para apagar el LED y para finalizar un "delay(50);"
@@ -836,13 +836,177 @@ detecte verdadero o falso, luego de eso ponemos "void setup(){" lo que hace es e
 <img width="800" height="551" alt="image" src="https://github.com/user-attachments/assets/000593d5-8440-4da3-b455-2c07f8b59e27" />
 
 
--5 Video de la practica:
+- 5 Video de la practica:
 
 
 
--6 Imagen para la entrada del blog o proyecto:
+- 6 Imagen para la entrada del blog o proyecto:
 
 <img width="939" height="696" alt="image" src="https://github.com/user-attachments/assets/467d0a96-b3b2-472f-8557-f9b4ce525f8d" />
+
+Práctica 5.1: Random Color Light
+-
+
+- 1 Objetivo de la practica:
+
+Haremos un LED multicolor, controlando el LED RGB para cambiar entre diferentes colores
+automáticamente. El LED RGB tiene integrados 3 LED que pueden emitir luz roja, verde y azul respectivamente. Y
+tiene 4 pines.
+
+- 2 Material y explicacion de cada componente:
+
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos tres de 220Ω.
+
+-Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+
+-RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
+
+- 3 Esquema del circuito:
+
+<img width="381" height="409" alt="image" src="https://github.com/user-attachments/assets/1f09e0af-9af8-4f62-8e26-8b138b2ce65c" />
+
+- 4 Codigo explicado:
+
+
+
+- 5 Video de la practica:
+
+
+
+- 6 Imagen para la entrada del blog o proyecto:
+
+
+
+- Preguntas
+
+1) Analizar y entender la diferencia entre un LED normal a un LED RGB. Para esto pueden crear
+una pequeña tabla de dos Columnas, donde la cabecera de cada columna serán los dos tipos
+de LED analizados en clase y que tendrá dos filas asociadas a los elementos comunes y las
+diferencias entre ellos.
+
+
+
+2) Que ocurriría en caso de invertir los colores del LED RGB por ejemplo que el pin 4 (Rojo)
+vaya a la pata del LED G(Verde) y el pin 0 a la pata del LED R(Roja). Porque cree que pase
+esto argumente su respuesta.
+
+
+
+3) Que sucede si comentamos dentro de la función void loop{}, la llamada a la función
+setColor(red, green, blue). Argumente lo que observa, después de volver a compilar el código.
+
+
+
+Práctica 5.2: RGB LED Controlado
+-
+
+- 1 Objetivo de la practica:
+
+Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada ping.
+
+- 2 Material y explicacion de cada componente:
+
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos tres de 220Ω.
+
+-Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+
+-RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
+
+- 3 Esquema del circuito:
+
+
+
+- 4 Codigo explicado:
+
+
+
+- 5 Video de la practica:
+
+
+
+- 6 Imagen para la entrada del blog o proyecto:
+
+
+
+- Preguntas
+
+1) ¿Qué función tendría que dejar de utilizar para evitar el cambio aleatorio de los colores dentro
+del ciclo infinito? Explique que hace dicha función.
+
+2) Utiliza al menos dos combinaciones de colores (RGB) no aleatorias, que más le guste y donde
+se observen diferencias y argumente porque cree usted que se observa la tendencia hacia un
+color determinado.
+
+3) ¿Qué sucedería si utilizamos la función aleatoria, pero regulamos los valores de la función
+random y pasamos los rangos que queremos? ¿Sería una forma de regular la coloración del
+LED RGB? Explique su respuesta brevemente.
+
+
+Práctica 5.3: Luz de Color Degradado
+-
+
+- 1 Objetivo de la practica:
+
+En el proyecto anterior, dominamos el uso de LED RGB, pero la visualización aleatoria de colores
+es bastante rígida. Este proyecto realizará una luz moderna con suaves cambios de color, La lista de
+componentes y el circuito son exactamente los mismos que los de la luz de color aleatorio.
+Usando un modelo de color, el color cambia de 0 a 255.
+
+- 2 Material y explicacion de cada componente:
+
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos tres de 220Ω.
+
+  -Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+
+-RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
+
+- 3 Esquema del circuito:
+
+
+
+- 4 Codigo explicado:
+
+<img width="835" height="958" alt="image" src="https://github.com/user-attachments/assets/5d695200-507e-449b-96c6-9443b7cb2993" />
+
+- 5 Video de la practica:
+
+
+
+- 6 Imagen para la entrada del blog o proyecto:
+
+
+
+- Preguntas
+
+1) Que observa tras cargar y correr el código del programa con respecto a lo que vimos antes.
+Explique la diferencia y argumente que es el gradiente y que es lo que hace (En el código)
+que en este ejercicio se pueda observar.
+
+
+
+2) Explique que es el tipo de dato long y su diferencia con el int y porque se utiliza en el
+ejercicio.
+
+
+
+3) Explique el funcionamiento de la función wheel de manera general.
+
+
+   
+4) Busque en las referencias para que se utiliza la función ledcWrite() además indique cual es
+la salida de esta función y qué significado tiene en el código.
 
 
 </details>
