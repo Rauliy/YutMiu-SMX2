@@ -871,6 +871,7 @@ tiene 4 pines.
 
 - 4 Codigo explicado:
 
+<img width="1426" height="730" alt="image" src="https://github.com/user-attachments/assets/0b07053c-e444-4a0c-af23-43decdeb09b9" />
 
 
 - 5 Video de la practica:
