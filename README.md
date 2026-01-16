@@ -927,6 +927,7 @@ Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada 
 
 - 4 Codigo explicado:
 
+<img width="1438" height="735" alt="image" src="https://github.com/user-attachments/assets/ae403871-bb79-4322-9c2b-5dbbb2260306" />
 
 
 - 5 Video de la practica:
@@ -979,7 +980,8 @@ Usando un modelo de color, el color cambia de 0 a 255.
 
 - 4 Codigo explicado:
 
-<img width="835" height="958" alt="image" src="https://github.com/user-attachments/assets/5d695200-507e-449b-96c6-9443b7cb2993" />
+<img width="1429" height="735" alt="image" src="https://github.com/user-attachments/assets/3202fb5d-82f3-467a-9fe7-1830e8de9aa5" />
+
 
 - 5 Video de la practica:
 
