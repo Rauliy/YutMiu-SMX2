@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YUTMIU — Tu música</title>
+  <link rel="stylesheet" href="style-.css" />
+  <script src="funciones.js" defer></script>
+
+</head>
+<body>
+  <!-- NAV BAR: logo + botones -->
+  <header class="nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo YUTMIU" class="logo-img logo-big">
+  </div>
+    <nav class="menu">
+        <a href="Registrado_YUT-.html" class="nav-link active">Inicio</a>
+        <a href="Opiniones-.html" class="nav-link">Opiniones</a>
+        <a href="#" class="nav-link">Amigos</a>
+        <a href="Listas de Musica_.html" class="nav-link explore">Listas de música</a>
+    </nav>
+
+    <div class="nav-right">
+        <!-- BOTÓN TEMA (IMAGEN) -->
+     <img
+     src="oscuro-claro.svg"
+     alt="Cambiar tema"
+     id="theme-toggle-img"
+     class="theme-toggle-img"
+     >      
+      <form class="search" onsubmit="event.preventDefault();">
+        <input type="search" placeholder="Buscar">
+        <button type="submit">Buscar</button>
+      </form>
+
+      <!-- Foto de perfil con menú desplegable -->
+      <div class="profile-dropdown">
+        <img src="perfil.jpg" alt="Foto de perfil" class="profile-img">
+        <div class="dropdown-menu">
+          <a href="#">Perfil</a>
+          <a href="configuracion-.html">Configuración</a>
+          <a href="YutMiu-.html">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="lists-block">
+    <!-- Encabezado centrado -->
+    <div class="top-header">
+      <h3>Listas de música</h3>
+      <details class="filter">
+        <summary>Filtrar</summary>
+        <div class="filter-options">
+          <button class="chip">Pop</button>
+          <button class="chip">Rock</button>
+          <button class="chip">Lo-fi</button>
+          <button class="chip">Electrónica</button>
+        </div>
+      </details>
+    </div>
+  
+    <!-- Tarjetas centradas -->
+    <div class="horizontal-cards">
+      <article class="card">
+        <h4>Top Hits</h4>
+        <p class="muted">20 canciones</p>
+      </article>
+      <article class="card">
+        <h4>Relax</h4>
+        <p class="muted">15 canciones</p>
+      </article>
+      <article class="card">
+        <h4>Estudio</h4>
+        <p class="muted">18 canciones</p>
+      </article>
+      <article class="card">
+        <h4>Indie Vibes</h4>
+        <p class="muted">22 canciones</p>
+      </article>
+    </div>
+    <!-- PLAYER FIJO ABAJO -->
+  <div class="bottom-player">
+    <div class="player-left">
+      <div class="thumb">🎵</div>
+      <div class="song-info">
+        <strong>Nombre de la canción</strong>
+        <span class="muted">Artista</span>
+      </div>
+    </div>
+    <div class="player-controls">
+      <button class="small">⏮</button>
+      <button class="play">▶</button>
+      <button class="small">⏭</button>
+    </div>
+  </div>
+  </section>
+  
