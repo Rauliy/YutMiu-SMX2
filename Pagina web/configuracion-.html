@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YUTMIU — Tu música</title>
+  <link rel="stylesheet" href="style_config-.css" />
+  <script src="funciones.js" defer></script>
+</head>
+<body>
+  <!-- NAV BAR: logo + botones -->
+  <header class="nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo YUTMIU" class="logo-img logo-big">
+  </div>
+
+    <nav class="menu">
+        <a href="Registrado_YUT-.html" class="nav-link active">Inicio</a>
+        <a href="Opiniones-.html" class="nav-link">Opiniones</a>
+        <a href="#" class="nav-link">Amigos</a>
+        <a href="Listas de Musica_.html" class="nav-link explore">Listas de música</a>
+    </nav>
+
+    <div class="nav-right">
+        <!-- BOTÓN TEMA (IMAGEN) -->
+     <img
+     src="oscuro-claro.svg"
+     alt="Cambiar tema"
+     id="theme-toggle-img"
+     class="theme-toggle-img"
+     >      
+      <form class="search" onsubmit="event.preventDefault();">
+        <input type="search" placeholder="Buscar">
+        <button type="submit">Buscar</button>
+      </form>
+
+      <!-- Foto de perfil con menú desplegable -->
+      <div class="profile-dropdown">
+        <img src="perfil.jpg" alt="Foto de perfil" class="profile-img">
+        <div class="dropdown-menu">
+          <a href="#">Perfil</a>
+          <a href="configuracion-.html">Configuración</a>
+          <a href="YutMiu-.html">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO: bienvenida + buscador -->
+  <section class="config">
+    <div class="config-left">
+      <h1>Configuración</h1>
+    </div>
+  </section>
+
+  <section class="settings">
+    <h3>Configuración</h3>
+
+    <div class="setting-item">
+        <span>Perfil privado</span>
+        <button class="toggle-btn" data-setting="privateProfile">Desactivado</button>
+    </div>
+
+    <div class="setting-item">
+        <span>Listas de música privadas</span>
+        <button class="toggle-btn" data-setting="privatePlaylists">Desactivado</button>
+    </div>
+
+    <div class="setting-item">
+        <span>Mostrar canciones favoritas</span>
+        <button class="toggle-btn" data-setting="showFavorites">Activado</button>
+    </div>
+
+    <div class="setting-item">
+        <span>Modo oscuro / claro</span>
+        <button id="theme-toggle" class="toggle-btn">Oscuro</button>
+    </div>
+</section>

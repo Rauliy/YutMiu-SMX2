@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro – YUTMIU</title>
+    <link rel="stylesheet" href="style-.css">
+    <script src="funciones.js" defer></script>
+
+<body class="login-page">
+
+    <header class="nav">
+        <div class="nav-left">
+            <img src="logo.png" alt="Logo YUTMIU" class="logo-img logo-big">
+        </div>
+  
+        <nav class="menu">
+            <a href="YutMiu-.html" class="nav-link active">Inicio</a>
+        </nav>
+  
+        <div class="nav-right">
+              <!-- BOTÓN TEMA (IMAGEN) -->
+     <img
+     src="oscuro-claro.svg"
+     alt="Cambiar tema"
+     id="theme-toggle-img"
+     class="theme-toggle-img"
+     >      
+          <form class="search" onsubmit="event.preventDefault();">
+            <input type="search" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+    </header>
+
+    <main class="login-body">
+        <div class="login-container">
+            <img src="logo.png" class="login-logo" alt="Logo YUTMIU">
+    
+            <h1>Inicia sesión</h1>
+    
+            <form class="login-form">
+            <label>Nombre de usuario</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="usuario" required>
+
+            <label>Contraseña</label>
+            <input type="password" name="password" required>
+
+            <label>Repite contraseña</label>
+            <input type="password" name="repeat-password" required>
+            <a href="Registrado_YUT-.html" class="btn-full">Registrar</a>
+        </form>
+
+        <p class="login-register">
+            ¿Ya tienes cuenta?
+            <a href="login-.html">Inicia Sesion aqui</a>
+        </p>
+    </div>
+</main>
+
+</body>
+</html>
