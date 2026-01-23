@@ -666,7 +666,7 @@ Hay varios modelos de Arduino, como el Uno, Mega, Nano o Leonardo, y cada uno ti
 
 En resumen, Arduino es una herramienta súper útil para aprender a crear cosas electrónicas, como robots, juegos, alarmas o luces automáticas. Es como una caja de magia tecnológica para inventores jóvenes y curiosos.
 
-Práctica 1: LED
+Práctica: LED
 -
 
 - 1 Objetivo de la practica:
@@ -679,6 +679,8 @@ para hacer que el LED parpadee.
 
 Los componentes son:
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
@@ -711,7 +713,7 @@ y cuando se haya configurado como salida y "delay" lo que hace es simplemente es
 <img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/49af2129-00ef-448b-b2d0-dffe26ebe046" />
 
 
-Práctica 2: SEMÁFORO
+Práctica: SEMÁFORO
 -
 
 - 1 Objetivo de la practica:
@@ -722,6 +724,8 @@ en el que las luces parpadeen de forma intermitente pero nunca a la vez.
 - 2 Material y explicacion de cada componente:
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
@@ -753,7 +757,7 @@ y cuando se haya configurado como salida y configuraremos el mismo comando 3 vec
 
 <img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/c6c688ee-8961-43aa-b9c8-6c2740634f5c" />
 
-Práctica 3: Button & Led
+Práctica 1: Button & Led
 -
 
 - 1 Objetivo de la practica:
@@ -764,6 +768,8 @@ presiona el botón, se enciende el led y, cuando se suelte, se apagará.
 - 2 Material y explicacion de cada componente:
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
@@ -800,7 +806,7 @@ se ejecutará si no se cumple la condición if y en este caso pondriamos "digita
 <img width="1026" height="756" alt="image" src="https://github.com/user-attachments/assets/9d153aeb-3fc8-46c4-bf70-eab4f7803fe0" />
 
 
-Práctica 4: Mini table Lamp
+Práctica 2: Mini table Lamp
 -
 
 - 1 Objetivo de la practica:
@@ -814,6 +820,8 @@ presionar el botón nuevamente, el LED se apagará.
 Los componentes que se utilizan en este ejercicio son los mismos que se utilizan en el ejercicio 3 Button & Led.
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
@@ -845,7 +853,7 @@ detecte verdadero o falso, luego de eso ponemos "void setup(){" lo que hace es e
 
 <img width="939" height="696" alt="image" src="https://github.com/user-attachments/assets/467d0a96-b3b2-472f-8557-f9b4ce525f8d" />
 
-Práctica 5.1: Random Color Light
+Práctica 3.1: Random Color Light
 -
 
 - 1 Objetivo de la practica:
@@ -857,6 +865,8 @@ tiene 4 pines.
 - 2 Material y explicacion de cada componente:
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -881,6 +891,7 @@ tiene 4 pines.
 
 - 6 Imagen para la entrada del blog o proyecto:
 
+<img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/26643b1a-120a-4156-b895-13f8c33e676e" />
 
 
 - Preguntas
@@ -890,20 +901,24 @@ una pequeña tabla de dos Columnas, donde la cabecera de cada columna serán los
 de LED analizados en clase y que tendrá dos filas asociadas a los elementos comunes y las
 diferencias entre ellos.
 
-
+El LED normal emite un solo color fijo (rojo, verde, amarillo, etc.) y el LED RGB Puede emitir múltiples colores combinando rojo, verde y azul, tambien otra diferencia es que le LED normal tiene dos patas y el LED RGB tiene 4.
 
 2) Que ocurriría en caso de invertir los colores del LED RGB por ejemplo que el pin 4 (Rojo)
 vaya a la pata del LED G(Verde) y el pin 0 a la pata del LED R(Roja). Porque cree que pase
 esto argumente su respuesta.
 
+-El código envía valores a cada pin pensando que controla un color en concreto.
 
+-Al estar mal cableado, el valor destinado al rojo se mostrará como verde y otros colores.
+
+-El resultado son colores incorrectos.
 
 3) Que sucede si comentamos dentro de la función void loop{}, la llamada a la función
 setColor(red, green, blue). Argumente lo que observa, después de volver a compilar el código.
 
+Puede haber dos opciones, la primera es que el LED no cambiara de color y la segunda opcion seria que quedará apagado o mostrará el último color cargado antes.
 
-
-Práctica 5.2: RGB LED Controlado
+Práctica 3.2: RGB LED Controlado
 -
 
 - 1 Objetivo de la practica:
@@ -913,6 +928,8 @@ Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada 
 - 2 Material y explicacion de cada componente:
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -937,6 +954,7 @@ Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada 
 
 - 6 Imagen para la entrada del blog o proyecto:
 
+<img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/9ab97956-cd26-4f0f-9e24-2258bae313d5" />
 
 
 - Preguntas
@@ -944,16 +962,29 @@ Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada 
 1) ¿Qué función tendría que dejar de utilizar para evitar el cambio aleatorio de los colores dentro
 del ciclo infinito? Explique que hace dicha función.
 
+La funcion lo que hace es generar valores aleatorios entre dos límites y tambien al usarse dentro de loop() provoca que el LED cambie de color todo el rato.
+
 2) Utiliza al menos dos combinaciones de colores (RGB) no aleatorias, que más le guste y donde
 se observen diferencias y argumente porque cree usted que se observa la tendencia hacia un
 color determinado.
+
+RGB(255, 0, 0) → Rojo intenso
+Predomina el rojo porque solo ese canal tiene valor alto de todos.
 
 3) ¿Qué sucedería si utilizamos la función aleatoria, pero regulamos los valores de la función
 random y pasamos los rangos que queremos? ¿Sería una forma de regular la coloración del
 LED RGB? Explique su respuesta brevemente.
 
+Lo que hariamos seria lo siguiente:
 
-Práctica 5.3: Luz de Color Degradado
+-Limitamos los valores posibles.
+
+-Evitamos colores extremos.
+
+-Se obtiene una variación más suave y controlada.
+
+
+Práctica 3.3: Luz de Color Degradado
 -
 
 - 1 Objetivo de la practica:
@@ -967,11 +998,13 @@ Usando un modelo de color, el color cambia de 0 a 255.
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
+
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
 -Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, necesitaremos tres de 220Ω.
 
-  -Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
+-Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
 
 -RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
 
@@ -990,6 +1023,7 @@ Usando un modelo de color, el color cambia de 0 a 255.
 
 - 6 Imagen para la entrada del blog o proyecto:
 
+<img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/e6aa3c4a-b3ee-44bd-8545-b662f590d408" />
 
 
 - Preguntas
@@ -998,19 +1032,199 @@ Usando un modelo de color, el color cambia de 0 a 255.
 Explique la diferencia y argumente que es el gradiente y que es lo que hace (En el código)
 que en este ejercicio se pueda observar.
 
+Lo que pasa al ejecutar el codigo es que el color cambia de forma suave y no hay saltos bruscos como con el comando random.
 
+2) Explique que es el tipo de dato long y su diferencia con el int y porque se utiliza en el ejercicio.
 
-2) Explique que es el tipo de dato long y su diferencia con el int y porque se utiliza en el
-ejercicio.
-
-
+Se usa long para que los valores de color en formato hexadecimal pueden ser muy grandes y un int no podría almacenarlos correctamente.
 
 3) Explique el funcionamiento de la función wheel de manera general.
 
-
+Lo que hace el comando wheel es que recibe un valor entre 1 y 255 y luego devuelve un color RGB diferente según el valor que le han dado y por ultimo permite recorrer todo el espectro de colores de forma suave.
    
 4) Busque en las referencias para que se utiliza la función ledcWrite() además indique cual es
 la salida de esta función y qué significado tiene en el código.
+
+La funcion lo que hace es envía un valor PWM a un canal configurado, el significado en el codigo es controlar la intensidad de cada color RGB y permite crear mezclas y transiciones suaves.
+
+
+Práctica 4: LED BAR
+-
+
+- 1 Objetivo de la practica:
+
+Un gráfico de barras LED tiene 10 LED integrados en un componente compacto. Las dos filas de
+LEDs en su parte inferior están emparejadas para identificar cada LED como el único LED
+utilizado anteriormente.
+
+- 2 Material y explicacion de cada componente:
+
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
+
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-Jumper 10x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 10 para hacer un gráfico de barras LED. 
+
+-Resistencia220Ω x10: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, i necesitaremos 10 resistencias para conectarlas al LED bad graph.
+
+-LED bar graph: Es una matriz de LED que se utiliza para conectarse con un circuito electrónico o un microcontrolador.
+  
+- 3 Esquema del circuito:
+
+<img width="588" height="422" alt="image" src="https://github.com/user-attachments/assets/30e0a102-3b1c-426a-9adf-d5e8af340793" />
+
+- 4 Codigo explicado:
+
+<img width="651" height="376" alt="image" src="https://github.com/user-attachments/assets/0897549a-a247-4984-b66a-96c508c6e680" />
+
+- 5 Video de la practica:
+
+
+
+- 6 Imagen para la entrada del blog o proyecto:
+
+<img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/e2a263d7-8b79-4a0b-94ce-6ebe66653370" />
+
+Práctica 5.1: Serial comunication
+-
+
+- 1 Objetivo de la practica:
+
+Para esta práctica vamos simplemente a probar como funciona la comunicación de la placa con el
+ordenador para, en próximas prácticas, explotar esta funcionalidad.
+
+- 2 Material y explicacion de cada componente:
+
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
+
+-Micro USB wire: Usado para energizar y conectar con la PC ciertas tarjetas Arduino.
+  
+- 3 Esquema del circuito:
+
+
+
+- 4 Codigo explicado:
+
+
+
+- 5 Video de la practica:
+
+
+
+- 6 Imagen para la entrada del blog o proyecto:
+
+
+- Preguntas
+
+1) ¿Que aparece en serial monitor?
+
+
+   
+2) Pulsa los botones de boot+EN que hay en la placa de Arduino, ¿qué ocurre? Ahora pulsa solo en, ¿qué ha ocurrido? ¿para qué nos puede servir esto?
+
+
+
+3) ¿Qué indica la linea de código “Serial.begin(115200);”?
+
+
+   
+4) Averigua que significa “%.1f s\n“.
+
+
+Práctica 5.2: Panel LCD1602
+-
+
+- 1 Objetivo de la practica:
+
+Una pantalla LCD1602 típica puede mostrar 2 líneas de caracteres en 16 columnas y es capaz de
+mostrar números, letras, símbolos, código ASCII, etc.
+
+- 2 Material y explicacion de cada componente:
+
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
+
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-Pantalla LCD1602: Permite mostrar texto/números/caracteres, además hacer debugging o correcciones en nuestros proyectos sobretodo cuando se trabaja con sensores y procesamiento de datos.
+
+-Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y los utilizaremos para conectarlo a la Pantalla LCD1602.
+ 
+- 3 Esquema del circuito:
+
+<img width="612" height="441" alt="image" src="https://github.com/user-attachments/assets/ead64f05-27fa-4e6d-a12e-8afeb53703f6" />
+
+
+- 4 Codigo explicado:
+
+
+
+- 5 Video de la practica:
+
+
+
+- 6 Imagen para la entrada del blog o proyecto:   
+
+
+- Preguntas:
+  
+1) Revisa las conexiones en el circuito eléctrico y explica para que se utiliza cada una:
+   
+SCL:
+
+SDA:
+
+VCC:
+
+GND:
+
+
+2) ¿Que hace la función “lcd.print()”? ¿Y “lcd.clear”?
+
+   
+3) Por último, busca como conseguir que el mensaje de la primera fila se desplace de izquierda
+a derecha o a la inversa.
+
+
+Práctica 5.3: Crear una estación meteorológica y recuperar los datos
+-
+
+- 1 Objetivo de la practica:
+
+
+
+- 2 Material y explicacion de cada componente:
+
+-Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+
+-GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
+
+-Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+
+-Pantalla LCD1602: Permite mostrar texto/números/caracteres, además hacer debugging o correcciones en nuestros proyectos sobretodo cuando se trabaja con sensores y procesamiento de datos.
+
+-Resistencia10kΩ x1: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, 
+  
+- 3 Esquema del circuito:
+
+<img width="565" height="381" alt="image" src="https://github.com/user-attachments/assets/f7ee77dc-e40a-4f72-9f9b-deccf54fa1d4" />
+
+
+- 4 Codigo explicado:
+
+
+
+- 5 Video de la practica:
+
+
+
+- 6 Imagen para la entrada del blog o proyecto:
+
 
 
 </details>
