@@ -546,12 +546,13 @@ c.Mapa de navegabilidad:
 <summary><h2>8.Servicios</h2></summary>
 g.DNS:
 
+-DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas.
 
 
 h.DHCP:
 
-
-
+- Servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores.
+   
 i.Apache:
 
 
