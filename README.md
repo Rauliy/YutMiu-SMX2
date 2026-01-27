@@ -562,7 +562,6 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 los anteriores passos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña
 que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS y el DHCP.
 
-
 h.Apache:
 
 
@@ -577,8 +576,11 @@ j.Copias de seguridad:
 k.Ffmpeg
 
 Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
-este comando "$ sudo apt-get install ffmpeg"
+este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado dentro del ubuntu. 
 
+<img width="878" height="449" alt="image" src="https://github.com/user-attachments/assets/41cc369e-e5df-4756-a902-d48963fa1e56" />
+
+Ffmpeg para como tanto para obtener información de un archivo multimedia, como para convertirlo a otro formato.
 
 </details>
 
