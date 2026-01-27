@@ -1140,11 +1140,11 @@ ordenador para, en próximas prácticas, explotar esta funcionalidad.
 
 1) ¿Que aparece en serial monitor?
 
-
+Al pulsar BOOT + EN a la vez, la placa entra en modo programación, lo que permite cargar un nuevo programa desde el ordenador.
    
 2) Pulsa los botones de boot+EN que hay en la placa de Arduino, ¿qué ocurre? Ahora pulsa solo en, ¿qué ha ocurrido? ¿para qué nos puede servir esto?
 
-
+Al pulsar solo EN, la placa se reinicia, es decir, vuelve a empezar la ejecución del programa desde el inicio.
 
 3) ¿Qué indica la linea de código “Serial.begin(115200);”?
 
