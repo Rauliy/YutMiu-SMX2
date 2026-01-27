@@ -544,26 +544,42 @@ c.Mapa de navegabilidad:
 
 <details>
 <summary><h2>8.Servicios</h2></summary>
-g.DNS:
+g.DNS i DHCP
 
--DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas.
+Priemro de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas i el DHCP es un 
+servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Para poder gestion el DNS i el DHCP lo que hemos
+hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server.
+
+Dentro de el ubuntu server el primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
+configurar la ip statica y lo haremos poniendo el comando "sudo nano /etc/netplan/00-installer-config.yaml" i esto lo que hace es editar el archivo netplan y la tendremos que configurar aqui una captura de como lo tenemos configurado.
+<img width="794" height="680" alt="image" src="https://github.com/user-attachments/assets/f7c6eb1b-0479-4f30-abb0-25ef1abfd5be" />
+
+Ahora luego de haber configurado correctamente el archivo netplat solo tenemos que hacer "sudo netplan apply" para aplicar los cambios y "ip a" para verificar que funcione. Despues de hacer los anteriores pasos tendremos que instalar el 
+pi-hole con "curl -sSL https://install.pi-hole.net | bash" si no funciona el comando significa que el ubuntu no tiene instalado el curl, si es asi solo instalamos el curl con "sudo apt install curl -y". Ahora en la instalacion saldran las 
+siguientes opciones: seleccionar la interfaz de red, elegir el DNS upstream, seleccionar interfaz web  y seleccionar servidor web.
+
+Despues de completar la instalacion del pi-hole y haber seleccionado cada apartado al final tendremos que seleccionar una contraseña para el pi-hole y sera necesaria para abrir el pi-hole dentro de el navegador. Ahola despues de hacer todos
+los anteriores passos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña
+que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS y el DHCP.
 
 
-h.DHCP:
-
-- Servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores.
-   
-i.Apache:
+h.Apache:
 
 
 
-j.Firewall:
+i.Firewall:
 
 
 
-k.Copias de seguridad:
+j.Copias de seguridad:
 
-FFMPEG
+
+k.Ffmpeg
+
+Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
+este comando "$ sudo apt-get install ffmpeg"
+
+
 </details>
 
 <details>
