@@ -865,7 +865,7 @@ detecte verdadero o falso, luego de eso ponemos "void setup(){" lo que hace es e
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/c30af521-2161-436e-b5e3-c2a8d5fd31c2
 
 - 6 Imagen para la entrada del blog o proyecto:
 
