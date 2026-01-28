@@ -538,7 +538,6 @@ c.Mapa de navegabilidad:
 
 -Aquí tenemos el diagrama de flujo de la interfaz web.
 
-
 <img width="528" height="852" alt="image" src="https://github.com/user-attachments/assets/980bccd8-7082-4ea4-acad-ed31662ee8ca" />
 </details>
 
@@ -548,9 +547,10 @@ g.DNS i DHCP
 
 Priemro de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas i el DHCP es un 
 servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Para poder gestion el DNS i el DHCP lo que hemos
-hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server.
+hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
 
-Dentro de el ubuntu server el primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
+Pi-hole es un bloqueador de anuncios de uso general que cubre toda la red y la protege de los anuncios y los rastreadores sin que sea necesario configurar cada uno de los dispositivos, ahora dentro de el ubuntu server 
+el primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
 configurar la ip statica y lo haremos poniendo el comando "sudo nano /etc/netplan/00-installer-config.yaml" i esto lo que hace es editar el archivo netplan y la tendremos que configurar aqui una captura de como lo tenemos configurado.
 <img width="794" height="680" alt="image" src="https://github.com/user-attachments/assets/f7c6eb1b-0479-4f30-abb0-25ef1abfd5be" />
 
@@ -561,19 +561,33 @@ siguientes opciones: seleccionar la interfaz de red, elegir el DNS upstream, sel
 Despues de completar la instalacion del pi-hole y haber seleccionado cada apartado al final tendremos que seleccionar una contraseña para el pi-hole y sera necesaria para abrir el pi-hole dentro de el navegador. Ahola despues de hacer todos
 los anteriores passos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña
 que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS y el DHCP.
+<img width="1163" height="839" alt="image" src="https://github.com/user-attachments/assets/7638eb0b-e414-40ed-bd85-08757c5488ef" />
 
-h.Apache:
+Una incidencia que teniamos era que el pi-hole estaba todo correctamente configurado y estabamos todo el rato intentando conseguir la ip de la maquina virtual con "ip a" pero no salia la ip, y sin la ip no podriamos acceder a la pagina web de nuetro Pi-hole. Al final el error era que nuestra maquina virtual de ubuntu server no estaba con el adaptador puente activado y eso hacia que por mucho que lo intentaramos no nos saliera la ip. Luego de activar el adaptador fuente ya todo funciono 
+correctamente.
+
+h.Docker:
+
+Docker Desktop es un sistema operativo para contenadores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
+
+Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker vamos a implementar pi-hole(bloqueador de anuncios) y Nginx(software de servidor web de código abierto). 
+
+i.MySQL:
+
+MySQL es un sistema de gestión de bases de datos de codigo abierto que base de datos relacional que permite almacenar, organizar y recuperar datos de manera eficiente.
+
+i.Nginx:
+
+ 
+
+j.Firewall:
 
 
 
-i.Firewall:
+k.Copias de seguridad:
 
 
-
-j.Copias de seguridad:
-
-
-k.Ffmpeg
+l.Ffmpeg:
 
 Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
 este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado dentro del ubuntu. 
@@ -1148,10 +1162,18 @@ Al pulsar solo EN, la placa se reinicia, es decir, vuelve a empezar la ejecució
 
 3) ¿Qué indica la linea de código “Serial.begin(115200);”?
 
-
+Indica que se inicia la comunicación serie entre la placa y el ordenador a una velocidad de 115200.
+Esta velocidad debe coincidir con la configurada en el Monitor Serie, o de lo contrario los datos no se verán correctamente.
    
 4) Averigua que significa “%.1f s\n“.
 
+% es un número decimal 
+
+.1f muestra un decimal
+
+s texto literal (segundos)
+
+\n → salto de línea
 
 Práctica 5.2: Panel LCD1602
 -
