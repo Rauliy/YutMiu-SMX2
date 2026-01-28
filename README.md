@@ -723,7 +723,7 @@ y cuando se haya configurado como salida y "delay" lo que hace es simplemente es
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/37430081-c8bb-4d6b-9985-093da97b96de
 
 - 6 Imagen para la entrada del blog o proyecto:
 
@@ -768,7 +768,7 @@ y cuando se haya configurado como salida y configuraremos el mismo comando 3 vec
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/e8b27595-ab34-4ec5-981f-f1d319e4666e
 
 - 6 Imagen para la entrada del blog o proyecto:
 
@@ -817,7 +817,7 @@ se ejecutará si no se cumple la condición if y en este caso pondriamos "digita
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/eb9f9faa-8668-4f20-9b96-64c839b879c0
 
 - 6 Imagen para la entrada del blog o proyecto:
 
@@ -905,7 +905,7 @@ tiene 4 pines.
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/5ebae02b-cfd8-4261-890e-417272ad1473
 
 - 6 Imagen para la entrada del blog o proyecto:
 
@@ -968,7 +968,7 @@ Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada 
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/fe8dd13a-963a-4ff6-95ae-4ee4c79a1de6
 
 - 6 Imagen para la entrada del blog o proyecto:
 
@@ -1037,7 +1037,7 @@ Usando un modelo de color, el color cambia de 0 a 255.
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/ad8c4fc4-1efa-49ba-a02e-dc796ab2e8c4
 
 - 6 Imagen para la entrada del blog o proyecto:
 
@@ -1099,7 +1099,7 @@ utilizado anteriormente.
 
 - 5 Video de la practica:
 
-
+https://github.com/user-attachments/assets/5b61667a-1ab5-4608-b1c2-1975e4977088
 
 - 6 Imagen para la entrada del blog o proyecto:
 
