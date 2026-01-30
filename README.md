@@ -920,6 +920,8 @@ tiene 4 pines.
 
 - 4 Codigo explicado:
 
+ Primero de todo ponermos "const byte ledPins[] = {4, 0, 2};" y "const byte chns[] = {0, 1, 2};"  que lo utilizamos para guardar los pines donde está conectado el LED RGB, el pin 4 será el color rojo, el pin 0 el verde y el pin 2 el azul y despues de eso 
+ ponemos un "void setup() {" para comenzar a comenzar a poner el codigo que vamos a ejecutar, dentro del void setup ponemos "for (int i = 0; i < 3; i++) {" que sirve para repetir el mismo proceso tres veces, luego ponemos "ledcAttach(ledPins[i], 1000, 8);" que permite controlar el brillo de cada color con valores entre 0 y 255. Mas tarde ponemos otro void para ejecutar mas codigo i ponemos "for (int i = 0; i < 256; i++) {" que hace que la variable i vaya aumentando desde 0 hasta 255 y tambien ponemos "setColor(wheel(i));" que lo que hace es generar un color RGB según el valor de i, i ponemos un delay de un segundo despues. Ahora un "void setColor(long rgb) {" que lo que hace esta función que se encarga de separar el color RGB y enviarlo al LED, ahora tenemos que configurar el color del LED con "ledcWrite(ledPins[0], 255 - ((rgb >> 16) & 0xFF));" que extrae el color rojo del valor RGB y lo envía al pin correspondiente, usando 255 -, i ponemos el mismo codigo para los otros dos LEDS mas. Ahora ponemos "long wheel(int pos) {" que es la función que genera los colores del arcoíris i para finalizar ponemos "pos = pos % 256;" para asegurarnos de que el valor esté entre 0 y 255 y luego tenemos un if que divide el arcoíris en tres partes.
 <img width="1426" height="730" alt="image" src="https://github.com/user-attachments/assets/0b07053c-e444-4a0c-af23-43decdeb09b9" />
 
 
@@ -982,6 +984,14 @@ Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada 
 
 
 - 4 Codigo explicado:
+
+Para comenzar ponemos "const uint8_t PIN_R = 4;" "const uint8_t PIN_G = 0;" y "const uint8_t PIN_B = 2;" que se utilizan para definir los pines donde está conectado cada color del LED RGB, siendo el pin 4 el rojo, el pin 0 el verde y el pin 2 el azul. Luego ponemos un "void setup" que dentro pondremos "ledcAttach(PIN_R, 1000, 8);", "ledcAttach(PIN_G, 1000, 8);" y "ledcAttach(PIN_B, 1000, 8);" que permite controlar el brillo de cada color con valores entre 0 y 255. Con esto dejamos preparado el LED para poder cambiar de color correctamente. Despues un "void loop() {" que pondremos "setRGB(50, 50, 255);" para encender el LED con un color azul y a continuacion ponemos "delay(3000);" que hace que ese color se mantenga encendido durante 3 segundos, i repetimos el mismo proceso procedo pero en vez del azul con el color verde. Mas abajo ponemos "void setRGB(uint8_t r, uint8_t g, uint8_t b) {" que es la función encargada de controlar el color del LED RGB. Esta función recibe tres valores, uno para el rojo, uno para el verde y uno para el azul. Dentro de esta función usamos "ledcWrite(PIN_R, 255 - r);" "ledcWrite(PIN_G, 255 - g);" y "ledcWrite(PIN_B, 255 - b);" lo que hace es enviar el valor de brillo a cada pin del LED, pero restándolo a 255.
+
+
+
+
+
+
 
 <img width="1438" height="735" alt="image" src="https://github.com/user-attachments/assets/ae403871-bb79-4322-9c2b-5dbbb2260306" />
 
