@@ -543,8 +543,11 @@ c.Mapa de navegabilidad:
 
 <details>
 <summary><h2>8.Servicios</h2></summary>
-g.DNS i DHCP
 
+- ¿Qué función cumple exactamente este servicio dentro de la red? 
+
+1. DNS, DHCP Y pi-hole:
+   
 Priemro de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas i el DHCP es un 
 servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Para poder gestion el DNS i el DHCP lo que hemos
 hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
@@ -566,34 +569,29 @@ que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS y 
 Una incidencia que teniamos era que el pi-hole estaba todo correctamente configurado y estabamos todo el rato intentando conseguir la ip de la maquina virtual con "ip a" pero no salia la ip, y sin la ip no podriamos acceder a la pagina web de nuetro Pi-hole. Al final el error era que nuestra maquina virtual de ubuntu server no estaba con el adaptador puente activado y eso hacia que por mucho que lo intentaramos no nos saliera la ip. Luego de activar el adaptador fuente ya todo funciono 
 correctamente.
 
-h.Docker:
+
+2. Docker:
 
 Docker Desktop es un sistema operativo para contenadores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
 
 Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker vamos a implementar pi-hole(bloqueador de anuncios) y Nginx(software de servidor web de código abierto). 
 
-i.MySQL:
+
+3. MySQL:
 
 MySQL es un sistema de gestión de bases de datos de codigo abierto que base de datos relacional que permite almacenar, organizar, recuperar datos de manera eficiente y es perfecto para guardar: Datos de usuarios (nombre, email, contraseñas encriptadas, etc...), Inventarios de productos, Transacciones de ventas y Registros históricos o logs. Tambien no permite aplicar reglas de integridad referencial, relaciones entre tablas y control de accesos para garantizar la coherencia y seguridad de la información. Uno de los 
 usos más comunes de MySQL es como base de datos para aplicaciones web dinámicas.
 
 MySQL se integra fácilmente con sitios desarrollados en lenguajes como PHP, Python o Node.js, el que utilizaremos nosotros en este proyecto sera PHP que es un lenguaje de scripts generalista, especialmente concebido para el desarrollo de 
-aplicaciones web, gracias a su compatibilidad con servicios de hosting puedes desplegar fácilmente sitios web que consulten, actualicen o gestionen información en tiempo real.
+aplicaciones web, gracias a su compatibilidad con servicios de hosting puedes desplegar fácilmente sitios web que consulten, actualicen o gestionen información en tiempo real.   
 
 
+4. Nginx:
 
-i.Nginx:
-
- 
-
-j.Firewall:
+NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
 
 
-
-k.Copias de seguridad:
-
-
-l.Ffmpeg:
+5. Ffmpeg:
 
 Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
 este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado dentro del ubuntu. 
@@ -601,6 +599,48 @@ este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos 
 <img width="878" height="449" alt="image" src="https://github.com/user-attachments/assets/41cc369e-e5df-4756-a902-d48963fa1e56" />
 
 Ffmpeg para como tanto para obtener información de un archivo multimedia, como para convertirlo a otro formato.
+
+
+- ¿En qué equipo se instala y qué requisitos necesita?
+
+Sistema operativo:
+
+El equipo donde vamos a tener todo va a ser un Ubuntu Server, dentro de el Ubuntu Server vamos a tener instalado el DCHP, el dnasmasq y el pi-hole.
+
+IP del servidor:
+
+La ip de nuestro del Ubuntu Server es la 192.168.135.xx por que es dinamica. Y la ip estatica de nuestro Ubuntu Server 192.168.6.62.
+
+Recursos mínimos (CPU, RAM, disco):
+
+Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
+<img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
+
+
+- ¿Qué parámetros básicos debo configurar?
+
+Puertos:
+
+
+
+Directorios de trabajo:
+
+
+
+Archivos de configuración principales:
+
+
+
+Rango DHCP / zonas DNS / virtual hosts:
+
+
+
+
+- ¿Cómo verifico que funciona correctamente?
+
+
+
+- ¿Qué aspectos de seguridad debo revisar?
 
 </details>
 
