@@ -603,15 +603,15 @@ Ffmpeg para como tanto para obtener información de un archivo multimedia, como 
 
 - ¿En qué equipo se instala y qué requisitos necesita?
 
-Sistema operativo:
+-Sistema operativo:
 
-El equipo donde vamos a tener todo va a ser un Ubuntu Server, dentro de el Ubuntu Server vamos a tener instalado el DCHP, el dnasmasq y el pi-hole.
+El equipo donde vamos a tener todo va a ser un Ubuntu Server, dentro de el Ubuntu Server vamos a tener instalado el DCHP, el dnasmasq y el pi-hole. Tambien tenemos otra maquina virtual con un Ubuntu con el Ffmpeg para exportar musicas para la pagina web.
 
-IP del servidor:
+-IP del servidor:
 
 La ip de nuestro del Ubuntu Server es la 192.168.135.xx por que es dinamica. Y la ip estatica de nuestro Ubuntu Server 192.168.6.62.
 
-Recursos mínimos (CPU, RAM, disco):
+-Recursos mínimos (CPU, RAM, disco):
 
 Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
 <img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
@@ -619,28 +619,64 @@ Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
 
 - ¿Qué parámetros básicos debo configurar?
 
-Puertos:
+-Puertos:
 
 
 
-Directorios de trabajo:
+-Directorios de trabajo:
 
 
 
-Archivos de configuración principales:
+-Archivos de configuración principales:
 
 
 
-Rango DHCP / zonas DNS / virtual hosts:
+-Rango DHCP / zonas DNS / virtual hosts:
 
 
 
 
 - ¿Cómo verifico que funciona correctamente?
 
+-Comando de estado:
+
+
+
+-Prueba desde cliente:
+
+
+
+-Logs:
+
+
+
+-Acceso vía navegador / ping / nslookup / etc:
+
+
 
 
 - ¿Qué aspectos de seguridad debo revisar?
+
+-Firewall abierto solo en puertos necesarios
+
+
+
+-Permisos de archivos
+
+
+
+-Usuario del servicio
+
+
+
+-Acceso remoto
+
+
+
+-Actualizaciones
+
+
+
 
 </details>
 
