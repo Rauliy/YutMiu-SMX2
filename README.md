@@ -1233,7 +1233,7 @@ ordenador para, en próximas prácticas, explotar esta funcionalidad.
 
 - 4 Codigo explicado:
 
-
+<img width="705" height="218" alt="image" src="https://github.com/user-attachments/assets/f7a41128-4f07-4915-871b-a2af8873ee54" />
 
 - 5 Video de la practica:
 
@@ -1328,7 +1328,7 @@ Práctica 5.3: Crear una estación meteorológica y recuperar los datos
 
 - 1 Objetivo de la practica:
 
-
+Crear una estación meteorológica y recuperar los datos
 
 - 2 Material y explicacion de cada componente:
 
@@ -1340,7 +1340,13 @@ Práctica 5.3: Crear una estación meteorológica y recuperar los datos
 
 -Pantalla LCD1602: Permite mostrar texto/números/caracteres, además hacer debugging o correcciones en nuestros proyectos sobretodo cuando se trabaja con sensores y procesamiento de datos.
 
--Resistencia10kΩ x1: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, 
+-Resistencia10kΩ x1: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
+
+-Jumper F/M X4:
+
+-Jumper M/M x4:
+
+-DHT11: 
   
 - 3 Esquema del circuito:
 
@@ -1356,6 +1362,30 @@ Práctica 5.3: Crear una estación meteorológica y recuperar los datos
 
 
 - 6 Imagen para la entrada del blog o proyecto:
+
+
+- Preguntas:
+
+  1) Primero prueba que el código funciona por monitor serial. Prueba a soplar sobre el sensor
+para modificar los valores de humedad.
+
+
+
+2) Ahora prueba a mostrar los valores en la pantalla LCD.
+
+
+   
+3) Busca que hace esta linea “DHTesp dht; “ al principio del código. ¿Que es un objeto en
+programación y que es lo que hace?
+
+
+
+4) Prueba a codificar los valores para que muestre en la primera fila la temperatura en grados
+Kelvin y en la segunda fila en grados Farenheit.
+Programalo de tal forma que se muestre algo así:
+
+Temp: 303,15ºK
+Temp: 86ºF
 
 
 
