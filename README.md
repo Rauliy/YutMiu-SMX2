@@ -621,7 +621,19 @@ Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
 
 -Puertos:
 
+Aqui estan todos los servicios conectados al Portainer con sus respectivos puertos:
 
+-Mysql: Tiene el puerto 3306:3306 y 32768:33060.
+
+-Ngingx: Tiene el puerto 80:80.
+
+-Phpmyadmin-web: Tiene el puerto 8081:80.
+
+-Pihole: Tiene el puerto 53:53 y 8080:80.
+
+-Portainer: Tiene el puerto 8000:8000 y 9443:9443.
+
+<img width="1618" height="538" alt="image" src="https://github.com/user-attachments/assets/b6ee57d9-3709-40e1-8d2c-a8a875235bdb" />
 
 -Directorios de trabajo:
 
@@ -632,7 +644,6 @@ Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
 
 
 -Rango DHCP / zonas DNS / virtual hosts:
-
 
 
 
