@@ -1676,22 +1676,10 @@ ordenador para, en próximas prácticas, explotar esta funcionalidad.
 <details>
 <summary><h4>4.Codigo explicado:</h4></summary> 
 
-<img width="705" height="218" alt="image" src="https://github.com/user-attachments/assets/f7a41128-4f07-4915-871b-a2af8873ee54" />
+<img width="987" height="590" alt="image" src="https://github.com/user-attachments/assets/12c4ad76-2202-4668-ae8d-e756619f8771" />
 
 </details>
 
-<details>
-<summary><h4>5.Video de la practica:</h4></summary> 
-
-
-
-</details>
-
-<details>
-<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
-
-
-</details>
 
 <details>
 <summary><h4>Preguntas:</h4></summary> 
@@ -1757,20 +1745,21 @@ mostrar números, letras, símbolos, código ASCII, etc.
 <details>
 <summary><h4>4.Codigo explicado:</h4></summary> 
 
-
+<img width="1872" height="722" alt="image" src="https://github.com/user-attachments/assets/42d500bc-80ed-45b5-ba4e-0d3f5ce229dc" />
 
 </details>
 
 <details>
 <summary><h4>5.Video de la practica:</h4></summary> 
 
-
+https://github.com/user-attachments/assets/6e1ea8d4-727c-4a6a-a7a1-7edf8aceb1b0
 
 </details>
 
 <details>
 <summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
 
+<img width="553" height="734" alt="image" src="https://github.com/user-attachments/assets/189cf307-f071-42f6-af09-d06142cc2edf" />
 
 
 </details>
@@ -1882,6 +1871,80 @@ Programalo de tal forma que se muestre algo así:
 
 Temp: 303,15ºK
 Temp: 86ºF
+
+</details>
+
+</details>
+
+Práctica 6.1: Station mode
+-
+
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary> 
+
+En el modo estación el ESP32-S3 actúa como un cliente WiFi. Esto permite conectarse a la red del Router y comunicarse con otros dispositivos a través de la conexión WiFi. En la imagen siguiente podemos ver un PC que está conectado a un Router, al igual que el ESP32-S3 permitiendo la comunicación entre ambos.
+
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary> 
+
+
+
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary> 
+
+
+
+</details>
+
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary> 
+
+
+
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary> 
+
+
+
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
+
+
+
+</details>
+
+<details>
+<summary><h4>Preguntas:</h4></summary> 
+
+1) ¿A qué red te has podido conectar? Es 5G, 2.4G? Explica.
+
+
+
+2) Verifica el uso de las librerías que aparecen en el código.
+2.1. ¿Son necesarias las tres: WiFi.h, WiFiClient.h, WiFiClientSecure.h)?
+
+
+
+2.2. ¿En qué casos utilizaría las librerías de arduino WiFiClient.h y WiFiClientSecure.h?
+
+
+
+2.3. ?Es posible seleccionar el canal de comunicación de la WiFi? Argumenta.
+
+
+   
+3) Prueba la conectividad entre un dispositivo como e PC o el móvil a la IP que te brinda el ESP32.
+
+
 
 </details>
 
