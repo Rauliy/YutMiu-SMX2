@@ -567,7 +567,8 @@ También ofrecemos opciones para la privacidad del usuario que son:
 <details>
 <summary><h2>8.Servicios</h2></summary>
 
-- ¿Qué función cumple exactamente este servicio dentro de la red? 
+¿Qué función cumple exactamente este servicio dentro de la red?
+-
 
 <details>
   
@@ -792,25 +793,40 @@ Ffmpeg para como tanto para obtener información de un archivo multimedia, como 
 
 </details>
 
-- ¿En qué equipo se instala y qué requisitos necesita?
+¿En qué equipo se instala y qué requisitos necesita?
+-
 
--Sistema operativo:
+<details>
+  
+<summary><h4>Sistema operativo:</h4></summary>
 
 El equipo donde vamos a tener todo va a ser un Ubuntu Server, dentro de el Ubuntu Server vamos a tener instalado el DCHP, el dnasmasq y el pi-hole. Tambien tenemos otra maquina virtual con un Ubuntu con el Ffmpeg para exportar musicas para la pagina web.
 
--IP del servidor:
+</details>
+
+<details>
+  
+<summary><h4>IP del servidor:</h4></summary>
 
 La ip de nuestro del Ubuntu Server es la 192.168.135.xx por que es dinamica. Y la ip estatica de nuestro Ubuntu Server 192.168.6.62.
 
--Recursos mínimos (CPU, RAM, disco):
+</details>
+
+<details>
+  
+<summary><h4>Recursos mínimos (CPU, RAM, disco):</h4></summary>
 
 Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
 <img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
 
+</details>
 
-- ¿Qué parámetros básicos debo configurar?
+¿Qué parámetros básicos debo configurar?
+-
 
--Puertos:
+<details>
+  
+<summary><h4>Puertos:</h4></summary>
 
 Aqui estan todos los servicios conectados al Portainer con sus respectivos puertos:
 
@@ -826,59 +842,113 @@ Aqui estan todos los servicios conectados al Portainer con sus respectivos puert
 
 <img width="1618" height="538" alt="image" src="https://github.com/user-attachments/assets/b6ee57d9-3709-40e1-8d2c-a8a875235bdb" />
 
--Directorios de trabajo:
+</details>
+
+<details>
+  
+<summary><h4>Directorios de trabajo:</h4></summary>
 
 
 
--Archivos de configuración principales:
+</details>
+
+
+<details>
+  
+<summary><h4>Archivos de configuración principales:</h4></summary>
 
 
 
--Rango DHCP / zonas DNS / virtual hosts:
+</details>
+
+<details>
+  
+<summary><h4>Rango DHCP / zonas DNS / virtual hosts:</h4></summary>
 
 
 
-- ¿Cómo verifico que funciona correctamente?
-
--Comando de estado:
+</details>
 
 
+¿Cómo verifico que funciona correctamente?
+-
 
--Prueba desde cliente:
-
-
-
--Logs:
+<details>
+  
+<summary><h4>Comando de estado:</h4></summary>
 
 
 
--Acceso vía navegador / ping / nslookup / etc:
+</details>
+
+
+<details>
+  
+<summary><h4>Prueba desde cliente:</h4></summary>
 
 
 
+</details>
 
-- ¿Qué aspectos de seguridad debo revisar?
-
--Firewall abierto solo en puertos necesarios
-
-
-
--Permisos de archivos
+<details>
+  
+<summary><h4>Logs:</h4></summary>
 
 
 
--Usuario del servicio
+</details>
+
+<details>
+  
+<summary><h4>Acceso vía navegador / ping / nslookup / etc:</h4></summary>
 
 
 
--Acceso remoto
+</details>
+
+¿Qué aspectos de seguridad debo revisar?
+-
+
+<details>
+  
+<summary><h4>Firewall abierto solo en puertos necesarios</h4></summary>
 
 
 
--Actualizaciones
+</details>
+
+<details>
+  
+<summary><h4>Permisos de archivos:</h4></summary>
 
 
 
+</details>
+
+<details>
+  
+<summary><h4>Usuario del servicio:</h4></summary>
+
+
+
+</details>
+
+
+<details>
+  
+<summary><h4>Acceso remoto:</h4></summary>
+
+
+
+</details>
+
+<details>
+  
+<summary><h4>Actualizaciones:</h4></summary>
+
+
+</details>
+</details>
 
 </details>
 
