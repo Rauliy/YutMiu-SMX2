@@ -402,31 +402,33 @@ Tipos de usuarios:
 <details>
 <summary><h2>7.Web</h2></summary>
 
-b.Mockup:
-
 Este sería el mockup de nuestra web.
 
-
-
-Página principal:
+<details>
+  
+<summary><h4>Página principal:</h4></summary>
 
 Esta es nuestra primera página, la homepage. Desde aquí podemos escuchar música y configurar un par de cosas. Todas las demás opciones, para tenerlas disponibles, el usuario tendrá que iniciar sesión. 
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0cb4442b-076c-4e7e-9020-36a8b6a94b19" />
 
+</details>
 
-
-Inicio de sesion:
+<details>
+  
+<summary><h4>Inicio de sesion:</h4></summary>
 
 Esto será nuestro inicio de sesión y de fondo intentaremos poner un video de nuestra web; además, si no inicias sesión, no podrás publicar ni videos ni comentarios.
 poner valoraciones a las canciones, solo podras escucharlas y hacer todas las acciones sobre retroceder o avanzar o ponerlo en bucle., una
 vez hayas iniciado sesion podras hacer todo.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/657f6ad2-14e6-4589-833b-ca42ceea8b21" />
 
+</details>
 
+<details>
+  
+<summary><h4>Página principal luego del inicio de sesión:</h4></summary>
 
-Página principal luego del inicio de sesión:
-
-Dentro de iniciar sesión podrás utilizar todas las herramientas de nuestra web.
+Despues de iniciar sesión podrás utilizar todas las herramientas de nuestra web.
 
 El contenido que tendrá será:
 - Buscador
@@ -444,48 +446,60 @@ El contenido que tendrá será:
 - Botón para ver tu perfil
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0f30fc76-e67a-46ff-905c-f75596a9c838" />
 
+</details>
 
-
-Músicas:
+<details>
+  
+<summary><h4>Músicas:</h4></summary>
 
 Esta opción también estará disponible sin iniciar sesión; desde aquí solo podrás escuchar la música y ver el nombre del artista.
 Al ver su letra, las opciones de valoraciones solo estarán disponibles si inicias sesión.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/028edfcc-5c9d-4b27-9489-d2ef485d32d6" />
 
+</details>
 
-
-Opiniones:
+<details>
+  
+<summary><h4>Opiniones:</h4></summary>
 
 Desde aquí podrás ver comentarios de gente debatiendo sobre músicas y sus opiniones; también podrás ver todas tus opiniones. 
 Y valoraciones que has hecho. También podrás eliminar valoraciones u opiniones que hayas hecho.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/4de2ce40-07b0-48b0-9039-47c50c6370a7" />
 
+</details>
 
-
-Amigos:
+<details>
+  
+<summary><h4>Amigos:</h4></summary>
 
 Dentro de aquí podrás ver a todos tus amigos; también desde esa pestaña podrás ver el perfil de tus amigos. También tendrás un chat con cada uno. 
 Amigo, y también podréis pasaros músicas.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/31656063-b799-4611-bcba-08e3f34a4911" />
 
+</details>
 
-
-Listas de músicas:
+<details>
+  
+<summary><h4>Listas de músicas:</h4></summary>
 
 Aquí podrás ver las músicas que hayas almacenado. También podrás hacer listas de músicas de lo que tú quieras.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/33b7421b-3ec2-4d06-a578-8db2960ec105" />
 
+</details>
 
-
-Buscador:
+<details>
+  
+<summary><h4>Buscador:</h4></summary>
 
 También esta es otra opción que estará disponible sin tener que iniciar sesión y podrás buscar la música que tú prefieras o la que esté. 
 Disponible en nuestra web; también podrás ver los artistas, el tipo de música y una valoración general de la música.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/1ba60730-1e27-4abb-9d32-daae5a2d67e6" />
 
+</details>
 
-
-Tu perfil:
+<details>
+  
+<summary><h4>Tu perfil:</h4></summary>
 
 Aqui podras ver bastantes cosas como:
 
@@ -498,9 +512,11 @@ Aqui podras ver bastantes cosas como:
 - Tambien un boton que te lleve a la privacidad de la cuenta.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/a83cf8df-3fdc-43aa-b3d6-549731cd5316" />
 
+</details>
 
-
-Perfil de amigos:
+<details>
+  
+<summary><h4>Perfil de amigos:</h4></summary>
 
 Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 
@@ -513,9 +529,11 @@ Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 - Comentarios y valoraciones que haya puesto.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/d844342d-d264-4ca9-98e7-670c661e145c" />
 
+</details>
 
-
-Configuración:
+<details>
+  
+<summary><h4>Configuración:</h4></summary>
 
 Desde aquí podrás modificar una variedad de contenido para que la experiencia con el usuario sea mejor; las opciones que hay son:
 
@@ -534,11 +552,16 @@ También ofrecemos opciones para la privacidad del usuario que son:
 - No son visibles tus comentarios y varolaciones.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
 
-c.Mapa de navegabilidad:
+</details>
+
+<details>
+  
+<summary><h4>Mapa de navegabilidad:</h4></summary>
 
 -Aquí tenemos el diagrama de flujo de la interfaz web.
 
 <img width="528" height="852" alt="image" src="https://github.com/user-attachments/assets/980bccd8-7082-4ea4-acad-ed31662ee8ca" />
+</details>
 </details>
 
 <details>
@@ -593,6 +616,136 @@ usos más comunes de MySQL es como base de datos para aplicaciones web dinámica
 
 MySQL se integra fácilmente con sitios desarrollados en lenguajes como PHP, Python o Node.js, el que utilizaremos nosotros en este proyecto sera PHP que es un lenguaje de scripts generalista, especialmente concebido para el desarrollo de 
 aplicaciones web, gracias a su compatibilidad con servicios de hosting puedes desplegar fácilmente sitios web que consulten, actualicen o gestionen información en tiempo real.   
+
+```
+create database Yutmiu;
+use Yutmiu;
+
+CREATE TABLE usuarios (
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(15),
+    apellido VARCHAR(15),
+    email VARCHAR(20) UNIQUE,
+    password VARCHAR(15),
+    foto_perfil VARCHAR(45),
+    descripcion VARCHAR(50)
+);
+
+
+CREATE TABLE artistas (
+    id_artista INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(15),
+    imagen VARCHAR(45)
+);
+
+
+CREATE TABLE musicas (
+    id_musica INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(50),
+    genero VARCHAR(10),
+    duracion TIME,
+    id_artista INT,
+    FOREIGN KEY (id_artista) REFERENCES artistas(id_artista)
+);
+
+
+CREATE TABLE valoraciones (
+    id_valoracion INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT,
+    id_musica INT,
+    puntuacion INT CHECK (puntuacion BETWEEN 1 AND 5),
+    comentario VARCHAR(50),
+    fecha DATE,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
+    FOREIGN KEY (id_musica) REFERENCES musicas(id_musica)
+);
+
+
+CREATE TABLE listas (
+    id_lista INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(15),
+    descripcion VARCHAR(50),
+    id_usuario INT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
+
+CREATE TABLE lista_musica (
+    id_lista INT,
+    id_musica INT,
+    PRIMARY KEY (id_lista, id_musica),
+    FOREIGN KEY (id_lista) REFERENCES listas(id_lista),
+    FOREIGN KEY (id_musica) REFERENCES musicas(id_musica)
+);
+
+
+
+SELECT * FROM usuarios;
+insert into usuarios (nombre, apellido, email, password, foto_perfil, descripcion)
+values ("Pep", "Pepe", "pepito", "popete", "popeye", "popote");
+
+SELECT * FROM artistas;
+insert into artistas (nombre, imagen)
+values ("Nachote", "imagen");
+
+SELECT * FROM musicas;
+insert into musicas (titulo, genero, id_artista)
+values ("musica", "pop", 10);
+
+SELECT * FROM valoraciones;
+insert into valoraciones (id_usuario, id_musica, puntuacion, comentario, fecha)
+values (11, 12, "Puntos", "Comentario", "Fecha");
+
+SELECT * FROM listas;
+insert into listas (nombre, descripcion, id_usuario)
+values ("Nachote", "descripcion", 13);
+
+SELECT * FROM lista_musica;
+insert into lista_musica (id_lista, id_musica)
+values (14, 15);
+
+
+
+DELETE FROM usuarios
+where nombre = "Pep" and apellido = "Pepe" and email = "pepito";
+
+DELETE FROM artistas
+where nombre = "Nachote" and imagen = "imagen";
+
+DELETE FROM musicas
+where titulo = "musica" and genero = "pop";
+
+DELETE FROM valoraciones
+where comentario = "Comentario";
+
+DELETE FROM listas
+where nombre = "Nachote" and descripcion = "descripcion";
+
+DELETE FROM lista_musica
+where id_lista = 14 and id_musica = 15;
+
+
+
+UPDATE usuarios
+SET nombre = "Pepe"
+WHERE id_usuario = 112;
+
+UPDATE artista
+SET nombre = "Nachote"
+WHERE ID_Artista = 113;
+
+UPDATE musicas
+SET titulo = 132
+WHERE id_musica = 114;
+
+UPDATE valoraciones
+SET comentario = "temon"
+WHERE id_musica = 115;
+
+UPDATE listas
+SET nombre = "Nachote"
+WHERE id_lista = 116;
+```
 
 </details>
 
