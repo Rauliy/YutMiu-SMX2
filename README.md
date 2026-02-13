@@ -987,7 +987,7 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 <details>
 <summary><h2>12.Arduino</h2></summary>
 
-Investigar
+Aqui todo el contenido de Arduino:
 
 A0 - Preparación del entorno
 -
