@@ -989,23 +989,34 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 
 Investigar
 
-- 2.1  ¿Qué es Arduino?
+A0 - Preparación del entorno
+-
+
+<details>
+<summary><h4>1.1  ¿Qué es Arduino?</h4></summary>
 
 Arduino es una plataforma de desarrollo basada en una placa electrónica de hardware libre que incorpora un microcontrolador re-programable y una serie de pines hembra.
 
 <img width="272" height="185" alt="image" src="https://github.com/user-attachments/assets/5e6d88be-25ce-46bc-8691-48e56818d974" />
 
-- 2.2 ¿Cuáles son sus características más importantes?
+</details>
+
+<details>
+<summary><h4>1.2 ¿Cuáles son sus características más importantes?</h4></summary>
 
 Las características más importantes de Arduino son su simplicidad, flexibilidad y facilidad de uso, tanto en hardware como en software. Es una plataforma de prototipado electrónico de código abierto, diseñada para facilitar la interacción entre el mundo físico y digital. 
 
+</details>
 
-- 2.3 ¿Cuál es el origen de Arduino?
+<details>
+<summary><h4>1.3 ¿Cuál es el origen de Arduino?</h4></summary>
 
 Arduino nació en el año 2005 el Instituto de Diseño Interactivo de Ivrea, apareció por la necesidad de contar con un dispositivo para utilizar en las aulas que fuera de bajo coste.
 
-- 2.4 ¿Qué modelos de Arduino hay? Haz una tabla donde especifiques para cada modelo:
-microcontrolador, voltaje, pines digitales, entradas analógicas, memoria, reloj.
+</details>
+
+<details>
+<summary><h4>1.4 ¿Qué modelos de Arduino hay?</h4></summary>
 
 Existen varios modelos de Arduino, entre los más conocidos están:
 Arduino Uno: Usa el microcontrolador ATmega328P, funciona a 5V, tiene 14 pines digitales, 6 entradas analógicas, 32 KB de memoria flash y trabaja a 16 MHz.
@@ -1028,19 +1039,31 @@ Arduino Due: Usa un microcontrolador ARM Cortex-M3 (ATSAM3X8E), funciona a 3.3V,
 
 <img width="306" height="165" alt="image" src="https://github.com/user-attachments/assets/88fda871-b89d-4f40-be8c-0cf622d285ff" />
 
-- 2.5 ¿Para qué sirve un Arduino?
+</details>
+
+<details>
+<summary><h4>1.5 ¿Para qué sirve un Arduino?</h4></summary>
 
 Se utiliza como un microcontrolador reprogramable con una serie de pines que permiten establecer conexiones entre el controlador y los diferentes sensores, es decir el «cerebro» de algún circuito o maquinaria.
 
-- 2.6 ¿Qué lenguaje utiliza?
+</details>
+
+<details>
+<summary><h4>1.6 ¿Qué lenguaje utiliza?</h4></summary>
 
 Usa C y C++, el llenguatge de programació C, llenguatge C o llenguatge de programació de sistemes, va ser creat per Dennis Ritchie i Ken Thompson als Laboratoris Bell d'AT&T, a principis de la dècada dels 70 i el C++ es un lenguaje de programación que fue creado, como su predecesor C , en los laboratorios Bell (no confundir con Graham Bell) de AT&T . El autor principal es Bjarne Stroustrup.
 
-- 2.7 ¿Qué es el Arduino IDE?
+</details>
+
+<details>
+<summary><h4>1.7 ¿Qué es el Arduino IDE?</h4></summary>
 
 Es el entorno de desarrollo donde se escribe, compila y sube el código a la placa Arduino. Basicamente es donde puedes hacer todas las funciones de el arduino.
 
-Resumen acerca de arduino:
+</details>
+
+<details>
+<summary><h4>Resumen acerca de arduino:</h4></summary>
 
 Arduino es una pequeña placa electrónica que funciona como el "cerebro" de muchos proyectos. Sirve para controlar luces, motores, sensores y muchas otras cosas. Lo genial de Arduino es que cualquiera lo puede usar, incluso si no sabe mucho de electrónica, porque es fácil de entender y está pensado para aprender jugando y experimentando.
 
@@ -1052,35 +1075,47 @@ Hay varios modelos de Arduino, como el Uno, Mega, Nano o Leonardo, y cada uno ti
 
 En resumen, Arduino es una herramienta súper útil para aprender a crear cosas electrónicas, como robots, juegos, alarmas o luces automáticas. Es como una caja de magia tecnológica para inventores jóvenes y curiosos.
 
+</details>
+
 Práctica: LED
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 Según el circuito funciona si el nivel de salida GPIO2 del ESP32-S3 WROOM es alto, el LED se enciende y cuando el nivel de
 salida es bajo, el LED se apaga. Por lo tanto, podemos dejar que el GPIO2 emita circularmente niveles altos y bajos
 para hacer que el LED parpadee.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 Los componentes son:
--Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
+- Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
--GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
+- GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
--Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
+- Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
--Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto. 
+- Jumper: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto. 
 
--LED: El LED sirve para proporcionar luz al arduino.
+- LED: El LED sirve para proporcionar luz al arduino.
 
--Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
+- Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
 
-- 3 Esquema del circuito:
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>
 
 
 
-- 4 Codigo explicado:
+</details>
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
 
 Para emprezar "#define LED_BUILTIN 2" sirve para definir el LED que tenemos en el Breadboard, luego el comando "void setup(){" lo que hace es estableces cuales serán 
 los pines de entrada o salida, configurar parámetros como velocidad o frecuencias i "pinMode(LED_BUILTIN, OUTPUT);" permite configurar a cada pin, de forma individual, como entrada o como salida.
@@ -1089,25 +1124,35 @@ y cuando se haya configurado como salida y "delay" lo que hace es simplemente es
 
 <img width="454" height="209" alt="image" src="https://github.com/user-attachments/assets/dff9cb1a-6511-4a30-a063-7b0f944a4e8b" />
 
-- 5 Video de la practica:
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/37430081-c8bb-4d6b-9985-093da97b96de
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
 
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/49af2129-00ef-448b-b2d0-dffe26ebe046" />
 
+</details>
 
 Práctica: SEMÁFORO
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 A partir de los conocimientos adquiridos en la anterior práctica hay que construir un prototipo de un semáforo
 en el que las luces parpadeen de forma intermitente pero nunca a la vez.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1121,11 +1166,17 @@ en el que las luces parpadeen de forma intermitente pero nunca a la vez.
 
 -Resistencia: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
 
-- 3 Esquema del circuito:
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>
 
 
 
-- 4 Codigo explicado:
+</details>
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
 
 Primero los tres "#include" se utilizan para identificar los 3 LEDS, luego el comando "void setup(){" lo que hace es estableces cuales serán 
 los pines de entrada o salida, configurar parámetros como velocidad o frecuencias i "pinMode(LED_BUILTIN, OUTPUT);" permite configurar a cada pin, de forma individual por eso esta el mismo comando repetido 3 veces,
@@ -1134,24 +1185,35 @@ y cuando se haya configurado como salida y configuraremos el mismo comando 3 vec
 
 <img width="650" height="654" alt="image" src="https://github.com/user-attachments/assets/8c524e65-edd8-4e5a-8cd0-f4f531bab3cc" />
 
-- 5 Video de la practica:
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/e8b27595-ab34-4ec5-981f-f1d319e4666e
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
 
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="976" height="735" alt="image" src="https://github.com/user-attachments/assets/c6c688ee-8961-43aa-b9c8-6c2740634f5c" />
+
+</details>
 
 Práctica 1: Button & Led
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 En esta práctica vamos a controlar el estado del led a través de un botón. Esto es, cuando se
 presiona el botón, se enciende el led y, cuando se suelte, se apagará.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1167,12 +1229,17 @@ presiona el botón, se enciende el led y, cuando se suelte, se apagará.
 
 -Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED.
 
-- 3 Esquema del circuito:
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>
 
 <img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/9071a546-c93d-4cfa-b9d1-ec2e1bba7bbd" />
 
+</details>
 
-- 4 Codigo explicado: 
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
 
 Primero de todo utilizamos dos "include", uno para identificar el LED i el otro para identificar el push botton, luego de identificarlos tenemos que utilizar 
 el comando "void setup(){" lo que hace es estableces cuales serán los pines de entrada o salida y dentro de el void setup ponemos "pinMode" permite configurar a cada pin i en nuestro
@@ -1183,25 +1250,37 @@ en un pin de salida de una tarjeta Arduino, if hace poder encender el LED si lo 
 se ejecutará si no se cumple la condición if y en este caso pondriamos "digitalWrite" i poner LOW para que no se encienda.
 <img width="964" height="658" alt="image" src="https://github.com/user-attachments/assets/d952f2e9-9e5b-4acf-a176-e8e9508030cd" />
 
-- 5 Video de la practica:
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/eb9f9faa-8668-4f20-9b96-64c839b879c0
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="1026" height="756" alt="image" src="https://github.com/user-attachments/assets/9d153aeb-3fc8-46c4-bf70-eab4f7803fe0" />
+
+</details>
 
 
 Práctica 2: Mini table Lamp
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 Para esta práctica también usaremos un interruptor de botón, un LED para hacer una lámpara de
 mesa MINI, pero de manera diferente, esto es: al presionar el botón, el LED se encenderá y, al
 presionar el botón nuevamente, el LED se apagará.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 Los componentes que se utilizan en este ejercicio son los mismos que se utilizan en el ejercicio 3 Button & Led.
 
@@ -1218,37 +1297,55 @@ Los componentes que se utilizan en este ejercicio son los mismos que se utilizan
 -LED: El LED sirve para proporcionar luz al arduino y solo utilizaremos 1 LED.
 
 -Push button: Simplemente es un pulsador que en esta actividad nos va a servir para encender el LED
-  
-- 3 Esquema del circuito:
+
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>
 
 <img width="488" height="370" alt="image" src="https://github.com/user-attachments/assets/9071a546-c93d-4cfa-b9d1-ec2e1bba7bbd" />
 
-- 4 Codigo explicado:
+</details>
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
 
 Primero de todo ponemos "bool LedOn" que se utilizan para almacenar un estado de entre esos dos posibles, y así hacer que el código reaccione según
 detecte verdadero o falso, luego de eso ponemos "void setup(){" lo que hace es estableces cuales serán los pines de entrada o salida, dentro del void setup ponemos "pinMode" permite configurar a cada pin i en nuestrocaso pondremos dos para configurar el LED(pinMode(2, OUTPUT) i el push button(13, INPUT_PULLUP). Luego "void loop()" i "if "(digitalRead(13) == LOW){" que esto lo que hace es detectar si el botón está presionado, despues "delay(50);" que hara una pequeña espera, ledOn = !ledOn; lo que hace es cabiar el estado del LED de apagado a encendido o al reves, "digitalWrite(2, ledOn ? HIGH : LOW);" que hace apagar o encender el LED segun el estado de ledon, "while (digitalRead(13) == LOW);" espera a que el boton deje de estar pulsado para apagar el LED y para finalizar un "delay(50);"
 
 <img width="800" height="551" alt="image" src="https://github.com/user-attachments/assets/000593d5-8440-4da3-b455-2c07f8b59e27" />
 
+</details>
 
-- 5 Video de la practica:
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/c30af521-2161-436e-b5e3-c2a8d5fd31c2
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="939" height="696" alt="image" src="https://github.com/user-attachments/assets/467d0a96-b3b2-472f-8557-f9b4ce525f8d" />
+
+</details>
+
 
 Práctica 3.1: Random Color Light
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 Haremos un LED multicolor, controlando el LED RGB para cambiar entre diferentes colores
 automáticamente. El LED RGB tiene integrados 3 LED que pueden emitir luz roja, verde y azul respectivamente. Y
 tiene 4 pines.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
@@ -1262,27 +1359,40 @@ tiene 4 pines.
 
 -RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
 
-- 3 Esquema del circuito:
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>
 
 <img width="381" height="409" alt="image" src="https://github.com/user-attachments/assets/1f09e0af-9af8-4f62-8e26-8b138b2ce65c" />
 
-- 4 Codigo explicado:
+</details>
 
- Primero de todo ponermos "const byte ledPins[] = {4, 0, 2};" y "const byte chns[] = {0, 1, 2};"  que lo utilizamos para guardar los pines donde está conectado el LED RGB, el pin 4 será el color rojo, el pin 0 el verde y el pin 2 el azul y despues de eso 
- ponemos un "void setup() {" para comenzar a comenzar a poner el codigo que vamos a ejecutar, dentro del void setup ponemos "for (int i = 0; i < 3; i++) {" que sirve para repetir el mismo proceso tres veces, luego ponemos "ledcAttach(ledPins[i], 1000, 8);" que permite controlar el brillo de cada color con valores entre 0 y 255. Mas tarde ponemos otro void para ejecutar mas codigo i ponemos "for (int i = 0; i < 256; i++) {" que hace que la variable i vaya aumentando desde 0 hasta 255 y tambien ponemos "setColor(wheel(i));" que lo que hace es generar un color RGB según el valor de i, i ponemos un delay de un segundo despues. Ahora un "void setColor(long rgb) {" que lo que hace esta función que se encarga de separar el color RGB y enviarlo al LED, ahora tenemos que configurar el color del LED con "ledcWrite(ledPins[0], 255 - ((rgb >> 16) & 0xFF));" que extrae el color rojo del valor RGB y lo envía al pin correspondiente, usando 255 -, i ponemos el mismo codigo para los otros dos LEDS mas. Ahora ponemos "long wheel(int pos) {" que es la función que genera los colores del arcoíris i para finalizar ponemos "pos = pos % 256;" para asegurarnos de que el valor esté entre 0 y 255 y luego tenemos un if que divide el arcoíris en tres partes.
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
+
+Primero de todo ponermos "const byte ledPins[] = {4, 0, 2};" y "const byte chns[] = {0, 1, 2};"  que lo utilizamos para guardar los pines donde está conectado el LED RGB, el pin 4 será el color rojo, el pin 0 el verde y el pin 2 el azul y despues de eso 
+ponemos un "void setup() {" para comenzar a comenzar a poner el codigo que vamos a ejecutar, dentro del void setup ponemos "for (int i = 0; i < 3; i++) {" que sirve para repetir el mismo proceso tres veces, luego ponemos "ledcAttach(ledPins[i], 1000, 8);" que permite controlar el brillo de cada color con valores entre 0 y 255. Mas tarde ponemos otro void para ejecutar mas codigo i ponemos "for (int i = 0; i < 256; i++) {" que hace que la variable i vaya aumentando desde 0 hasta 255 y tambien ponemos "setColor(wheel(i));" que lo que hace es generar un color RGB según el valor de i, i ponemos un delay de un segundo despues. Ahora un "void setColor(long rgb) {" que lo que hace esta función que se encarga de separar el color RGB y enviarlo al LED, ahora tenemos que configurar el color del LED con "ledcWrite(ledPins[0], 255 - ((rgb >> 16) & 0xFF));" que extrae el color rojo del valor RGB y lo envía al pin correspondiente, usando 255 -, i ponemos el mismo codigo para los otros dos LEDS mas. Ahora ponemos "long wheel(int pos) {" que es la función que genera los colores del arcoíris i para finalizar ponemos "pos = pos % 256;" para asegurarnos de que el valor esté entre 0 y 255 y luego tenemos un if que divide el arcoíris en tres partes.
 <img width="1426" height="730" alt="image" src="https://github.com/user-attachments/assets/0b07053c-e444-4a0c-af23-43decdeb09b9" />
 
+</details>
 
-- 5 Video de la practica:
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/5ebae02b-cfd8-4261-890e-417272ad1473
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/26643b1a-120a-4156-b895-13f8c33e676e" />
 
+</details>
 
-- Preguntas
+<details>
+<summary><h4>Preguntas:</h4></summary>
 
 1) Analizar y entender la diferencia entre un LED normal a un LED RGB. Para esto pueden crear
 una pequeña tabla de dos Columnas, donde la cabecera de cada columna serán los dos tipos
@@ -1306,14 +1416,20 @@ setColor(red, green, blue). Argumente lo que observa, después de volver a compi
 
 Puede haber dos opciones, la primera es que el LED no cambiara de color y la segunda opcion seria que quedará apagado o mostrará el último color cargado antes.
 
+</details>
+
 Práctica 3.2: RGB LED Controlado
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada ping.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
@@ -1327,33 +1443,41 @@ Ahora necesitamos controlar el valor de los colores que quiero mostrar por cada 
 
 -RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
 
-- 3 Esquema del circuito:
+</details>
+
+<details>
+<summary><h4>3Esquema del circuito:</h4></summary>
 
 
 
-- 4 Codigo explicado:
+</details>
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
 
 Para comenzar ponemos "const uint8_t PIN_R = 4;" "const uint8_t PIN_G = 0;" y "const uint8_t PIN_B = 2;" que se utilizan para definir los pines donde está conectado cada color del LED RGB, siendo el pin 4 el rojo, el pin 0 el verde y el pin 2 el azul. Luego ponemos un "void setup" que dentro pondremos "ledcAttach(PIN_R, 1000, 8);", "ledcAttach(PIN_G, 1000, 8);" y "ledcAttach(PIN_B, 1000, 8);" que permite controlar el brillo de cada color con valores entre 0 y 255. Con esto dejamos preparado el LED para poder cambiar de color correctamente. Despues un "void loop() {" que pondremos "setRGB(50, 50, 255);" para encender el LED con un color azul y a continuacion ponemos "delay(3000);" que hace que ese color se mantenga encendido durante 3 segundos, i repetimos el mismo proceso procedo pero en vez del azul con el color verde. Mas abajo ponemos "void setRGB(uint8_t r, uint8_t g, uint8_t b) {" que es la función encargada de controlar el color del LED RGB. Esta función recibe tres valores, uno para el rojo, uno para el verde y uno para el azul. Dentro de esta función usamos "ledcWrite(PIN_R, 255 - r);" "ledcWrite(PIN_G, 255 - g);" y "ledcWrite(PIN_B, 255 - b);" lo que hace es enviar el valor de brillo a cada pin del LED, pero restándolo a 255.
 
-
-
-
-
-
-
 <img width="1438" height="735" alt="image" src="https://github.com/user-attachments/assets/ae403871-bb79-4322-9c2b-5dbbb2260306" />
 
+</details>
 
-- 5 Video de la practica:
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/fe8dd13a-963a-4ff6-95ae-4ee4c79a1de6
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/9ab97956-cd26-4f0f-9e24-2258bae313d5" />
 
+</details>
 
-- Preguntas
+<details>
+<summary><h4>Preguntas:</h4></summary>
+Preguntas
 
 1) ¿Qué función tendría que dejar de utilizar para evitar el cambio aleatorio de los colores dentro
 del ciclo infinito? Explique que hace dicha función.
@@ -1379,18 +1503,23 @@ Lo que hariamos seria lo siguiente:
 
 -Se obtiene una variación más suave y controlada.
 
+</details>
 
 Práctica 3.3: Luz de Color Degradado
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 En el proyecto anterior, dominamos el uso de LED RGB, pero la visualización aleatoria de colores
 es bastante rígida. Este proyecto realizará una luz moderna con suaves cambios de color, La lista de
 componentes y el circuito son exactamente los mismos que los de la luz de color aleatorio.
 Usando un modelo de color, el color cambia de 0 a 255.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 -Breadboard: Es una herramienta simple que se usa en proyectos de robótica que permite conectar fácilmente componentes electrónicos entre sí, sin necesidad de realizar una soldadura.
 
@@ -1404,25 +1533,38 @@ Usando un modelo de color, el color cambia de 0 a 255.
 
 -RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
 
-- 3 Esquema del circuito:
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>
 
 
 
-- 4 Codigo explicado:
+</details>
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
 
 <img width="1429" height="735" alt="image" src="https://github.com/user-attachments/assets/3202fb5d-82f3-467a-9fe7-1830e8de9aa5" />
 
+</details>
 
-- 5 Video de la practica:
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/ad8c4fc4-1efa-49ba-a02e-dc796ab2e8c4
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/e6aa3c4a-b3ee-44bd-8545-b662f590d408" />
 
+</details>
 
-- Preguntas
+<details>
+<summary><h4>Preguntas:</h4></summary>
 
 1) Que observa tras cargar y correr el código del programa con respecto a lo que vimos antes.
 Explique la diferencia y argumente que es el gradiente y que es lo que hace (En el código)
@@ -1443,17 +1585,22 @@ la salida de esta función y qué significado tiene en el código.
 
 La funcion lo que hace es envía un valor PWM a un canal configurado, el significado en el codigo es controlar la intensidad de cada color RGB y permite crear mezclas y transiciones suaves.
 
+</details>
 
 Práctica 4: LED BAR
 -
 
-- 1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 Un gráfico de barras LED tiene 10 LED integrados en un componente compacto. Las dos filas de
 LEDs en su parte inferior están emparejadas para identificar cada LED como el único LED
 utilizado anteriormente.
 
-- 2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1466,32 +1613,46 @@ utilizado anteriormente.
 -Resistencia220Ω x10: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico, i necesitaremos 10 resistencias para conectarlas al LED bad graph.
 
 -LED bar graph: Es una matriz de LED que se utiliza para conectarse con un circuito electrónico o un microcontrolador.
-  
-- 3 Esquema del circuito:
+
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>
 
 <img width="588" height="422" alt="image" src="https://github.com/user-attachments/assets/30e0a102-3b1c-426a-9adf-d5e8af340793" />
 
-- 4 Codigo explicado:
+</details>
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary>
 
 <img width="651" height="376" alt="image" src="https://github.com/user-attachments/assets/0897549a-a247-4984-b66a-96c508c6e680" />
 
-- 5 Video de la practica:
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary>
 
 https://github.com/user-attachments/assets/5b61667a-1ab5-4608-b1c2-1975e4977088
 
-- 6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary>
 
 <img width="1114" height="839" alt="image" src="https://github.com/user-attachments/assets/e2a263d7-8b79-4a0b-94ce-6ebe66653370" />
+
+</details>
 
 Práctica 5.1: Serial comunication
 -
 
-- 1 Objetivo de la practica:
+1 Objetivo de la practica:
 
 Para esta práctica vamos simplemente a probar como funciona la comunicación de la placa con el
 ordenador para, en próximas prácticas, explotar esta funcionalidad.
 
-- 2 Material y explicacion de cada componente:
+2 Material y explicacion de cada componente:
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1499,22 +1660,22 @@ ordenador para, en próximas prácticas, explotar esta funcionalidad.
 
 -Micro USB wire: Usado para energizar y conectar con la PC ciertas tarjetas Arduino.
   
-- 3 Esquema del circuito:
+3 Esquema del circuito:
 
 
 
-- 4 Codigo explicado:
+4 Codigo explicado:
 
 <img width="705" height="218" alt="image" src="https://github.com/user-attachments/assets/f7a41128-4f07-4915-871b-a2af8873ee54" />
 
-- 5 Video de la practica:
+5 Video de la practica:
 
 
 
-- 6 Imagen para la entrada del blog o proyecto:
+6 Imagen para la entrada del blog o proyecto:
 
 
-- Preguntas
+Preguntas
 
 1) ¿Que aparece en serial monitor?
 
@@ -1542,12 +1703,12 @@ s texto literal (segundos)
 Práctica 5.2: Panel LCD1602
 -
 
-- 1 Objetivo de la practica:
+1 Objetivo de la practica:
 
 Una pantalla LCD1602 típica puede mostrar 2 líneas de caracteres en 16 columnas y es capaz de
 mostrar números, letras, símbolos, código ASCII, etc.
 
-- 2 Material y explicacion de cada componente:
+2 Material y explicacion de cada componente:
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1559,23 +1720,23 @@ mostrar números, letras, símbolos, código ASCII, etc.
 
 -Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y los utilizaremos para conectarlo a la Pantalla LCD1602.
  
-- 3 Esquema del circuito:
+3 Esquema del circuito:
 
 <img width="612" height="441" alt="image" src="https://github.com/user-attachments/assets/ead64f05-27fa-4e6d-a12e-8afeb53703f6" />
 
 
-- 4 Codigo explicado:
+4 Codigo explicado:
 
 
 
-- 5 Video de la practica:
+5 Video de la practica:
 
 
 
-- 6 Imagen para la entrada del blog o proyecto:   
+6 Imagen para la entrada del blog o proyecto:   
 
 
-- Preguntas:
+Preguntas:
   
 1) Revisa las conexiones en el circuito eléctrico y explica para que se utiliza cada una:
    
@@ -1598,11 +1759,11 @@ a derecha o a la inversa.
 Práctica 5.3: Crear una estación meteorológica y recuperar los datos
 -
 
-- 1 Objetivo de la practica:
+1 Objetivo de la practica:
 
 Crear una estación meteorológica y recuperar los datos
 
-- 2 Material y explicacion de cada componente:
+2 Material y explicacion de cada componente:
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1620,23 +1781,23 @@ Crear una estación meteorológica y recuperar los datos
 
 -DHT11: 
   
-- 3 Esquema del circuito:
+3 Esquema del circuito:
 
 <img width="565" height="381" alt="image" src="https://github.com/user-attachments/assets/f7ee77dc-e40a-4f72-9f9b-deccf54fa1d4" />
 
 
-- 4 Codigo explicado:
+4 Codigo explicado:
 
 
 
-- 5 Video de la practica:
+5 Video de la practica:
 
 
 
-- 6 Imagen para la entrada del blog o proyecto:
+6 Imagen para la entrada del blog o proyecto:
 
 
-- Preguntas:
+Preguntas:
 
   1) Primero prueba que el código funciona por monitor serial. Prueba a soplar sobre el sensor
 para modificar los valores de humedad.
