@@ -1647,35 +1647,54 @@ https://github.com/user-attachments/assets/5b61667a-1ab5-4608-b1c2-1975e4977088
 Práctica 5.1: Serial comunication
 -
 
-1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary>
 
 Para esta práctica vamos simplemente a probar como funciona la comunicación de la placa con el
 ordenador para, en próximas prácticas, explotar esta funcionalidad.
 
-2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary>
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
 -GPIO extension board: Es una placa de expansión que permite separar todos los pines y la alimentación de la a través de dos vías.
 
 -Micro USB wire: Usado para energizar y conectar con la PC ciertas tarjetas Arduino.
-  
-3 Esquema del circuito:
+
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary>  
 
 
 
-4 Codigo explicado:
+</details>
+
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary> 
 
 <img width="705" height="218" alt="image" src="https://github.com/user-attachments/assets/f7a41128-4f07-4915-871b-a2af8873ee54" />
 
-5 Video de la practica:
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary> 
 
 
 
-6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
 
 
-Preguntas
+</details>
+
+<details>
+<summary><h4>Preguntas:</h4></summary> 
 
 1) ¿Que aparece en serial monitor?
 
@@ -1700,15 +1719,21 @@ s texto literal (segundos)
 
 \n → salto de línea
 
+</details>
+
 Práctica 5.2: Panel LCD1602
 -
 
-1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary> 
 
 Una pantalla LCD1602 típica puede mostrar 2 líneas de caracteres en 16 columnas y es capaz de
 mostrar números, letras, símbolos, código ASCII, etc.
 
-2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary> 
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1719,25 +1744,40 @@ mostrar números, letras, símbolos, código ASCII, etc.
 -Pantalla LCD1602: Permite mostrar texto/números/caracteres, además hacer debugging o correcciones en nuestros proyectos sobretodo cuando se trabaja con sensores y procesamiento de datos.
 
 -Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y los utilizaremos para conectarlo a la Pantalla LCD1602.
- 
-3 Esquema del circuito:
+
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary> 
 
 <img width="612" height="441" alt="image" src="https://github.com/user-attachments/assets/ead64f05-27fa-4e6d-a12e-8afeb53703f6" />
 
+</details>
 
-4 Codigo explicado:
-
-
-
-5 Video de la practica:
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary> 
 
 
 
-6 Imagen para la entrada del blog o proyecto:   
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary> 
 
 
-Preguntas:
-  
+
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
+
+
+
+</details>
+
+<details>
+<summary><h4>Preguntas:</h4></summary> 
+
 1) Revisa las conexiones en el circuito eléctrico y explica para que se utiliza cada una:
    
 SCL:
@@ -1756,14 +1796,21 @@ GND:
 a derecha o a la inversa.
 
 
+</details>
+
 Práctica 5.3: Crear una estación meteorológica y recuperar los datos
 -
 
-1 Objetivo de la practica:
+<details>
+<summary><h4>1.Objetivo de la practica:</h4></summary> 
 
-Crear una estación meteorológica y recuperar los datos
+Un higrotermógrafo es un instrumento de medición utilizado para registrar y monitorizar las variaciones de temperatura y humedad relativa en el tiempo. Su diseño combina las funciones de un termógrafo (para medir la temperatura) y un higrógrafo (para medir la
+humedad relativa).
 
-2 Material y explicacion de cada componente:
+</details>
+
+<details>
+<summary><h4>2.Material y explicacion de cada componente:</h4></summary> 
 
 -Placa ESP32: Es un microcontrolador potente y versátil que ofrece una serie de características, incluyendo conectividad WiFi y Bluetooth, procesamiento de doble núcleo, y una gama de periféricos.
 
@@ -1780,24 +1827,40 @@ Crear una estación meteorológica y recuperar los datos
 -Jumper M/M x4:
 
 -DHT11: 
-  
-3 Esquema del circuito:
+
+</details>
+
+<details>
+<summary><h4>3.Esquema del circuito:</h4></summary> 
 
 <img width="565" height="381" alt="image" src="https://github.com/user-attachments/assets/f7ee77dc-e40a-4f72-9f9b-deccf54fa1d4" />
 
-
-4 Codigo explicado:
-
+</details>
 
 
-5 Video de la practica:
+<details>
+<summary><h4>4.Codigo explicado:</h4></summary> 
 
 
 
-6 Imagen para la entrada del blog o proyecto:
+</details>
+
+<details>
+<summary><h4>5.Video de la practica:</h4></summary> 
 
 
-Preguntas:
+
+</details>
+
+<details>
+<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
+
+
+
+</details>
+
+<details>
+<summary><h4>Preguntas:</h4></summary> 
 
   1) Primero prueba que el código funciona por monitor serial. Prueba a soplar sobre el sensor
 para modificar los valores de humedad.
@@ -1820,6 +1883,6 @@ Programalo de tal forma que se muestre algo así:
 Temp: 303,15ºK
 Temp: 86ºF
 
-
+</details>
 
 </details>
