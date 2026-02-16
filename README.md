@@ -28,7 +28,7 @@
 12-.Arduino
 
 <details>
-<summary><h2>1. Introducción</h2></summary>
+<summary><h1>1. Introducción</h1></summary>
 
 Nuestra web va a tratar sobre música en streaming y donde los usuarios puedan ir comentando y recomendando sus canciones preferidas y dar sus opiniones respecto a la música que han escuchado. 
 o que les han recomendado. Va a tener un extenso catálogo de canciones de diferentes estilos para satisfacer a las personas que utilicen nuestra página. 
@@ -98,7 +98,7 @@ Chats de amigos
 </details>
 
 <details>
-<summary><h2>2. Briefing</h2></summary>
+<summary><h1>2. Briefing</h1></summary>
 
 Estas eran unas de las propuestas que teníamos antes de decidirnos.
 
