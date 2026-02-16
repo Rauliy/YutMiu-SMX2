@@ -1531,7 +1531,7 @@ Usando un modelo de color, el color cambia de 0 a 255.
 
 -Jumper 4x: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y utilizaremos 3 para simular un semaforo. 
 
--RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul
+-RGBLED: Consiste en múltiples combinaciones de tres colores primarios ópticos, rojo, verde y azul.
 
 </details>
 
@@ -1545,6 +1545,19 @@ Usando un modelo de color, el color cambia de 0 a 255.
 <details>
 <summary><h4>4.Codigo explicado:</h4></summary>
 
+  Primero de todo en "setup()" configuramos tres canales PWM (rojo, verde y azul) con una frecuencia de 1000 Hz y resolución de 8 bits, y los junta a los pines PIN_R, PIN_G y PIN_B.
+
+Luego el "loop()" utiliza un contador de 0 a 255. En cada iteración calcula un color usando la función "wheel(i)", lo envía a "setColor()" y hace un "delay(20)", lo que produce una transición de colores. Cuando termina en 255, vuelve a empezar.
+
+La función "setColor(long rgb)" separa el valor de 24 bits recibido en sus componentes rojo, verde y azul. Luego escribe esos valores en los canales PWM con "ledWrite()". Como el LED invierte los valores para que el brillo funcione correctamente.
+
+La función "wheel(int pos)" genera los colores del arcoíris en tres fases:
+
+- De 0 a 84: transición de rojo a azul.
+
+- De 85 a 169: transición de azul a verde.
+
+- De 170 a 255: transición de verde a rojo.
 <img width="1429" height="735" alt="image" src="https://github.com/user-attachments/assets/3202fb5d-82f3-467a-9fe7-1830e8de9aa5" />
 
 </details>
@@ -1626,6 +1639,20 @@ utilizado anteriormente.
 <details>
 <summary><h4>4.Codigo explicado:</h4></summary>
 
+Primero definimos un arreglo "ledPins[]" con los pines donde están conectados los "LEDs: {15, 2, 0, 4, 5, 18, 19, 21, 22, 23}". Luego calcula automáticamente cuántos LEDs hay usando "sizeof(ledPins)" y guarda ese valor en "ledCounts".
+
+En "setup()" configuramos cada uno de esos pines como salida (OUTPUT) usando un bucle "for", preparándolos para controlar los LEDs.
+
+En loop() se ejecutan dos secuencias:
+
+- 1.Recorrido hacia adelante:
+Recorre el arreglo desde el primer pin hasta el último. En cada paso:
+
+Enciende el LED (digitalWrite(..., HIGH)), hace un "delay(100);", lo apaga (digitalWrite(..., LOW)) y esto produce el efecto de una luz que avanza por la fila de LEDs.
+
+- 2.Recorrido hacia atrás:
+Recorre el arreglo en sentido inverso haciendo lo mismo, esto genera el efecto de regreso y al terminar ambas secuencias, el "loop()" vuelve a empezar, creando un movimiento continuo de ida y vuelta.
+
 <img width="651" height="376" alt="image" src="https://github.com/user-attachments/assets/0897549a-a247-4984-b66a-96c508c6e680" />
 
 </details>
@@ -1675,6 +1702,12 @@ ordenador para, en próximas prácticas, explotar esta funcionalidad.
 
 <details>
 <summary><h4>4.Codigo explicado:</h4></summary> 
+
+En "setup()" se inicializa la comunicación serie a 115200 baudios y se envía un mensaje de arranque indicando que la ESP32-S3 se ha iniciado correctamente.
+
+En el "loop()" se ejecuta continuamente una impresión por el monitor serie usando "Serial.printf()". En cada iteración se calcula el tiempo transcurrido desde el inicio del programa con millis(), que devuelve los milisegundos desde el arranque, y se convierte a segundos dividiéndolo entre 1000.0. El formato %.1f hace que el tiempo se muestre con un decimal.
+
+Después de imprimir el tiempo, el programa espera 1 segundo "(delay(1000))", por lo que el mensaje se actualiza aproximadamente una vez por segundo.
 
 <img width="987" height="590" alt="image" src="https://github.com/user-attachments/assets/12c4ad76-2202-4668-ae8d-e756619f8771" />
 
@@ -1811,11 +1844,11 @@ humedad relativa).
 
 -Resistencia10kΩ x1: Una resistencia sirve para limitar la corriente que circula por una rama de un circuito eléctrico.
 
--Jumper F/M X4:
+-Jumper F/M X4: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y en nuestro caso utilizaremos 4 Jumpers femeninos.
 
--Jumper M/M x4:
+-Jumper M/M x4: Es un pequeño dispositivo que puede conectarse o desconectarse para cambiar los ajustes o la configuración de un componente concreto y en nuestro caso utilizaremos 4 Jumpers masculinos.
 
--DHT11: 
+-DHT11: El DHT11 es un sensor digital básico y económico diseñado para medir la temperatura y la humedad ambiental y lo vamos a utilizar para registrar y monitorizar las variaciones de temperatura y humedad relativa
 
 </details>
 
@@ -1837,14 +1870,17 @@ humedad relativa).
 <details>
 <summary><h4>5.Video de la practica:</h4></summary> 
 
+https://github.com/user-attachments/assets/900eed5b-a2d4-4188-b585-5f3b4a0768d1
 
+
+https://github.com/user-attachments/assets/399427cc-7a5d-4bc7-8a0c-a9e9a064f943
 
 </details>
 
 <details>
 <summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
 
-
+<img width="4080" height="3072" alt="image" src="https://github.com/user-attachments/assets/77496a66-cabb-40ca-b2e8-4e83827fd8cd" />
 
 </details>
 
@@ -1875,76 +1911,6 @@ Temp: 86ºF
 </details>
 
 </details>
-
-Práctica 6.1: Station mode
--
-
-<details>
-<summary><h4>1.Objetivo de la practica:</h4></summary> 
-
-En el modo estación el ESP32-S3 actúa como un cliente WiFi. Esto permite conectarse a la red del Router y comunicarse con otros dispositivos a través de la conexión WiFi. En la imagen siguiente podemos ver un PC que está conectado a un Router, al igual que el ESP32-S3 permitiendo la comunicación entre ambos.
-
-</details>
-
-<details>
-<summary><h4>2.Material y explicacion de cada componente:</h4></summary> 
-
-
-
-</details>
-
-<details>
-<summary><h4>3.Esquema del circuito:</h4></summary> 
-
-
-
-</details>
-
-
-<details>
-<summary><h4>4.Codigo explicado:</h4></summary> 
-
-
-
-</details>
-
-<details>
-<summary><h4>5.Video de la practica:</h4></summary> 
-
-
-
-</details>
-
-<details>
-<summary><h4>6.Imagen para la entrada del blog o proyecto:</h4></summary> 
-
-
-
-</details>
-
-<details>
-<summary><h4>Preguntas:</h4></summary> 
-
-1) ¿A qué red te has podido conectar? Es 5G, 2.4G? Explica.
-
-
-
-2) Verifica el uso de las librerías que aparecen en el código.
-2.1. ¿Son necesarias las tres: WiFi.h, WiFiClient.h, WiFiClientSecure.h)?
-
-
-
-2.2. ¿En qué casos utilizaría las librerías de arduino WiFiClient.h y WiFiClientSecure.h?
-
-
-
-2.3. ?Es posible seleccionar el canal de comunicación de la WiFi? Argumenta.
-
-
-   
-3) Prueba la conectividad entre un dispositivo como e PC o el móvil a la IP que te brinda el ESP32.
-
-
 
 </details>
 
