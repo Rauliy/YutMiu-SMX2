@@ -129,7 +129,7 @@ También necesitaremos una base de datos, un docker, y máquinas virtuales que h
 </details>
 
 <details>
-<summary><h2>3.Materiales físicos y lógicos</h2></summary>
+<summary><h1>3.Materiales físicos y lógicos</h1></summary>
 Para este proyecto vamos a usar sobre todo dos ordenadores.
 En uno de ellos tendremos montado un servidor Linux en  VirtualBox, que es donde vamos a usar FFmpeg para convertir música antes de subirla a nuestra web.
 También instalaremos Docker Desktop porque nos va a hacer falta para levantar la web y otros servicios sin tener que instalarlos a mano uno por uno.
@@ -139,7 +139,7 @@ En el segundo ordenador trabajaremos todo lo relacionado con el diseño de la p�
 </details>
 
 <details>
-<summary><h2>4.Arquitectura del software</h2></summary>
+<summary><h1>4.Arquitectura del software</h1></summary>
 La idea básica es estructurarlo de tal manera que cada parte del proyecto tenga su propio espacio y no esté todo mezclado.
 Utilizaremos Visual Studio Code para la programación de la web, ya que es lo más práctico para nosotros.
 Después, utilizaremos Pi-hole como servidor DNS y DHCP, ya que su configuración es sencilla y nos permite gestionar toda la red sin complicaciones.
@@ -150,7 +150,7 @@ Además de todo esto, deseamos establecer una VPN con Cloudflare, emplear Nginx 
 </details>
 
 <details>
-<summary><h2>5.Tecnologías a utilizar</h2></summary>
+<summary><h1>5.Tecnologías a utilizar</h1></summary>
 A continuación, podréis observar una lista  más detallada de todas las tecnologías que utilizaremos :
 
 Visual Studio Code → para el desarrollo web.
@@ -176,7 +176,7 @@ Proxmox (si es posible) → administración avanzada de máquinas virtuales.
 </details>
 
 <details>
-<summary><h2>6.Red</h2></summary>
+<summary><h1>6.Red</h1></summary>
 Aquí podemos ver cómo vamos a organizar la web y los servidores correspondientes:
 
 a.Diagrama de la red:
@@ -400,7 +400,7 @@ Tipos de usuarios:
 </details>
 
 <details>
-<summary><h2>7.Web</h2></summary>
+<summary><h1>7.Web</h1></summary>
 
 Este sería el mockup de nuestra web.
 
@@ -565,7 +565,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
 </details>
 
 <details>
-<summary><h2>8.Servicios</h2></summary>
+<summary><h1>8.Servicios</h1></summary>
 
 ¿Qué función cumple exactamente este servicio dentro de la red?
 -
@@ -953,19 +953,19 @@ Aqui estan todos los servicios conectados al Portainer con sus respectivos puert
 </details>
 
 <details>
-<summary><h2>9.Diagrama Gantt</h2></summary>
+<summary><h1>9.Diagrama Gantt</h1></summary>
 Aqui podeis ver como lo hemos organizado y separado el Diagrama:
 <img width="1919" height="417" alt="image" src="https://github.com/user-attachments/assets/ee66626d-ab31-4546-bf3f-8af53b429077" />
 Y aqui os voy a dejar el enlace al Excel para que lo vayais viendo como se va actualizando a diario: https://alumnoifp-my.sharepoint.com/:x:/g/personal/rreyesf_student_ifp_es/EWDiyoYtqXtNhg-YJbDrquoBVqxon1pBstPxaSgkpy9Yhg?e=22Y8uM
 </details>
 
 <details>
-<summary><h2>10.Conclusiones</h2></summary>
+<summary><h1>10.Conclusiones</h1></summary>
 </details>
 
 
 <details>
-<summary><h2>11.Bibliografía</h2></summary>
+<summary><h1>11.Bibliografía</h1></summary>
 Hemos utilizado estas webs para buscar informacion datos etc ect:
   
 Esta Web la hemos utilizado para coger iconos:
@@ -985,7 +985,7 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </details>
 
 <details>
-<summary><h2>12.Arduino</h2></summary>
+<summary><h1>12.Arduino</h1></summary>
 
 Aqui todo el contenido de Arduino:
 
