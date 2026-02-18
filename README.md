@@ -271,7 +271,7 @@ Además, en esta parte programaremos cosas como: escuchar música, comentar, val
 
 Ahora vamos presentar el diagrama de la base de datos:
 
-##1. ¿Qué datos son necesarios para mi aplicación?
+1. ¿Qué datos son necesarios para mi aplicación?
 
 Para que mi app funcione bien necesitamos guardar varias cosas:
 - Usuarios → toda la info de cada persona que se registre (nombre, email, contraseña…).
@@ -288,7 +288,7 @@ Para que mi app funcione bien necesitamos guardar varias cosas:
 
 
 
-##2. ¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?
+2. ¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?
 Datos que voy a pedir al usuario:
 
 - Nombre de usuario
@@ -310,9 +310,9 @@ Tipos de usuarios:
 3. ¿Qué tipo de dato necesitaré para cada información?
 
 <details>
-<summary><strong>Estructura de Base de Datoss</strong></summary>
+<summary><strong>Estructura de Base de Datos</strong></summary>
 
-## Tabla de datos y tipos (Base de datos)
+Tabla de datos y tipos (Base de datos)
 
 ### Tabla: Usuarios
 | Información       | Tipo MySQL         | Descripción |
@@ -371,7 +371,7 @@ Tipos de usuarios:
 </details>
 
 
-##4. ¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?
+4. ¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?
 - Usuarios → id_usuario
 
 - Canciones → id_cancion
@@ -384,7 +384,7 @@ Tipos de usuarios:
 
 - Amigos → id_amigo
 
-###Relaciones principales:
+Relaciones principales:
 - Una playlist pertenece a un usuario, así que un usuario puede tener muchas playlists.
 
 - Una canción puede estar en muchas playlists, por eso necesitamos una tabla intermedia tipo “playlist_cancion”.
@@ -789,7 +789,7 @@ este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos 
 
 <img width="878" height="449" alt="image" src="https://github.com/user-attachments/assets/41cc369e-e5df-4756-a902-d48963fa1e56" />
 
-Ffmpeg para como tanto para obtener información de un archivo multimedia, como para convertirlo a otro formato.
+Ffmpeg para como tanto para obtener información de un archivo multimedia, como para convertirlo a otro formato. Tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia.
 
 </details>
 
