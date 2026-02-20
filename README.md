@@ -572,12 +572,10 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 <details>
   
-<summary><h4>1. DNS, DHCP Y pi-hole:</h4></summary>
+<summary><h4>1. DNS y pi-hole:</h4></summary>
 
   
-Primero de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas i el DHCP es un 
-servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Para poder gestion el DNS i el DHCP lo que hemos
-hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
+Primero de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas. Para poder gestion el DNS i el DHCP lo que hemos hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
 
 Pi-hole es un bloqueador de anuncios de uso general que cubre toda la red y la protege de los anuncios y los rastreadores sin que sea necesario configurar cada uno de los dispositivos, ahora dentro de el ubuntu server 
 el primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
@@ -590,7 +588,7 @@ siguientes opciones: seleccionar la interfaz de red, elegir el DNS upstream, sel
 
 Despues de completar la instalacion del pi-hole y haber seleccionado cada apartado al final tendremos que seleccionar una contraseña para el pi-hole y sera necesaria para abrir el pi-hole dentro de el navegador. Ahola despues de hacer todos
 los anteriores passos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña
-que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS y el DHCP.
+que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS.
 <img width="1163" height="839" alt="image" src="https://github.com/user-attachments/assets/7638eb0b-e414-40ed-bd85-08757c5488ef" />
 
 Una incidencia que teniamos era que el pi-hole estaba todo correctamente configurado y estabamos todo el rato intentando conseguir la ip de la maquina virtual con "ip a" pero no salia la ip, y sin la ip no podriamos acceder a la pagina web de nuetro Pi-hole. Al final el error era que nuestra maquina virtual de ubuntu server no estaba con el adaptador puente activado y eso hacia que por mucho que lo intentaramos no nos saliera la ip. Luego de activar el adaptador fuente ya todo funciono 
@@ -600,7 +598,15 @@ correctamente.
 
 <details>
   
-<summary><h4>2. Docker:</h4></summary>
+<summary><h4>2. DHCP y Dnsmasq :</h4></summary>
+
+El DHCP es un servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que vamos a utilizar es porque permite la configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
+
+</details>
+
+<details>
+  
+<summary><h4>3. Docker:</h4></summary>
 
 Docker Desktop es un sistema operativo para contenadores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
 
@@ -610,7 +616,7 @@ Su principal diferencia es que Docker Desktop por sí solo proporciona una base 
 
 <details>
   
-<summary><h4>3. MySQL:</h4></summary>
+<summary><h4>4. MySQL:</h4></summary>
 
 MySQL es un sistema de gestión de bases de datos de codigo abierto que base de datos relacional que permite almacenar, organizar, recuperar datos de manera eficiente y es perfecto para guardar: Datos de usuarios (nombre, email, contraseñas encriptadas, etc...), Inventarios de productos, Transacciones de ventas y Registros históricos o logs. Tambien no permite aplicar reglas de integridad referencial, relaciones entre tablas y control de accesos para garantizar la coherencia y seguridad de la información. Uno de los 
 usos más comunes de MySQL es como base de datos para aplicaciones web dinámicas.
@@ -752,7 +758,7 @@ WHERE id_lista = 116;
 
 <details>
   
-<summary><h4>4. Nginx:</h4></summary>
+<summary><h4>5. Nginx:</h4></summary>
 
 NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
 
@@ -760,7 +766,7 @@ NGINX es un software de código abierto que se utiliza para servidores web, prox
 
 <details>
   
-<summary><h4>5. PHP:</h4></summary>
+<summary><h4>6. PHP:</h4></summary>
 
 PHP es un lenguaje de programación de código abierto diseñado para el desarrollo web que se ejecuta en el servidor, permitiendo crear sitios web dinámicos, interactivos y con conexión a bases de datos.
 
@@ -782,7 +788,7 @@ Envía correos y gestiona archivos: Permite subir archivos al servidor y enviar 
 
 <details>
   
-<summary><h4>6. Ffmpeg:</h4></summary>
+<summary><h4>7. Ffmpeg:</h4></summary>
 
 Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
 este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado dentro del ubuntu. 
