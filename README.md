@@ -181,8 +181,7 @@ Aquí podemos ver cómo vamos a organizar la web y los servidores correspondient
 
 a.Diagrama de la red:
 
-<img width="848" height="644" alt="image" src="https://github.com/user-attachments/assets/c1e30176-401e-4faf-82a9-26dae8a072e3" />
-
+<img width="862" height="753" alt="image" src="https://github.com/user-attachments/assets/e9870c8e-cf22-47e7-94b2-8f4eaf82e836" />
 
 ##Estructura básica de la red
 
