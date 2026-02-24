@@ -609,7 +609,7 @@ Dnsmasq es una herramienta sencilla pero poderosa, diseñada para proporcionar s
   
 <summary><h4>3. Docker:</h4></summary>
 
-Docker Desktop es un sistema operativo para contenadores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
+Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
 
 Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker vamos a implementar pi-hole(bloqueador de anuncios) y Nginx(software de servidor web de código abierto). 
 
