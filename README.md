@@ -1947,6 +1947,8 @@ https://projecthub.arduino.cc/diegogalvan_1294/building-an-ultrasonic-radar-usin
 Water Sensor
 https://projecthub.arduino.cc/daryllqayyim/water-sensor-basic-13d33f
 
+Ultrasonic Radar with Arduino
+https://projecthub.arduino.cc/nimishac/ultrasonic-radar-with-arduino-19baa3
 
 </details>
 
