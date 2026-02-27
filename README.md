@@ -1921,6 +1921,77 @@ Temp: 86ºF
 
 </details>
 
+<details>
+<summary><h1>Proyecto Arudino</h1></summary>
+  
+<details>
+<summary><h4>1.Presentación de la idea:</h4></summary> 
+
+Principalmente nuestra idea principal es hacer que el arduino pueda reproducir musica, estos son los diferentes opciones que tenemos:
+
+Xylophone:
+https://www.instructables.com/3D-Printed-Arduino-Xylophone/
+
+Play Music in the Air:
+https://projecthub.arduino.cc/shmuel_rubin/play-music-in-the-air-arduino-air-piano-project-8e5a68
+
+Song Arduino Music Box with LCD and LED Light Show
+https://projecthub.arduino.cc/jenny972/3-song-arduino-music-box-with-lcd-and-led-light-show-7bda6e
+
+Arduino Based Piano
+https://projecthub.arduino.cc/RucksikaaR/arduino-based-piano-f9a995
+
+Building an Ultrasonic Radar using Arduino and Processing
+https://projecthub.arduino.cc/diegogalvan_1294/building-an-ultrasonic-radar-using-arduino-and-processing-59053e
+
+Water Sensor
+https://projecthub.arduino.cc/daryllqayyim/water-sensor-basic-13d33f
+
+
+</details>
+
+
+<details>
+<summary><h4>2.Objetivos del Proyecto:</h4></summary> 
+
+
+
+</details>
+
+
+<details>
+<summary><h4>3.Requisitos Técnicos:</h4></summary> 
+
+
+
+</details>
+
+
+<details>
+<summary><h4>4.Metodología de Trabajo:</h4></summary> 
+
+
+
+</details>
+
+
+<details>
+<summary><h4>5.Recursos Disponibles::</h4></summary> 
+
+
+
+</details>
+
+
+<details>
+<summary><h4>6.Desafíos y Soluciones Previstas:</h4></summary> 
+
+
+
+</details>
+
+
+
 </details>
 
 </details>
