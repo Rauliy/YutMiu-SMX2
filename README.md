@@ -1922,7 +1922,7 @@ Temp: 86ºF
 </details>
 
 <details>
-<summary><h1>Proyecto Arudino</h1></summary>
+<summary><h1>Proyecto Arduino</h1></summary>
   
 <details>
 <summary><h4>1.Presentación de la idea:</h4></summary> 
