@@ -2048,7 +2048,23 @@ Uno de los siguientes:
 <details>
 <summary><h4>4.Metodología de Trabajo:</h4></summary> 
 
+<h1>Investigación inicial:</h1>
+Buscar información sobre coches teledirigidos con Arduino y los componentes necesarios.
 
+<h1>Selección de componentes:</h1>
+Elegir Arduino, driver de motores, motores, batería, módulo de comunicación y sensores.
+
+<h1>Montaje del hardware:</h1>
+Instalar motores, ruedas, driver y Arduino en el chasis.
+
+<h1>Programación:</h1>
+Programar Arduino para controlar los motores.
+
+<h1>Pruebas del sistema:</h1>
+Hacer que el coche avance, retroceda, gire y se pare correctamente.
+
+<h1>Documentación del proyecto:</h1>
+Mientras hacemos tendremos que ir documentando todas las cosas que hemos hecho como fallos o avances.
 
 </details>
 
@@ -2056,7 +2072,25 @@ Uno de los siguientes:
 <details>
 <summary><h4>5.Recursos Disponibles::</h4></summary> 
 
+Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 
+<h1>Documentación y guías:</h1>
+
+- Documentación oficial de Arduino
+
+- Guías sobre control de motores con drivers L298N o L293D
+
+- Tutoriales sobre comunicación Bluetooth con Arduino
+
+
+
+<h1>Tutoriales y videotutoriales:</h1>
+
+- Tutoriales de Arduino en YouTube
+
+- Proyectos de coches Arduino en páginas de electrónica
+
+- Guías paso a paso para el uso del módulo Bluetooth HC-05
 
 </details>
 
