@@ -1927,7 +1927,7 @@ Temp: 86ºF
 <details>
 <summary><h4>1.Presentación de la idea:</h4></summary> 
 
-Principalmente nuestra idea principal es hacer que el arduino pueda reproducir musica, estos son los diferentes opciones que tenemos:
+Principalmente nuestra idea principal es hacer que el arduino pueda reproducir musica, estos son los diferentes proyectos que podriamos hacer:
 
 Xylophone:
 https://www.instructables.com/3D-Printed-Arduino-Xylophone/
@@ -1950,13 +1950,35 @@ https://projecthub.arduino.cc/daryllqayyim/water-sensor-basic-13d33f
 Ultrasonic Radar with Arduino
 https://projecthub.arduino.cc/nimishac/ultrasonic-radar-with-arduino-19baa3
 
+Al final hemos decicido hacer un coche control remoto que se pueda manejar con facilidad y al final hemos decicido hacer este proyecto ya que no tendriamos que comprar ningun componente de Arduino que no tengamos y seria mas facil de hacer que todos los diferentes proyectos.
+
 </details>
 
 
 <details>
 <summary><h4>2.Objetivos del Proyecto:</h4></summary> 
 
+El principal objetivo seria hacer un coche de arduino capaz de desplazarse en distintas direcciones mediante control remoto, poniendo componentes y programación.
 
+<h1>Estos serian los objetivos especificos:</h1>
+
+- Diseñar la estructura del vehículo.
+
+- Crear un chasis funcional que soporte los componentes electrónicos y mecánicos.
+
+- Implementar el sistema de control.
+
+- Programar el microcontrolador Arduino para controlar los motores del vehículo.
+
+- Permitir el control remoto.
+
+- Controlar el coche mediante un sistema inalámbrico.
+
+- Controlar el movimiento del coche.
+
+- Permitir movimientos básicos que seran: avanzar, retroceder, girar a la izquierda, girar a la derecha y pararse.
+
+- Integrar sensores (opcional, aun no sabemos si ponerselo o no).
 
 </details>
 
@@ -1964,7 +1986,61 @@ https://projecthub.arduino.cc/nimishac/ultrasonic-radar-with-arduino-19baa3
 <details>
 <summary><h4>3.Requisitos Técnicos:</h4></summary> 
 
+Estos seran requisitos técnicos que necesitaremos:
 
+<h1>Sistema de movimiento:</h1>
+
+- 2 o 4 motores DC
+
+- Driver de motores
+
+- Ruedas compatibles con los motores
+
+- Chasis para el coche
+
+
+
+<h1>Sistema de alimentación:</h1>
+
+- Batería
+
+- Portabaterías
+
+- Regulador de voltaje si es necesario
+
+
+
+<h1>Sistema de comunicación:</h1>
+
+Uno de los siguientes:
+
+- Bluetooth
+
+- Módulo RF 433 MHz
+
+- WiFi
+
+
+
+<h1>Otros componentes necesarios:</h1>
+
+- Cables Dupont
+
+- Protoboard o PCB
+
+- Interruptor de encendido
+
+- LEDs indicadores (opcional)
+
+
+
+<h1>Sensores opcionales:</h1>
+
+- Sensor ultrasónico (para evitar obstáculos)
+
+- Sensor de línea
+
+- Sensor infrarrojo
 
 </details>
 
