@@ -802,6 +802,34 @@ Ffmpeg para como tanto para obtener información de un archivo multimedia, como 
 
 </details>
 
+<details>
+
+<summary><h4>8. TrueNAS:</h4></summary>
+
+TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
+
+Principales características las principales caracteristicas por lo que utilizamos TrueNAS son:
+
+- Reducido tamaño en disco 
+  
+- Fácil instalación
+  
+- Fácil administración remota, mediante páginas web accesibles desde cualquier computadora en red con un navegador
+  
+- No es necesario tener conectado monitor ni teclado para su operación
+
+Ahora estamos instalando el TrueNAS dentro de una maquina virtual con la iso del Truenas.
+<img width="637" height="564" alt="image" src="https://github.com/user-attachments/assets/47f34bb2-9344-4fc2-94d3-270b47e2c07c" />
+
+Despues de instalar el Truenas tenemos que configurarlo correctamente para mas adelante poderlo abrir dentro de un navegador.
+<img width="1212" height="839" alt="image" src="https://github.com/user-attachments/assets/4d9d37db-ca06-47c3-9f44-be53fc761b5b" />
+
+Y tras configurarlo todo y haber accedido al TrueNAS des de navegador nos permitira crear pools de almacenamiento seguros con ZFS, gestionar copias de seguridad en la nube, correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operativos.
+<img width="1434" height="735" alt="image" src="https://github.com/user-attachments/assets/ead62b99-b029-42fb-941a-6af1ef9e1b37" />
+
+
+</details>
+
 ¿En qué equipo se instala y qué requisitos necesita?
 -
 
