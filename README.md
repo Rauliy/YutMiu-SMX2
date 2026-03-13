@@ -2132,6 +2132,45 @@ Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 
 
 
+<details>
+<summary><h4>Todos los componentes y su uso:</h4></summary> 
+
+- Arduino Uno:
+
+Es la placa principal que leera el control remoto y decidira qué motores mover.
+
+- Batería o Portapilas:
+
+Los motores a la hora de utilizarse consumiran energía una pila de 9V común servira.
+
+- Interruptor:
+
+Para no tener que desconectar los cables cada vez que quieras apagarlo.
+
+- Chasis de coche:
+
+Es donde estara la estructura, las ruedas y los motores.
+
+- Controlador de Motores:
+
+Es el componente más importante para el movimiento del coche y lo que hace es recibir órdenes de baja potencia del Arduino y las convierte en potencia real para los motores, eso nos permitira controlar la velocidad y el sentido de giro del coche.
+
+- Módulo Bluetooth:
+
+Permite controlar el coche.
+
+- Módulo Infrarrojo:
+  
+Para que funcione línea de visión directa entre el mando y el coche.
+
+- Módulo de Radiofrecuencia:
+  
+Sirve para largo alcance, aunque requiere un segundo Arduino como mando.
+
+- Sensor Ultrasónico:
+
+Lo que hace es medir la distancia a los objetos enviando un pulso de sonido.
+
 </details>
 
 </details>
