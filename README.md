@@ -2173,4 +2173,14 @@ Lo que hace es medir la distancia a los objetos enviando un pulso de sonido.
 
 </details>
 
+
+<details>
+<summary><h4>Diagrama de flujo</h4></summary> 
+
+Este seria nuestro diagrama de flujo con todos los componentes que vamos a utilizar:
+
+Aqui deberia ir la foto pero no se por que motivo no se pone, te la paso por el campus.     
+
+</details>
+
 </details>
