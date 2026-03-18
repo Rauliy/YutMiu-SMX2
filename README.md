@@ -567,7 +567,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
 <summary><h1>8.Servicios</h1></summary>
 
 ¿Qué función cumple exactamente este servicio dentro de la red?
--
+
 
 <details>
   
@@ -831,6 +831,21 @@ Despues de instalar el Truenas tenemos que configurarlo correctamente para mas a
 Y tras configurarlo todo y haber accedido al TrueNAS des de navegador nos permitira crear pools de almacenamiento seguros con ZFS, gestionar copias de seguridad en la nube, correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operativos.
 <img width="1434" height="735" alt="image" src="https://github.com/user-attachments/assets/ead62b99-b029-42fb-941a-6af1ef9e1b37" />
 
+Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto seria:
+
+- La maquinas virtuales donde tenemos el Docker. Aparte tambien tendriamos que guardar toda su configuracion y su conexion.
+
+- El Pi-hole y toda su configuracion para que el DNS sea funcional.
+
+- El DNSmasq y toda su configuracion para que el DHCP sea funcional.
+
+- Toda la pagina web que seria todo el html, css, js y php. Los archivos de la pagina web ahora mismo estan en la D del ordenador y dentro de nuestros propios discos duros.
+
+- Todo el PHP conectado con el MySQL. Tendriamos que hacer una copia de seguridad al PHP y toda su configuracion, el MySQL esta bien guardado no seria necesario hacerle una copia.
+
+- El Nginx y toda su configuracion porque sin Nginx no podriamos publicar nuestra pagina web.
+
+- Todos los sistemas conectados en el Portainer, Tambien tendriamos que guardar las ips de cada servicio conectado y lo puertos donde estan conectados.
 
 </details>
 
@@ -1026,7 +1041,93 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </details>
 
 <details>
-<summary><h1>12.Arduino</h1></summary>
+<summary><h1>12.Plan de contingencia</h1></summary>
+
+<details>
+<summary><h3>1.Datos generales</h3></summary>
+
+• Nombre del proyecto: YutMiu
+
+• Alumno(s): Raul Reyes y Ignasi Merino
+
+• Fecha: 18/03/2026
+
+• Versión del documento:
+
+• Descripción breve del sistema:
+
+</details>
+
+<details>
+<summary><h3>2.Objetivo del plan</h3></summary>
+
+- ¿Para qué sirve este plan?
+
+Sirve para guardar los archivos importantes por si ocurre un error y se pierde todo.
+
+- ¿Qué se pretende garantizar?
+
+Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que perdamos parte del trabajo por accidente.
+
+</details>
+
+<details>
+<summary><h3>3.Alcance</h3></summary>
+
+Indica qué cubre este plan:
+
+• Sistemas incluidos (servidores, red, equipos…)
+
+Maquinas virtuales: Tendriamos que guardar principalmente las maquinas virtuales donde esta el pi-hole y el DNSmasq.
+
+• Servicios críticos: 
+
+Pagina web: Si no guardaramos la pagina web tendriamos que tendriamos que volver a hacer toda la estructura de nuevo.
+
+Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base de datos el PHP no podria funcionar dentro de nuestra web.
+
+• Qué queda fuera: (si aplica)
+
+
+
+</details>
+
+<details>
+<summary><h3>4.Identificaión de activos</h3></summary>
+
+
+
+</details>
+
+<details>
+<summary><h3>5.Análisis de riesgos</h3></summary>
+
+
+
+</details>
+
+<details>
+<summary><h3>6.Escenarios de contingencia</h3></summary>
+
+Descripcion de situaciones reales que podrian suceder y afectar a los servicios de nuestra web:
+
+</details>
+
+<details>
+<summary><h3>7.Plan de respuesta</h3></summary>
+
+
+
+</details>
+
+
+
+
+
+</details>
+
+<details>
+<summary><h1>Actividades Arduino</h1></summary>
 
 Aqui todo el contenido de Arduino:
 
