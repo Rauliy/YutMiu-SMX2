@@ -775,17 +775,21 @@ PHP es un lenguaje de programación de código abierto diseñado para el desarro
 
 Qué hace PHP?
 
-Genera contenido dinámico: Crea páginas web que cambian según la interacción del usuario.
+- Genera contenido dinámico: Crea páginas web que cambian según la interacción del usuario.
 
-Interactúa con bases de datos: Se conecta y gestiona fácilmente bases de datos como MySQL, PostgreSQL o MariaDB.
+- Interactúa con bases de datos: Se conecta y gestiona fácilmente bases de datos como MySQL, PostgreSQL o MariaDB.
 
-Gestiona archivos en el servidor: Puede crear, abrir, leer, escribir y cerrar archivos.
+- Gestiona archivos en el servidor: Puede crear, abrir, leer, escribir y cerrar archivos.
 
-Maneja formularios: Recopila, valida y procesa datos enviados desde formularios HTML.
+- Maneja formularios: Recopila, valida y procesa datos enviados desde formularios HTML.
 
-Controla accesos y cookies: Maneja la autenticación de usuarios (inicios de sesión) y puede establecer o acceder a cookies.
+- Controla accesos y cookies: Maneja la autenticación de usuarios (inicios de sesión) y puede establecer o acceder a cookies.
 
-Envía correos y gestiona archivos: Permite subir archivos al servidor y enviar correos electrónicos automáticamente. 
+- Envía correos y gestiona archivos: Permite subir archivos al servidor y enviar correos electrónicos automáticamente. 
+
+<img width="1551" height="735" alt="image" src="https://github.com/user-attachments/assets/3abc807d-0fb9-4ffd-a782-c7b511ceb0e5" />
+
+Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y hazerla funcional.
 
 </details>
 
