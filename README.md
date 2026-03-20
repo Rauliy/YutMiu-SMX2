@@ -1111,17 +1111,225 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 
 Descripcion de situaciones reales que podrian suceder y afectar a los servicios de nuestra web:
 
+• Caída del servidor:
+
+
+
+• Pérdida de conexión a internet:
+
+
+
+• Fallo de hardware:
+
+Ante un fallo de hardware nos podria afectar dentro de las maquinas virtuales ya que se podrian abortar las maquinas virtuales importantes que tenemos como el que contiene el docker.
+
+• Error humano:
+
+
+
+• Ataque (malware, ransomware):
+
+
+
 </details>
 
 <details>
 <summary><h3>7.Plan de respuesta</h3></summary>
 
+Qué hacer en cada caso:
+
+• Caída del servidor:
+
+
+
+• Pérdida de conexión a internet:
+
+
+
+• Fallo de hardware:
+
+
+
+• Error humano:
+
+
+
+• Ataque (malware, ransomware):
 
 
 </details>
 
+<details>
+<summary><h3>8.Plan de recuperación</h3></summary>
+
+Cómo volver a la normalidad:
+
+• Restauración de sistemas:
+
+Tendriamos que volver a instalar nuevamente todas las maquinas virtuales configurar todo y nuevamente.
+
+• Reconfiguración de servicios:
+
+Por cada servicio que teniamos volverla a configurar como lo habiamos hecho anteriormente.
+
+• Verificación del funcionamiento:
+
+A la hora de verificar que todo vuelva a la normalidad tendriamos que entrar dentro del Portainer y ver que todos los servicios esten en running.
+
+Añadir tiempos:
+
+• Tiempo máximo de recuperación(RTO):
 
 
+
+• Pérdida de datos aceptable(RPO):
+
+
+
+</details>
+
+<details>
+<summary><h3>9.Copias de seguridad</h3></summary>
+
+Detallar:
+
+• Tipo de backup:
+
+
+
+• Frecuencia:
+
+
+
+• Ubicación:
+
+
+
+• Herramientas utilizadas:
+
+
+
+</details>
+
+<details>
+<summary><h3>10.Medidas preventivas</h3></summary>
+
+Para evitar problemas:
+
+• Antivirus / Firewall:
+
+
+
+• Actualizaciones:
+
+
+
+• Control de accesos:
+
+
+
+• Monitorización:
+
+
+
+</details>
+
+<details>
+<summary><h3>11.Responsables</h3></summary>
+
+
+
+
+</details>
+
+<details>
+<summary><h3>12.Plan de comunicación</h3></summary>
+
+En caso de fallo:
+
+• A quién avisar:
+
+Primero tedriamos que avisar a nuestro compañero de trabajo y luego avisar a los nuestros tutores para preguntarles que hacer con este problema que a surjido.
+
+• Cómo:
+
+Si estamos en classe simplemente avisarle que hemos tenido un problema grave y preguntarle como solucionarlo y si no fuera en classe le mandariamos un email con nuestro problema.
+
+• Tiempo de respuesta:
+
+Si estamos en classe intentar hacer que venga lo antes posible para que diga que hacer ante nuestro problema y si no lo estamos seria enviarle un correo i intentar que conteste lo antes posible.
+
+</details>
+
+<details>
+<summary><h3>13.Pruebas del plan</h3></summary>
+
+Validar el plan:
+
+• Simulación de fallos:
+
+Tendriamos que plantear antes los fallos mas graves que podrian pasar antes de validar este plan.
+
+• Resultados obtenidos:
+
+
+
+• Mejoras detectadas:
+
+
+
+</details>
+
+<details>
+<summary><h3>14.Mantenimiento del plan</h3></summary>
+
+Indicar:
+
+• Cada cuánto se revisa:
+
+Todo el plan de contingencia lo revisariamos cada 2 semanas o 1 semana, depende de cuando avanzemos en el trabajo.
+
+• Quién lo actualiza:
+
+Hasta que no pase algo muy grave o algo parecido creo que no haria falta actualizarla, mientras todo este seguro correctamente no haria falta preocuparse.
+
+</details>
+
+<details>
+<summary><h3>15.Mejoras futuras</h3></summary>
+
+• Automatización de recuperación:
+
+
+
+• Sistemas redundantes:
+
+
+
+• Mejora de seguridad:
+
+
+
+</details>
+
+<details>
+<summary><h3>16.Conclusiones</h3></summary>
+
+Reflexión:
+
+• Importancia del plan:
+
+El motivo principal de este plan y la importancia de tenerlo es principalmente para evitar perdidas de horas de trabajo en pequeños errores y garantizar la seguridad de nuestro trabajo en caso de fallo.
+
+• Qué han aprendido:
+
+Gestionar cuales fallos podriamos prevenir y que podrian suceder a la hora de trabajar en el proyecto y garantizar la seguridad de nuestro proyecto.
+
+• Cómo mejora el proyecto:
+
+Lo que podriamos hacer a la hora de mejorar el proyecto es apuntar todos los avances que hacemos cada dia y cada cierto tiempo aplicarle el plan de contingencia.
+
+</details>
 
 
 </details>
