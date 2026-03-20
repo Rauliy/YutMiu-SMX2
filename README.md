@@ -1052,9 +1052,9 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 
 • Fecha: 18/03/2026
 
-• Versión del documento:
+• Versión del documento: 1.0
 
-• Descripción breve del sistema:
+• Descripción breve del sistema: Infraestructura web basada en contenedores Docker, gestionada con Portainer, que incluye servicios de red con el Pi-hole y DNSmasq, un servidor web Nginx y una aplicación PHP con base de datos MySQL.
 
 </details>
 
@@ -1086,23 +1086,35 @@ Pagina web: Si no guardaramos la pagina web tendriamos que tendriamos que volver
 
 Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base de datos el PHP no podria funcionar dentro de nuestra web.
 
-• Qué queda fuera: (si aplica)
-
-
-
 </details>
 
 <details>
 <summary><h3>4.Identificaión de activos</h3></summary>
 
-
+| Activo | Tipo | Importancia |
+| :--- | :--- | :--- |
+| **VM Docker Host** | Software/Infraestructura | Alta |
+| **Configuración y Conexiones VM** | Software | Alta |
+| **Pi-hole (DNS) y configuración** | Software/Servicio | Alta |
+| **DNSmasq (DHCP) y configuración** | Software/Servicio | Alta |
+| **Archivos Web (D:/html, css, js, php)** | Datos/Archivos | Alta |
+| **Código PHP y Conexión MySQL** | Software | Alta |
+| **Nginx y Configuración** | Software/Servicio | Alta |
+| **Portainer (IPs y Puertos)** | Software/Gestión | Alta |
 
 </details>
 
 <details>
 <summary><h3>5.Análisis de riesgos</h3></summary>
 
-
+| Riesgo | Probabilidad | Impacto | Nivel de riesgo |
+| :--- | :--- | :--- | :--- |
+| **Caída del servidor Docker** | Alta | Alta | **Crítico** |
+| **Fallo de hardware (Disco D / VM)** | Media | Alta | **Alto** |
+| **Pérdida de conexión a internet** | Media | Media | **Medio** |
+| **Error humano (Borrado de código)** | Media | Alta | **Alto** |
+| **Ataque informático (Malware)** | Baja | Alta | **Alto** |
+| **Fallo de configuración DNS/DHCP** | Media | Alta | **Alto** |
 
 </details>
 
@@ -1111,25 +1123,25 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 
 Descripcion de situaciones reales que podrian suceder y afectar a los servicios de nuestra web:
 
-• Caída del servidor:
+• Caída del servidor: 
 
+Los contenedores dejan de responder o Portainer se bloquea.
 
+• Pérdida de conexión a internet: 
 
-• Pérdida de conexión a internet:
+El DNS (Pi-hole) o DHCP fallan, dejando a los clientes sin conexión.
 
-
-
-• Fallo de hardware:
+• Fallo de hardware: 
 
 Ante un fallo de hardware nos podria afectar dentro de las maquinas virtuales ya que se podrian abortar las maquinas virtuales importantes que tenemos como el que contiene el docker.
 
-• Error humano:
+• Error humano: 
 
+Sobrescritura de archivos PHP/CSS críticos sin tener copia previa.
 
+• Ataque (malware, ransomware): 
 
-• Ataque (malware, ransomware):
-
-
+Infección que encripte o dañe los archivos del servidor web.
 
 </details>
 
@@ -1138,24 +1150,21 @@ Ante un fallo de hardware nos podria afectar dentro de las maquinas virtuales ya
 
 Qué hacer en cada caso:
 
-• Caída del servidor:
+• Incidencia: Caída de servicios (Nginx/Pi-hole)
 
+   1.Acceder a Portainer y revisar el estado de los contenedores.
 
+   2.Reiniciar los contenedores afectados.
 
-• Pérdida de conexión a internet:
+   3.Verificar logs de Docker para identificar la causa.
 
+• Incidencia: Fallo de VM o Hardware
 
+   1.Notificar al compañero y tutores.
 
-• Fallo de hardware:
+   2.Recuperar la última exportación/snapshot de la VM.
 
-
-
-• Error humano:
-
-
-
-• Ataque (malware, ransomware):
-
+   3.Restaurar archivos desde el disco duro de respaldo o nube.
 
 </details>
 
@@ -1170,7 +1179,7 @@ Tendriamos que volver a instalar nuevamente todas las maquinas virtuales configu
 
 • Reconfiguración de servicios:
 
-Por cada servicio que teniamos volverla a configurar como lo habiamos hecho anteriormente.
+Por cada servicio que tendriamos que volver a configurar todo como lo habiamos hecho anteriormente y aplicar los parámetros de IP estáticas y puertos guardados en la documentación de Portainer.
 
 • Verificación del funcionamiento:
 
@@ -1178,13 +1187,9 @@ A la hora de verificar que todo vuelva a la normalidad tendriamos que entrar den
 
 Añadir tiempos:
 
-• Tiempo máximo de recuperación(RTO):
+• Tiempo máximo de recuperación(RTO): Máximo 4 horas.
 
-
-
-• Pérdida de datos aceptable(RPO):
-
-
+• Pérdida de datos aceptable(RPO): Máximo 24 horas
 
 </details>
 
@@ -1193,21 +1198,21 @@ Añadir tiempos:
 
 Detallar:
 
-• Tipo de backup:
+• Tipo de backup: 
 
+Copia completa de archivos y Snapshots de las VMs.
 
+• Frecuencia: 
 
-• Frecuencia:
+Semanal (o por cada avance que hagamos).
 
+• Ubicación: 
 
+Disco local D o una copia externa
 
-• Ubicación:
+• Herramientas utilizadas: 
 
-
-
-• Herramientas utilizadas:
-
-
+Exportación de configuraciones de Portainer, copiado manual de archivos y snapshots de VirtualBox/VMware.
 
 </details>
 
@@ -1216,29 +1221,31 @@ Detallar:
 
 Para evitar problemas:
 
-• Antivirus / Firewall:
+• Antivirus / Firewall: 
 
+Configuración básica para permitir solo el tráfico necesario (80, 443, 53).
 
+• Actualizaciones: 
 
-• Actualizaciones:
-
-
+Mantener las imágenes de Docker actualizadas a versiones estables.
 
 • Control de accesos:
 
-
+Uso de contraseñas seguras en Portainer y MySQL.
 
 • Monitorización:
 
-
+Revisión periódica de los recursos consumidos por los contenedores.
 
 </details>
 
 <details>
 <summary><h3>11.Responsables</h3></summary>
 
-
-
+| Rol | Persona | Función |
+| :--- | :--- | :--- |
+| **Administrador de Sistemas** | Raul Reyes | Gestión de VMs, Docker y Backups y Nginx. |
+| **Técnico de Soporte y Web** | Ignasi Merino | Resolución de incidencias web y red. |
 
 </details>
 
@@ -1266,17 +1273,13 @@ Si estamos en classe intentar hacer que venga lo antes posible para que diga que
 
 Validar el plan:
 
-• Simulación de fallos:
+• Simulación: 
 
-Tendriamos que plantear antes los fallos mas graves que podrian pasar antes de validar este plan.
+Apagado forzado de la VM para verificar el tiempo de arranque y recuperación de contenedores.
 
-• Resultados obtenidos:
+• Verificación de Backup: 
 
-
-
-• Mejoras detectadas:
-
-
+Intentar restaurar una copia de los archivos PHP en una carpeta distinta para confirmar que no están corruptos.
 
 </details>
 
@@ -1291,23 +1294,18 @@ Todo el plan de contingencia lo revisariamos cada 2 semanas o 1 semana, depende 
 
 • Quién lo actualiza:
 
-Hasta que no pase algo muy grave o algo parecido creo que no haria falta actualizarla, mientras todo este seguro correctamente no haria falta preocuparse.
+Hasta que no pase algo muy grave o algo parecido creo que no haria falta actualizarla, mientras todo este seguro correctamente no haria falta preocuparse. Los dos nos encargamos de actualizarlo.
 
 </details>
 
 <details>
 <summary><h3>15.Mejoras futuras</h3></summary>
 
-• Automatización de recuperación:
+• Implementar un sistema de backups automatizado mediante scripts.
 
+• Configurar un segundo servidor Nginx en modo redundante.
 
-
-• Sistemas redundantes:
-
-
-
-• Mejora de seguridad:
-
+• Uso de Git (GitHub/GitLab) para un control de versiones más estricto del código.
 
 
 </details>
