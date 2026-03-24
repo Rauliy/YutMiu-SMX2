@@ -25,7 +25,11 @@
 
 11-.Bibliografía
 
-12-.Arduino
+12-.Plan de Contingencia
+
+-.Actividades Arduino
+
+-.Proyecto Arduino
 
 <details>
 <summary><h1>1. Introducción</h1></summary>
@@ -567,7 +571,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
 <summary><h1>8.Servicios</h1></summary>
 
 ¿Qué función cumple exactamente este servicio dentro de la red?
-
+-
 
 <details>
   
@@ -1044,22 +1048,23 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 <summary><h1>12.Plan de contingencia</h1></summary>
 
 <details>
-<summary><h3>1.Datos generales</h3></summary>
+<summary><h3>12.1.Datos generales</h3></summary>
 
 • Nombre del proyecto: YutMiu
 
 • Alumno(s): Raul Reyes y Ignasi Merino
 
-• Fecha: 18/03/2026
+• Fecha: 20/03/2026
 
 • Versión del documento: 1.0
 
-• Descripción breve del sistema: Infraestructura web basada en contenedores Docker, gestionada con Portainer, que incluye servicios de red con el Pi-hole y DNSmasq, un servidor web Nginx y una aplicación PHP con base de datos MySQL.
+• Descripción breve del sistema: Infraestructura web basada en contenedores Docker, gestionada con Portainer, 
+que incluye servicios de red con el Pi-hole y DNSmasq, un servidor web Nginx y una aplicación PHP con base de datos MySQL.
 
 </details>
 
 <details>
-<summary><h3>2.Objetivo del plan</h3></summary>
+<summary><h3>12.2.Objetivo del plan</h3></summary>
 
 - ¿Para qué sirve este plan?
 
@@ -1072,7 +1077,7 @@ Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que 
 </details>
 
 <details>
-<summary><h3>3.Alcance</h3></summary>
+<summary><h3>12.3.Alcance</h3></summary>
 
 Indica qué cubre este plan:
 
@@ -1089,7 +1094,7 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 </details>
 
 <details>
-<summary><h3>4.Identificaión de activos</h3></summary>
+<summary><h3>12.4.Identificaión de activos</h3></summary>
 
 | Activo | Tipo | Importancia |
 | :--- | :--- | :--- |
@@ -1105,7 +1110,7 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 </details>
 
 <details>
-<summary><h3>5.Análisis de riesgos</h3></summary>
+<summary><h3>12.5.Análisis de riesgos</h3></summary>
 
 | Riesgo | Probabilidad | Impacto | Nivel de riesgo |
 | :--- | :--- | :--- | :--- |
@@ -1119,7 +1124,7 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 </details>
 
 <details>
-<summary><h3>6.Escenarios de contingencia</h3></summary>
+<summary><h3>12.6.Escenarios de contingencia</h3></summary>
 
 Descripcion de situaciones reales que podrian suceder y afectar a los servicios de nuestra web:
 
@@ -1137,16 +1142,16 @@ Ante un fallo de hardware nos podria afectar dentro de las maquinas virtuales ya
 
 • Error humano: 
 
-Sobrescritura de archivos PHP/CSS críticos sin tener copia previa.
+Sobrescritura de archivos PHP/CSS críticos sin tener una copia.
 
 • Ataque (malware, ransomware): 
 
-Infección que encripte o dañe los archivos del servidor web.
+Infección que encripte o afecte a los archivos del servidor web.
 
 </details>
 
 <details>
-<summary><h3>7.Plan de respuesta</h3></summary>
+<summary><h3>12.7.Plan de respuesta</h3></summary>
 
 Qué hacer en cada caso:
 
@@ -1164,18 +1169,18 @@ Qué hacer en cada caso:
 
    2.Recuperar la última exportación/snapshot de la VM.
 
-   3.Restaurar archivos desde el disco duro de respaldo o nube.
+   3.Intentar restaurar archivos desde el disco duro de respaldo o nube.
 
 </details>
 
 <details>
-<summary><h3>8.Plan de recuperación</h3></summary>
+<summary><h3>12.8.Plan de recuperación</h3></summary>
 
 Cómo volver a la normalidad:
 
 • Restauración de sistemas:
 
-Tendriamos que volver a instalar nuevamente todas las maquinas virtuales configurar todo y nuevamente.
+Tendriamos que volver a instalar nuevamente todas las maquinas virtuales volver a configurar todo nuevamente.
 
 • Reconfiguración de servicios:
 
@@ -1194,7 +1199,7 @@ Añadir tiempos:
 </details>
 
 <details>
-<summary><h3>9.Copias de seguridad</h3></summary>
+<summary><h3>12.9.Copias de seguridad</h3></summary>
 
 Detallar:
 
@@ -1217,7 +1222,7 @@ Exportación de configuraciones de Portainer, copiado manual de archivos y snaps
 </details>
 
 <details>
-<summary><h3>10.Medidas preventivas</h3></summary>
+<summary><h3>12.10.Medidas preventivas</h3></summary>
 
 Para evitar problemas:
 
@@ -1227,7 +1232,7 @@ Configuración básica para permitir solo el tráfico necesario (80, 443, 53).
 
 • Actualizaciones: 
 
-Mantener las imágenes de Docker actualizadas a versiones estables.
+Mantener las imágenes de Docker actualizadas.
 
 • Control de accesos:
 
@@ -1240,7 +1245,7 @@ Revisión periódica de los recursos consumidos por los contenedores.
 </details>
 
 <details>
-<summary><h3>11.Responsables</h3></summary>
+<summary><h3>12.11.Responsables</h3></summary>
 
 | Rol | Persona | Función |
 | :--- | :--- | :--- |
@@ -1250,7 +1255,7 @@ Revisión periódica de los recursos consumidos por los contenedores.
 </details>
 
 <details>
-<summary><h3>12.Plan de comunicación</h3></summary>
+<summary><h3>12.12.Plan de comunicación</h3></summary>
 
 En caso de fallo:
 
@@ -1269,7 +1274,7 @@ Si estamos en classe intentar hacer que venga lo antes posible para que diga que
 </details>
 
 <details>
-<summary><h3>13.Pruebas del plan</h3></summary>
+<summary><h3>12.13.Pruebas del plan</h3></summary>
 
 Validar el plan:
 
@@ -1284,7 +1289,7 @@ Intentar restaurar una copia de los archivos PHP en una carpeta distinta para co
 </details>
 
 <details>
-<summary><h3>14.Mantenimiento del plan</h3></summary>
+<summary><h3>12.14.Mantenimiento del plan</h3></summary>
 
 Indicar:
 
@@ -1299,19 +1304,19 @@ Hasta que no pase algo muy grave o algo parecido creo que no haria falta actuali
 </details>
 
 <details>
-<summary><h3>15.Mejoras futuras</h3></summary>
+<summary><h3>12.15.Mejoras futuras</h3></summary>
 
 • Implementar un sistema de backups automatizado mediante scripts.
 
-• Configurar un segundo servidor Nginx en modo redundante.
+• Configurar un segundo servidor Nginx por si acaso.
 
-• Uso de Git (GitHub/GitLab) para un control de versiones más estricto del código.
+• Uso de GitHub para un control de versiones más estricto del código.
 
 
 </details>
 
 <details>
-<summary><h3>16.Conclusiones</h3></summary>
+<summary><h3>12.16.Conclusiones</h3></summary>
 
 Reflexión:
 
