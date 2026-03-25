@@ -2535,7 +2535,8 @@ Lo que hace es medir la distancia a los objetos enviando un pulso de sonido.
 
 Este seria nuestro diagrama de flujo con todos los componentes que vamos a utilizar:
 
-Aqui deberia ir la foto pero no se por que motivo no se pone, te la paso por el campus.     
+<img width="2090" height="1516" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/49c734c8-eb91-45da-8dc3-c732ce930712" />
+
 
 </details>
 
