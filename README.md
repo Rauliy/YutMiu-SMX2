@@ -3,36 +3,36 @@
 
 ## Índice:
 
-1-.Introducción
+1.Introducción
 
-2-.Briefing 
+2.Briefing 
 
-3-.Materiales físicos y lógicos
+3.Materiales físicos y lógicos
 
-4-.Arquitectura del software
+4.Arquitectura del software
 
-5-.Tecnologías a utilizar
+5.Tecnologías a utilizar
 
-6-.Red
+6.Red
 
-7-.Web
+7.Web
 
-8-.Servicios
+8.Servicios
 
-9-.Conclusiones
+9.Conclusiones
 
-10-.Webgrafia
+10.Webgrafia
 
-11-.Bibliografía
+11.Bibliografía
 
-12-.Plan de Contingencia
+12.Plan de Contingencia
 
--.Actividades Arduino
+-Actividades Arduino
 
--.Proyecto Arduino
+-Proyecto Arduino
 
 <details>
-<summary><h1>1. Introducción</h1></summary>
+<summary><h1>1.Introducción</h1></summary>
 
 Nuestra web va a tratar sobre música en streaming y donde los usuarios puedan ir comentando y recomendando sus canciones preferidas y dar sus opiniones respecto a la música que han escuchado. 
 o que les han recomendado. Va a tener un extenso catálogo de canciones de diferentes estilos para satisfacer a las personas que utilicen nuestra página. 
@@ -40,7 +40,8 @@ Queremos que nuestros usuarios disfruten compartiendo sus canciones favoritas, o
 
 Somos un equipo de dos estudiantes que queremos hacer una web de música y hemos estado buscando webs y aplicaciones con este tipo de contenido para inspirarnos. Contenidos del tipo: música, opiniones y valoraciones de las canciones disponibles en la web.
 
-##¿Qué funcionalidades ofrecerá a los usuarios?
+¿Qué funcionalidades ofrecerá a los usuarios?
+-
 
 Las funciones que vamos a implementar en nuestra página web van a ser:
 
@@ -52,33 +53,57 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuánto te ha gustado.
 
-  Los datos que se deben guardar serán los siguientes:
+Los datos que se deben guardar serán los siguientes:
+-
+
 El nombre del usuario:
-Correo electrónico o/e teléfono
-Edad y para que lo quiere utilizar la web
-Contraseña
-Fecha de registro
-Musica publicada 
-Comentarios publicados
-Música que ha estado escuchando los últimos 7 días
+  
+- Correo electrónico o/e teléfono
+  
+- Edad y para que lo quiere utilizar la web
+  
+- Contraseña
+  
+- Fecha de registro
+  
+- Musica publicada
+  
+- Comentarios publicados
+  
+- Música que ha estado escuchando los últimos 7 días
+  
+
 Datos de la web:
-Música que hay publicada.
-Comentarios publicados con fecha y hora.
-Usuarios registrados
-Usuarios conectados
-Gente que ha descubierto un easter egg con una canción especial
-Y un registro de las canciones más escuchadas y menos escuchadas
-Valoración mediante un sistema de puntuación que utilizaremos en la web.
-Para el tiempo→DATETIME
-Para la fecha y la hora→Date
-Puntuación de las canciones→Utilizaremos un sistema llamado Float o Decimal para números más precisos.
-Comentarios publicados→ Date y Text
 
-##¿Cómo se relacionan unas entidades con otras?
-En nuestra web implementaremos una función para poder hablar y compartir músicas. Para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga. También se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
+- Música que hay publicada
+  
+- Comentarios publicados con fecha y hora
+  
+- Usuarios registrados
+  
+- Usuarios conectados
+  
+- Gente que ha descubierto un easter egg con una canción especial
+  
+- Y un registro de las canciones más escuchadas y menos escuchadas
+  
+- Valoración mediante un sistema de puntuación que utilizaremos en la web
+
+- Para el tiempo→DATETIME
+
+- Para la fecha y la hora→Date
+
+- Puntuación de las canciones→Utilizaremos un sistema llamado Float o Decimal para números más precisos.
+
+- Comentarios publicados→ Date y Text
 
 
-##Registro en la tabla Usuario:
+¿Cómo se relacionan unas entidades con otras?
+-
+
+En nuestra web implementaremos una función para poder hablar y compartir músicas pero para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga, también se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
+
+Registro en la tabla Usuario:
 
 Nombre: Juan Pérez
 
@@ -102,7 +127,7 @@ Chats de amigos
 </details>
 
 <details>
-<summary><h1>2. Briefing</h1></summary>
+<summary><h1>2.Briefing</h1></summary>
 
 Estas eran unas de las propuestas que teníamos antes de decidirnos.
 
@@ -117,15 +142,15 @@ Estas eran unas de las propuestas que teníamos antes de decidirnos.
 Al final vamos a combinar algunas de estas ideas; vamos a hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando músicas y dar sus opiniones respecto a la 
 música que han escuchado o que les han recomendado. Básicamente, hemos escogido hacer esto porque a ambos nos gusta la música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
 
-##Objetivos del Proyecto.
+Objetivos del Proyecto:
 Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda disfrutar y gaudir de este proyecto, ya que lo que buscamos es que la gente la utilice y no solo ara que sea para un proyecto sino que queremos que se utilice de verdad, yo creo que si le ponemos empeño lo podremos lograr.
 Objetivo del Publico.
 
 Nosotros queremos llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
 
-##Material Necesario.
-Vamos a utilizar una app externa que funciona mediante comandos que se llama FFMpeg
-También necesitaremos una base de datos, un docker, y máquinas virtuales que hagan de servidores para dar seguridad y estabilidad a nuestra web.
+Material Necesario:
+Vamos a utilizar una app externa que funciona mediante comandos que se llama FFMpeg que sirve para comprimir audios o videos a diferente formato,
+también necesitaremos una base de datos, un docker, y máquinas virtuales que hagan de servidores para dar seguridad y estabilidad a nuestra web.
 
 </details>
 
@@ -137,7 +162,6 @@ También necesitaremos una base de datos, un docker, y máquinas virtuales que h
 Para este proyecto vamos a usar sobre todo dos ordenadores.
 En uno de ellos tendremos montado un servidor Linux en  VirtualBox, que es donde vamos a usar FFmpeg para convertir música antes de subirla a nuestra web.
 También instalaremos Docker Desktop porque nos va a hacer falta para levantar la web y otros servicios sin tener que instalarlos a mano uno por uno.
-
 En el segundo ordenador trabajaremos todo lo relacionado con el diseño de la página web, y además vamos a montar Pi-hole, que lo usaremos como servidor DNS y DHCP para que toda la red del proyecto esté controlada y funcione como toca.
 
 </details>
@@ -183,7 +207,8 @@ Proxmox (si es posible) → administración avanzada de máquinas virtuales.
 <summary><h1>6.Red</h1></summary>
 Aquí podemos ver cómo vamos a organizar la web y los servidores correspondientes:
 
-a.Diagrama de la red:
+Diagrama de la red:
+-
 
 <img width="905" height="749" alt="image" src="https://github.com/user-attachments/assets/82f3d9ba-9db0-4032-8da3-78f2baa8cc26" />
 
@@ -217,7 +242,7 @@ Utilidades:
 <details>
 <summary><strong>Tabla de tecnologías</strong></summary>
 Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web:
-## Lista de objetivos y funcionalidades del proyecto
+Lista de objetivos y funcionalidades del proyecto
 
 | ID  | Prioridad | Objetivo / Funcionalidad | Descripción                                                                                                                                                                                                 | Fecha Entrega   | Estado     |
 |-----|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------|
@@ -575,7 +600,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 <details>
   
-<summary><h4>1. DNS y pi-hole:</h4></summary>
+<summary><h4>8.1.DNS y pi-hole:</h4></summary>
 
   
 Primero de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas. Para poder gestion el DNS i el DHCP lo que hemos hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
@@ -601,7 +626,7 @@ correctamente.
 
 <details>
   
-<summary><h4>2. DHCP y Dnsmasq :</h4></summary>
+<summary><h4>8.2.DHCP y Dnsmasq :</h4></summary>
 
 El DHCP es un servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que vamos a utilizar es porque permite la configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
 
@@ -611,7 +636,7 @@ Dnsmasq es una herramienta sencilla pero poderosa, diseñada para proporcionar s
 
 <details>
   
-<summary><h4>3. Docker:</h4></summary>
+<summary><h4>8.3.Docker:</h4></summary>
 
 Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
 
@@ -623,7 +648,7 @@ Su principal diferencia es que Docker Desktop por sí solo proporciona una base 
 
 <details>
   
-<summary><h4>4. MySQL:</h4></summary>
+<summary><h4>8.4.MySQL:</h4></summary>
 
 MySQL es un sistema de gestión de bases de datos de codigo abierto que base de datos relacional que permite almacenar, organizar, recuperar datos de manera eficiente y es perfecto para guardar: Datos de usuarios (nombre, email, contraseñas encriptadas, etc...), Inventarios de productos, Transacciones de ventas y Registros históricos o logs. Tambien no permite aplicar reglas de integridad referencial, relaciones entre tablas y control de accesos para garantizar la coherencia y seguridad de la información. Uno de los 
 usos más comunes de MySQL es como base de datos para aplicaciones web dinámicas.
@@ -765,7 +790,7 @@ WHERE id_lista = 116;
 
 <details>
   
-<summary><h4>5. Nginx:</h4></summary>
+<summary><h4>8.5.Nginx:</h4></summary>
 
 NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
 
@@ -773,7 +798,7 @@ NGINX es un software de código abierto que se utiliza para servidores web, prox
 
 <details>
   
-<summary><h4>6. PHP:</h4></summary>
+<summary><h4>8.6.PHP:</h4></summary>
 
 PHP es un lenguaje de programación de código abierto diseñado para el desarrollo web que se ejecuta en el servidor, permitiendo crear sitios web dinámicos, interactivos y con conexión a bases de datos.
 
@@ -799,7 +824,7 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
 
 <details>
   
-<summary><h4>7. Ffmpeg:</h4></summary>
+<summary><h4>8.7.Ffmpeg:</h4></summary>
 
 Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
 este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado dentro del ubuntu. 
@@ -812,7 +837,7 @@ Ffmpeg para como tanto para obtener información de un archivo multimedia, como 
 
 <details>
 
-<summary><h4>8. TrueNAS:</h4></summary>
+<summary><h4>8.8.TrueNAS:</h4></summary>
 
 TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
 
@@ -827,13 +852,21 @@ Principales características las principales caracteristicas por lo que utilizam
 - No es necesario tener conectado monitor ni teclado para su operación
 
 Ahora estamos instalando el TrueNAS dentro de una maquina virtual con la iso del Truenas.
+
 <img width="637" height="564" alt="image" src="https://github.com/user-attachments/assets/47f34bb2-9344-4fc2-94d3-270b47e2c07c" />
 
 Despues de instalar el Truenas tenemos que configurarlo correctamente para mas adelante poderlo abrir dentro de un navegador.
+
 <img width="1212" height="839" alt="image" src="https://github.com/user-attachments/assets/4d9d37db-ca06-47c3-9f44-be53fc761b5b" />
 
-Y tras configurarlo todo y haber accedido al TrueNAS des de navegador nos permitira crear pools de almacenamiento seguros con ZFS, gestionar copias de seguridad en la nube, correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operativos.
+Y tras configurarlo todo y haber accedido al TrueNAS des de navegador nos permitira crear pools de almacenamiento seguros con ZFS, gestionar copias de seguridad en la nube, 
+correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operativos.
+
 <img width="1434" height="735" alt="image" src="https://github.com/user-attachments/assets/ead62b99-b029-42fb-941a-6af1ef9e1b37" />
+
+Ahora estamos creando una carpeta dentro de nuestra carpeta del proyecto y haciendo Backup a los archivos mas importantes que seria la base de datos, a la carpeta del servidor y al Portainer.
+
+<img width="1097" height="619" alt="image" src="https://github.com/user-attachments/assets/41066dae-0a6f-451b-abae-dd6b8ab048ef" />
 
 Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto seria:
 
@@ -855,7 +888,7 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 <details>
   
-<summary><h4>9. PfSense:</h4></summary>
+<summary><h4>8.9.PfSense:</h4></summary>
 
 PfSense es una plataforma de firewall y enrutador de código abierto basada en FreeBSD, utilizada para asegurar, gestionar y controlar redes.
 
@@ -875,20 +908,49 @@ Dentro de PfSense hemos configurado lo siguiente:
 Port Forward
 -
 
+El port forwarding sirve para acceder al router que permite a dispositivos externos en internet acceder a servicios específicos dentro de tu red local privada,
+y lo que hemos hecho a sido conectar todos los servicios que tenemos con sus respectivas ip y puertos para que todo este conectado entre si.
+
+Tambien ofrece estas funciones:
+
+- Acceso remoto: Permite conectar con equipos de la red doméstica desde cualquier lugar.
+
+- Alojamiento de servicios: Facilita la creación de servidores web, de correo, FTP o de aplicaciones en una red local, haciéndolos accesibles al público.
+
 <img width="1423" height="735" alt="image" src="https://github.com/user-attachments/assets/af6f1c80-f76e-4079-b02d-4357f47e4acf" />
 
-
-
-Redes WAN y LAN:
+Red WAN:
 -
+
+Tambien hemos conectado todos los servicios a la red WAN para conectar la red a internet.
+
+Tambien ofrece estas funciones:
+
+- Función: Recibe la conexión del módem de tu proveedor de servicios de internet.
+
+- Uso: Generalmente obtiene una IP pública o dinámica para acceder a internet.
+
+- Seguridad: PfSense bloquea todo el tráfico entrante no solicitado en la WAN para proteger la red interna.
+
+- Túneles de seguridad: Permite redirigir tráfico inseguro a través de un canal cifrado seguro.
 
 <img width="1421" height="735" alt="image" src="https://github.com/user-attachments/assets/30ae14c0-d1da-4004-9dd8-d19f4c5c9493" />
 
+Red LAN:
+-
 
+Y LAN conecta tus dispositivos locales al firewall.
+
+Tambien ofrece estas funciones:
+
+- Función: Se conecta a los dispositivos internos.
+  
+- Uso: Proporciona IPs locales a tus dispositivos y gestiona el tráfico interno.
+  
+- Seguridad: Por defecto, confía en el tráfico interno y permite el acceso hacia la WAN.
+  
 
 <img width="1418" height="734" alt="image" src="https://github.com/user-attachments/assets/b308c873-96aa-4259-a4c7-1f401c889bed" />
-
-
 
 
 </details>
