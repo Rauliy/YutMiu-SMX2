@@ -853,6 +853,46 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 </details>
 
+<details>
+  
+<summary><h4>9. PfSense:</h4></summary>
+
+PfSense es una plataforma de firewall y enrutador de código abierto basada en FreeBSD, utilizada para asegurar, gestionar y controlar redes.
+
+Los principales usos que le daremos al PfSense seran:
+
+- Firewall de alto nivel: Gestiona el tráfico de red basado en reglas, filtrando conexiones para mejorar la seguridad.
+
+- Servicios de Red: Funciona como servidor DHCP, servidor DNS, y proxy.
+
+- Servidor VPN: Soporta conexiones seguras mediante protocolos como OpenVPN e IPsec, permitiendo el acceso remoto seguro.
+
+Ahora mismo todo el PfSense esta instalado detro de una maquina virtual con el sistema operativo FreeBSD y con un adaptador puente y una red interna 
+y accedemos a el poniendo la ip de la red interna dentro de un navegador.
+
+Dentro de PfSense hemos configurado lo siguiente:
+
+Port Forward
+-
+
+<img width="1423" height="735" alt="image" src="https://github.com/user-attachments/assets/af6f1c80-f76e-4079-b02d-4357f47e4acf" />
+
+
+
+Redes WAN y LAN:
+-
+
+<img width="1421" height="735" alt="image" src="https://github.com/user-attachments/assets/30ae14c0-d1da-4004-9dd8-d19f4c5c9493" />
+
+
+
+<img width="1418" height="734" alt="image" src="https://github.com/user-attachments/assets/b308c873-96aa-4259-a4c7-1f401c889bed" />
+
+
+
+
+</details>
+
 ¿En qué equipo se instala y qué requisitos necesita?
 -
 
