@@ -103,25 +103,25 @@ Datos de la web:
 
 En nuestra web implementaremos una función para poder hablar y compartir músicas pero para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga, también se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
 
-Registro en la tabla Usuario:
+- Registro en la tabla Usuario:
 
-Nombre: Juan Pérez
+- Nombre: Juan Pérez
 
-Email: juanp@gmail.com
+- Email: juanp@gmail.com
 
-Fecha de registro: 10/09/2025
+- Fecha de registro: 10/09/2025
 
-Amigos conectados: 2 amigos online
+- Amigos conectados: 2 amigos online
 
-Amigos deconectados:0 amigos offline
+- Amigos deconectados:0 amigos offline
 
-Listas de música
+- Listas de música
 
-Horas que has estado utilizando la aplicación:367 horas
+- Horas que has estado utilizando la aplicación:367 horas
 
-Publicaciones subidas en los ultimos 7 dias: Comentario→ “Hola” 
+- Publicaciones subidas en los ultimos 7 dias: Comentario→ “Hola” 
 
-Chats de amigos
+- Chats de amigos
 
   
 </details>
@@ -129,26 +129,30 @@ Chats de amigos
 <details>
 <summary><h1>2.Briefing</h1></summary>
 
-Estas eran unas de las propuestas que teníamos antes de decidirnos.
+Propuestas iniciales y objetivos:
+-
 
-1-Hacer como una especie de Spotify pero sin anuncios.
+1- Hacer como una especie de Spotify pero sin anuncios.
 
-2-Hacer una web como YouTube.
+2- Hacer una web como YouTube.
 
-3-Hacer una especie de chat.
+3- Hacer una especie de chat.
 
-4-Hacer un foro de opiniones como Reddit.
+4- Hacer un foro de opiniones como Reddit.
 
 Al final vamos a combinar algunas de estas ideas; vamos a hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando músicas y dar sus opiniones respecto a la 
 música que han escuchado o que les han recomendado. Básicamente, hemos escogido hacer esto porque a ambos nos gusta la música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
 
 Objetivos del Proyecto:
+-
+
 Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda disfrutar y gaudir de este proyecto, ya que lo que buscamos es que la gente la utilice y no solo ara que sea para un proyecto sino que queremos que se utilice de verdad, yo creo que si le ponemos empeño lo podremos lograr.
 Objetivo del Publico.
 
 Nosotros queremos llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
 
 Material Necesario:
+-
 Vamos a utilizar una app externa que funciona mediante comandos que se llama FFMpeg que sirve para comprimir audios o videos a diferente formato,
 también necesitaremos una base de datos, un docker, y máquinas virtuales que hagan de servidores para dar seguridad y estabilidad a nuestra web.
 
@@ -179,27 +183,29 @@ Además de todo esto, deseamos establecer una VPN con Cloudflare, emplear Nginx 
 
 <details>
 <summary><h1>5.Tecnologías a utilizar</h1></summary>
-A continuación, podréis observar una lista  más detallada de todas las tecnologías que utilizaremos :
+  
+Lista detallada de todas las tecnologías que utilizaremos:
+-
 
-Visual Studio Code → para el desarrollo web.
+- Visual Studio Code → para el desarrollo web.
 
-HTML, CSS y JavaScript → con el propósito de diseñar y hacer que el sitio funcione.
+- HTML, CSS y JavaScript → con el propósito de diseñar y hacer que el sitio funcione.
 
-Docker Desktop → para trabajar con Apache, MySQL, contenedores y servicios.
+- Docker Desktop → para trabajar con Apache, MySQL, contenedores y servicios.
 
-MySQL → base de datos para web.
+- MySQL → base de datos para web.
 
-Apache / Nginx → servidor de la web y proxy inverso.
+- Apache / Nginx → servidor de la web y proxy inverso.
 
-Pi-hole → servidor de DHCP y DNS.
+- Pi-hole → servidor de DHCP y DNS.
 
-FFmpeg → administración y transformación de audio para su transmisión en línea.
+- FFmpeg → administración y transformación de audio para su transmisión en línea.
 
-Linux (en VirtualBox) → Servidor destinado a FFmpeg.
+- Linux (en VirtualBox) → Servidor destinado a FFmpeg.
 
-VPN de Cloudflare → acceso a distancia y seguridad.
+- VPN de Cloudflare → acceso a distancia y seguridad.
 
-Proxmox (si es posible) → administración avanzada de máquinas virtuales.
+- Proxmox (si es posible) → administración avanzada de máquinas virtuales.
 
 </details>
 
@@ -212,17 +218,18 @@ Diagrama de la red:
 
 <img width="905" height="749" alt="image" src="https://github.com/user-attachments/assets/82f3d9ba-9db0-4032-8da3-78f2baa8cc26" />
 
-##Estructura básica de la red
+Asi es como tenemos estructurada nuestra red.
 
-Esto seria nuestra estructura sobre la web.
+Estructura básica de la red
+-
 
 <img width="606" height="340" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
 
-Hemos organizado la importancia de cada tabla con core(Tabla principal), subtablas i utilidades.
+Hemos organizado la importancia de cada tabla con core (Tabla principal), subtablas y utilidades.
 
 Core:
 -
-- En nuestra web la tabla de musica seria la tabla principal porque basicamente es la funcion principal de nuestra pagina web. 
+En nuestra web la tabla de musica seria la tabla principal porque basicamente es la funcion principal de nuestra pagina web. 
 
 Subtablas:
 -
@@ -239,69 +246,57 @@ Utilidades:
 <img width="906" height="709" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
 
+ Listado de tareas sobre como nos lo vamos a montar y organizar nuestro proyecto:
+ -
+
 <details>
-<summary><strong>Tabla de tecnologías</strong></summary>
-Luego aqui podeis observar las funcionalidades de la Arquitectura de nuestra web:
-Lista de objetivos y funcionalidades del proyecto
-
-| ID  | Prioridad | Objetivo / Funcionalidad | Descripción                                                                                                                                                                                                 | Fecha Entrega   | Estado     |
-|-----|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------|
-| ID0 | Alta      | Registro de usuarios      | Esta opción es súper importante porque si inicias sesión podrás tener todas las funciones de la web: listas de música, amigos, valoraciones… Sin iniciar sesión solo podrás escuchar canciones.             | 20/02/2026      | Pendiente  |
-| ID1 | Alta      | Músicas (Reproducción)   | Es lo más básico de la web. Sin esto la web no sirve. Utilizaremos **FFmpeg** para poder subir y escuchar música en streaming. Es lo que hace que todo el sistema funcione.                                 | —               | Pendiente  |
-| ID2 | Alta      | Listas de música          | Los usuarios podrán guardar sus canciones favoritas en playlists personalizadas. Podrán tener varias listas diferentes según sus gustos.                                                                     | —               | Pendiente  |
-| ID3 | Media     | Amigos y chats            | Los usuarios podrán añadirse como amigos, hablar por chat y enviarse música por ahí. Esto hace la web más social y divertida.                                                                                | —               | Pendiente  |
-| ID4 | Media     | Valoraciones              | Los usuarios podrán poner notas a las canciones (de 1 a 5). Así se puede ver qué canciones molan más para la comunidad.                                                                                     | —               | Pendiente  |
-| ID5 | Alta      | Buscador                  | Función clave para que la gente encuentre música rápido. Podrá buscar canciones por título, artista, playlists, etc.                                                                                        | —               | Pendiente  |
-| ID6 | Alta      | Perfil de usuario         | Aquí el usuario podrá ver y editar su perfil: cambiar la descripción, foto, ver sus valoraciones, comentarios, etc. También podrá ver el perfil de sus amigos.                                               | —               | Pendiente  |
-</details>
- Luego aqui teneis un listado de tareas sobre como nos lo vamos a monatar y organizar en nuestro proyecto:
- Objetivo 1: Implementar un servidor web
-
+<summary><h4>Objetivo1: Implementar un servidor web:</h4></summary>
+Objetivo 1: Implementar un servidor web
+  
 - 1.1
  [Raul] Instalar y configurar el servidor básico.
  CP1.2 – Que el servidor funcione en red.
+
+
 - 1.2
  [Raul] Configurar los permisos de los usuarios y cosas de seguridad.
  CP1.2 – Que el sistema operativo en red esté listo y seguro.
+
+
 - 1.3
  [Ignasi] Instalar y configurar los servicios web: NGINX, base de datos, PHP y PHPMYADMIN.
  CP3.1.1 – Que todo el servidor web funcione sin problemas.
 Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar todo listo para que los usuarios puedan subir canciones y playlists.
 
+</details>
+
+<details>
+<summary><h4>Objetivo2: Implementar un servidor web:</h4></summary>
 Objetivo 2: Programar la front-page
 
 - 2.1
  [Ignasi] Hacer la estructura del index.html con CSS.
  CP2.1.6 – Que se vea bien y que funcione todo en el navegador.
+
 - 2.2
 [Ignasi] Crear el header y el footer que se vean en todas las páginas.
  CP2.1.6 – Que todo sea consistente y fácil de usar.
+
 - 2.3
  [Raul] Hacer el formulario de contacto.
  CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
 Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
-<details>
-<summary><strong>Tecnologías y Componentes del Sistema</strong></summary>
-
-| Componente del sistema | Tecnología / Framework | Versión | Puerto | Descripción de uso o requisitos | Documentación |
-|------------------------|------------------------|---------|--------|---------------------------------|---------------|
-| Hardware | Procesador Intel + 8GB RAM | Última | 8080 / 3033 | Dos ordenadores: uno con Windows Server 2016 y otro con Linux Debian. Cada máquina virtual con 4GB de RAM. | — |
-| Sistema operativo | Linux Debian y Windows Server | Última | 8080 / 3033 | Linux Debian para los servicios principales y Windows Server 2016 para pruebas. | https://www.debian.org / https://www.microsoft.com |
-| Interfaz de usuario (Frontend) | HTML, CSS | HTML5 / CSS3 | 8080 / 3033 | Frontend hecho con HTML y CSS, que es lo que más dominamos. | https://developer.mozilla.org |
-| Lógica de negocio (Backend) | PHP | PHP 8.3 | 8080 / 3033 | Backend hecho con PHP, que es lo que estamos aprendiendo. | https://www.php.net |
-| Servidor web | Apache, Nginx | Última | 8080 / 3033 | Usamos Apache porque viene en Docker y Nginx por estabilidad. | https://httpd.apache.org / https://nginx.org |
-| Base de datos | MySQL | Última | 8080 / 3033 | Usamos MySQL porque es simple de configurar y funciona bien con Docker. | https://www.mysql.com |
-| Gestor de base de datos | PHPMyAdmin | Última | 8080 / 3033 | PHPMyAdmin porque es el que mejor sabemos utilizar. | https://www.phpmyadmin.net |
-| Servicios de APIs | REST | Última | 8080 / 3033 | Para conectar frontend y backend usaremos REST. | https://restfulapi.net |
-
 </details>
 
 Ahora vamos presentar el diagrama de la base de datos:
+-
 
-1. ¿Qué datos son necesarios para mi aplicación?
+<details>
+<summary><h4>1.¿Qué datos son necesarios para mi aplicación?</h4></summary>
 
 Para que mi app funcione bien necesitamos guardar varias cosas:
+
 - Usuarios → toda la info de cada persona que se registre (nombre, email, contraseña…).
 
 - Canciones → título, artista, archivo de música, duración, fecha de publicación…
@@ -314,9 +309,11 @@ Para que mi app funcione bien necesitamos guardar varias cosas:
 
 - Amigos → las relaciones entre usuarios, es decir, quién es amigo de quién.
 
+</details>
 
+<details>
+<summary><h4>2.¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?</h4></summary>
 
-2. ¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?
 Datos que voy a pedir al usuario:
 
 - Nombre de usuario
@@ -333,14 +330,71 @@ Tipos de usuarios:
 
 - Admin (opcional) → podría gestionar canciones, usuarios o comentarios si lo necesitamos.
 
+</details>
 
-
-3. ¿Qué tipo de dato necesitaré para cada información?
 
 <details>
-<summary><strong>Estructura de Base de Datos</strong></summary>
+<summary><h4>3.¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?</h4></summary>
 
-Tabla de datos y tipos (Base de datos)
+- Usuarios → id_usuario
+
+- Canciones → id_cancion
+
+- Playlists → id_playlist
+
+- Comentarios → id_comentario
+
+- Valoraciones → id_valoracion
+
+- Amigos → id_amigo
+
+Relaciones principales:
+
+- Una playlist pertenece a un usuario, así que un usuario puede tener muchas playlists.
+
+- Una canción puede estar en muchas playlists, por eso necesitamos una tabla intermedia tipo “playlist_cancion”.
+
+- Un comentario pertenece a un usuario y a una canción, para saber quién dijo qué y dónde.
+
+- Una valoración pertenece a un usuario y a una canción, para calcular la nota media.
+
+- Una relación de amigos une dos usuarios, así podemos ver quién es amigo de quién.
+
+</details>
+
+Lista de objetivos y funcionalidades del proyecto
+-
+
+| ID  | Prioridad | Objetivo / Funcionalidad | Descripción                                                                                                                                                                                                 | Fecha Entrega   | Estado     |
+|-----|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------|
+| ID0 | Alta      | Registro de usuarios      | Esta opción es súper importante porque si inicias sesión podrás tener todas las funciones de la web: listas de música, amigos, valoraciones… Sin iniciar sesión solo podrás escuchar canciones.             | 20/02/2026      | Pendiente  |
+| ID1 | Alta      | Músicas (Reproducción)   | Es lo más básico de la web. Sin esto la web no sirve. Utilizaremos **FFmpeg** para poder subir y escuchar música en streaming. Es lo que hace que todo el sistema funcione.                                 | —               | Pendiente  |
+| ID2 | Alta      | Listas de música          | Los usuarios podrán guardar sus canciones favoritas en playlists personalizadas. Podrán tener varias listas diferentes según sus gustos.                                                                     | —               | Pendiente  |
+| ID3 | Media     | Amigos y chats            | Los usuarios podrán añadirse como amigos, hablar por chat y enviarse música por ahí. Esto hace la web más social y divertida.                                                                                | —               | Pendiente  |
+| ID4 | Media     | Valoraciones              | Los usuarios podrán poner notas a las canciones (de 1 a 5). Así se puede ver qué canciones molan más para la comunidad.                                                                                     | —               | Pendiente  |
+| ID5 | Alta      | Buscador                  | Función clave para que la gente encuentre música rápido. Podrá buscar canciones por título, artista, playlists, etc.                                                                                        | —               | Pendiente  |
+| ID6 | Alta      | Perfil de usuario         | Aquí el usuario podrá ver y editar su perfil: cambiar la descripción, foto, ver sus valoraciones, comentarios, etc. También podrá ver el perfil de sus amigos.                                               | —               | Pendiente  |
+
+
+Tecnologías y Componentes del Sistema
+-
+
+| Componente del sistema | Tecnología / Framework | Versión | Puerto | Descripción de uso o requisitos | Documentación |
+|------------------------|------------------------|---------|--------|---------------------------------|---------------|
+| Hardware | Procesador Intel + 8GB RAM | Última | 8080 / 3033 | Dos ordenadores: uno con Windows Server 2016 y otro con Linux Debian. Cada máquina virtual con 4GB de RAM. | — |
+| Sistema operativo | Linux Debian y Windows Server | Última | 8080 / 3033 | Linux Debian para los servicios principales y Windows Server 2016 para pruebas. | https://www.debian.org / https://www.microsoft.com |
+| Interfaz de usuario (Frontend) | HTML, CSS | HTML5 / CSS3 | 8080 / 3033 | Frontend hecho con HTML y CSS, que es lo que más dominamos. | https://developer.mozilla.org |
+| Lógica de negocio (Backend) | PHP | PHP 8.3 | 8080 / 3033 | Backend hecho con PHP, que es lo que estamos aprendiendo. | https://www.php.net |
+| Servidor web | Apache, Nginx | Última | 8080 / 3033 | Usamos Apache porque viene en Docker y Nginx por estabilidad. | https://httpd.apache.org / https://nginx.org |
+| Base de datos | MySQL | Última | 8080 / 3033 | Usamos MySQL porque es simple de configurar y funciona bien con Docker. | https://www.mysql.com |
+| Gestor de base de datos | PHPMyAdmin | Última | 8080 / 3033 | PHPMyAdmin porque es el que mejor sabemos utilizar. | https://www.phpmyadmin.net |
+| Servicios de APIs | REST | Última | 8080 / 3033 | Para conectar frontend y backend usaremos REST. | https://restfulapi.net |
+
+
+Estructura de Base de Datos
+-
+
+Tabla de datos y tipos (Base de datos):
 
 ### Tabla: Usuarios
 | Información       | Tipo MySQL         | Descripción |
@@ -398,34 +452,6 @@ Tabla de datos y tipos (Base de datos)
 
 </details>
 
-
-4. ¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?
-- Usuarios → id_usuario
-
-- Canciones → id_cancion
-
-- Playlists → id_playlist
-
-- Comentarios → id_comentario
-
-- Valoraciones → id_valoracion
-
-- Amigos → id_amigo
-
-Relaciones principales:
-- Una playlist pertenece a un usuario, así que un usuario puede tener muchas playlists.
-
-- Una canción puede estar en muchas playlists, por eso necesitamos una tabla intermedia tipo “playlist_cancion”.
-
-- Un comentario pertenece a un usuario y a una canción, para saber quién dijo qué y dónde.
-
-- Una valoración pertenece a un usuario y a una canción, para calcular la nota media.
-
-- Una relación de amigos une dos usuarios, así podemos ver quién es amigo de quién.
-
-
-
-</details>
 
 <details>
 <summary><h1>7.Web</h1></summary>
@@ -1130,19 +1156,19 @@ Y aqui os voy a dejar el enlace al Excel para que lo vayais viendo como se va ac
 <summary><h1>11.Bibliografía</h1></summary>
 Hemos utilizado estas webs para buscar informacion datos etc ect:
   
-Esta Web la hemos utilizado para coger iconos:
+- Esta Web la hemos utilizado para coger iconos:
 https://icons.getbootstrap.com/
 
-También nos hemos basado en muchas ideas de la pagina de Spootify:
+- También nos hemos basado en muchas ideas de la pagina de Spootify:
 https://open.spotify.com/
 
-También hemos hecho el diseño del la web en el canva:
+- También hemos hecho el diseño del la web en el canva:
 https://www.canva.com/design/DAG1FzZUJu8/4GEBUf7oiEVidqma9VoWNw/view?utm_content=DAG1FzZUJu8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he356a4d6cf
 
-Esta web sirve para corregir nuestros errores ortográficos:
+- Esta web sirve para corregir nuestros errores ortográficos:
 https://quillbot.com/es/corrector-ortografico/d/8fda3fc1-36db-468a-92ae-1efa4166ce68
 
-Para hacer el diagrama de la red hemos utilizado microsoft visio:
+- Para hacer el diagrama de la red hemos utilizado microsoft visio:
 https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </details>
 
@@ -2375,25 +2401,25 @@ Temp: 86ºF
 
 Principalmente nuestra idea principal es hacer que el arduino pueda reproducir musica, estos son los diferentes proyectos que podriamos hacer:
 
-Xylophone:
+- Xylophone:
 https://www.instructables.com/3D-Printed-Arduino-Xylophone/
 
-Play Music in the Air:
+- Play Music in the Air:
 https://projecthub.arduino.cc/shmuel_rubin/play-music-in-the-air-arduino-air-piano-project-8e5a68
 
-Song Arduino Music Box with LCD and LED Light Show
+- Song Arduino Music Box with LCD and LED Light Show
 https://projecthub.arduino.cc/jenny972/3-song-arduino-music-box-with-lcd-and-led-light-show-7bda6e
 
-Arduino Based Piano
+- Arduino Based Piano
 https://projecthub.arduino.cc/RucksikaaR/arduino-based-piano-f9a995
 
-Building an Ultrasonic Radar using Arduino and Processing
+- Building an Ultrasonic Radar using Arduino and Processing
 https://projecthub.arduino.cc/diegogalvan_1294/building-an-ultrasonic-radar-using-arduino-and-processing-59053e
 
-Water Sensor
+- Water Sensor
 https://projecthub.arduino.cc/daryllqayyim/water-sensor-basic-13d33f
 
-Ultrasonic Radar with Arduino
+- Ultrasonic Radar with Arduino
 https://projecthub.arduino.cc/nimishac/ultrasonic-radar-with-arduino-19baa3
 
 Al final hemos decicido hacer un coche control remoto que se pueda manejar con facilidad y al final hemos decicido hacer este proyecto ya que no tendriamos que comprar ningun componente de Arduino que no tengamos y seria mas facil de hacer que todos los diferentes proyectos.
