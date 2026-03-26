@@ -132,13 +132,13 @@ En nuestra web implementaremos una función para poder hablar y compartir músic
 Propuestas iniciales y objetivos:
 -
 
-1- Hacer como una especie de Spotify pero sin anuncios.
+- 1.Hacer como una especie de Spotify pero sin anuncios.
 
-2- Hacer una web como YouTube.
+- 2.Hacer una web como YouTube.
 
-3- Hacer una especie de chat.
+- 3.Hacer una especie de chat.
 
-4- Hacer un foro de opiniones como Reddit.
+- 4.Hacer un foro de opiniones como Reddit.
 
 Al final vamos a combinar algunas de estas ideas; vamos a hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando músicas y dar sus opiniones respecto a la 
 música que han escuchado o que les han recomendado. Básicamente, hemos escogido hacer esto porque a ambos nos gusta la música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
