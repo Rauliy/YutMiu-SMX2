@@ -3,33 +3,33 @@
 
 ## Índice:
 
-1.Introducción
+- 1.Introducción
 
-2.Briefing 
+- 2.Briefing 
 
-3.Materiales físicos y lógicos
+- 3.Materiales físicos y lógicos
 
-4.Arquitectura del software
+- 4.Arquitectura del software
 
-5.Tecnologías a utilizar
+- 5.Tecnologías a utilizar
 
-6.Red
+- 6.Red
 
-7.Web
+- 7.Web
 
-8.Servicios
+- 8.Servicios
 
-9.Conclusiones
+- 9.Diagrama Gantt
 
-10.Webgrafia
+- 10.Conclusiones
 
-11.Bibliografía
+- 11.Webgrafia
 
-12.Plan de Contingencia
+- 12.Plan de Contingencia
 
--Actividades Arduino
+- Actividades Arduino
 
--Proyecto Arduino
+- Proyecto Arduino
 
 <details>
 <summary><h1>1.Introducción</h1></summary>
@@ -1153,7 +1153,7 @@ Y aqui os voy a dejar el enlace al Excel para que lo vayais viendo como se va ac
 
 
 <details>
-<summary><h1>11.Bibliografía</h1></summary>
+<summary><h1>11.Webgrafia</h1></summary>
 Hemos utilizado estas webs para buscar informacion datos etc ect:
   
 - Esta Web la hemos utilizado para coger iconos:
@@ -1173,7 +1173,7 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </details>
 
 <details>
-<summary><h1>12.Plan de contingencia</h1></summary>
+<summary><h1>12.Plan de Contingencia</h1></summary>
 
 <details>
 <summary><h3>12.1.Datos generales</h3></summary>
