@@ -2552,7 +2552,6 @@ Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 - Tutoriales sobre comunicación Bluetooth con Arduino
 
 
-
 <h2>Tutoriales y videotutoriales:</h2>
 
 - Tutoriales de Arduino en YouTube
@@ -2634,7 +2633,9 @@ Este seria nuestro diagrama de flujo con todos los componentes que vamos a utili
 Código estructurado y funcional:
 -
 
-<h3>Codigo del coche:</h3>
+<details>
+<summary><h3>Codigo del coche:</h3></summary> 
+
 Lo que hace el codigo es configurar los botones de avanzar, retroceder, izquierda, derecha y parar.
 
 ```
@@ -2739,7 +2740,12 @@ void parar() {
 }
 ```
 
-<h3>Codigo del Radar(.ino):</h3>
+</details>
+
+<br>
+
+<details>
+<summary><h3>Codigo del Radar(.ino):</h3></summary> 
 
 Los archivos con extensión .ino son archivos de código utilizados principalmente en el entorno de desarrollo Arduino IDE, contienen instrucciones escritas en C/C++ que definen 
 el comportamiento de placas microcontroladoras, como encender luces o como en nuestro caso leer sensores y mover motores.
@@ -2802,7 +2808,12 @@ void loop()
 }
 ```
 
-<h3>Codigo del Radar(.pde):</h3>
+</details>
+
+<br>
+
+<details>
+<summary><h3>Codigo del Radar(.pde):</h3></summary> 
 
 Los archivos .pde eran la extensión original para los sketches de Arduino, utilizados en versiones antiguas del IDE. Actualmente, se utiliza .ino para los archivos de Arduino, mientras que .pde se asocia principalmente con el software de programación Processing.
 
@@ -2947,5 +2958,6 @@ void drawText() { // draws the texts on the screen
   popMatrix();
 }
 ```
+</details>
 
 </details>
