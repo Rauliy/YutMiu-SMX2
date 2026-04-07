@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YUTMIU — Tu música</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV BAR: logo + botones -->
+  <header class="nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo YUTMIU" class="logo-img">
+      <span class="brand">YUTMIU</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="ghost">Explorar</a>
+      <a href="login.html" class="btn" id="btn-login">Iniciar sesión</a>
+      <a href="login.html" class="btn primary" id="btn-register">Registrarse</a>
+    </div>
+  </header>
+
+  <!-- TOP: Listas y Opiniones -->
+  <section class="top-row">
+    <div class="top-block lists-block">
+      <div class="top-header">
+        <h3>Listas de música</h3>
+        <details class="filter">
+          <summary>Filtrar</summary>
+          <div class="filter-options">
+            <button class="chip">Pop</button>
+            <button class="chip">Rock</button>
+            <button class="chip">Lo-fi</button>
+            <button class="chip">Electrónica</button>
+          </div>
+        </details>
+      </div>
+
+      <div class="horizontal-cards">
+        <article class="card"> 
+          <h4>Top Hits</h4>
+          <p class="muted">20 canciones</p>
+        </article>
+        <article class="card"> 
+          <h4>Relax</h4>
+          <p class="muted">15 canciones</p>
+        </article>
+        <article class="card"> 
+          <h4>Estudio</h4>
+          <p class="muted">18 canciones</p>
+        </article>
+        <article class="card"> 
+          <h4>Indie Vibes</h4>
+          <p class="muted">22 canciones</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="top-block opinions-block">
+      <div class="top-header">
+        <h3>Opiniones</h3>
+        <details class="filter">
+          <summary>Ordenar</summary>
+          <div class="filter-options">
+            <button class="chip">Recientes</button>
+            <button class="chip">Más valoradas</button>
+            <button class="chip">Recomendadas</button>
+          </div>
+        </details>
+      </div>
+
+      <div class="horizontal-cards">
+        <article class="op-card">
+          <p class="op-title">"Tema épico"</p>
+          <p class="muted small">— Usuario123</p>
+        </article>
+        <article class="op-card">
+          <p class="op-title">"Me ayudó a estudiar"</p>
+          <p class="muted small">— Ana</p>
+        </article>
+        <article class="op-card">
+          <p class="op-title">"Buena calidad"</p>
+          <p class="muted small">— Miguel</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO: bienvenida + buscador -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Bienvenido a YUTMIU</h1>
+      <p class="lead">Escucha, comparte y valora música. Crea playlists y conéctate con amigos.</p>
+
+      <form class="search" onsubmit="event.preventDefault();">
+        <input type="search" placeholder="Buscar canciones, artistas o playlists...">
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <div class="hero-right">
+      <div class="sample-player">
+        <div class="cover-placeholder">🎵</div>
+        <div class="player-info">
+          <strong>Nombre de la canción</strong>
+          <span class="muted">Artista</span>
+          <div class="player-controls">
+            <button class="small">⏮</button>
+            <button class="play">▶</button>
+            <button class="small">⏭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID: lista de canciones -->
+  <section class="song-grid">
+    <h3>Últimas canciones</h3>
+    <div class="grid">
+      <article class="song">
+        <div class="thumb">♪</div>
+        <div class="meta">
+          <div class="song-title">Nombre de la canción</div>
+          <div class="song-artist muted">Artista</div>
+        </div>
+        <div class="song-actions">
+          <button class="ghost">❤</button>
+        </div>
+      </article>
+
+      <article class="song">
+        <div class="thumb">♪</div>
+        <div class="meta">
+          <div class="song-title">Otra canción</div>
+          <div class="song-artist muted">Otro artista</div>
+        </div>
+        <div class="song-actions">
+          <button class="ghost">❤</button>
+        </div>
+      </article>
+
+      <article class="song">
+        <div class="thumb">♪</div>
+        <div class="meta">
+          <div class="song-title">Tema 3</div>
+          <div class="song-artist muted">Artista 3</div>
+        </div>
+        <div class="song-actions">
+          <button class="ghost">❤</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PLAYER FIJO ABAJO -->
+  <div class="bottom-player">
+    <div class="player-left">
+      <div class="thumb">🎵</div>
+      <div class="song-info">
+        <strong>Nombre de la canción</strong>
+        <span class="muted">Artista</span>
+      </div>
+    </div>
+    <div class="player-controls">
+      <button class="small">⏮</button>
+      <button class="play">▶</button>
+      <button class="small">⏭</button>
+    </div>
+  </div>
+
+  <!-- PIE -->
+  <footer class="footer">
+    <p class="muted">© YUTMIU - Proyecto SMX2</p>
+  </footer>
+
+  <!-- (opcional) pequeño script para comportamiento demo -->
+  <script>
+    document.getElementById('btn-login').addEventListener('click', function(e){
+      // Placeholder para abrir login, actualmente apunta a login.html
+    });
+  </script>
+</body>
+</html>
