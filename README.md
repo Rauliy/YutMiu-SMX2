@@ -1,7 +1,8 @@
 # YutMiu-SMX2
 <img width="197" height="187" alt="image" src="https://github.com/user-attachments/assets/3296b3ea-68eb-482f-ace5-3f9f45dc7233" />
 
-## Índice:
+<details>
+<summary><h1>Índice</h1></summary>
 
 - 1.Introducción
 
@@ -30,6 +31,8 @@
 - Actividades Arduino
 
 - Proyecto Arduino
+
+</details>
 
 <details>
 <summary><h1>1.Introducción</h1></summary>
@@ -656,7 +659,7 @@ correctamente.
 
 El DHCP es un servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que vamos a utilizar es porque permite la configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
 
-Dnsmasq es una herramienta sencilla pero poderosa, diseñada para proporcionar servicios de red esenciales. Entre sus características más destacadas encontramos: Resolución de nombres DNS rápida y eficiente. Configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
+Dnsmasq es una herramienta diseñada para proporcionar servicios de red esenciales. Entre sus características más destacadas encontramos: Resolución de nombres DNS rápida y eficiente. Configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
 
 </details>
 
