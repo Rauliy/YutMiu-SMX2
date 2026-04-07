@@ -35,8 +35,6 @@
 
 - Plan de Contingencia
 
-- Arduino
-
 </details>
 
 #
@@ -646,7 +644,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 <details>
   
-<summary><h2>8.1.DNS y pi-hole:</h2></summary>
+<summary><h2>8.1.DNS y Pi-hole:</h2></summary>
 
   
 Primero de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas. Para poder gestion el DNS i el DHCP lo que hemos hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
@@ -1209,6 +1207,27 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </div>
 
 <details>
+<summary><h2>Truenas</h2></summary>
+
+El TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
+
+Principales características las principales caracteristicas por lo que utilizamos TrueNAS son:
+
+- Reducido tamaño en disco 
+  
+- Fácil instalación
+  
+- Fácil administración remota, mediante páginas web accesibles desde cualquier computadora en red con un navegador
+  
+- No es necesario tener conectado monitor ni teclado para su operación
+
+Dentro de el TrueNAS sera donde gestionaremos toda las cosas importantes como maquinas virtuales, archivos, etc... para poder hacer copias de seguridad y asi tener todo el trabajo guardado ante algun fallo.
+
+</details>
+
+#
+
+<details>
 <summary><h2>1.Datos generales</h2></summary>
 
 • Nombre del proyecto: YutMiu
@@ -1224,6 +1243,8 @@ que incluye servicios de red con el Pi-hole y DNSmasq, un servidor web Nginx y u
 
 </details>
 
+#
+
 <details>
 <summary><h2>2.Objetivo del plan</h2></summary>
 
@@ -1236,6 +1257,8 @@ Sirve para guardar los archivos importantes por si ocurre un error y se pierde t
 Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que perdamos parte del trabajo por accidente.
 
 </details>
+
+#
 
 <details>
 <summary><h2>3.Alcance</h2></summary>
@@ -1254,6 +1277,8 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 
 </details>
 
+#
+
 <details>
 <summary><h2>4.Identificaión de activos</h2></summary>
 
@@ -1270,6 +1295,8 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 
 </details>
 
+#
+
 <details>
 <summary><h2>5.Análisis de riesgos</h2></summary>
 
@@ -1283,6 +1310,8 @@ Base de datos: Seria necesario hacerle una copia de seguridad porque sin la base
 | **Fallo de configuración DNS/DHCP** | Media | Alta | **Alto** |
 
 </details>
+
+#
 
 <details>
 <summary><h2>6.Escenarios de contingencia</h2></summary>
@@ -1311,6 +1340,8 @@ Infección que encripte o afecte a los archivos del servidor web.
 
 </details>
 
+#
+
 <details>
 <summary><h2>7.Plan de respuesta</h2></summary>
 
@@ -1333,6 +1364,8 @@ Qué hacer en cada caso:
    3.Intentar restaurar archivos desde el disco duro de respaldo o nube.
 
 </details>
+
+#
 
 <details>
 <summary><h2>8.Plan de recuperación</h2></summary>
@@ -1359,6 +1392,8 @@ Añadir tiempos:
 
 </details>
 
+#
+
 <details>
 <summary><h2>9.Copias de seguridad</h2></summary>
 
@@ -1381,6 +1416,8 @@ Disco local D o una copia externa
 Exportación de configuraciones de Portainer, copiado manual de archivos y snapshots de VirtualBox/VMware.
 
 </details>
+
+#
 
 <details>
 <summary><h2>10.Medidas preventivas</h2></summary>
@@ -1405,6 +1442,8 @@ Revisión periódica de los recursos consumidos por los contenedores.
 
 </details>
 
+#
+
 <details>
 <summary><h2>11.Responsables</h2></summary>
 
@@ -1414,6 +1453,8 @@ Revisión periódica de los recursos consumidos por los contenedores.
 | **Técnico de Soporte y Web** | Ignasi Merino | Resolución de incidencias web y red. |
 
 </details>
+
+#
 
 <details>
 <summary><h2>12.Plan de comunicación</h2></summary>
@@ -1434,6 +1475,8 @@ Si estamos en classe intentar hacer que venga lo antes posible para que diga que
 
 </details>
 
+#
+
 <details>
 <summary><h2>13.Pruebas del plan</h2></summary>
 
@@ -1448,6 +1491,8 @@ Apagado forzado de la VM para verificar el tiempo de arranque y recuperación de
 Intentar restaurar una copia de los archivos PHP en una carpeta distinta para confirmar que no están corruptos.
 
 </details>
+
+#
 
 <details>
 <summary><h2>14.Mantenimiento del plan</h2></summary>
@@ -1464,6 +1509,8 @@ Hasta que no pase algo muy grave o algo parecido creo que no haria falta actuali
 
 </details>
 
+#
+
 <details>
 <summary><h2>15.Mejoras futuras</h2></summary>
 
@@ -1473,8 +1520,9 @@ Hasta que no pase algo muy grave o algo parecido creo que no haria falta actuali
 
 • Uso de GitHub para un control de versiones más estricto del código.
 
-
 </details>
+
+#
 
 <details>
 <summary><h2>16.Conclusiones</h2></summary>
@@ -1494,5 +1542,7 @@ Gestionar cuales fallos podriamos prevenir y que podrian suceder a la hora de tr
 Lo que podriamos hacer a la hora de mejorar el proyecto es apuntar todos los avances que hacemos cada dia y cada cierto tiempo aplicarle el plan de contingencia.
 
 </details>
+
+#
 
 </details>
