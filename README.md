@@ -185,7 +185,6 @@ En el segundo ordenador trabajaremos todo lo relacionado con el diseño de la p�
 La idea básica es estructurarlo de tal manera que cada parte del proyecto tenga su propio espacio y no esté todo mezclado.
 Utilizaremos Visual Studio Code para la programación de la web, ya que es lo más práctico para nosotros.
 Después, utilizaremos Pi-hole como servidor DNS y DHCP, ya que su configuración es sencilla y nos permite gestionar toda la red sin complicaciones.
-
 Para la parte de los servicios y el backend, utilizaremos Docker Desktop, que es donde desplegaremos elementos como MySQL o Apache, entre otros, sin necesidad de instalar nada directamente en el ordenador.
 Además, contaremos con un servidor Linux exclusivamente para FFmpeg, que nos permitirá cargar y administrar música en streaming en nuestro sitio web.
 Además de todo esto, deseamos establecer una VPN con Cloudflare, emplear Nginx como proxy inverso e intentar instalar Proxmox para gestionar máquinas virtuales de manera más profesional.
@@ -225,47 +224,58 @@ Lista detallada de todas las tecnologías que utilizaremos:
 
 <details>
 <summary><h2>6.Red</h2></summary>
+  
 Aquí podemos ver cómo vamos a organizar la web y los servidores correspondientes:
 
-Diagrama de la red:
+Estructura y diagrama de la red:
 -
 
-<img width="905" height="749" alt="image" src="https://github.com/user-attachments/assets/82f3d9ba-9db0-4032-8da3-78f2baa8cc26" />
+<details>
+<summary><h3>Estructura básica de la red</h3></summary>
 
-Asi es como tenemos estructurada nuestra red.
+Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtablas y utilidades:
 
-Estructura básica de la red
--
+<img width="503" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+<img width="503" height="282" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
-<img width="606" height="340" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+<h3>Core:</h3>
 
-Hemos organizado la importancia de cada tabla con core (Tabla principal), subtablas y utilidades.
+- Musicas: En nuestra web la tabla de musica seria la tabla principal porque basicamente es la funcion principal de nuestra pagina web. 
 
-Core:
--
-En nuestra web la tabla de musica seria la tabla principal porque basicamente es la funcion principal de nuestra pagina web. 
+<h3>Subtablas:</h3>
 
-Subtablas:
--
 - Artistas: Los artistas estan en el apartado de subtablas por que no es una utilidad es solo un grupo especificos de personas y no es una utilidad.
 
-Utilidades:
-- 
+<h3>Utilidades:</h3>
+
 - Valoraciones: Este sera un apartado bastante importante en nuestro proyecto ya que es lo unico que nos diferencia entre otras webs de musica.
 
 - Buscardor: El buscados es fundamental a la hora de una web de musica y es una de las utilidades mas importantes de cualquier web de musica.
 
 - Usuarios: Este es el apartado mas importante de nuestra web ya que gracias a los usuarion podremos utilizar la gran variedad de herramientas que ofrecemos.
 
-<img width="906" height="709" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
+</details>
 
+<br>
+
+<details>
+<summary><h3>Diagrama de la red</h3></summary>
+
+Asi es como tenemos estructurada nuestra red implementada
+
+<img width="905" height="749" alt="image" src="https://github.com/user-attachments/assets/82f3d9ba-9db0-4032-8da3-78f2baa8cc26" />
+
+</details>
+
+<br>
 
  Listado de tareas sobre como nos lo vamos a montar y organizar nuestro proyecto:
  -
 
 <details>
-<summary><h2>Objetivo1: Implementar un servidor web:</h2></summary>
-Objetivo 1: Implementar un servidor web
+<summary><h3>Objetivo1: Implementar un servidor web:</h3></summary>
+  
+<h4>Objetivo 1: Implementar un servidor web</h4> 
   
 - 1.1
  [Raul] Instalar y configurar el servidor básico.
@@ -284,9 +294,12 @@ Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar 
 
 </details>
 
+<br>
+
 <details>
-<summary><h2>Objetivo2: Implementar un servidor web:</h2></summary>
-Objetivo 2: Programar la front-page
+<summary><h3>Objetivo2: Implementar un servidor web:</h3></summary>
+  
+<h4>Objetivo 2: Programar la front-page</h4> 
 
 - 2.1
  [Ignasi] Hacer la estructura del index.html con CSS.
@@ -303,11 +316,13 @@ Además, en esta parte programaremos cosas como: escuchar música, comentar, val
 
 </details>
 
+<br>
+
 Ahora vamos presentar el diagrama de la base de datos:
 -
 
 <details>
-<summary><h2>1.¿Qué datos son necesarios para mi aplicación?</h2></summary>
+<summary><h3>1.¿Qué datos son necesarios para mi aplicación?</h3></summary>
 
 Para que mi app funcione bien necesitamos guardar varias cosas:
 
@@ -325,8 +340,10 @@ Para que mi app funcione bien necesitamos guardar varias cosas:
 
 </details>
 
+<br>
+
 <details>
-<summary><h2>2.¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?</h2></summary>
+<summary><h3>2.¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?</h3></summary>
 
 Datos que voy a pedir al usuario:
 
@@ -346,9 +363,10 @@ Tipos de usuarios:
 
 </details>
 
+<br>
 
 <details>
-<summary><h2>3.¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?</h2></summary>
+<summary><h3>3.¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?</h3></summary>
 
 - Usuarios → id_usuario
 
@@ -376,8 +394,13 @@ Relaciones principales:
 
 </details>
 
-Lista de objetivos y funcionalidades del proyecto
+<br>
+
+Lista de objetivos y tecnologías:
 -
+
+<details>
+<summary><h3>Lista de objetivos y funcionalidades del proyecto</h3></summary>
 
 | ID  | Prioridad | Objetivo / Funcionalidad | Descripción                                                                                                                                                                                                 | Fecha Entrega   | Estado     |
 |-----|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------|
@@ -389,9 +412,12 @@ Lista de objetivos y funcionalidades del proyecto
 | ID5 | Alta      | Buscador                  | Función clave para que la gente encuentre música rápido. Podrá buscar canciones por título, artista, playlists, etc.                                                                                        | —               | Pendiente  |
 | ID6 | Alta      | Perfil de usuario         | Aquí el usuario podrá ver y editar su perfil: cambiar la descripción, foto, ver sus valoraciones, comentarios, etc. También podrá ver el perfil de sus amigos.                                               | —               | Pendiente  |
 
+</details>
 
-Tecnologías y Componentes del Sistema
--
+<br>
+
+<details>
+<summary><h3>Tecnologías y Componentes del Sistema</h3></summary>
 
 | Componente del sistema | Tecnología / Framework | Versión | Puerto | Descripción de uso o requisitos | Documentación |
 |------------------------|------------------------|---------|--------|---------------------------------|---------------|
@@ -404,13 +430,18 @@ Tecnologías y Componentes del Sistema
 | Gestor de base de datos | PHPMyAdmin | Última | 8080 / 3033 | PHPMyAdmin porque es el que mejor sabemos utilizar. | https://www.phpmyadmin.net |
 | Servicios de APIs | REST | Última | 8080 / 3033 | Para conectar frontend y backend usaremos REST. | https://restfulapi.net |
 
+</details>
 
-Estructura de Base de Datos
+<br>
+
+Estructura de Base de Datos:
 -
 
 Tabla de datos y tipos (Base de datos):
 
-### Tabla: Usuarios
+<details>
+<summary><h3>Tabla: Usuarios</h3></summary>
+
 | Información       | Tipo MySQL         | Descripción |
 |------------------|--------------------|-------------|
 | `id_usuario`      | INT AUTO_INCREMENT | Clave primaria, identifica a cada usuario. |
@@ -420,8 +451,13 @@ Tabla de datos y tipos (Base de datos):
 | `foto_perfil`     | VARCHAR(255)       | Ruta de la imagen que sube el usuario. |
 
 ---
+</details>
 
-### Tabla: Canciones
+<br>
+
+<details>
+<summary><h3>Tabla: Canciones</h3></summary>
+
 | Información     | Tipo MySQL         | Descripción |
 |----------------|--------------------|-------------|
 | `id_cancion`    | INT AUTO_INCREMENT | Clave primaria de la canción. |
@@ -431,16 +467,26 @@ Tabla de datos y tipos (Base de datos):
 | `duracion`      | TIME               | Duración de la canción. |
 
 ---
+</details>
 
-### Tabla: Playlists
+<br>
+
+<details>
+<summary><h3>Tabla: Playlists</h3></summary>
+  
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
 | `id_playlist`      | INT AUTO_INCREMENT | Clave primaria. |
 | `nombre_playlist`  | VARCHAR(100)       | Nombre de la playlist. |
 
 ---
+</details>
 
-### Tabla: Comentarios
+<br>
+
+<details>
+<summary><h3>Tabla: Comentarios</h3></summary>
+  
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
 | `id_comentario`    | INT AUTO_INCREMENT | Clave primaria del comentario. |
@@ -448,21 +494,33 @@ Tabla de datos y tipos (Base de datos):
 | `fecha`            | DATETIME           | Fecha del comentario. |
 
 ---
+</details>
 
-### Tabla: Valoraciones
+<br>
+
+<details>
+<summary><h3>Tabla: Valoraciones</h3></summary>
+
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
 | `id_valoracion`    | INT AUTO_INCREMENT | Clave primaria. |
 | `puntuacion`       | TINYINT            | Nota del 1 al 5. |
 
 ---
+</details>
 
-### Tabla: Amigos
+<br>
+
+<details>
+<summary><h3>Tabla: Amigos</h3></summary>
+
 | Información | Tipo MySQL         | Descripción |
 |-------------|--------------------|-------------|
 | `id_amigo`  | INT AUTO_INCREMENT | Clave primaria. |
 | `usuario1`  | INT                | ID del primer usuario. |
 | `usuario2`  | INT                | ID del segundo usuario. |
+
+</details>
 
 </details>
 
@@ -475,7 +533,7 @@ Este sería el mockup de nuestra web.
 
 <details>
   
-<summary><h2>Página principal:</h2></summary>
+<summary><h3>Página principal:</h3></summary>
 
 Esta es nuestra primera página, la homepage. Desde aquí podemos escuchar música y configurar un par de cosas. Todas las demás opciones, para tenerlas disponibles, el usuario tendrá que iniciar sesión. 
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0cb4442b-076c-4e7e-9020-36a8b6a94b19" />
@@ -484,7 +542,7 @@ Esta es nuestra primera página, la homepage. Desde aquí podemos escuchar músi
 
 <details>
   
-<summary><h2>Inicio de sesion:</h2></summary>
+<summary><h3>Inicio de sesion:</h3></summary>
 
 Esto será nuestro inicio de sesión y de fondo intentaremos poner un video de nuestra web; además, si no inicias sesión, no podrás publicar ni videos ni comentarios.
 poner valoraciones a las canciones, solo podras escucharlas y hacer todas las acciones sobre retroceder o avanzar o ponerlo en bucle., una
@@ -495,7 +553,7 @@ vez hayas iniciado sesion podras hacer todo.
 
 <details>
   
-<summary><h2>Página principal luego del inicio de sesión:</h2></summary>
+<summary><h3>Página principal luego del inicio de sesión:</h3></summary>
 
 Despues de iniciar sesión podrás utilizar todas las herramientas de nuestra web.
 
@@ -519,7 +577,7 @@ El contenido que tendrá será:
 
 <details>
   
-<summary><h2>Músicas:</h2></summary>
+<summary><h3>Músicas:</h3></summary>
 
 Esta opción también estará disponible sin iniciar sesión; desde aquí solo podrás escuchar la música y ver el nombre del artista.
 Al ver su letra, las opciones de valoraciones solo estarán disponibles si inicias sesión.
@@ -529,7 +587,7 @@ Al ver su letra, las opciones de valoraciones solo estarán disponibles si inici
 
 <details>
   
-<summary><h2>Opiniones:</h2></summary>
+<summary><h3>Opiniones:</h3></summary>
 
 Desde aquí podrás ver comentarios de gente debatiendo sobre músicas y sus opiniones; también podrás ver todas tus opiniones. 
 Y valoraciones que has hecho. También podrás eliminar valoraciones u opiniones que hayas hecho.
@@ -539,7 +597,7 @@ Y valoraciones que has hecho. También podrás eliminar valoraciones u opiniones
 
 <details>
   
-<summary><h2>Amigos:</h2></summary>
+<summary><h3>Amigos:</h3></summary>
 
 Dentro de aquí podrás ver a todos tus amigos; también desde esa pestaña podrás ver el perfil de tus amigos. También tendrás un chat con cada uno. 
 Amigo, y también podréis pasaros músicas.
@@ -549,7 +607,7 @@ Amigo, y también podréis pasaros músicas.
 
 <details>
   
-<summary><h2>Listas de músicas:</h2></summary>
+<summary><h3>Listas de músicas:</h3></summary>
 
 Aquí podrás ver las músicas que hayas almacenado. También podrás hacer listas de músicas de lo que tú quieras.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/33b7421b-3ec2-4d06-a578-8db2960ec105" />
@@ -558,7 +616,7 @@ Aquí podrás ver las músicas que hayas almacenado. También podrás hacer list
 
 <details>
   
-<summary><h2>Buscador:</h2></summary>
+<summary><h3>Buscador:</h3></summary>
 
 También esta es otra opción que estará disponible sin tener que iniciar sesión y podrás buscar la música que tú prefieras o la que esté. 
 Disponible en nuestra web; también podrás ver los artistas, el tipo de música y una valoración general de la música.
@@ -568,7 +626,7 @@ Disponible en nuestra web; también podrás ver los artistas, el tipo de música
 
 <details>
   
-<summary><h2>Tu perfil:</h2></summary>
+<summary><h3>Tu perfil:</h3></summary>
 
 Aqui podras ver bastantes cosas como:
 
@@ -585,7 +643,7 @@ Aqui podras ver bastantes cosas como:
 
 <details>
   
-<summary><h2>Perfil de amigos:</h2></summary>
+<summary><h3>Perfil de amigos:</h3></summary>
 
 Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 
@@ -602,7 +660,7 @@ Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 
 <details>
   
-<summary><h2>Configuración:</h2></summary>
+<summary><h3>Configuración:</h3></summary>
 
 Desde aquí podrás modificar una variedad de contenido para que la experiencia con el usuario sea mejor; las opciones que hay son:
 
@@ -625,7 +683,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 <details>
   
-<summary><h2>Mapa de navegabilidad:</h2></summary>
+<summary><h3>Mapa de navegabilidad:</h3></summary>
 
 -Aquí tenemos el diagrama de flujo de la interfaz web.
 
@@ -644,7 +702,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 <details>
   
-<summary><h2>8.1.DNS y Pi-hole:</h2></summary>
+<summary><h3>8.1.DNS y Pi-hole:</h3></summary>
 
   
 Primero de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas. Para poder gestion el DNS i el DHCP lo que hemos hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
@@ -670,7 +728,7 @@ correctamente.
 
 <details>
   
-<summary><h2>8.2.DHCP y Dnsmasq :</h2></summary>
+<summary><h3>8.2.DHCP y Dnsmasq :</h3></summary>
 
 El DHCP es un servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que vamos a utilizar es porque permite la configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
 
@@ -680,7 +738,7 @@ Dnsmasq es una herramienta diseñada para proporcionar servicios de red esencial
 
 <details>
   
-<summary><h2>8.3.Docker:</h2></summary>
+<summary><h3>8.3.Docker:</h3></summary>
 
 Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
 
@@ -692,7 +750,7 @@ Su principal diferencia es que Docker Desktop por sí solo proporciona una base 
 
 <details>
   
-<summary><h2>8.4.MySQL:</h2></summary>
+<summary><h3>8.4.MySQL:</h3></summary>
 
 MySQL es un sistema de gestión de bases de datos de codigo abierto que base de datos relacional que permite almacenar, organizar, recuperar datos de manera eficiente y es perfecto para guardar: Datos de usuarios (nombre, email, contraseñas encriptadas, etc...), Inventarios de productos, Transacciones de ventas y Registros históricos o logs. Tambien no permite aplicar reglas de integridad referencial, relaciones entre tablas y control de accesos para garantizar la coherencia y seguridad de la información. Uno de los 
 usos más comunes de MySQL es como base de datos para aplicaciones web dinámicas.
@@ -834,7 +892,7 @@ WHERE id_lista = 116;
 
 <details>
   
-<summary><h2>8.5.Nginx:</h2></summary>
+<summary><h3>8.5.Nginx:</h3></summary>
 
 NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
 
@@ -842,7 +900,7 @@ NGINX es un software de código abierto que se utiliza para servidores web, prox
 
 <details>
   
-<summary><h2>8.6.PHP:</h2></summary>
+<summary><h3>8.6.PHP:</h3></summary>
 
 PHP es un lenguaje de programación de código abierto diseñado para el desarrollo web que se ejecuta en el servidor, permitiendo crear sitios web dinámicos, interactivos y con conexión a bases de datos.
 
@@ -868,7 +926,7 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
 
 <details>
   
-<summary><h2>8.7.Ffmpeg:</h2></summary>
+<summary><h3>8.7.Ffmpeg:</h3></summary>
 
 Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
 este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado dentro del ubuntu. 
@@ -881,7 +939,7 @@ Ffmpeg para como tanto para obtener información de un archivo multimedia, como 
 
 <details>
 
-<summary><h2>8.8.TrueNAS:</h2></summary>
+<summary><h3>8.8.TrueNAS:</h3></summary>
 
 TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
 
@@ -932,7 +990,7 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 <details>
   
-<summary><h2>8.9.PfSense:</h2></summary>
+<summary><h3>8.9.PfSense:</h3></summary>
 
 PfSense es una plataforma de firewall y enrutador de código abierto basada en FreeBSD, utilizada para asegurar, gestionar y controlar redes.
 
@@ -1004,7 +1062,7 @@ Tambien ofrece estas funciones:
 
 <details>
   
-<summary><h2>Sistema operativo:</h2></summary>
+<summary><h3>Sistema operativo:</h3></summary>
 
 El equipo donde vamos a tener todo va a ser un Ubuntu Server, dentro de el Ubuntu Server vamos a tener instalado el DCHP, el dnasmasq y el pi-hole. Tambien tenemos otra maquina virtual con un Ubuntu con el Ffmpeg para exportar musicas para la pagina web.
 
@@ -1012,7 +1070,7 @@ El equipo donde vamos a tener todo va a ser un Ubuntu Server, dentro de el Ubunt
 
 <details>
   
-<summary><h2>IP del servidor:</h2></summary>
+<summary><h3>IP del servidor:</h3></summary>
 
 La ip de nuestro del Ubuntu Server es la 192.168.135.xx por que es dinamica. Y la ip estatica de nuestro Ubuntu Server 192.168.6.62.
 
@@ -1020,7 +1078,7 @@ La ip de nuestro del Ubuntu Server es la 192.168.135.xx por que es dinamica. Y l
 
 <details>
   
-<summary><h2>Recursos mínimos (CPU, RAM, disco):</h2></summary>
+<summary><h3>Recursos mínimos (CPU, RAM, disco):</h3></summary>
 
 Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
 <img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
@@ -1032,7 +1090,7 @@ Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
 
 <details>
   
-<summary><h2>Puertos:</h2></summary>
+<summary><h3>Puertos:</h3></summary>
 
 Aqui estan todos los servicios conectados al Portainer con sus respectivos puertos:
 
@@ -1103,7 +1161,7 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </div>
 
 <details>
-<summary><h2>Truenas</h2></summary>
+<summary><h3>Truenas</h3></summary>
 
 El TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
 
