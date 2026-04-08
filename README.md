@@ -697,29 +697,91 @@ También ofrecemos opciones para la privacidad del usuario que son:
 <details>
 <summary><h2>8.Servicios</h2></summary>
 
-¿Qué función cumple exactamente este servicio dentro de la red?
+¿Qué función cumple exactamente cada servicio dentro de la red?
 -
 
 <details>
   
 <summary><h3>8.1.DNS y Pi-hole:</h3></summary>
 
+Explicacion y funcionamiento
+-
   
-Primero de todo el DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas. Para poder gestion el DNS i el DHCP lo que hemos hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
+- DNS:
 
-Pi-hole es un bloqueador de anuncios de uso general que cubre toda la red y la protege de los anuncios y los rastreadores sin que sea necesario configurar cada uno de los dispositivos, ahora dentro de el ubuntu server 
-el primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
+Ell DNS es un sistema que traduce nombres de dominio (google.com) a direcciones IP i lo necesitamos por que sin DNS, los usuarios tendrían que recordar IPs de máquinas. Para poder gestion el DNS i el DHCP lo que hemos hecho a sido instalar y configurar el pi-hole dentro de un ubuntu server. 
+
+- Pi-Hole:
+
+Es un bloqueador de anuncios de uso general que cubre toda la red y la protege de los anuncios y los rastreadores sin que sea necesario configurar cada uno de los dispositivos.
+
+<br>
+
+Proceso de instalacion
+-
+
+Ahora voy a explicar paso a paso toda su instalacion paso a paso:
+
+<h4>Paso 1:</h4>
+
+El primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
 configurar la ip statica y lo haremos poniendo el comando "sudo nano /etc/netplan/00-installer-config.yaml" i esto lo que hace es editar el archivo netplan y la tendremos que configurar aqui una captura de como lo tenemos configurado.
-<img width="794" height="680" alt="image" src="https://github.com/user-attachments/assets/f7c6eb1b-0479-4f30-abb0-25ef1abfd5be" />
 
-Ahora luego de haber configurado correctamente el archivo netplat solo tenemos que hacer "sudo netplan apply" para aplicar los cambios y "ip a" para verificar que funcione. Despues de hacer los anteriores pasos tendremos que instalar el 
-pi-hole con "curl -sSL https://install.pi-hole.net | bash" si no funciona el comando significa que el ubuntu no tiene instalado el curl, si es asi solo instalamos el curl con "sudo apt install curl -y". Ahora en la instalacion saldran las 
-siguientes opciones: seleccionar la interfaz de red, elegir el DNS upstream, seleccionar interfaz web  y seleccionar servidor web.
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f7c6eb1b-0479-4f30-abb0-25ef1abfd5be" />
 
-Despues de completar la instalacion del pi-hole y haber seleccionado cada apartado al final tendremos que seleccionar una contraseña para el pi-hole y sera necesaria para abrir el pi-hole dentro de el navegador. Ahola despues de hacer todos
-los anteriores passos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña
-que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS.
+<br>
+
+<h4>Paso 2:</h4>
+
+Ahora luego de haber configurado correctamente el archivo netplat solo tenemos que hacer "sudo netplan apply" para aplicar los cambios y "ip a" para verificar que funcione. Despues de hacer los anteriores pasos tendremos que instalar el pi-hole con "curl -sSL https://install.pi-hole.net | bash" si no funciona el comando significa que el ubuntu no tiene instalado el curl, si es asi solo instalamos el curl con "sudo apt install curl -y". Ahora en la instalacion saldran las siguientes opciones: seleccionar la interfaz de red, elegir el DNS upstream, seleccionar interfaz web  y seleccionar servidor web.
+
+<br>
+
+<h4>Paso 3:</h4>
+
+Despues de completar la instalacion del pi-hole y haber seleccionado cada apartado al final tendremos que seleccionar una contraseña para el pi-hole y sera necesaria para abrir el pi-hole dentro de el navegador. Ahola despues de hacer todoslos anteriores pasos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS.
 <img width="1163" height="839" alt="image" src="https://github.com/user-attachments/assets/7638eb0b-e414-40ed-bd85-08757c5488ef" />
+
+<br>
+
+¿En qué equipo se instala y qué requisitos necesita?
+-
+
+<h4>Sistema operativo</h4>
+
+
+
+<h4>IP del servidor</h4>
+
+
+
+<h4>Recursos mínimos</h4>
+
+
+
+
+<br>
+
+¿Qué parámetros básicos debo configurar?
+-
+
+<h4>Puertos</h4>
+
+
+
+<h4>Directorios de trabajo</h4>
+
+
+
+<h4>Rango DHCP / zonas DNS / virtual hosts</h4>
+
+
+
+
+<br>
+
+Incidencias
+-
 
 Una incidencia que teniamos era que el pi-hole estaba todo correctamente configurado y estabamos todo el rato intentando conseguir la ip de la maquina virtual con "ip a" pero no salia la ip, y sin la ip no podriamos acceder a la pagina web de nuetro Pi-hole. Al final el error era que nuestra maquina virtual de ubuntu server no estaba con el adaptador puente activado y eso hacia que por mucho que lo intentaramos no nos saliera la ip. Luego de activar el adaptador fuente ya todo funciono 
 correctamente.
@@ -736,6 +798,8 @@ Dnsmasq es una herramienta diseñada para proporcionar servicios de red esencial
 
 </details>
 
+<br>
+
 <details>
   
 <summary><h3>8.3.Docker:</h3></summary>
@@ -747,6 +811,8 @@ Su principal diferencia es que Docker Desktop por sí solo proporciona una base 
 <img width="1618" height="538" alt="image" src="https://github.com/user-attachments/assets/5e007514-da9f-44e5-9111-b05703d40f56" />
 
 </details>
+
+<br>
 
 <details>
   
@@ -890,6 +956,8 @@ WHERE id_lista = 116;
 
 </details>
 
+<br>
+
 <details>
   
 <summary><h3>8.5.Nginx:</h3></summary>
@@ -897,6 +965,8 @@ WHERE id_lista = 116;
 NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
 
 </details>
+
+<br>
 
 <details>
   
@@ -924,6 +994,8 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
 
 </details>
 
+<br>
+
 <details>
   
 <summary><h3>8.7.Ffmpeg:</h3></summary>
@@ -936,6 +1008,8 @@ este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos 
 Ffmpeg para como tanto para obtener información de un archivo multimedia, como para convertirlo a otro formato. Tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia.
 
 </details>
+
+<br>
 
 <details>
 
@@ -988,6 +1062,8 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 </details>
 
+<br>
+
 <details>
   
 <summary><h3>8.9.PfSense:</h3></summary>
@@ -1007,6 +1083,8 @@ y accedemos a el poniendo la ip de la red interna dentro de un navegador.
 
 Dentro de PfSense hemos configurado lo siguiente:
 
+<br>
+
 Port Forward
 -
 
@@ -1020,6 +1098,8 @@ Tambien ofrece estas funciones:
 - Alojamiento de servicios: Facilita la creación de servidores web, de correo, FTP o de aplicaciones en una red local, haciéndolos accesibles al público.
 
 <img width="1423" height="735" alt="image" src="https://github.com/user-attachments/assets/af6f1c80-f76e-4079-b02d-4357f47e4acf" />
+
+<br>
 
 Red WAN:
 -
@@ -1038,6 +1118,8 @@ Tambien ofrece estas funciones:
 
 <img width="1421" height="735" alt="image" src="https://github.com/user-attachments/assets/30ae14c0-d1da-4004-9dd8-d19f4c5c9493" />
 
+<br>
+
 Red LAN:
 -
 
@@ -1054,8 +1136,9 @@ Tambien ofrece estas funciones:
 
 <img width="1418" height="734" alt="image" src="https://github.com/user-attachments/assets/b308c873-96aa-4259-a4c7-1f401c889bed" />
 
-
 </details>
+
+<br>
 
 ¿En qué equipo se instala y qué requisitos necesita?
 -
