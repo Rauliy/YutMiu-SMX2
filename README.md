@@ -704,7 +704,7 @@ También ofrecemos opciones para la privacidad del usuario que son:
   
 <summary><h3>8.1.DNS y Pi-hole:</h3></summary>
 
-Explicacion y funcionamiento
+Explicacion y funcionamiento:
 -
   
 - DNS:
@@ -717,7 +717,7 @@ Es un bloqueador de anuncios de uso general que cubre toda la red y la protege d
 
 <br>
 
-Proceso de instalacion
+Proceso de instalacion:
 -
 
 Ahora voy a explicar paso a paso toda su instalacion paso a paso:
@@ -747,15 +747,15 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 ¿En qué equipo se instala y qué requisitos necesita?
 -
 
-<h4>Sistema operativo</h4>
+<h4>Sistema operativo:</h4>
 
 
 
-<h4>IP del servidor</h4>
+<h4>IP del servidor:</h4>
 
 
 
-<h4>Recursos mínimos</h4>
+<h4>Recursos mínimos:</h4>
 
 
 
@@ -765,15 +765,15 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 ¿Qué parámetros básicos debo configurar?
 -
 
-<h4>Puertos</h4>
+<h4>Puertos:</h4>
 
 
 
-<h4>Directorios de trabajo</h4>
+<h4>Directorios de trabajo:</h4>
 
 
 
-<h4>Rango DHCP / zonas DNS / virtual hosts</h4>
+<h4>Rango DHCP / zonas DNS / virtual hosts:</h4>
 
 
 
@@ -788,13 +788,22 @@ correctamente.
 
 </details>
 
+<br>
+
 <details>
   
-<summary><h3>8.2.DHCP y Dnsmasq :</h3></summary>
+<summary><h3>8.2.DHCP y DnsMasq :</h3></summary>
 
-El DHCP es un servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores. Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que vamos a utilizar es porque permite la configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
+Explicacion y funcionamiento:
+-
 
-Dnsmasq es una herramienta diseñada para proporcionar servicios de red esenciales. Entre sus características más destacadas encontramos: Resolución de nombres DNS rápida y eficiente. Configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
+- DHCP:
+
+El DHCP es un servicio que asigna automáticamente IP, puerta de enlace y DNS a los clientes tambien es necesario para evita configurar manualmente cada equipo y reduce errores.
+
+- DnsMasq:
+
+Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que vamos a utilizar es porque permite la configuración de un servidor DHCP básico para asignar direcciones IP automáticamente, Dnsmasq es una herramienta diseñada para proporcionar servicios de red esenciales como: Resolución de nombres DNS rápida y eficiente. Configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
 
 </details>
 
@@ -804,11 +813,58 @@ Dnsmasq es una herramienta diseñada para proporcionar servicios de red esencial
   
 <summary><h3>8.3.Docker:</h3></summary>
 
-Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
+Explicacion y funcionamiento:
+-
+
+Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. 
+
+Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
+
+<br>
+
+Diferencia:
+-
 
 Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker vamos a implementar pi-hole(bloqueador de anuncios) y Nginx(software de servidor web de código abierto). 
 
 <img width="1618" height="538" alt="image" src="https://github.com/user-attachments/assets/5e007514-da9f-44e5-9111-b05703d40f56" />
+
+¿En qué equipo se instala y qué requisitos necesita?
+-
+
+<h4>Sistema operativo:</h4>
+
+<img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
+
+<h4>IP del servidor:</h4>
+
+
+
+<h4>Recursos mínimos:</h4>
+
+
+
+
+<br>
+
+¿Qué parámetros básicos debo configurar?
+-
+
+<h4>Puertos:</h4>
+
+
+
+<h4>Directorios de trabajo:</h4>
+
+
+
+<h4>Rango DHCP / zonas DNS / virtual hosts:</h4>
+
+
+
+
+<br>
+
 
 </details>
 
@@ -1138,59 +1194,6 @@ Tambien ofrece estas funciones:
 
 </details>
 
-<br>
-
-¿En qué equipo se instala y qué requisitos necesita?
--
-
-<details>
-  
-<summary><h3>Sistema operativo:</h3></summary>
-
-El equipo donde vamos a tener todo va a ser un Ubuntu Server, dentro de el Ubuntu Server vamos a tener instalado el DCHP, el dnasmasq y el pi-hole. Tambien tenemos otra maquina virtual con un Ubuntu con el Ffmpeg para exportar musicas para la pagina web.
-
-</details>
-
-<details>
-  
-<summary><h3>IP del servidor:</h3></summary>
-
-La ip de nuestro del Ubuntu Server es la 192.168.135.xx por que es dinamica. Y la ip estatica de nuestro Ubuntu Server 192.168.6.62.
-
-</details>
-
-<details>
-  
-<summary><h3>Recursos mínimos (CPU, RAM, disco):</h3></summary>
-
-Estas son las configuraciones que hemos puesto para nuestra maquina virtual.
-<img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
-
-</details>
-
-¿Qué parámetros básicos debo configurar?
--
-
-<details>
-  
-<summary><h3>Puertos:</h3></summary>
-
-Aqui estan todos los servicios conectados al Portainer con sus respectivos puertos:
-
--Mysql: Tiene el puerto 3306:3306 y 32768:33060.
-
--Ngingx: Tiene el puerto 80:80.
-
--Phpmyadmin-web: Tiene el puerto 8081:80.
-
--Pihole: Tiene el puerto 53:53 y 8080:80.
-
--Portainer: Tiene el puerto 8000:8000 y 9443:9443.
-
-<img width="1618" height="538" alt="image" src="https://github.com/user-attachments/assets/b6ee57d9-3709-40e1-8d2c-a8a875235bdb" />
-
-</details>
-
 </details>
 
 #
@@ -1199,7 +1202,10 @@ Aqui estan todos los servicios conectados al Portainer con sus respectivos puert
 <summary><h2>9.Diagrama Gantt</h2></summary>
 Aqui podeis ver como lo hemos organizado y separado el Diagrama:
 <img width="1919" height="417" alt="image" src="https://github.com/user-attachments/assets/ee66626d-ab31-4546-bf3f-8af53b429077" />
-Y aqui os voy a dejar el enlace al Excel para que lo vayais viendo como se va actualizando a diario: https://alumnoifp-my.sharepoint.com/:x:/g/personal/rreyesf_student_ifp_es/EWDiyoYtqXtNhg-YJbDrquoBVqxon1pBstPxaSgkpy9Yhg?e=22Y8uM
+Y aqui os voy a dejar el enlace al Excel para que lo vayais viendo como se va actualizando a diario: 
+  
+https://alumnoifp-my.sharepoint.com/:x:/g/personal/rreyesf_student_ifp_es/EWDiyoYtqXtNhg-YJbDrquoBVqxon1pBstPxaSgkpy9Yhg?e=22Y8uM
+
 </details>
 
 #
