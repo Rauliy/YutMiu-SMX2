@@ -744,37 +744,43 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 
 <br>
 
-¿En qué equipo se instala y qué requisitos necesita?
+Sistema operativo:
 -
-
-<h4>Sistema operativo:</h4>
-
-
-
-<h4>IP del servidor:</h4>
-
-
-
-<h4>Recursos mínimos:</h4>
-
 
 
 
 <br>
 
-¿Qué parámetros básicos debo configurar?
+IP del servidor:
 -
 
-<h4>Puertos:</h4>
+
+
+<br>
+
+Recursos mínimos:
+-
 
 
 
-<h4>Directorios de trabajo:</h4>
+<br>
+
+Puertos:
+-
 
 
 
-<h4>Rango DHCP / zonas DNS / virtual hosts:</h4>
+<br>
 
+Directorios de trabajo:
+-
+
+
+
+<br>
+
+Rango DHCP / zonas DNS / virtual hosts:
+-
 
 
 
@@ -783,8 +789,7 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 Incidencias
 -
 
-Una incidencia que teniamos era que el pi-hole estaba todo correctamente configurado y estabamos todo el rato intentando conseguir la ip de la maquina virtual con "ip a" pero no salia la ip, y sin la ip no podriamos acceder a la pagina web de nuetro Pi-hole. Al final el error era que nuestra maquina virtual de ubuntu server no estaba con el adaptador puente activado y eso hacia que por mucho que lo intentaramos no nos saliera la ip. Luego de activar el adaptador fuente ya todo funciono 
-correctamente.
+Una incidencia que teniamos era que el pi-hole estaba todo correctamente configurado y estabamos todo el rato intentando conseguir la ip de la maquina virtual con "ip a" pero no salia la ip, y sin la ip no podriamos acceder a la pagina web de nuetro Pi-hole. Al final el error era que nuestra maquina virtual de ubuntu server no estaba con el adaptador puente activado y eso hacia que por mucho que lo intentaramos no nos saliera la ip. Luego de activar el adaptador fuente ya todo funciono correctamente.
 
 </details>
 
@@ -816,55 +821,60 @@ Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que v
 Explicacion y funcionamiento:
 -
 
-Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. 
-
-Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
+Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
 
 <br>
 
 Diferencia:
 -
 
-Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker vamos a implementar pi-hole(bloqueador de anuncios) y Nginx(software de servidor web de código abierto). 
+Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker hemos implementado los siguientes servicios:
 
-<img width="1618" height="538" alt="image" src="https://github.com/user-attachments/assets/5e007514-da9f-44e5-9111-b05703d40f56" />
+<img width="1618" height="623" alt="image" src="https://github.com/user-attachments/assets/b87d9312-b74e-419a-900e-e1c6497e500e" />
 
-¿En qué equipo se instala y qué requisitos necesita?
+<br>
+
+Sistema operativo:
 -
-
-<h4>Sistema operativo:</h4>
 
 <img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
 
-<h4>IP del servidor:</h4>
-
-
-
-<h4>Recursos mínimos:</h4>
-
-
-
-
 <br>
 
-¿Qué parámetros básicos debo configurar?
+IP del servidor:
 -
 
-<h4>Puertos:</h4>
 
 
+<br>
 
-<h4>Directorios de trabajo:</h4>
-
-
-
-<h4>Rango DHCP / zonas DNS / virtual hosts:</h4>
-
+Recursos mínimos:
+-
 
 
 
 <br>
 
+Puerto:
+-
+
+
+
+<br>
+
+Directorios de trabajo:
+-
+
+
+
+<br>
+
+Rango DHCP / zonas DNS / virtual hosts:
+-
+
+
+
+<br>
 
 </details>
 
@@ -874,11 +884,18 @@ Su principal diferencia es que Docker Desktop por sí solo proporciona una base 
   
 <summary><h3>8.4.MySQL:</h3></summary>
 
+Explicacion y funcionamiento:
+-
+
 MySQL es un sistema de gestión de bases de datos de codigo abierto que base de datos relacional que permite almacenar, organizar, recuperar datos de manera eficiente y es perfecto para guardar: Datos de usuarios (nombre, email, contraseñas encriptadas, etc...), Inventarios de productos, Transacciones de ventas y Registros históricos o logs. Tambien no permite aplicar reglas de integridad referencial, relaciones entre tablas y control de accesos para garantizar la coherencia y seguridad de la información. Uno de los 
 usos más comunes de MySQL es como base de datos para aplicaciones web dinámicas.
 
-MySQL se integra fácilmente con sitios desarrollados en lenguajes como PHP, Python o Node.js, el que utilizaremos nosotros en este proyecto sera PHP que es un lenguaje de scripts generalista, especialmente concebido para el desarrollo de 
-aplicaciones web, gracias a su compatibilidad con servicios de hosting puedes desplegar fácilmente sitios web que consulten, actualicen o gestionen información en tiempo real.   
+MySQL se integra fácilmente con sitios desarrollados en lenguajes como PHP, Python o Node.js, el que utilizaremos nosotros en este proyecto sera PHP que es un lenguaje de scripts generalista, especialmente concebido para el desarrollo de aplicaciones web, gracias a su compatibilidad con servicios de hosting puedes desplegar fácilmente sitios web que consulten, actualicen o gestionen información en tiempo real.   
+
+<br>
+
+Nuestra base de datos:
+-
 
 ```
 create database Yutmiu;
@@ -940,75 +957,13 @@ CREATE TABLE lista_musica (
     FOREIGN KEY (id_lista) REFERENCES listas(id_lista),
     FOREIGN KEY (id_musica) REFERENCES musicas(id_musica)
 );
-
-
-
-SELECT * FROM usuarios;
-insert into usuarios (nombre, apellido, email, password, foto_perfil, descripcion)
-values ("Pep", "Pepe", "pepito", "popete", "popeye", "popote");
-
-SELECT * FROM artistas;
-insert into artistas (nombre, imagen)
-values ("Nachote", "imagen");
-
-SELECT * FROM musicas;
-insert into musicas (titulo, genero, id_artista)
-values ("musica", "pop", 10);
-
-SELECT * FROM valoraciones;
-insert into valoraciones (id_usuario, id_musica, puntuacion, comentario, fecha)
-values (11, 12, "Puntos", "Comentario", "Fecha");
-
-SELECT * FROM listas;
-insert into listas (nombre, descripcion, id_usuario)
-values ("Nachote", "descripcion", 13);
-
-SELECT * FROM lista_musica;
-insert into lista_musica (id_lista, id_musica)
-values (14, 15);
-
-
-
-DELETE FROM usuarios
-where nombre = "Pep" and apellido = "Pepe" and email = "pepito";
-
-DELETE FROM artistas
-where nombre = "Nachote" and imagen = "imagen";
-
-DELETE FROM musicas
-where titulo = "musica" and genero = "pop";
-
-DELETE FROM valoraciones
-where comentario = "Comentario";
-
-DELETE FROM listas
-where nombre = "Nachote" and descripcion = "descripcion";
-
-DELETE FROM lista_musica
-where id_lista = 14 and id_musica = 15;
-
-
-
-UPDATE usuarios
-SET nombre = "Pepe"
-WHERE id_usuario = 112;
-
-UPDATE artista
-SET nombre = "Nachote"
-WHERE ID_Artista = 113;
-
-UPDATE musicas
-SET titulo = 132
-WHERE id_musica = 114;
-
-UPDATE valoraciones
-SET comentario = "temon"
-WHERE id_musica = 115;
-
-UPDATE listas
-SET nombre = "Nachote"
-WHERE id_lista = 116;
 ```
+
+<br>
+
+Puerto:
+-
+
 
 </details>
 
@@ -1018,7 +973,17 @@ WHERE id_lista = 116;
   
 <summary><h3>8.5.Nginx:</h3></summary>
 
+Explicacion y funcionamiento:
+-
+
 NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
+
+<br>
+
+Puerto:
+-
+
+
 
 </details>
 
@@ -1027,6 +992,9 @@ NGINX es un software de código abierto que se utiliza para servidores web, prox
 <details>
   
 <summary><h3>8.6.PHP:</h3></summary>
+
+Explicacion y funcionamiento:
+-
 
 PHP es un lenguaje de programación de código abierto diseñado para el desarrollo web que se ejecuta en el servidor, permitiendo crear sitios web dinámicos, interactivos y con conexión a bases de datos.
 
@@ -1042,11 +1010,23 @@ Qué hace PHP?
 
 - Controla accesos y cookies: Maneja la autenticación de usuarios (inicios de sesión) y puede establecer o acceder a cookies.
 
-- Envía correos y gestiona archivos: Permite subir archivos al servidor y enviar correos electrónicos automáticamente. 
+- Envía correos y gestiona archivos: Permite subir archivos al servidor y enviar correos electrónicos automáticamente.
+
+<br>
+
+Base de datos:
+-
+  
+Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y hazerla funcional.
 
 <img width="1551" height="735" alt="image" src="https://github.com/user-attachments/assets/3abc807d-0fb9-4ffd-a782-c7b511ceb0e5" />
 
-Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y hazerla funcional.
+<br>
+
+Puerto:
+-
+
+
 
 </details>
 
@@ -1056,12 +1036,26 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
   
 <summary><h3>8.7.Ffmpeg:</h3></summary>
 
-Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web tambien el ffmpeg es multiplataforma, por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac, nosotros lo haremos des de un ubuntu. Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es abrir el cmd i poner 
-este comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado dentro del ubuntu. 
+Explicacion y funcionamiento:
+-
+
+Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web, tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia.tambien y ademas es multiplataforma por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac. 
+
+<br>
+
+Proceso de instalacion:
+-
+
+Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es poner el comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado. Ahora instalado lo que hemos hecho a sido instalarnos una musica qualquiera en mp3 y con el Ffmpeg convertirlo a un formato con mayor calidad, tambien hemos añadido el Ffmpeg dentro de el Portainer para que los usuarios puedan publicar la musica que quieran.
 
 <img width="878" height="449" alt="image" src="https://github.com/user-attachments/assets/41cc369e-e5df-4756-a902-d48963fa1e56" />
 
-Ffmpeg para como tanto para obtener información de un archivo multimedia, como para convertirlo a otro formato. Tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia.
+<br>
+
+Puerto:
+-
+
+
 
 </details>
 
@@ -1070,6 +1064,9 @@ Ffmpeg para como tanto para obtener información de un archivo multimedia, como 
 <details>
 
 <summary><h3>8.8.TrueNAS:</h3></summary>
+
+Explicacion y funcionamiento:
+-
 
 TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
 
@@ -1083,6 +1080,11 @@ Principales características las principales caracteristicas por lo que utilizam
   
 - No es necesario tener conectado monitor ni teclado para su operación
 
+<br>
+
+Proceso de instalacion:
+-
+  
 Ahora estamos instalando el TrueNAS dentro de una maquina virtual con la iso del Truenas.
 
 <img width="637" height="564" alt="image" src="https://github.com/user-attachments/assets/47f34bb2-9344-4fc2-94d3-270b47e2c07c" />
@@ -1100,6 +1102,11 @@ Ahora estamos creando una carpeta dentro de nuestra carpeta del proyecto y hacie
 
 <img width="1097" height="619" alt="image" src="https://github.com/user-attachments/assets/41066dae-0a6f-451b-abae-dd6b8ab048ef" />
 
+<br>
+
+Copias de seguridad:
+-
+
 Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto seria:
 
 - La maquinas virtuales donde tenemos el Docker. Aparte tambien tendriamos que guardar toda su configuracion y su conexion.
@@ -1116,6 +1123,8 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 - Todos los sistemas conectados en el Portainer, Tambien tendriamos que guardar las ips de cada servicio conectado y lo puertos donde estan conectados.
 
+<br>
+
 </details>
 
 <br>
@@ -1123,6 +1132,9 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 <details>
   
 <summary><h3>8.9.PfSense:</h3></summary>
+
+Explicacion y funcionamiento:
+-
 
 PfSense es una plataforma de firewall y enrutador de código abierto basada en FreeBSD, utilizada para asegurar, gestionar y controlar redes.
 
@@ -1134,15 +1146,20 @@ Los principales usos que le daremos al PfSense seran:
 
 - Servidor VPN: Soporta conexiones seguras mediante protocolos como OpenVPN e IPsec, permitiendo el acceso remoto seguro.
 
+<br>
+
+Configuracion del PfSense:
+-
+
 Ahora mismo todo el PfSense esta instalado detro de una maquina virtual con el sistema operativo FreeBSD y con un adaptador puente y una red interna 
 y accedemos a el poniendo la ip de la red interna dentro de un navegador.
 
-Dentro de PfSense hemos configurado lo siguiente:
-
 <br>
 
-Port Forward
--
+Dentro de PfSense hemos configurado lo siguiente:
+
+<details>
+<summary><h4>Port Forward</h4></summary>
 
 El port forwarding sirve para acceder al router que permite a dispositivos externos en internet acceder a servicios específicos dentro de tu red local privada,
 y lo que hemos hecho a sido conectar todos los servicios que tenemos con sus respectivas ip y puertos para que todo este conectado entre si.
@@ -1155,10 +1172,12 @@ Tambien ofrece estas funciones:
 
 <img width="1423" height="735" alt="image" src="https://github.com/user-attachments/assets/af6f1c80-f76e-4079-b02d-4357f47e4acf" />
 
+</details>
+
 <br>
 
-Red WAN:
--
+<details>
+<summary><h4>Red WAN:</h4></summary>
 
 Tambien hemos conectado todos los servicios a la red WAN para conectar la red a internet.
 
@@ -1174,10 +1193,12 @@ Tambien ofrece estas funciones:
 
 <img width="1421" height="735" alt="image" src="https://github.com/user-attachments/assets/30ae14c0-d1da-4004-9dd8-d19f4c5c9493" />
 
+</details>
+
 <br>
 
-Red LAN:
--
+<details>
+<summary><h4>Red LAN:</h4></summary>
 
 Y LAN conecta tus dispositivos locales al firewall.
 
@@ -1189,8 +1210,11 @@ Tambien ofrece estas funciones:
   
 - Seguridad: Por defecto, confía en el tráfico interno y permite el acceso hacia la WAN.
   
-
 <img width="1418" height="734" alt="image" src="https://github.com/user-attachments/assets/b308c873-96aa-4259-a4c7-1f401c889bed" />
+
+</details>
+
+<br>
 
 </details>
 
@@ -1250,7 +1274,7 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </div>
 
 <details>
-<summary><h3>Truenas</h3></summary>
+<summary><h2>Truenas</h2></summary>
 
 El TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
 
