@@ -1015,6 +1015,7 @@ Al final hemos decicido hacer un coche control remoto que se pueda manejar con f
 
 </details>
 
+#
 
 <details>
 <summary><h3>2.Objetivos del Proyecto:</h3></summary> 
@@ -1043,13 +1044,15 @@ El principal objetivo seria hacer un coche de arduino capaz de desplazarse en di
 
 </details>
 
+#
 
 <details>
 <summary><h3>3.Requisitos Técnicos:</h3></summary> 
 
 Estos seran requisitos técnicos que necesitaremos:
 
-<h4>Sistema de movimiento:</h4>
+<details>
+<summary><h4>Sistema de movimiento:</h4></summary> 
 
 - 2 o 4 motores DC
 
@@ -1059,8 +1062,12 @@ Estos seran requisitos técnicos que necesitaremos:
 
 - Chasis para el coche
 
+</details>
 
-<h4>Sistema de alimentación:</h4>
+<br>
+
+<details>
+<summary><h4>Sistema de alimentación:</h4></summary> 
 
 - Batería
 
@@ -1068,8 +1075,12 @@ Estos seran requisitos técnicos que necesitaremos:
 
 - Regulador de voltaje si es necesario
 
+</details>
 
-<h4>Sistema de comunicación:</h4>
+<br>
+
+<details>
+<summary><h4>Sistema de comunicación:</h4></summary> 
 
 Uno de los siguientes:
 
@@ -1079,8 +1090,12 @@ Uno de los siguientes:
 
 - WiFi
 
+</details>
 
-<h4>Otros componentes necesarios:</h4>
+<br>
+
+<details>
+<summary><h4>Otros componentes necesarios:</h4></summary> 
 
 - Cables Dupont
 
@@ -1090,8 +1105,12 @@ Uno de los siguientes:
 
 - LEDs indicadores (opcional)
 
+</details>
 
-<h4>Sensores opcionales:</h4>
+<br>
+
+<details>
+<summary><h4>Sensores opcionales:</h4></summary> 
 
 - Sensor ultrasónico (para evitar obstáculos)
 
@@ -1101,6 +1120,9 @@ Uno de los siguientes:
 
 </details>
 
+</details>
+
+#
 
 <details>
 <summary><h3>4.Metodología de Trabajo:</h3></summary> 
@@ -1108,28 +1130,41 @@ Uno de los siguientes:
 <h4>Investigación inicial:</h4>
 Buscar información sobre coches teledirigidos con Arduino y los componentes necesarios.
 
+<br>
+
 <h4>Selección de componentes:</h4>
 Elegir Arduino, driver de motores, motores, batería, módulo de comunicación y sensores.
+
+<br>
 
 <h4>Montaje del hardware:</h4>
 Instalar motores, ruedas, driver y Arduino en el chasis.
 
+<br>
+
 <h4>Programación:</h4>
 Programar Arduino para controlar los motores.
 
+<br>
+
 <h4>Pruebas del sistema:</h4>
 Hacer que el coche avance, retroceda, gire y se pare correctamente.
+
+<br>
 
 <h4>Documentación del proyecto:</h4>
 Mientras hacemos tendremos que ir documentando todas las cosas que hemos hecho como fallos o avances.
 
 </details>
 
+#
 
 <details>
 <summary><h3>5.Recursos Disponibles:</h3></summary> 
 
 Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
+
+<br>
 
 <h4>Documentación y guías:</h4>
 
@@ -1139,6 +1174,7 @@ Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 
 - Tutoriales sobre comunicación Bluetooth con Arduino
 
+<br>
 
 <h4>Tutoriales y videotutoriales:</h4>
 
@@ -1150,62 +1186,119 @@ Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 
 </details>
 
+#
 
 <details>
 <summary><h3>6.Desafíos y Soluciones Previstas:</h3></summary> 
 
-
+#
 
 </details>
 
 <br>
 
-Todos los componentes y su uso:
--
+#
+
+<details>
+<summary><h2>Todos los componentes y su uso:</h2></summary> 
 
 <h4>Arduino Uno:</h4>
 
 Es la placa principal que leera el control remoto y decidira qué motores mover.
 
+<br>
+
+<h4>Magic I/O Shield for Arduino:</h4>
+
+Actúa como puente de conexión entre el módulo de bloques electrónicos y la placa UNO, tambien incorpora un controlador de motor similar al L293/L298, que proporciona potencia ajustable a cargas inductivas como relés, solenoides, motores de CC y motores paso a paso. Permite controlar dos canales de motores de CC con la placa Arduino, regulando la velocidad y la dirección de cada uno de forma independiente.
+
+<br>
 
 <h4>Batería o Portapilas:</h4>
 
 Los motores a la hora de utilizarse consumiran energía una pila de 9V común servira.
 
+<br>
 
 <h4>Interruptor:</h4>
 
 Para no tener que desconectar los cables cada vez que quieras apagarlo.
 
+<br>
 
 <h4>Chasis de coche:</h4>
 
 Es donde estara la estructura, las ruedas y los motores.
 
+<br>
 
 <h4>Controlador de Motores:</h4>
 
 Es el componente más importante para el movimiento del coche y lo que hace es recibir órdenes de baja potencia del Arduino y las convierte en potencia real para los motores, eso nos permitira controlar la velocidad y el sentido de giro del coche.
 
+<br>
 
 <h4>Módulo Bluetooth:</h4>
 
 Permite controlar el coche.
 
+<br>
 
 <h4>Módulo Infrarrojo:</h4>
   
 Para que funcione línea de visión directa entre el mando y el coche.
 
+<br>
 
 <h4>Módulo de Radiofrecuencia:</h4>
   
 Sirve para largo alcance, aunque requiere un segundo Arduino como mando.
 
+<br>
 
-<h4>Sensor Ultrasónico:</h4>
+<h4>Ultrasónic detector module:</h4>
 
 Lo que hace es medir la distancia a los objetos enviando un pulso de sonido.
+
+<br>
+
+<h4>Micro servo motor:</h4>
+
+Este servomotor lo utilizaremos para controlar o regular cargas pequeñas. Alimentado con 5 V, este pequeño servomotor tiene una velocidad de accionamiento máxima de hasta 0,1 segundos/60 grados. 
+
+<br>
+
+<h4>Universal wheel:</h4>
+
+Una rueda conectada al coche que permite moverse en cualquier dirección (adelante, atrás, izquierda y derecha) sin girar primero, gracias a pequeños rodillos en su perímetro que hay en la parte frontal del coche.
+
+<br>
+
+<h4>LCD screen:</h4>
+
+Una pantalla LCD lo que hace es mostrar imágenes y texto en dispositivos planos al controlar eléctricamente la luz que pasa a través de una capa de cristal líquido. Funciona bloqueando o permitiendo el paso de la luz de fondo a través de filtros, creando colores vibrantes sin emitir luz propia.
+
+<br>
+
+<h4>Infrared remote controller:</h4>
+
+Envía señales de luz invisible, moduladas en pulsos, para controlar dispositivos electrónicos a corta distancia y nosotros lo utilizaremos como controlar el coche con control remoto.
+
+<br>
+
+<h4>Battery box:</h4>
+
+Esto nos permitira que el coche se pueda mover a distancia con el Infrared remote controller.
+
+<br>
+
+<h4>IR receiver module:</h4>
+
+Un módulo receptor IR recibe señales de luz infrarroja emitidas por un control remoto o emisor en nuestro caso seria el Infrared remote controller, y las convierte en señales eléctricas digitales que un microcontrolador puede procesar.
+
+</details>
+
+#
 
 <br>
 
@@ -1216,7 +1309,7 @@ Este seria nuestro diagrama de flujo con todos los componentes que vamos a utili
 
 <img width="2090" height="1516" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/49c734c8-eb91-45da-8dc3-c732ce930712" />
 
-<br>
+<br><br>
 
 Código estructurado y funcional:
 -
@@ -1548,6 +1641,6 @@ void drawText() { // draws the texts on the screen
 ```
 </details>
 
-
+#
 
 </details>
