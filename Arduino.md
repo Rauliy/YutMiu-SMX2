@@ -5,7 +5,7 @@
 </div>
 
 <details>
-<summary><h2>Actividades Arduino</h2></summary>
+<summary><h1>Actividades Arduino</h1></summary>
 
 Aqui todo el contenido y todas las actividades de Arduino:
 
@@ -980,7 +980,7 @@ Temp: 86ºF
 #
 
 <details>
-<summary><h2>Proyecto Arduino</h2></summary>
+<summary><h1>Proyecto Arduino</h1></summary>
 
 Briefing proyecto:
 -
