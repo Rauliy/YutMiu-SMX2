@@ -751,17 +751,12 @@ Sistema operativo y los recursos mínimos:
 
 <br>
 
-IP del servidor:
+IP del servidor y puertos:
 -
 
 
 
-<br>
-
-Puertos:
--
-
-
+<img width="1585" height="47" alt="image" src="https://github.com/user-attachments/assets/764fb92b-04ff-4eb1-a3b3-c6a53ae8cff6" />
 
 <br>
 
@@ -823,28 +818,23 @@ Diferencia:
 
 Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker hemos implementado los siguientes servicios:
 
-<img width="1618" height="623" alt="image" src="https://github.com/user-attachments/assets/b87d9312-b74e-419a-900e-e1c6497e500e" />
-
 <br>
 
 Sistema operativo y los recursos mínimos:
 -
 
+
+
 <img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
 
 <br>
 
-IP del servidor:
+IP del servidor y puertos:
 -
 
 
 
-<br>
-
-Puerto:
--
-
-
+<img width="1618" height="623" alt="image" src="https://github.com/user-attachments/assets/b87d9312-b74e-419a-900e-e1c6497e500e" />
 
 <br>
 
@@ -860,7 +850,7 @@ Rango DHCP / zonas DNS / virtual hosts:
 
 
 
-<br>
+
 
 </details>
 
@@ -959,7 +949,7 @@ CREATE TABLE lista_musica (
 
 <br>
 
-Puerto:
+IP del servidor y puertos:
 -
 
 
@@ -979,10 +969,12 @@ NGINX es un software de código abierto que se utiliza para servidores web, prox
 
 <br>
 
-Puerto:
+IP del servidor y puertos:
 -
 
 
+
+<img width="1585" height="47" alt="image" src="https://github.com/user-attachments/assets/11451c94-6860-49ad-b445-047a7f007666" />
 
 </details>
 
@@ -1022,10 +1014,12 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
 
 <br>
 
-Puerto:
+IP del servidor y puertos:
 -
 
 
+
+<img width="1584" height="45" alt="image" src="https://github.com/user-attachments/assets/507dd9d2-3233-463b-a897-fd960c0596a7" />
 
 </details>
 
@@ -1051,7 +1045,7 @@ Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es poner el 
 
 <br>
 
-Puerto:
+IP del servidor y puertos:
 -
 
 
@@ -1100,6 +1094,13 @@ correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operat
 Ahora estamos creando una carpeta dentro de nuestra carpeta del proyecto y haciendo Backup a los archivos mas importantes que seria la base de datos, a la carpeta del servidor y al Portainer.
 
 <img width="1097" height="619" alt="image" src="https://github.com/user-attachments/assets/41066dae-0a6f-451b-abae-dd6b8ab048ef" />
+
+<br>
+
+Sistema operativo y los recursos mínimos:
+-
+
+
 
 <br>
 
