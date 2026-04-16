@@ -235,8 +235,8 @@ Estructura y diagrama de la red:
 
 Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtablas y utilidades:
 
-<img width="503" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
-<img width="503" height="282" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
+<img width="502" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+<img width="502" height="282" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
 <h3>Core:</h3>
 
@@ -1020,6 +1020,63 @@ IP del servidor y puertos:
 
 
 <img width="1584" height="45" alt="image" src="https://github.com/user-attachments/assets/507dd9d2-3233-463b-a897-fd960c0596a7" />
+
+<br><br>
+
+Que apartados de la pagina web tenemos que volver dinamica:
+-
+
+<h4>Pagina principal</h4>
+
+- Cuando escribas en el buscador que aparezca la musica que estas buscando.
+
+-  Poner un boton para poder añadir la musicas que tu deseas, podras selecionar un archivo de audio y seleccionar que estilo de musica es.
+
+-  Poder seleccionar el estilo de musica que quieres escuchar y que te salgan las musicas mas recientes que han sido publicadas con el mismo estilo de musica que hayas seleccionado.
+
+<br>
+
+<h4>Pagina principal</h4>
+
+- Cuando escribas en el buscador que aparezca la musica que estas buscando.
+
+-  Poner un boton para poder añadir la musicas que tu deseas, podras selecionar un archivo de audio y seleccionar que estilo de musica es.
+
+-  Poder seleccionar el estilo de musica que quieres escuchar y que te salgan las musicas mas recientes que han sido publicadas con el mismo estilo de musica que hayas seleccionado.
+
+<br>
+
+<h4>Musicas</h4>
+
+- Visualizar el artista y poder ver que otras canciones tiene publicadas dentro de nuestra web.
+
+- Visualizar las valoraciones hechas por otras personas podiendo ver cuantas estrellas han puesto y su comentario.
+
+- Poder enviar tu propia valoracion con el numero de estrellas seleccionadas y pequeño texto y dentro de las valoraciones de esa musica ver la que has hecho.
+
+- Tambien por cada musica ver la letra de ella.
+
+<br>
+
+<h4>Listas de musica</h4>
+
+- Poder guardar diferentes musicas dentro de una lista de reproduccion
+
+- Tambien poder hacer mas de una lista de reproduccion.
+
+<br>
+
+<h4>Configuracion</h4>
+
+- Podras activar o desactivar la opcion de recibir solicitudes de amistad.
+
+- Podras activar o desactivar la opcion de ocultar tus musicas favoritas.
+
+- Podras activar o desactivar la opcion de ocultar tus listas de musica.
+
+- Podras activar o desactivar la opcion de tener el perfil privado para que ningun usuario pueda ver que tienes.
+
+<br>
 
 </details>
 
