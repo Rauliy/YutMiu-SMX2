@@ -1064,7 +1064,6 @@ Estos seran requisitos técnicos que necesitaremos:
 
 </details>
 
-<br>
 
 <details>
 <summary><h4>Sistema de alimentación:</h4></summary> 
@@ -1077,7 +1076,6 @@ Estos seran requisitos técnicos que necesitaremos:
 
 </details>
 
-<br>
 
 <details>
 <summary><h4>Sistema de comunicación:</h4></summary> 
@@ -1092,8 +1090,6 @@ Uno de los siguientes:
 
 </details>
 
-<br>
-
 <details>
 <summary><h4>Otros componentes necesarios:</h4></summary> 
 
@@ -1106,8 +1102,6 @@ Uno de los siguientes:
 - LEDs indicadores (opcional)
 
 </details>
-
-<br>
 
 <details>
 <summary><h4>Sensores opcionales:</h4></summary> 
@@ -1130,27 +1124,27 @@ Uno de los siguientes:
 <h4>Investigación inicial:</h4>
 Buscar información sobre coches teledirigidos con Arduino y los componentes necesarios.
 
-<br>
+<br><br>
 
 <h4>Selección de componentes:</h4>
 Elegir Arduino, driver de motores, motores, batería, módulo de comunicación y sensores.
 
-<br>
+<br><br>
 
 <h4>Montaje del hardware:</h4>
 Instalar motores, ruedas, driver y Arduino en el chasis.
 
-<br>
+<br><br>
 
 <h4>Programación:</h4>
 Programar Arduino para controlar los motores.
 
-<br>
+<br><br>
 
 <h4>Pruebas del sistema:</h4>
 Hacer que el coche avance, retroceda, gire y se pare correctamente.
 
-<br>
+<br><br>
 
 <h4>Documentación del proyecto:</h4>
 Mientras hacemos tendremos que ir documentando todas las cosas que hemos hecho como fallos o avances.
@@ -1163,8 +1157,6 @@ Mientras hacemos tendremos que ir documentando todas las cosas que hemos hecho c
 <summary><h3>5.Recursos Disponibles:</h3></summary> 
 
 Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
-
-<br>
 
 <h4>Documentación y guías:</h4>
 
