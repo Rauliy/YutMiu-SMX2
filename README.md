@@ -11,6 +11,9 @@
 <details>
 <summary><h2>Índice</h2></summary>
 
+<details>
+<summary><h3>YutMiu-SMX2</h3></summary>
+  
 - 1.Introducción
 
 - 2.Briefing 
@@ -33,7 +36,46 @@
 
 - 11.Webgrafia
 
-- Plan de Contingencia
+</details>
+
+<details>
+<summary><h3>Plan de Contingencia</h3></summary>
+
+- Truenas
+
+- 1.Datos generales
+
+- 2.Objetivo del plan
+
+- 3.Alcance
+
+- 4.Identificaión de activos
+
+- 5.Análisis de riesgos
+
+- 6.Escenarios de contingencia
+
+- 7.Plan de respuesta
+
+- 8.Plan de recuperación
+
+- 9.Copias de seguridad
+
+- 10.Medidas preventivas
+
+- 11.Responsables
+
+- 12.Plan de comunicación
+
+- 13.Pruebas del plan
+
+- 14.Mantenimiento del plan
+
+- 15.Mejoras futuras
+
+- 16.Conclusiones
+
+</details>
 
 </details>
 
@@ -48,6 +90,8 @@ Queremos que nuestros usuarios disfruten compartiendo sus canciones favoritas, o
 
 Somos un equipo de dos estudiantes que queremos hacer una web de música y hemos estado buscando webs y aplicaciones con este tipo de contenido para inspirarnos. Contenidos del tipo: música, opiniones y valoraciones de las canciones disponibles en la web.
 
+<br>
+
 ¿Qué funcionalidades ofrecerá a los usuarios?
 -
 
@@ -61,10 +105,12 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuánto te ha gustado.
 
+<br>
+
 Los datos que se deben guardar serán los siguientes:
 -
 
-El nombre del usuario:
+<h3>El nombre del usuario:</h3>
   
 - Correo electrónico o/e teléfono
   
@@ -80,8 +126,9 @@ El nombre del usuario:
   
 - Música que ha estado escuchando los últimos 7 días
   
+<br>
 
-Datos de la web:
+<h3>Datos de la web:</h3>
 
 - Música que hay publicada
   
@@ -105,6 +152,7 @@ Datos de la web:
 
 - Comentarios publicados→ Date y Text
 
+<br>
 
 ¿Cómo se relacionan unas entidades con otras?
 -
@@ -141,6 +189,8 @@ En nuestra web implementaremos una función para poder hablar y compartir músic
 Propuestas iniciales y objetivos:
 -
 
+Estas fueron las principales propuestas antes de decidirnos:
+
 - 1.Hacer como una especie de Spotify pero sin anuncios.
 
 - 2.Hacer una web como YouTube.
@@ -152,6 +202,8 @@ Propuestas iniciales y objetivos:
 Al final vamos a combinar algunas de estas ideas; vamos a hacer una web de música en streaming y que los usuarios puedan ir comentando y recomendando músicas y dar sus opiniones respecto a la 
 música que han escuchado o que les han recomendado. Básicamente, hemos escogido hacer esto porque a ambos nos gusta la música, y además nos pareció buena idea que hubiese un chat con comentarios y opiniones de lo que la gente escucha y ve.
 
+<br>
+
 Objetivos del Proyecto:
 -
 
@@ -159,6 +211,8 @@ Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda di
 Objetivo del Publico.
 
 Nosotros queremos llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
+
+<br>
 
 Material Necesario:
 -
@@ -1028,7 +1082,7 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 <h4>Pagina principal</h4>
 
-- Cuando escribas en el buscador que aparezca la musica que estas buscando.
+-  Cuando escribas en el buscador que aparezca la musica que estas buscando.
 
 -  Poner un boton para poder añadir la musicas que tu deseas, podras selecionar un archivo de audio y seleccionar que estilo de musica es.
 
@@ -1036,13 +1090,13 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 <br>
 
-<h4>Pagina principal</h4>
+<h4>Mi perfil</h4>
 
-- Cuando escribas en el buscador que aparezca la musica que estas buscando.
+-  Puedes cambiar tu foto de perfil y amigos o usuario podran verla.
 
--  Poner un boton para poder añadir la musicas que tu deseas, podras selecionar un archivo de audio y seleccionar que estilo de musica es.
+-  Tambien dentro de tu perfil puedes modificar la descripcion pudiendo poner hasta 50 caracteres.   
 
--  Poder seleccionar el estilo de musica que quieres escuchar y que te salgan las musicas mas recientes que han sido publicadas con el mismo estilo de musica que hayas seleccionado.
+-  Y desde el perfil podras hacer publicas las listas de musicas que tengas y las valoraciones que hayas hecho.
 
 <br>
 
@@ -1058,6 +1112,14 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 <br>
 
+<h4>Valoracines</h4>
+
+- Aqui podras visualizar todas las valoraciones hechas por usuarios acerca de una musica que escojas.
+
+- Por cada valoracion podras ver el perfil del ususario, el numero de estrellas que le a dado y un pequeño comentario.
+
+<br>
+
 <h4>Listas de musica</h4>
 
 - Poder guardar diferentes musicas dentro de una lista de reproduccion
@@ -1066,13 +1128,23 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 <br>
 
+<h4>Amigos</h4>
+
+-  Des de aqui podras agregar como amigo a quien tu quieras solo poniendo el nombre del usuario.
+
+-  Cuando ya tengas un amigo podras hablar con el, tambien podras recomendarle musicas, pasarle listas de musicas tuyas o de otros usuarios y enviarle valoraciones.
+
+- Tambien podras ponerle motes a tu amigos.
+
+<br>
+
 <h4>Configuracion</h4>
 
 - Podras activar o desactivar la opcion de recibir solicitudes de amistad.
 
-- Podras activar o desactivar la opcion de ocultar tus musicas favoritas.
+- Podras activar o desactivar la opcion de ocultar tus musicas favoritas para que dentro de tu perfil no se pueda visualizar.
 
-- Podras activar o desactivar la opcion de ocultar tus listas de musica.
+- Podras activar o desactivar la opcion de ocultar tus listas de musica para que dentro de tu perfil no se pueda visualizar.
 
 - Podras activar o desactivar la opcion de tener el perfil privado para que ningun usuario pueda ver que tienes.
 
@@ -1134,21 +1206,36 @@ Principales características las principales caracteristicas por lo que utilizam
 
 Proceso de instalacion:
 -
-  
+
+Ahora voy a explicar paso a paso toda su instalacion paso a paso:
+
+<h4>Paso 1</h4>  
 Ahora estamos instalando el TrueNAS dentro de una maquina virtual con la iso del Truenas.
 
 <img width="637" height="564" alt="image" src="https://github.com/user-attachments/assets/47f34bb2-9344-4fc2-94d3-270b47e2c07c" />
 
+<br>
+
+
+<h4>Paso 2</h4>
 Despues de instalar el Truenas tenemos que configurarlo correctamente para mas adelante poderlo abrir dentro de un navegador.
 
 <img width="1212" height="839" alt="image" src="https://github.com/user-attachments/assets/4d9d37db-ca06-47c3-9f44-be53fc761b5b" />
+
+<br>
+
+<h4>Paso 3</h4>
 
 Y tras configurarlo todo y haber accedido al TrueNAS des de navegador nos permitira crear pools de almacenamiento seguros con ZFS, gestionar copias de seguridad en la nube, 
 correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operativos.
 
 <img width="1434" height="735" alt="image" src="https://github.com/user-attachments/assets/ead62b99-b029-42fb-941a-6af1ef9e1b37" />
 
-Ahora estamos creando una carpeta dentro de nuestra carpeta del proyecto y haciendo Backup a los archivos mas importantes que seria la base de datos, a la carpeta del servidor y al Portainer.
+<br>
+
+<h4>Paso 4</h4>
+
+Y tras hacer toda la configuracion ahora podemos crear una nueva carpeta dentro de nuestra carpeta del proyecto y haciendo Backup a los archivos mas importantes que seria la base de datos, a la carpeta del servidor y al Portainer.
 
 <img width="1097" height="619" alt="image" src="https://github.com/user-attachments/assets/41066dae-0a6f-451b-abae-dd6b8ab048ef" />
 
