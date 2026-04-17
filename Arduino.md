@@ -1160,21 +1160,21 @@ Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 
 <h4>Documentación y guías:</h4>
 
-- Documentación oficial de Arduino
+- Documentación oficial de Arduino.
 
-- Guías sobre control de motores con drivers L298N o L293D
+- Guías sobre control de motores con drivers L298N o L293D.
 
-- Tutoriales sobre comunicación Bluetooth con Arduino
+- Tutoriales sobre comunicación Bluetooth con Arduino.
 
 <br>
 
 <h4>Tutoriales y videotutoriales:</h4>
 
-- Tutoriales de Arduino en YouTube
+- Tutoriales de Arduino en YouTube.
 
-- Proyectos de coches Arduino en páginas de electrónica
+- Proyectos de coches Arduino en páginas de electrónica.
 
-- Guías paso a paso para el uso del módulo Bluetooth HC-05
+- Guías paso a paso para el uso del módulo Bluetooth HC-05.
 
 </details>
 
