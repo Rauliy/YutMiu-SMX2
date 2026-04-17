@@ -1191,7 +1191,7 @@ Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 <details>
 <summary><h3>6.Desafíos y Soluciones Previstas:</h3></summary> 
 
-#
+
 
 </details>
 
