@@ -1312,104 +1312,81 @@ Código estructurado y funcional:
 Lo que hace el codigo es configurar los botones de avanzar, retroceder, izquierda, derecha y parar.
 
 ```
-#include <SoftwareSerial.h>
+#include <Servo.h>
+#include <IRremote.h> // Ahora sí funcionará cuando instales la librería
 
-// Pines Bluetooth (RX, TX)
-SoftwareSerial BT(10, 11);
+// Pines de Motores (Extraídos de tu lesson22.mix)
+const int IN1 = 12; const int IN2 = 11;
+const int IN3 = 9;  const int IN4 = 10;
+const int ENA = 5;  const int ENB = 6;
 
-// Pines del driver de motores
-int IN1 = 2;
-int IN2 = 3;
-int IN3 = 4;
-int IN4 = 5;
+// Radar (En bloque D7D8) y Servo (MUY IMPORTANTE: Conéctalo a D3)
+const int trigPin = 7; 
+const int echoPin = 8; 
+const int servoPin = 3; 
 
-// Pines de velocidad (PWM)
-int ENA = 6;
-int ENB = 9;
-
-char comando;
+Servo cabeza;
+IRrecv irrecv(4); // Receptor IR en bloque D4
+decode_results results;
 
 void setup() {
-  // Configuración de pines
-  pinMode(IN1, OUTPUT);
-  pinMode(IN2, OUTPUT);
-  pinMode(IN3, OUTPUT);
-  pinMode(IN4, OUTPUT);
-  pinMode(ENA, OUTPUT);
-  pinMode(ENB, OUTPUT);
+  pinMode(IN1, OUTPUT); pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT); pinMode(IN4, OUTPUT);
+  pinMode(ENA, OUTPUT); pinMode(ENB, OUTPUT);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
 
-  // Velocidad inicial
-  analogWrite(ENA, 200);
-  analogWrite(ENB, 200);
-
-  // Iniciar Bluetooth
-  BT.begin(9600);
+  cabeza.attach(servoPin);
+  cabeza.write(90); // Centrar cabeza al inicio
+  
+  irrecv.enableIRIn(); // Iniciar el receptor IR
+  frenar();
 }
 
 void loop() {
-  if (BT.available()) {
-    comando = BT.read();
+  if (irrecv.decode(&results)) {
+    unsigned long tecla = results.value;
 
-    switch (comando) {
-
-      case 'F': // Avanzar
-        adelante();
-        break;
-
-      case 'B': // Retroceder
-        atras();
-        break;
-
-      case 'L': // Izquierda
-        izquierda();
-        break;
-
-      case 'R': // Derecha
-        derecha();
-        break;
-
-      case 'S': // Parar
-        parar();
-        break;
-    }
+    // Códigos de tu mando extraídos de lesson22.mix
+    if (tecla == 0xFF4AB5) { avanzar(); delay(500); frenar(); } // Flecha arriba
+    else if (tecla == 0xFF18E7) { retroceder(); delay(500); frenar(); } // Flecha abajo
+    else if (tecla == 0xFF10EF) { girarDerecha(); delay(200); frenar(); } // Derecha
+    else if (tecla == 0xFF5AA5) { girarIzquierda(); delay(200); frenar(); } // Izquierda
+    else if (tecla == 0xFF38C7) { frenar(); } // Botón OK/Stop
+    
+    irrecv.resume();
   }
 }
 
-// FUNCIONES DE MOVIMIENTO
-
-void adelante() {
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
+// Funciones de movimiento adaptadas de tus archivos .mix
+void avanzar() {
+  digitalWrite(IN1, HIGH); digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);
+  analogWrite(ENA, 100); analogWrite(ENB, 100);
 }
 
-void atras() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, HIGH);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
+void retroceder() {
+  digitalWrite(IN1, LOW); digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, LOW); digitalWrite(IN4, HIGH);
+  analogWrite(ENA, 100); analogWrite(ENB, 100);
 }
 
-void izquierda() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, HIGH);
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
+void frenar() {
+  digitalWrite(IN1, LOW); digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW); digitalWrite(IN4, LOW);
+  analogWrite(ENA, 0); analogWrite(ENB, 0);
 }
 
-void derecha() {
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
+void girarDerecha() {
+  digitalWrite(IN1, HIGH); digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW); digitalWrite(IN4, HIGH);
+  analogWrite(ENA, 200); analogWrite(ENB, 200);
 }
 
-void parar() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, LOW);
+void girarIzquierda() {
+  digitalWrite(IN1, LOW); digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH); digitalWrite(IN4, LOW);
+  analogWrite(ENA, 200); analogWrite(ENB, 200);
 }
 ```
 
