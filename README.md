@@ -279,7 +279,7 @@ Lista detallada de todas las tecnologías que utilizaremos:
 <details>
 <summary><h2>6.Red</h2></summary>
   
-Aquí podemos ver cómo vamos a organizar la web y los servidores correspondientes:
+Aquí podemos ver cómo vamos a organizar la web y los servicios correspondientes:
 
 Estructura y diagrama de la red:
 -
@@ -289,18 +289,18 @@ Estructura y diagrama de la red:
 
 Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtablas y utilidades:
 
-<img width="502" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
-<img width="502" height="282" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
+<img width="501" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+<img width="501" height="282" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
-<h3>Core:</h3>
+<h4>Core:</h4>
 
 - Musicas: En nuestra web la tabla de musica seria la tabla principal porque basicamente es la funcion principal de nuestra pagina web. 
 
-<h3>Subtablas:</h3>
+<h4>Subtablas:</h4>
 
 - Artistas: Los artistas estan en el apartado de subtablas por que no es una utilidad es solo un grupo especificos de personas y no es una utilidad.
 
-<h3>Utilidades:</h3>
+<h4>Utilidades:</h4>
 
 - Valoraciones: Este sera un apartado bastante importante en nuestro proyecto ya que es lo unico que nos diferencia entre otras webs de musica.
 
@@ -323,7 +323,7 @@ Asi es como tenemos estructurada nuestra red implementada
 
 <br>
 
- Listado de tareas sobre como nos lo vamos a montar y organizar nuestro proyecto:
+ Listado de tareas sobre como vamos a montar y organizar nuestro proyecto:
  -
 
 <details>
@@ -494,7 +494,7 @@ Estructura de Base de Datos:
 Tabla de datos y tipos (Base de datos):
 
 <details>
-<summary><h3>Tabla: Usuarios</h3></summary>
+<summary><h3>Usuarios</h3></summary>
 
 | Información       | Tipo MySQL         | Descripción |
 |------------------|--------------------|-------------|
@@ -507,10 +507,8 @@ Tabla de datos y tipos (Base de datos):
 ---
 </details>
 
-<br>
-
 <details>
-<summary><h3>Tabla: Canciones</h3></summary>
+<summary><h3>Canciones</h3></summary>
 
 | Información     | Tipo MySQL         | Descripción |
 |----------------|--------------------|-------------|
@@ -523,10 +521,8 @@ Tabla de datos y tipos (Base de datos):
 ---
 </details>
 
-<br>
-
 <details>
-<summary><h3>Tabla: Playlists</h3></summary>
+<summary><h3>Playlists</h3></summary>
   
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
@@ -536,10 +532,8 @@ Tabla de datos y tipos (Base de datos):
 ---
 </details>
 
-<br>
-
 <details>
-<summary><h3>Tabla: Comentarios</h3></summary>
+<summary><h3>Comentarios</h3></summary>
   
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
@@ -550,10 +544,8 @@ Tabla de datos y tipos (Base de datos):
 ---
 </details>
 
-<br>
-
 <details>
-<summary><h3>Tabla: Valoraciones</h3></summary>
+<summary><h3>Valoraciones</h3></summary>
 
 | Información        | Tipo MySQL         | Descripción |
 |-------------------|--------------------|-------------|
@@ -563,10 +555,8 @@ Tabla de datos y tipos (Base de datos):
 ---
 </details>
 
-<br>
-
 <details>
-<summary><h3>Tabla: Amigos</h3></summary>
+<summary><h3>Amigos</h3></summary>
 
 | Información | Tipo MySQL         | Descripción |
 |-------------|--------------------|-------------|
@@ -776,25 +766,30 @@ Proceso de instalacion:
 
 Ahora voy a explicar paso a paso toda su instalacion paso a paso:
 
-<h4>Paso 1:</h4>
+<details>
+<summary><h4>Paso 1</h4></summary>
 
 El primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
 configurar la ip statica y lo haremos poniendo el comando "sudo nano /etc/netplan/00-installer-config.yaml" i esto lo que hace es editar el archivo netplan y la tendremos que configurar aqui una captura de como lo tenemos configurado.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f7c6eb1b-0479-4f30-abb0-25ef1abfd5be" />
 
-<br>
+</details>
 
-<h4>Paso 2:</h4>
+<details>
+<summary><h4>Paso 2</h4></summary>
 
 Ahora luego de haber configurado correctamente el archivo netplat solo tenemos que hacer "sudo netplan apply" para aplicar los cambios y "ip a" para verificar que funcione. Despues de hacer los anteriores pasos tendremos que instalar el pi-hole con "curl -sSL https://install.pi-hole.net | bash" si no funciona el comando significa que el ubuntu no tiene instalado el curl, si es asi solo instalamos el curl con "sudo apt install curl -y". Ahora en la instalacion saldran las siguientes opciones: seleccionar la interfaz de red, elegir el DNS upstream, seleccionar interfaz web  y seleccionar servidor web.
 
-<br>
+</details>
 
-<h4>Paso 3:</h4>
+<details>
+<summary><h4>Paso 3</h4></summary>
 
 Despues de completar la instalacion del pi-hole y haber seleccionado cada apartado al final tendremos que seleccionar una contraseña para el pi-hole y sera necesaria para abrir el pi-hole dentro de el navegador. Ahola despues de hacer todoslos anteriores pasos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS.
 <img width="1163" height="839" alt="image" src="https://github.com/user-attachments/assets/7638eb0b-e414-40ed-bd85-08757c5488ef" />
+
+</details>
 
 <br>
 
@@ -811,20 +806,6 @@ IP del servidor y puertos:
 
 
 <img width="1585" height="47" alt="image" src="https://github.com/user-attachments/assets/764fb92b-04ff-4eb1-a3b3-c6a53ae8cff6" />
-
-<br>
-
-Directorios de trabajo:
--
-
-
-
-<br>
-
-Rango DHCP / zonas DNS / virtual hosts:
--
-
-
 
 <br>
 
@@ -1209,35 +1190,41 @@ Proceso de instalacion:
 
 Ahora voy a explicar paso a paso toda su instalacion paso a paso:
 
-<h4>Paso 1</h4>  
+<details>
+<summary><h4>Paso 1</h4></summary>
 Ahora estamos instalando el TrueNAS dentro de una maquina virtual con la iso del Truenas.
 
 <img width="637" height="564" alt="image" src="https://github.com/user-attachments/assets/47f34bb2-9344-4fc2-94d3-270b47e2c07c" />
 
-<br>
+</details>
 
+<details>
+<summary><h4>Paso 2</h4></summary>
 
-<h4>Paso 2</h4>
 Despues de instalar el Truenas tenemos que configurarlo correctamente para mas adelante poderlo abrir dentro de un navegador.
 
 <img width="1212" height="839" alt="image" src="https://github.com/user-attachments/assets/4d9d37db-ca06-47c3-9f44-be53fc761b5b" />
 
-<br>
+</details>
 
-<h4>Paso 3</h4>
+<details>
+<summary><h4>Paso 3</h4></summary>
 
 Y tras configurarlo todo y haber accedido al TrueNAS des de navegador nos permitira crear pools de almacenamiento seguros con ZFS, gestionar copias de seguridad en la nube, 
 correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operativos.
 
 <img width="1434" height="735" alt="image" src="https://github.com/user-attachments/assets/ead62b99-b029-42fb-941a-6af1ef9e1b37" />
 
-<br>
+</details>
 
-<h4>Paso 4</h4>
+<details>
+<summary><h4>Paso 4</h4></summary>
 
 Y tras hacer toda la configuracion ahora podemos crear una nueva carpeta dentro de nuestra carpeta del proyecto y haciendo Backup a los archivos mas importantes que seria la base de datos, a la carpeta del servidor y al Portainer.
 
 <img width="1097" height="619" alt="image" src="https://github.com/user-attachments/assets/41066dae-0a6f-451b-abae-dd6b8ab048ef" />
+
+</details>
 
 <br>
 
