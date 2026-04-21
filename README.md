@@ -793,13 +793,6 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 
 <br>
 
-Sistema operativo y los recursos mínimos:
--
-
-
-
-<br>
-
 IP del servidor y puertos:
 -
 
@@ -873,17 +866,8 @@ IP del servidor y puertos:
 
 <br>
 
-Directorios de trabajo:
--
-
-
-
-<br>
-
 Rango DHCP / zonas DNS / virtual hosts:
 -
-
-
 
 
 
@@ -1061,7 +1045,8 @@ IP del servidor y puertos:
 Que apartados de la pagina web tenemos que volver dinamica:
 -
 
-<h4>Pagina principal</h4>
+<details>
+<summary><h4>Pagina principal</h4></summary>
 
 -  Cuando escribas en el buscador que aparezca la musica que estas buscando.
 
@@ -1069,9 +1054,10 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 -  Poder seleccionar el estilo de musica que quieres escuchar y que te salgan las musicas mas recientes que han sido publicadas con el mismo estilo de musica que hayas seleccionado.
 
-<br>
+</details>
 
-<h4>Mi perfil</h4>
+<details>
+<summary><h4>Mi perfil</h4></summary>
 
 -  Puedes cambiar tu foto de perfil y amigos o usuario podran verla.
 
@@ -1079,9 +1065,10 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 -  Y desde el perfil podras hacer publicas las listas de musicas que tengas y las valoraciones que hayas hecho.
 
-<br>
+</details>
 
-<h4>Musicas</h4>
+<details>
+<summary><h4>Musicas</h4></summary>
 
 - Visualizar el artista y poder ver que otras canciones tiene publicadas dentro de nuestra web.
 
@@ -1091,25 +1078,28 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 - Tambien por cada musica ver la letra de ella.
 
-<br>
+</details>
 
-<h4>Valoracines</h4>
+<details>
+<summary><h4>Valoracines</h4></summary>
 
 - Aqui podras visualizar todas las valoraciones hechas por usuarios acerca de una musica que escojas.
 
 - Por cada valoracion podras ver el perfil del ususario, el numero de estrellas que le a dado y un pequeño comentario.
 
-<br>
+</details>
 
-<h4>Listas de musica</h4>
+<details>
+<summary><h4>Listas de musica</h4></summary>
 
 - Poder guardar diferentes musicas dentro de una lista de reproduccion
 
 - Tambien poder hacer mas de una lista de reproduccion.
 
-<br>
+</details>
 
-<h4>Amigos</h4>
+<details>
+<summary><h4>Amigos</h4></summary>
 
 -  Des de aqui podras agregar como amigo a quien tu quieras solo poniendo el nombre del usuario.
 
@@ -1117,9 +1107,10 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 - Tambien podras ponerle motes a tu amigos.
 
-<br>
+</details>
 
-<h4>Configuracion</h4>
+<details>
+<summary><h4>Configuracion</h4></summary>
 
 - Podras activar o desactivar la opcion de recibir solicitudes de amistad.
 
@@ -1129,7 +1120,7 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 - Podras activar o desactivar la opcion de tener el perfil privado para que ningun usuario pueda ver que tienes.
 
-<br>
+</details>
 
 </details>
 
@@ -1346,6 +1337,11 @@ Tambien ofrece estas funciones:
 </details>
 
 <br>
+
+Sistema operativo y los recursos mínimos:
+-
+
+
 
 </details>
 
