@@ -289,8 +289,8 @@ Estructura y diagrama de la red:
 
 Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtablas y utilidades:
 
-<img width="501" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
-<img width="501" height="282" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
+<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
 <h4>Core:</h4>
 
@@ -407,7 +407,9 @@ Datos que voy a pedir al usuario:
 
 - Contraseña
 
-- Foto de perfil 
+- Foto de perfil
+
+<br>
 
 Tipos de usuarios:
 
@@ -433,6 +435,8 @@ Tipos de usuarios:
 - Valoraciones → id_valoracion
 
 - Amigos → id_amigo
+
+<br>
 
 Relaciones principales:
 
@@ -848,6 +852,29 @@ Su principal diferencia es que Docker Desktop por sí solo proporciona una base 
 
 <br>
 
+Servicios conectados al portainer:
+-
+
+Estos son todos los servicios que estan conectados al portainer y sus utilidades:
+
+- FfMpeg: Servira para que los usuarios publiquen la musica que quieran dentro de la web.
+
+- MySQL: Crear la base de datos de nuestra web.
+
+- Nginx: Publicar la pagina web 
+
+- Php: Para poder hacer la pagina web dinamica y funcional.
+
+- PhpMyAdmin: Poder almacenar las musicas, usuarios, valoraciones dentro de la pagina web.
+
+- Pihole: Bloqueador de anuncios de uso general.
+
+- Portainer: Para que todos los servicios funcionen y se conecten entre si correctamente.
+
+<img width="1618" height="623" alt="image" src="https://github.com/user-attachments/assets/b87d9312-b74e-419a-900e-e1c6497e500e" />
+
+<br>
+
 Sistema operativo y los recursos mínimos:
 -
 
@@ -862,7 +889,7 @@ IP del servidor y puertos:
 
 
 
-<img width="1618" height="623" alt="image" src="https://github.com/user-attachments/assets/b87d9312-b74e-419a-900e-e1c6497e500e" />
+<img width="1585" height="44" alt="image" src="https://github.com/user-attachments/assets/66c96206-3ff5-40e7-ab61-6d5d8141c1c1" />
 
 <br>
 
@@ -1133,7 +1160,7 @@ Que apartados de la pagina web tenemos que volver dinamica:
 Explicacion y funcionamiento:
 -
 
-Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web, tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia.tambien y ademas es multiplataforma por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac. 
+Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web, tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia, tambien y ademas es multiplataforma por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac. 
 
 <br>
 
@@ -1166,20 +1193,18 @@ TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de c�
 
 Principales características las principales caracteristicas por lo que utilizamos TrueNAS son:
 
-- Reducido tamaño en disco 
+- Tamaño en disco reducido
   
 - Fácil instalación
   
-- Fácil administración remota, mediante páginas web accesibles desde cualquier computadora en red con un navegador
-  
-- No es necesario tener conectado monitor ni teclado para su operación
+- Fácil administración remota, mediante páginas web accesibles desde cualquier ordenador en red con un navegador
 
 <br>
 
 Proceso de instalacion:
 -
 
-Ahora voy a explicar paso a paso toda su instalacion paso a paso:
+Ahora voy a explicar paso a paso toda su instalacion:
 
 <details>
 <summary><h4>Paso 1</h4></summary>
@@ -1223,6 +1248,8 @@ Sistema operativo y los recursos mínimos:
 -
 
 
+
+<img width="1557" height="639" alt="image" src="https://github.com/user-attachments/assets/086c4710-dfcd-4dfa-ba64-b1486abfaf16" />
 
 <br>
 
@@ -1342,6 +1369,8 @@ Sistema operativo y los recursos mínimos:
 -
 
 
+
+<img width="1562" height="638" alt="image" src="https://github.com/user-attachments/assets/8bdc2c0e-0e8a-43d6-a48b-9e35f40a0711" />
 
 </details>
 
