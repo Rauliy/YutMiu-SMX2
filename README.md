@@ -38,6 +38,8 @@
 
 </details>
 
+<br>
+
 <details>
 <summary><h3>Plan de Contingencia</h3></summary>
 
@@ -107,14 +109,14 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 
 <br>
 
-Los datos que se deben guardar serán los siguientes:
+Los datos que se deben guardar serán los siguientes
 -
 
-<h3>El nombre del usuario:</h3>
+<h3>El nombre del usuario</h3>
   
 - Correo electrónico o/e teléfono
   
-- Edad y para que lo quiere utilizar la web
+- Edad
   
 - Contraseña
   
@@ -128,7 +130,7 @@ Los datos que se deben guardar serán los siguientes:
   
 <br>
 
-<h3>Datos de la web:</h3>
+<h3>Datos de la web</h3>
 
 - Música que hay publicada
   
@@ -159,7 +161,7 @@ Los datos que se deben guardar serán los siguientes:
 
 En nuestra web implementaremos una función para poder hablar y compartir músicas pero para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga, también se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
 
-- Registro en la tabla Usuario:
+- Registro en la tabla Usuario
 
 - Nombre: Juan Pérez
 
@@ -169,11 +171,11 @@ En nuestra web implementaremos una función para poder hablar y compartir músic
 
 - Amigos conectados: 2 amigos online
 
-- Amigos deconectados:0 amigos offline
+- Amigos deconectados: 0 amigos offline
 
 - Listas de música
 
-- Horas que has estado utilizando la aplicación:367 horas
+- Horas que has estado utilizando la aplicación: 367 horas
 
 - Publicaciones subidas en los ultimos 7 dias: Comentario→ “Hola” 
 
@@ -186,7 +188,7 @@ En nuestra web implementaremos una función para poder hablar y compartir músic
 <details>
 <summary><h2>2.Briefing</h2></summary>
 
-Propuestas iniciales y objetivos:
+Propuestas iniciales y objetivos
 -
 
 Estas fueron las principales propuestas antes de decidirnos:
@@ -204,7 +206,7 @@ música que han escuchado o que les han recomendado. Básicamente, hemos escogid
 
 <br>
 
-Objetivos del Proyecto:
+Objetivos del Proyecto
 -
 
 Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda disfrutar y gaudir de este proyecto, ya que lo que buscamos es que la gente la utilice y no solo ara que sea para un proyecto sino que queremos que se utilice de verdad, yo creo que si le ponemos empeño lo podremos lograr.
@@ -214,7 +216,7 @@ Nosotros queremos llegar a un público específico que le encante la música, le
 
 <br>
 
-Material Necesario:
+Material Necesario
 -
 Vamos a utilizar una app externa que funciona mediante comandos que se llama FFMpeg que sirve para comprimir audios o videos a diferente formato,
 también necesitaremos una base de datos, un docker, y máquinas virtuales que hagan de servidores para dar seguridad y estabilidad a nuestra web.
@@ -249,7 +251,7 @@ Además de todo esto, deseamos establecer una VPN con Cloudflare, emplear Nginx 
 <details>
 <summary><h2>5.Tecnologías a utilizar</h2></summary>
   
-Lista detallada de todas las tecnologías que utilizaremos:
+Lista detallada de todas las tecnologías que utilizaremos
 -
 
 - Visual Studio Code → para el desarrollo web.
@@ -281,7 +283,7 @@ Lista detallada de todas las tecnologías que utilizaremos:
   
 Aquí podemos ver cómo vamos a organizar la web y los servicios correspondientes:
 
-Estructura y diagrama de la red:
+Estructura y diagrama de la red
 -
 
 <details>
@@ -323,13 +325,13 @@ Asi es como tenemos estructurada nuestra red implementada
 
 <br>
 
- Listado de tareas sobre como vamos a montar y organizar nuestro proyecto:
+ Listado de tareas sobre como vamos a montar y organizar nuestro proyecto
  -
 
 <details>
-<summary><h3>Objetivo1: Implementar un servidor web:</h3></summary>
+<summary><h3>Objetivo1: Implementar un servidor web</h3></summary>
   
-<h4>Objetivo 1: Implementar un servidor web</h4> 
+<h4>Objetivo 1 Implementar un servidor web</h4> 
   
 - 1.1
  [Raul] Instalar y configurar el servidor básico.
@@ -351,9 +353,9 @@ Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar 
 <br>
 
 <details>
-<summary><h3>Objetivo2: Implementar un servidor web:</h3></summary>
+<summary><h3>Objetivo2 Implementar un servidor web</h3></summary>
   
-<h4>Objetivo 2: Programar la front-page</h4> 
+<h4>Objetivo 2 Programar la front-page</h4> 
 
 - 2.1
  [Ignasi] Hacer la estructura del index.html con CSS.
@@ -372,7 +374,7 @@ Además, en esta parte programaremos cosas como: escuchar música, comentar, val
 
 <br>
 
-Ahora vamos presentar el diagrama de la base de datos:
+Ahora vamos presentar el diagrama de la base de datos
 -
 
 <details>
@@ -454,7 +456,7 @@ Relaciones principales:
 
 <br>
 
-Lista de objetivos y tecnologías:
+Lista de objetivos y tecnologías
 -
 
 <details>
@@ -492,7 +494,7 @@ Lista de objetivos y tecnologías:
 
 <br>
 
-Estructura de Base de Datos:
+Estructura de Base de Datos
 -
 
 Tabla de datos y tipos (Base de datos):
@@ -581,7 +583,7 @@ Este sería el mockup de nuestra web.
 
 <details>
   
-<summary><h3>Página principal:</h3></summary>
+<summary><h3>Página principal</h3></summary>
 
 Esta es nuestra primera página, la homepage. Desde aquí podemos escuchar música y configurar un par de cosas. Todas las demás opciones, para tenerlas disponibles, el usuario tendrá que iniciar sesión. 
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0cb4442b-076c-4e7e-9020-36a8b6a94b19" />
@@ -590,7 +592,7 @@ Esta es nuestra primera página, la homepage. Desde aquí podemos escuchar músi
 
 <details>
   
-<summary><h3>Inicio de sesion:</h3></summary>
+<summary><h3>Inicio de sesion</h3></summary>
 
 Esto será nuestro inicio de sesión y de fondo intentaremos poner un video de nuestra web; además, si no inicias sesión, no podrás publicar ni videos ni comentarios.
 poner valoraciones a las canciones, solo podras escucharlas y hacer todas las acciones sobre retroceder o avanzar o ponerlo en bucle., una
@@ -601,11 +603,12 @@ vez hayas iniciado sesion podras hacer todo.
 
 <details>
   
-<summary><h3>Página principal luego del inicio de sesión:</h3></summary>
+<summary><h3>Página principal luego del inicio de sesión</h3></summary>
 
 Despues de iniciar sesión podrás utilizar todas las herramientas de nuestra web.
 
 El contenido que tendrá será:
+
 - Buscador
 
 - Botón para ver la lista de búsqueda
@@ -625,7 +628,7 @@ El contenido que tendrá será:
 
 <details>
   
-<summary><h3>Músicas:</h3></summary>
+<summary><h3>Músicas</h3></summary>
 
 Esta opción también estará disponible sin iniciar sesión; desde aquí solo podrás escuchar la música y ver el nombre del artista.
 Al ver su letra, las opciones de valoraciones solo estarán disponibles si inicias sesión.
@@ -635,7 +638,7 @@ Al ver su letra, las opciones de valoraciones solo estarán disponibles si inici
 
 <details>
   
-<summary><h3>Opiniones:</h3></summary>
+<summary><h3>Opiniones</h3></summary>
 
 Desde aquí podrás ver comentarios de gente debatiendo sobre músicas y sus opiniones; también podrás ver todas tus opiniones. 
 Y valoraciones que has hecho. También podrás eliminar valoraciones u opiniones que hayas hecho.
@@ -645,7 +648,7 @@ Y valoraciones que has hecho. También podrás eliminar valoraciones u opiniones
 
 <details>
   
-<summary><h3>Amigos:</h3></summary>
+<summary><h3>Amigos</h3></summary>
 
 Dentro de aquí podrás ver a todos tus amigos; también desde esa pestaña podrás ver el perfil de tus amigos. También tendrás un chat con cada uno. 
 Amigo, y también podréis pasaros músicas.
@@ -655,7 +658,7 @@ Amigo, y también podréis pasaros músicas.
 
 <details>
   
-<summary><h3>Listas de músicas:</h3></summary>
+<summary><h3>Listas de músicas</h3></summary>
 
 Aquí podrás ver las músicas que hayas almacenado. También podrás hacer listas de músicas de lo que tú quieras.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/33b7421b-3ec2-4d06-a578-8db2960ec105" />
@@ -664,7 +667,7 @@ Aquí podrás ver las músicas que hayas almacenado. También podrás hacer list
 
 <details>
   
-<summary><h3>Buscador:</h3></summary>
+<summary><h3>Buscador</h3></summary>
 
 También esta es otra opción que estará disponible sin tener que iniciar sesión y podrás buscar la música que tú prefieras o la que esté. 
 Disponible en nuestra web; también podrás ver los artistas, el tipo de música y una valoración general de la música.
@@ -674,7 +677,7 @@ Disponible en nuestra web; también podrás ver los artistas, el tipo de música
 
 <details>
   
-<summary><h3>Tu perfil:</h3></summary>
+<summary><h3>Tu perfil</h3></summary>
 
 Aqui podras ver bastantes cosas como:
 
@@ -691,7 +694,7 @@ Aqui podras ver bastantes cosas como:
 
 <details>
   
-<summary><h3>Perfil de amigos:</h3></summary>
+<summary><h3>Perfil de amigos</h3></summary>
 
 Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 
@@ -708,13 +711,15 @@ Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 
 <details>
   
-<summary><h3>Configuración:</h3></summary>
+<summary><h3>Configuración</h3></summary>
 
 Desde aquí podrás modificar una variedad de contenido para que la experiencia con el usuario sea mejor; las opciones que hay son:
 
 - Poder cambiar los colores de la Página.
 
 - Poder gestionar la privacidad.de la cuenta.
+
+<br>
 
 También ofrecemos opciones para la privacidad del usuario que son:
 
@@ -725,13 +730,14 @@ También ofrecemos opciones para la privacidad del usuario que son:
 - No poder recibir solicitudes de amistad.
 
 - No son visibles tus comentarios y varolaciones.
+- 
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
 
 </details>
 
 <details>
   
-<summary><h3>Mapa de navegabilidad:</h3></summary>
+<summary><h3>Mapa de navegabilidad</h3></summary>
 
 -Aquí tenemos el diagrama de flujo de la interfaz web.
 
@@ -750,9 +756,9 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 <details>
   
-<summary><h3>8.1.DNS y Pi-hole:</h3></summary>
+<summary><h3>8.1.DNS y Pi-hole</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
   
 - DNS:
@@ -765,7 +771,7 @@ Es un bloqueador de anuncios de uso general que cubre toda la red y la protege d
 
 <br>
 
-Proceso de instalacion:
+Proceso de instalacion
 -
 
 Ahora voy a explicar paso a paso toda su instalacion paso a paso:
@@ -773,7 +779,7 @@ Ahora voy a explicar paso a paso toda su instalacion paso a paso:
 <details>
 <summary><h4>Paso 1</h4></summary>
 
-El primer comando que tenemos que ejetar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
+El primer comando que tenemos que ejecutar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
 configurar la ip statica y lo haremos poniendo el comando "sudo nano /etc/netplan/00-installer-config.yaml" i esto lo que hace es editar el archivo netplan y la tendremos que configurar aqui una captura de como lo tenemos configurado.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f7c6eb1b-0479-4f30-abb0-25ef1abfd5be" />
@@ -797,7 +803,7 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 
 <br>
 
-IP del servidor y puertos:
+IP del servidor y puertos
 -
 
 
@@ -817,9 +823,9 @@ Una incidencia que teniamos era que el pi-hole estaba todo correctamente configu
 
 <details>
   
-<summary><h3>8.2.DHCP y DnsMasq :</h3></summary>
+<summary><h3>8.2.DHCP y DnsMasq</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 - DHCP:
@@ -836,23 +842,23 @@ Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que v
 
 <details>
   
-<summary><h3>8.3.Docker:</h3></summary>
+<summary><h3>8.3.Docker</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 Docker Desktop es un sistema operativo para contenedores, Docker se instala en cada servidor en el que deseemos ejecutar contenedores y proporciona un conjunto sencillo de comandos que puede utilizar para crear, iniciar o detener contenedores. Configuramos el docker a partir de Portaner.io que es como el Docker Desktop pero con una interdaz mas entendible y tambien permite gestionar fácilmente los diferentes entornos Docker. 
 
 <br>
 
-Diferencia:
+Diferencia
 -
 
 Su principal diferencia es que Docker Desktop por sí solo proporciona una base sólida, pero carece de la seguridad, escalabilidad y usabilidad necesarias para implementaciones reales, Portainer cubre estas carencias, haciendo que los entornos contenedorizados sean prácticos, seguros y fáciles de gestionar para equipos de todos los niveles. En nuestro proyecto dentro del Docker hemos implementado los siguientes servicios:
 
 <br>
 
-Servicios conectados al portainer:
+Servicios conectados al portainer
 -
 
 Estos son todos los servicios que estan conectados al portainer y sus utilidades:
@@ -875,7 +881,7 @@ Estos son todos los servicios que estan conectados al portainer y sus utilidades
 
 <br>
 
-Sistema operativo y los recursos mínimos:
+Sistema operativo y los recursos mínimos
 -
 
 
@@ -884,7 +890,7 @@ Sistema operativo y los recursos mínimos:
 
 <br>
 
-IP del servidor y puertos:
+IP del servidor y puertos
 -
 
 
@@ -893,7 +899,7 @@ IP del servidor y puertos:
 
 <br>
 
-Rango DHCP / zonas DNS / virtual hosts:
+Rango DHCP / zonas DNS / virtual hosts
 -
 
 
@@ -904,9 +910,9 @@ Rango DHCP / zonas DNS / virtual hosts:
 
 <details>
   
-<summary><h3>8.4.MySQL:</h3></summary>
+<summary><h3>8.4.MySQL</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 MySQL es un sistema de gestión de bases de datos de codigo abierto que base de datos relacional que permite almacenar, organizar, recuperar datos de manera eficiente y es perfecto para guardar: 
@@ -928,7 +934,7 @@ MySQL se integra fácilmente con sitios desarrollados en lenguajes como PHP, Pyt
 
 <br>
 
-Nuestra base de datos:
+Nuestra base de datos
 -
 
 ```
@@ -995,7 +1001,7 @@ CREATE TABLE lista_musica (
 
 <br>
 
-IP del servidor y puertos:
+IP del servidor y puertos
 -
 
 
@@ -1006,16 +1012,16 @@ IP del servidor y puertos:
 
 <details>
   
-<summary><h3>8.5.Nginx:</h3></summary>
+<summary><h3>8.5.Nginx</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
 
 <br>
 
-IP del servidor y puertos:
+IP del servidor y puertos
 -
 
 
@@ -1028,9 +1034,9 @@ IP del servidor y puertos:
 
 <details>
   
-<summary><h3>8.6.PHP:</h3></summary>
+<summary><h3>8.6.PHP</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 PHP es un lenguaje de programación de código abierto diseñado para el desarrollo web que se ejecuta en el servidor, permitiendo crear sitios web dinámicos, interactivos y con conexión a bases de datos.
@@ -1051,7 +1057,7 @@ Qué hace PHP?
 
 <br>
 
-Base de datos:
+Base de datos
 -
   
 Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y hazerla funcional.
@@ -1060,7 +1066,7 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
 
 <br>
 
-IP del servidor y puertos:
+IP del servidor y puertos
 -
 
 
@@ -1069,7 +1075,7 @@ IP del servidor y puertos:
 
 <br><br>
 
-Que apartados de la pagina web tenemos que volver dinamica:
+Que apartados de la pagina web tenemos que volver dinamica
 -
 
 <details>
@@ -1155,16 +1161,16 @@ Que apartados de la pagina web tenemos que volver dinamica:
 
 <details>
   
-<summary><h3>8.7.Ffmpeg:</h3></summary>
+<summary><h3>8.7.Ffmpeg</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web, tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia, tambien y ademas es multiplataforma por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac. 
 
 <br>
 
-Proceso de instalacion:
+Proceso de instalacion
 -
 
 Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es poner el comando "$ sudo apt-get install ffmpeg", solo con ese comando ya tendremos el Ffmpeg instalado. Ahora instalado lo que hemos hecho a sido instalarnos una musica qualquiera en mp3 y con el Ffmpeg convertirlo a un formato con mayor calidad, tambien hemos añadido el Ffmpeg dentro de el Portainer para que los usuarios puedan publicar la musica que quieran.
@@ -1173,7 +1179,7 @@ Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es poner el 
 
 <br>
 
-IP del servidor y puertos:
+IP del servidor y puertos
 -
 
 
@@ -1184,9 +1190,9 @@ IP del servidor y puertos:
 
 <details>
 
-<summary><h3>8.8.TrueNAS:</h3></summary>
+<summary><h3>8.8.TrueNAS</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
@@ -1201,7 +1207,7 @@ Principales características las principales caracteristicas por lo que utilizam
 
 <br>
 
-Proceso de instalacion:
+Proceso de instalacion
 -
 
 Ahora voy a explicar paso a paso toda su instalacion:
@@ -1244,7 +1250,7 @@ Y tras hacer toda la configuracion ahora podemos crear una nueva carpeta dentro 
 
 <br>
 
-Sistema operativo y los recursos mínimos:
+Sistema operativo y los recursos mínimos
 -
 
 
@@ -1253,7 +1259,7 @@ Sistema operativo y los recursos mínimos:
 
 <br>
 
-Copias de seguridad:
+Copias de seguridad
 -
 
 Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto seria:
@@ -1280,9 +1286,9 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 <details>
   
-<summary><h3>8.9.PfSense:</h3></summary>
+<summary><h3>8.9.PfSense</h3></summary>
 
-Explicacion y funcionamiento:
+Explicacion y funcionamiento
 -
 
 PfSense es una plataforma de firewall y enrutador de código abierto basada en FreeBSD, utilizada para asegurar, gestionar y controlar redes.
@@ -1297,7 +1303,7 @@ Los principales usos que le daremos al PfSense seran:
 
 <br>
 
-Configuracion del PfSense:
+Configuracion del PfSense
 -
 
 Ahora mismo todo el PfSense esta instalado detro de una maquina virtual con el sistema operativo FreeBSD y con un adaptador puente y una red interna 
@@ -1313,7 +1319,7 @@ Dentro de PfSense hemos configurado lo siguiente:
 El port forwarding sirve para acceder al router que permite a dispositivos externos en internet acceder a servicios específicos dentro de tu red local privada,
 y lo que hemos hecho a sido conectar todos los servicios que tenemos con sus respectivas ip y puertos para que todo este conectado entre si.
 
-Tambien ofrece estas funciones:
+Tambien ofrece estas funciones
 
 - Acceso remoto: Permite conectar con equipos de la red doméstica desde cualquier lugar.
 
@@ -1326,7 +1332,7 @@ Tambien ofrece estas funciones:
 <br>
 
 <details>
-<summary><h4>Red WAN:</h4></summary>
+<summary><h4>Red WAN</h4></summary>
 
 Tambien hemos conectado todos los servicios a la red WAN para conectar la red a internet.
 
@@ -1347,7 +1353,7 @@ Tambien ofrece estas funciones:
 <br>
 
 <details>
-<summary><h4>Red LAN:</h4></summary>
+<summary><h4>Red LAN</h4></summary>
 
 Y LAN conecta tus dispositivos locales al firewall.
 
@@ -1365,7 +1371,7 @@ Tambien ofrece estas funciones:
 
 <br>
 
-Sistema operativo y los recursos mínimos:
+Sistema operativo y los recursos mínimos
 -
 
 
@@ -1496,15 +1502,15 @@ Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que 
 <details>
 <summary><h2>3.Alcance</h2></summary>
 
-<h3>Indica qué cubre este plan:</h3>
+<h3>Indica qué cubre este plan</h3>
 
-<h4>Sistemas incluidos(servidores, red, equipos…):</h4>
+<h4>Sistemas incluidos(servidores, red, equipos…)</h4>
 
 • Maquinas virtuales: Tendriamos que guardar principalmente las maquinas virtuales donde esta el pi-hole y el DNSmasq.
 
 <br>
 
-<h4>Servicios críticos:</h4> 
+<h4>Servicios críticos</h4> 
 
 • Pagina web: Si no guardaramos la pagina web tendriamos que tendriamos que volver a hacer toda la estructura de nuevo.
 
@@ -1553,31 +1559,31 @@ Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que 
 
 Descripcion de situaciones reales que podrian suceder y afectar a los servicios de nuestra web:
 
-<h3>Caída del servidor:</h3> 
+<h3>Caída del servidor</h3> 
 
 Los contenedores dejan de responder o Portainer se bloquea.
 
 <br>
 
-<h3>Pérdida de conexión a internet:</h3> 
+<h3>Pérdida de conexión a internet</h3> 
 
 El DNS (Pi-hole) o DHCP fallan, dejando a los clientes sin conexión.
 
 <br>
 
-<h3>Fallo de hardware:</h3>
+<h3>Fallo de hardware</h3>
 
 Ante un fallo de hardware nos podria afectar dentro de las maquinas virtuales ya que se podrian abortar las maquinas virtuales importantes que tenemos como el que contiene el docker.
 
 <br>
 
-<h3>Error humano:</h3> 
+<h3>Error humano</h3> 
 
 Sobrescritura de archivos PHP/CSS críticos sin tener una copia.
 
 <br>
 
-<h3>Ataque (malware, ransomware):</h3> 
+<h3>Ataque (malware, ransomware)</h3> 
 
 Infección que encripte o afecte a los archivos del servidor web.
 
@@ -1588,9 +1594,9 @@ Infección que encripte o afecte a los archivos del servidor web.
 <details>
 <summary><h2>7.Plan de respuesta</h2></summary>
 
-<h3>Qué hacer en cada caso:</h3>
+<h3>Qué hacer en cada caso</h3>
 
-<h4>Incidencia: Caída de servicios (Nginx/Pi-hole)</h4>
+<h4>Caída de servicios (Nginx/Pi-hole)</h4>
 
    1.Acceder a Portainer y revisar el estado de los contenedores.
 
@@ -1600,7 +1606,7 @@ Infección que encripte o afecte a los archivos del servidor web.
 
 <br>
 
-<h4>Incidencia: Fallo de VM o Hardware</h4>
+<h4>Fallo de VM o Hardware</h4>
 
    1.Notificar al compañero y tutores.
 
@@ -1615,27 +1621,27 @@ Infección que encripte o afecte a los archivos del servidor web.
 <details>
 <summary><h2>8.Plan de recuperación</h2></summary>
 
-<h3>Cómo volver a la normalidad:</h3>
+<h3>Cómo volver a la normalidad</h3>
 
-<h4>Restauración de sistemas:</h4>
+<h4>Restauración de sistemas</h4>
 
 Tendriamos que volver a instalar nuevamente todas las maquinas virtuales volver a configurar todo nuevamente.
 
 <br>
 
-<h4>Reconfiguración de servicios:</h4>
+<h4>Reconfiguración de servicios</h4>
 
 Por cada servicio que tendriamos que volver a configurar todo como lo habiamos hecho anteriormente y aplicar los parámetros de IP estáticas y puertos guardados en la documentación de Portainer.
 
 <br>
 
-<h4>Verificación del funcionamiento:</h4>
+<h4>Verificación del funcionamiento</h4>
 
 A la hora de verificar que todo vuelva a la normalidad tendriamos que entrar dentro del Portainer y ver que todos los servicios esten en running.
 
 <br>
 
-<h4>Añadir tiempos:</h4>
+<h4>Añadir tiempos</h4>
 
 • Tiempo máximo de recuperación(RTO): Máximo 4 horas.
 
@@ -1648,27 +1654,27 @@ A la hora de verificar que todo vuelva a la normalidad tendriamos que entrar den
 <details>
 <summary><h2>9.Copias de seguridad</h2></summary>
 
-<h3>Detallar:</h3>
+<h3>Detallar</h3>
 
-<h4>Tipo de backup:</h4> 
+<h4>Tipo de backup</h4> 
 
 Copia completa de archivos y Snapshots de las VMs.
 
 <br>
 
-<h4>Frecuencia:</h4>
+<h4>Frecuencia</h4>
 
 Semanal (o por cada avance que hagamos).
 
 <br>
 
-<h4>Ubicación:</h4>
+<h4>Ubicación</h4>
 
 Disco local D o una copia externa
 
 <br>
 
-<h4>Herramientas utilizadas:</h4>
+<h4>Herramientas utilizadas</h4>
 
 Exportación de configuraciones de Portainer, copiado manual de archivos y snapshots de VirtualBox/VMware.
 
@@ -1679,27 +1685,27 @@ Exportación de configuraciones de Portainer, copiado manual de archivos y snaps
 <details>
 <summary><h2>10.Medidas preventivas</h2></summary>
 
-<h3>Para evitar problemas:</h3>
+<h3>Para evitar problemas</h3>
 
-<h4>Antivirus / Firewall:</h4> 
+<h4>Antivirus / Firewall</h4> 
 
 Configuración básica para permitir solo el tráfico necesario (80, 443, 53).
 
 <br>
 
-<h4>Actualizaciones:</h4> 
+<h4>Actualizaciones</h4> 
 
 Mantener las imágenes de Docker actualizadas.
 
 <br>
 
-<h4>Control de accesos:</h4>
+<h4>Control de accesos</h4>
 
 Uso de contraseñas seguras en Portainer y MySQL.
 
 <br>
 
-<h4>Monitorización:</h4>
+<h4>Monitorización</h4>
 
 Revisión periódica de los recursos consumidos por los contenedores.
 
@@ -1722,21 +1728,21 @@ Revisión periódica de los recursos consumidos por los contenedores.
 <details>
 <summary><h2>12.Plan de comunicación</h2></summary>
 
-<h3>En caso de fallo:</h3>
+<h3>En caso de fallo</h3>
 
-<h4>A quién avisar:</h4>
+<h4>A quién avisar</h4>
 
 Primero tedriamos que avisar a nuestro compañero de trabajo y luego avisar a los nuestros tutores para preguntarles que hacer con este problema que a surjido.
 
 <br>
 
-<h4>Cómo:</h4>
+<h4>Cómo</h4>
 
 Si estamos en classe simplemente avisarle que hemos tenido un problema grave y preguntarle como solucionarlo y si no fuera en classe le mandariamos un email con nuestro problema.
 
 <br>
 
-<h4>Tiempo de respuesta:</h4>
+<h4>Tiempo de respuesta</h4>
 
 Si estamos en classe intentar hacer que venga lo antes posible para que diga que hacer ante nuestro problema y si no lo estamos seria enviarle un correo i intentar que conteste lo antes posible.
 
@@ -1747,15 +1753,15 @@ Si estamos en classe intentar hacer que venga lo antes posible para que diga que
 <details>
 <summary><h2>13.Pruebas del plan</h2></summary>
 
-<h3>Validar el plan:</h3>
+<h3>Validar el plan</h3>
 
-<h4>Simulación:</h4> 
+<h4>Simulación</h4> 
 
 Apagado forzado de la VM para verificar el tiempo de arranque y recuperación de contenedores.
 
 <br>
 
-<h4>Verificación de Backup:</h4> 
+<h4>Verificación de Backup</h4> 
 
 Intentar restaurar una copia de los archivos PHP en una carpeta distinta para confirmar que no están corruptos.
 
@@ -1766,15 +1772,15 @@ Intentar restaurar una copia de los archivos PHP en una carpeta distinta para co
 <details>
 <summary><h2>14.Mantenimiento del plan</h2></summary>
 
-<h3>Indicar:</h3>
+<h3>Indicar</h3>
 
-<h4>Cada cuánto se revisa:</h4>
+<h4>Cada cuánto se revisa</h4>
 
 Todo el plan de contingencia lo revisariamos cada 2 semanas o 1 semana, depende de cuando avanzemos en el trabajo.
 
 <br>
 
-<h4>Quién lo actualiza:</h4>
+<h4>Quién lo actualiza</h4>
 
 Hasta que no pase algo muy grave o algo parecido creo que no haria falta actualizarla, mientras todo este seguro correctamente no haria falta preocuparse. Los dos nos encargamos de actualizarlo.
 
@@ -1804,21 +1810,21 @@ Hasta que no pase algo muy grave o algo parecido creo que no haria falta actuali
 <details>
 <summary><h2>16.Conclusiones</h2></summary>
 
-<h3>Reflexión:</h3>
+<h3>Reflexión</h3>
 
-<h4>Importancia del plan:</h4>
+<h4>Importancia del plan</h4>
 
 El motivo principal de este plan y la importancia de tenerlo es principalmente para evitar perdidas de horas de trabajo en pequeños errores y garantizar la seguridad de nuestro trabajo en caso de fallo.
 
 <br>
 
-<h4>Qué han aprendido:</h4>
+<h4>Qué han aprendido</h4>
 
 Gestionar cuales fallos podriamos prevenir y que podrian suceder a la hora de trabajar en el proyecto y garantizar la seguridad de nuestro proyecto.
 
 <br>
 
-<h4>Cómo mejora el proyecto:</h4>
+<h4>Cómo mejora el proyecto</h4>
 
 Lo que podriamos hacer a la hora de mejorar el proyecto es apuntar todos los avances que hacemos cada dia y cada cierto tiempo aplicarle el plan de contingencia.
 
