@@ -172,10 +172,51 @@ música que han escuchado o que les han recomendado. Básicamente, hemos escogid
 Objetivos del Proyecto
 -
 
-Nuestro objetivo es hacer la web funcionable sin errores y que la gente pueda disfrutar y gaudir de este proyecto, ya que lo que buscamos es que la gente la utilice y no solo ara que sea para un proyecto sino que queremos que se utilice de verdad, yo creo que si le ponemos empeño lo podremos lograr.
-Objetivo del Publico.
+Nuestro objetivo principal es llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
 
-Nosotros queremos llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música, también esperamos llegar a un público que quiera ser músico y le guste hacer su propia música, publicarla y que los usuarios la escuchen.
+<details>
+<summary><h3>Objetivo1: Implementar un servidor web</h3></summary>
+  
+<h4>Objetivo 1 Implementar un servidor web</h4> 
+  
+- 1.1
+ [Raul] Instalar y configurar el servidor básico.
+ CP1.2 – Que el servidor funcione en red.
+
+
+- 1.2
+ [Raul] Configurar los permisos de los usuarios y cosas de seguridad.
+ CP1.2 – Que el sistema operativo en red esté listo y seguro.
+
+
+- 1.3
+ [Ignasi] Instalar y configurar los servicios web: NGINX, base de datos, PHP y PHPMYADMIN.
+ CP3.1.1 – Que todo el servidor web funcione sin problemas.
+Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar todo listo para que los usuarios puedan subir canciones y playlists.
+
+</details>
+
+<br>
+
+<details>
+<summary><h3>Objetivo2 Implementar un servidor web</h3></summary>
+  
+<h4>Objetivo 2 Programar la front-page</h4> 
+
+- 2.1
+ [Ignasi] Hacer la estructura del index.html con CSS.
+ CP2.1.6 – Que se vea bien y que funcione todo en el navegador.
+
+- 2.2
+[Ignasi] Crear el header y el footer que se vean en todas las páginas.
+ CP2.1.6 – Que todo sea consistente y fácil de usar.
+
+- 2.3
+ [Raul] Hacer el formulario de contacto.
+ CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
+Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
+
+</details>
 
 <br>
 
@@ -283,55 +324,6 @@ Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtab
 Asi es como tenemos estructurada nuestra red implementada
 
 <img width="905" height="749" alt="image" src="https://github.com/user-attachments/assets/82f3d9ba-9db0-4032-8da3-78f2baa8cc26" />
-
-</details>
-
-<br>
-
- Listado de tareas sobre como vamos a montar y organizar nuestro proyecto
- -
-
-<details>
-<summary><h3>Objetivo1: Implementar un servidor web</h3></summary>
-  
-<h4>Objetivo 1 Implementar un servidor web</h4> 
-  
-- 1.1
- [Raul] Instalar y configurar el servidor básico.
- CP1.2 – Que el servidor funcione en red.
-
-
-- 1.2
- [Raul] Configurar los permisos de los usuarios y cosas de seguridad.
- CP1.2 – Que el sistema operativo en red esté listo y seguro.
-
-
-- 1.3
- [Ignasi] Instalar y configurar los servicios web: NGINX, base de datos, PHP y PHPMYADMIN.
- CP3.1.1 – Que todo el servidor web funcione sin problemas.
-Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar todo listo para que los usuarios puedan subir canciones y playlists.
-
-</details>
-
-<br>
-
-<details>
-<summary><h3>Objetivo2 Implementar un servidor web</h3></summary>
-  
-<h4>Objetivo 2 Programar la front-page</h4> 
-
-- 2.1
- [Ignasi] Hacer la estructura del index.html con CSS.
- CP2.1.6 – Que se vea bien y que funcione todo en el navegador.
-
-- 2.2
-[Ignasi] Crear el header y el footer que se vean en todas las páginas.
- CP2.1.6 – Que todo sea consistente y fácil de usar.
-
-- 2.3
- [Raul] Hacer el formulario de contacto.
- CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
-Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
 </details>
 
@@ -452,86 +444,6 @@ Lista de objetivos y tecnologías
 | Base de datos | MySQL | Última | 8080 / 3033 | Usamos MySQL porque es simple de configurar y funciona bien con Docker. | https://www.mysql.com |
 | Gestor de base de datos | PHPMyAdmin | Última | 8080 / 3033 | PHPMyAdmin porque es el que mejor sabemos utilizar. | https://www.phpmyadmin.net |
 | Servicios de APIs | REST | Última | 8080 / 3033 | Para conectar frontend y backend usaremos REST. | https://restfulapi.net |
-
-</details>
-
-<br>
-
-Estructura de Base de Datos
--
-
-Tabla de datos y tipos (Base de datos):
-
-<details>
-<summary><h3>Usuarios</h3></summary>
-
-| Información       | Tipo MySQL         | Descripción |
-|------------------|--------------------|-------------|
-| `id_usuario`      | INT AUTO_INCREMENT | Clave primaria, identifica a cada usuario. |
-| `nombre_usuario`  | VARCHAR(50)        | Nombre que se muestra en la app. |
-| `email`           | VARCHAR(100)       | Correo único de cada usuario. |
-| `contraseña`      | VARCHAR(255)       | Contraseña encriptada. |
-| `foto_perfil`     | VARCHAR(255)       | Ruta de la imagen que sube el usuario. |
-
----
-</details>
-
-<details>
-<summary><h3>Canciones</h3></summary>
-
-| Información     | Tipo MySQL         | Descripción |
-|----------------|--------------------|-------------|
-| `id_cancion`    | INT AUTO_INCREMENT | Clave primaria de la canción. |
-| `título`        | VARCHAR(100)       | Nombre de la canción. |
-| `artista`       | VARCHAR(100)       | Artista o grupo. |
-| `archivo`       | VARCHAR(255)       | Ruta del archivo .mp3. |
-| `duracion`      | TIME               | Duración de la canción. |
-
----
-</details>
-
-<details>
-<summary><h3>Playlists</h3></summary>
-  
-| Información        | Tipo MySQL         | Descripción |
-|-------------------|--------------------|-------------|
-| `id_playlist`      | INT AUTO_INCREMENT | Clave primaria. |
-| `nombre_playlist`  | VARCHAR(100)       | Nombre de la playlist. |
-
----
-</details>
-
-<details>
-<summary><h3>Comentarios</h3></summary>
-  
-| Información        | Tipo MySQL         | Descripción |
-|-------------------|--------------------|-------------|
-| `id_comentario`    | INT AUTO_INCREMENT | Clave primaria del comentario. |
-| `contenido`        | TEXT               | Contenido que escribe el usuario. |
-| `fecha`            | DATETIME           | Fecha del comentario. |
-
----
-</details>
-
-<details>
-<summary><h3>Valoraciones</h3></summary>
-
-| Información        | Tipo MySQL         | Descripción |
-|-------------------|--------------------|-------------|
-| `id_valoracion`    | INT AUTO_INCREMENT | Clave primaria. |
-| `puntuacion`       | TINYINT            | Nota del 1 al 5. |
-
----
-</details>
-
-<details>
-<summary><h3>Amigos</h3></summary>
-
-| Información | Tipo MySQL         | Descripción |
-|-------------|--------------------|-------------|
-| `id_amigo`  | INT AUTO_INCREMENT | Clave primaria. |
-| `usuario1`  | INT                | ID del primer usuario. |
-| `usuario2`  | INT                | ID del segundo usuario. |
 
 </details>
 
@@ -830,7 +742,7 @@ Estos son todos los servicios que estan conectados al portainer y sus utilidades
 
 - MySQL: Crear la base de datos de nuestra web.
 
-- Nginx: Publicar la pagina web 
+- Nginx: Publicar la pagina web.
 
 - Php: Para poder hacer la pagina web dinamica y funcional.
 
@@ -981,6 +893,13 @@ Explicacion y funcionamiento
 -
 
 NGINX es un software de código abierto que se utiliza para servidores web, proxy inverso, almacenamiento en caché, balanceo de carga, streaming multimedia, tambien ofrece funciones de servidor HTTPS y está diseñado principalmente para maximizar el rendimiento y la estabilidad. También funciona como servidor proxy para protocolos de comunicación por correo electrónico como IMAP, POP3 y SMTP. En este caso Nginx lo utilizaremos en nuestro proyecto para publicar nustra web a internet para que cualquier persona pueda verla.
+
+<br>
+
+Proceso de instalacion
+-
+
+
 
 <br>
 
@@ -1158,7 +1077,7 @@ IP del servidor y puertos
 Explicacion y funcionamiento
 -
 
-TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
+TrueNAS es un sistema operativo de almacenamiento conectado a la red de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
 
 Principales características las principales caracteristicas por lo que utilizamos TrueNAS son:
 
