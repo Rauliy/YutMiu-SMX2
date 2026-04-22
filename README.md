@@ -11,9 +11,6 @@
 <details>
 <summary><h2>Índice</h2></summary>
 
-<details>
-<summary><h3>YutMiu-SMX2</h3></summary>
-  
 - 1.Introducción
 
 - 2.Briefing 
@@ -38,49 +35,6 @@
 
 </details>
 
-<br>
-
-<details>
-<summary><h3>Plan de Contingencia</h3></summary>
-
-- Truenas
-
-- 1.Datos generales
-
-- 2.Objetivo del plan
-
-- 3.Alcance
-
-- 4.Identificaión de activos
-
-- 5.Análisis de riesgos
-
-- 6.Escenarios de contingencia
-
-- 7.Plan de respuesta
-
-- 8.Plan de recuperación
-
-- 9.Copias de seguridad
-
-- 10.Medidas preventivas
-
-- 11.Responsables
-
-- 12.Plan de comunicación
-
-- 13.Pruebas del plan
-
-- 14.Mantenimiento del plan
-
-- 15.Mejoras futuras
-
-- 16.Conclusiones
-
-</details>
-
-</details>
-
 #
 
 <details>
@@ -94,25 +48,33 @@ Somos un equipo de dos estudiantes que queremos hacer una web de música y hemos
 
 <br>
 
-¿Qué funcionalidades ofrecerá a los usuarios?
--
+<h3>¿Qué funcionalidades ofrecerá a los usuarios?</h3>
+
+#
 
 Las funciones que vamos a implementar en nuestra página web van a ser:
 
 - Crear una cuenta para poder guardar tus músicas favoritas.
 
+<br>
+
 - Si te vinculas, podrás tener amigos que te podrán recomendar música.
 
+<br>
+
 - Puedes hacer una lista personalizada de tus músicas favoritas.
+
+<br>
 
 - Cada canción tendrá una sección de comentarios donde podrás escribir tu opinión sobre cualquier canción y también poner del 1 al 5 cuánto te ha gustado.
 
 <br>
 
-Los datos que se deben guardar serán los siguientes
--
+<h3>Los datos que se deben guardar serán los siguientes</h3>
 
-<h3>El nombre del usuario</h3>
+#
+
+<h4>El nombre del usuario</h4>
   
 - Correo electrónico o/e teléfono
   
@@ -130,7 +92,7 @@ Los datos que se deben guardar serán los siguientes
   
 <br>
 
-<h3>Datos de la web</h3>
+<h4>Datos de la web</h4>
 
 - Música que hay publicada
   
@@ -156,8 +118,9 @@ Los datos que se deben guardar serán los siguientes
 
 <br>
 
-¿Cómo se relacionan unas entidades con otras?
--
+<h3>¿Cómo se relacionan unas entidades con otras?</h3>
+
+#
 
 En nuestra web implementaremos una función para poder hablar y compartir músicas pero para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga, también se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
 
@@ -863,7 +826,7 @@ Servicios conectados al portainer
 
 Estos son todos los servicios que estan conectados al portainer y sus utilidades:
 
-- FfMpeg: Servira para que los usuarios publiquen la musica que quieran dentro de la web.
+- FfMpeg: Cuando los usuarios suban una musica a la web el Ffmpeg cambie el formato a WAPV.
 
 - MySQL: Crear la base de datos de nuestra web.
 
@@ -1166,7 +1129,7 @@ Que apartados de la pagina web tenemos que volver dinamica
 Explicacion y funcionamiento
 -
 
-Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para poner la musica dentro de nuestra pagina web, tambien uno de los motivos de por que estamos utilizamos FFmpeg es compatible con prácticamente todos los formatos de vídeo, audio e imagen existentes, incluyendo contenedores, formatos de audio y soporta cientos de códecs y formatos multimedia, tambien y ademas es multiplataforma por lo que puede instalarse en cualquier sistema, ya sea GNU/Linux, Windows o Mac. 
+Ffmpeg se trata de una herramienta de línea de comandos que permite realizar multitud de tareas relacionadas con video, audio o incluso imágenes, en nuestro caso ffmpeg lo utilizaremos para cuando un usuario publique una musica en nuestra web sin importar el formato automaticamente el Ffmpeg lo convierta a formato WAPV por que tiene mayor calidad de audio y ocupa menos espacio.
 
 <br>
 
@@ -1434,6 +1397,47 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 <h1>Plan de Contingencia</h1>
 
 </div>
+
+<details>
+<summary><h2>Índice</h2></summary>
+
+- Truenas
+
+- 1.Datos generales
+
+- 2.Objetivo del plan
+
+- 3.Alcance
+
+- 4.Identificaión de activos
+
+- 5.Análisis de riesgos
+
+- 6.Escenarios de contingencia
+
+- 7.Plan de respuesta
+
+- 8.Plan de recuperación
+
+- 9.Copias de seguridad
+
+- 10.Medidas preventivas
+
+- 11.Responsables
+
+- 12.Plan de comunicación
+
+- 13.Pruebas del plan
+
+- 14.Mantenimiento del plan
+
+- 15.Mejoras futuras
+
+- 16.Conclusiones
+
+</details>
+
+#
 
 <details>
 <summary><h2>Truenas</h2></summary>
