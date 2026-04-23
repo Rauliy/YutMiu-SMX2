@@ -6,8 +6,6 @@
 
 </div>
 
-  
-
 <details>
 <summary><h2>Introducción</h2></summary>
 
