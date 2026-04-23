@@ -6,39 +6,10 @@
 
 </div>
 
-#
+  
 
 <details>
-<summary><h2>Índice</h2></summary>
-
-- 1.Introducción
-
-- 2.Briefing 
-
-- 3.Materiales físicos y lógicos
-
-- 4.Arquitectura del software
-
-- 5.Tecnologías a utilizar
-
-- 6.Red
-
-- 7.Web
-
-- 8.Servicios
-
-- 9.Diagrama Gantt
-
-- 10.Conclusiones
-
-- 11.Webgrafia
-
-</details>
-
-#
-
-<details>
-<summary><h2>1.Introducción</h2></summary>
+<summary><h2>Introducción</h2></summary>
 
 Nuestra web va a tratar sobre música en streaming y donde los usuarios puedan ir comentando y recomendando sus canciones preferidas y dar sus opiniones respecto a la música que han escuchado. 
 o que les han recomendado. Va a tener un extenso catálogo de canciones de diferentes estilos para satisfacer a las personas que utilicen nuestra página. 
@@ -50,7 +21,7 @@ Somos un equipo de dos estudiantes que queremos hacer una web de música y hemos
 
 <h3>¿Qué funcionalidades ofrecerá a los usuarios?</h3>
 
-#
+  
 
 Las funciones que vamos a implementar en nuestra página web van a ser:
 
@@ -72,7 +43,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 
 <h3>Los datos que se deben guardar serán los siguientes</h3>
 
-#
+  
 
 <h4>El nombre del usuario</h4>
   
@@ -120,7 +91,7 @@ Las funciones que vamos a implementar en nuestra página web van a ser:
 
 <h3>¿Cómo se relacionan unas entidades con otras?</h3>
 
-#
+  
 
 En nuestra web implementaremos una función para poder hablar y compartir músicas pero para tener esta función lo que tendremos que hacer es registrarse, luego de eso podrás buscar el nombre de todos los usuarios, luego en un apartado podrás aceptar la solicitud o rechazarla, si aceptas la solicitud podrás hablar con el usuario, enviarle músicas y también listas de música que él tenga, también se pueden poner opiniones en cada música y todos los usuarios podrán verlos y comentar.
 
@@ -146,10 +117,10 @@ En nuestra web implementaremos una función para poder hablar y compartir músic
 
 </details>
 
-#
+  
 
 <details>
-<summary><h2>2.Briefing</h2></summary>
+<summary><h2>Briefing</h2></summary>
 
 Propuestas iniciales y objetivos
 -
@@ -174,10 +145,7 @@ Objetivos del Proyecto
 
 Nuestro objetivo principal es llegar a un público específico que le encante la música, le gusta mucho opinar y debatir e/o crear debates entre ellos y leer opiniones sobre otras músicas que no han escuchado o/e han escuchado pero no sabían que otra gente sabía de la existencia de esa música.
 
-<details>
-<summary><h3>Objetivo1: Implementar un servidor web</h3></summary>
-  
-<h4>Objetivo 1 Implementar un servidor web</h4> 
+<h3>Objetivo 1 Implementar un servidor web</h3> 
   
 - 1.1
  [Raul] Instalar y configurar el servidor básico.
@@ -194,14 +162,9 @@ Nuestro objetivo principal es llegar a un público específico que le encante la
  CP3.1.1 – Que todo el servidor web funcione sin problemas.
 Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar todo listo para que los usuarios puedan subir canciones y playlists.
 
-</details>
-
 <br>
 
-<details>
-<summary><h3>Objetivo2 Implementar un servidor web</h3></summary>
-  
-<h4>Objetivo 2 Programar la front-page</h4> 
+<h3>Objetivo 2 Programar la front-page</h3>
 
 - 2.1
  [Ignasi] Hacer la estructura del index.html con CSS.
@@ -216,15 +179,12 @@ Aquí también iría FFMPEG para poder escuchar la música en streaming y dejar 
  CP2.1.6 – Que se pueda enviar información y que funcione sin errores.
 Además, en esta parte programaremos cosas como: escuchar música, comentar, valorar canciones, crear playlists y agregar amigos. Todo debe ser fácil de usar y que la página quede bien.
 
-</details>
-
 <br>
 
 Lista de objetivos y tecnologías
 -
 
-<details>
-<summary><h3>Lista de objetivos y funcionalidades del proyecto</h3></summary>
+<h3>Lista de objetivos y funcionalidades del proyecto</h3>
 
 | ID  | Prioridad | Objetivo / Funcionalidad | Descripción                                                                                                                                                                                                 | Fecha Entrega   | Estado     |
 |-----|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------|
@@ -236,12 +196,9 @@ Lista de objetivos y tecnologías
 | ID5 | Alta      | Buscador                  | Función clave para que la gente encuentre música rápido. Podrá buscar canciones por título, artista, playlists, etc.                                                                                        | —               | Pendiente  |
 | ID6 | Alta      | Perfil de usuario         | Aquí el usuario podrá ver y editar su perfil: cambiar la descripción, foto, ver sus valoraciones, comentarios, etc. También podrá ver el perfil de sus amigos.                                               | —               | Pendiente  |
 
-</details>
-
 <br>
 
-<details>
-<summary><h3>Tecnologías y Componentes del Sistema</h3></summary>
+<h3>Tecnologías y Componentes del Sistema</h3>
 
 | Componente del sistema | Tecnología / Framework | Versión | Puerto | Descripción de uso o requisitos | Documentación |
 |------------------------|------------------------|---------|--------|---------------------------------|---------------|
@@ -254,16 +211,14 @@ Lista de objetivos y tecnologías
 | Gestor de base de datos | PHPMyAdmin | Última | 8080 / 3033 | PHPMyAdmin porque es el que mejor sabemos utilizar. | https://www.phpmyadmin.net |
 | Servicios de APIs | REST | Última | 8080 / 3033 | Para conectar frontend y backend usaremos REST. | https://restfulapi.net |
 
-</details>
-
 <br>
 
 </details>
 
-#
+  
 
 <details>
-<summary><h2>3.Materiales físicos y lógicos</h2></summary>
+<summary><h2>Materiales físicos y lógicos</h2></summary>
 Para este proyecto vamos a usar sobre todo dos ordenadores.
 En uno de ellos tendremos montado un servidor Linux en  VirtualBox, que es donde vamos a usar FFmpeg para convertir música antes de subirla a nuestra web.
 También instalaremos Docker Desktop porque nos va a hacer falta para levantar la web y otros servicios sin tener que instalarlos a mano uno por uno.
@@ -271,10 +226,10 @@ En el segundo ordenador trabajaremos todo lo relacionado con el diseño de la p�
 
 </details>
 
-#
+  
 
 <details>
-<summary><h2>4.Arquitectura del software</h2></summary>
+<summary><h2>Arquitectura del software</h2></summary>
 La idea básica es estructurarlo de tal manera que cada parte del proyecto tenga su propio espacio y no esté todo mezclado.
 Utilizaremos Visual Studio Code para la programación de la web, ya que es lo más práctico para nosotros.
 Después, utilizaremos Pi-hole como servidor DNS y DHCP, ya que su configuración es sencilla y nos permite gestionar toda la red sin complicaciones.
@@ -283,10 +238,10 @@ Además, contaremos con un servidor Linux exclusivamente para FFmpeg, que nos pe
 Además de todo esto, deseamos establecer una VPN con Cloudflare, emplear Nginx como proxy inverso e intentar instalar Proxmox para gestionar máquinas virtuales de manera más profesional.
 </details>
 
-#
+  
 
 <details>
-<summary><h2>5.Tecnologías a utilizar</h2></summary>
+<summary><h2>Tecnologías a utilizar</h2></summary>
   
 Lista detallada de todas las tecnologías que utilizaremos
 -
@@ -313,18 +268,17 @@ Lista detallada de todas las tecnologías que utilizaremos
 
 </details>
 
-#
+  
 
 <details>
-<summary><h2>6.Red</h2></summary>
+<summary><h2>Red</h2></summary>
   
 Aquí podemos ver cómo vamos a organizar la web y los servicios correspondientes:
 
 Estructura y diagrama de la red
 -
 
-<details>
-<summary><h3>Estructura básica de la red</h3></summary>
+<h3>Estructura básica de la red</h3>
 
 Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtablas y utilidades:
 
@@ -347,26 +301,20 @@ Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtab
 
 - Usuarios: Este es el apartado mas importante de nuestra web ya que gracias a los usuarion podremos utilizar la gran variedad de herramientas que ofrecemos.
 
-</details>
-
 <br>
 
-<details>
-<summary><h3>Diagrama de la red</h3></summary>
+<h3>Diagrama de la red</h3>
 
 Asi es como tenemos estructurada nuestra red implementada
 
 <img width="905" height="749" alt="image" src="https://github.com/user-attachments/assets/82f3d9ba-9db0-4032-8da3-78f2baa8cc26" />
-
-</details>
 
 <br>
 
 Ahora vamos presentar el diagrama de la base de datos
 -
 
-<details>
-<summary><h3>1.¿Qué datos son necesarios para mi aplicación?</h3></summary>
+<h3>1.¿Qué datos son necesarios para mi aplicación?</h3>
 
 Para que mi app funcione bien necesitamos guardar varias cosas:
 
@@ -382,12 +330,9 @@ Para que mi app funcione bien necesitamos guardar varias cosas:
 
 - Amigos → las relaciones entre usuarios, es decir, quién es amigo de quién.
 
-</details>
-
 <br>
 
-<details>
-<summary><h3>2.¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?</h3></summary>
+<h3>2.¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?</h3>
 
 Datos que voy a pedir al usuario:
 
@@ -407,12 +352,9 @@ Tipos de usuarios:
 
 - Admin (opcional) → podría gestionar canciones, usuarios o comentarios si lo necesitamos.
 
-</details>
-
 <br>
 
-<details>
-<summary><h3>3.¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?</h3></summary>
+<h3>3.¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?</h3>
 
 - Usuarios → id_usuario
 
@@ -444,38 +386,30 @@ Relaciones principales:
 
 </details>
 
-</details>
 
-#
 
 <details>
-<summary><h2>7.Web</h2></summary>
+<summary><h2>Web</h2></summary>
 
 Este sería el mockup de nuestra web.
 
-<details>
-  
-<summary><h3>Página principal</h3></summary>
+<h3>Página principal</h3>
 
 Esta es nuestra primera página, la homepage. Desde aquí podemos escuchar música y configurar un par de cosas. Todas las demás opciones, para tenerlas disponibles, el usuario tendrá que iniciar sesión. 
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0cb4442b-076c-4e7e-9020-36a8b6a94b19" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Inicio de sesion</h3></summary>
+<h3>Inicio de sesion</h3>
 
 Esto será nuestro inicio de sesión y de fondo intentaremos poner un video de nuestra web; además, si no inicias sesión, no podrás publicar ni videos ni comentarios.
 poner valoraciones a las canciones, solo podras escucharlas y hacer todas las acciones sobre retroceder o avanzar o ponerlo en bucle., una
 vez hayas iniciado sesion podras hacer todo.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/657f6ad2-14e6-4589-833b-ca42ceea8b21" />
 
-</details>
-
-<details>
+<br>
   
-<summary><h3>Página principal luego del inicio de sesión</h3></summary>
+<h3>Página principal luego del inicio de sesión</h3>
 
 Despues de iniciar sesión podrás utilizar todas las herramientas de nuestra web.
 
@@ -496,60 +430,48 @@ El contenido que tendrá será:
 - Botón para ver tu perfil
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/0f30fc76-e67a-46ff-905c-f75596a9c838" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Músicas</h3></summary>
+<h3>Músicas</h3>
 
 Esta opción también estará disponible sin iniciar sesión; desde aquí solo podrás escuchar la música y ver el nombre del artista.
 Al ver su letra, las opciones de valoraciones solo estarán disponibles si inicias sesión.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/028edfcc-5c9d-4b27-9489-d2ef485d32d6" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Opiniones</h3></summary>
+<h3>Opiniones</h3>
 
 Desde aquí podrás ver comentarios de gente debatiendo sobre músicas y sus opiniones; también podrás ver todas tus opiniones. 
 Y valoraciones que has hecho. También podrás eliminar valoraciones u opiniones que hayas hecho.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/4de2ce40-07b0-48b0-9039-47c50c6370a7" />
 
-</details>
-
-<details>
+<br>
   
-<summary><h3>Amigos</h3></summary>
+<h3>Amigos</h3>
 
 Dentro de aquí podrás ver a todos tus amigos; también desde esa pestaña podrás ver el perfil de tus amigos. También tendrás un chat con cada uno. 
 Amigo, y también podréis pasaros músicas.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/31656063-b799-4611-bcba-08e3f34a4911" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Listas de músicas</h3></summary>
+<h3>Listas de músicas</h3>
 
 Aquí podrás ver las músicas que hayas almacenado. También podrás hacer listas de músicas de lo que tú quieras.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/33b7421b-3ec2-4d06-a578-8db2960ec105" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Buscador</h3></summary>
+<h3>Buscador</h3>
 
 También esta es otra opción que estará disponible sin tener que iniciar sesión y podrás buscar la música que tú prefieras o la que esté. 
 Disponible en nuestra web; también podrás ver los artistas, el tipo de música y una valoración general de la música.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/1ba60730-1e27-4abb-9d32-daae5a2d67e6" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Tu perfil</h3></summary>
+<h3>Tu perfil</h3>
 
 Aqui podras ver bastantes cosas como:
 
@@ -562,11 +484,9 @@ Aqui podras ver bastantes cosas como:
 - Tambien un boton que te lleve a la privacidad de la cuenta.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/a83cf8df-3fdc-43aa-b3d6-549731cd5316" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Perfil de amigos</h3></summary>
+<h3>Perfil de amigos</h3>
 
 Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 
@@ -579,11 +499,9 @@ Aquí podrás ver el perfil de los amigos que tengas y podrás ver:
 - Comentarios y valoraciones que haya puesto.
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/d844342d-d264-4ca9-98e7-670c661e145c" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Configuración</h3></summary>
+<h3>Configuración</h3>
 
 Desde aquí podrás modificar una variedad de contenido para que la experiencia con el usuario sea mejor; las opciones que hay son:
 
@@ -602,33 +520,29 @@ También ofrecemos opciones para la privacidad del usuario que son:
 - No poder recibir solicitudes de amistad.
 
 - No son visibles tus comentarios y varolaciones.
-- 
+  
 <img width="1125" height="628" alt="image" src="https://github.com/user-attachments/assets/413a613c-f51e-455b-91fd-4505ed9988e2" />
 
-</details>
+<br>
 
-<details>
-  
-<summary><h3>Mapa de navegabilidad</h3></summary>
+<h3>Mapa de navegabilidad</h3>
 
 -Aquí tenemos el diagrama de flujo de la interfaz web.
 
 <img width="528" height="852" alt="image" src="https://github.com/user-attachments/assets/980bccd8-7082-4ea4-acad-ed31662ee8ca" />
-</details>
+
 
 </details>
 
-#
+  
 
 <details>
-<summary><h2>8.Servicios</h2></summary>
+<summary><h2>Servicios</h2></summary>
 
 ¿Qué función cumple exactamente cada servicio dentro de la red?
 -
 
-<details>
-  
-<summary><h3>8.1.DNS y Pi-hole</h3></summary>
+<h3>8.1.DNS y Pi-hole</h3>
 
 Explicacion y funcionamiento
 -
@@ -648,30 +562,25 @@ Proceso de instalacion
 
 Ahora voy a explicar paso a paso toda su instalacion paso a paso:
 
-<details>
-<summary><h4>Paso 1</h4></summary>
+<h4>Paso 1</h4>
 
 El primer comando que tenemos que ejecutar es "sudo apt update && sudo apt upgrade -y" que esto lo que ara sera actualizar el sistema para poder instalar el pihole, luego lo que tendremos que hacer sera 
 configurar la ip statica y lo haremos poniendo el comando "sudo nano /etc/netplan/00-installer-config.yaml" i esto lo que hace es editar el archivo netplan y la tendremos que configurar aqui una captura de como lo tenemos configurado.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f7c6eb1b-0479-4f30-abb0-25ef1abfd5be" />
 
-</details>
+<br>
 
-<details>
-<summary><h4>Paso 2</h4></summary>
+<h4>Paso 2</h4>
 
 Ahora luego de haber configurado correctamente el archivo netplat solo tenemos que hacer "sudo netplan apply" para aplicar los cambios y "ip a" para verificar que funcione. Despues de hacer los anteriores pasos tendremos que instalar el pi-hole con "curl -sSL https://install.pi-hole.net | bash" si no funciona el comando significa que el ubuntu no tiene instalado el curl, si es asi solo instalamos el curl con "sudo apt install curl -y". Ahora en la instalacion saldran las siguientes opciones: seleccionar la interfaz de red, elegir el DNS upstream, seleccionar interfaz web  y seleccionar servidor web.
 
-</details>
+<br>
 
-<details>
-<summary><h4>Paso 3</h4></summary>
+<h4>Paso 3</h4>
 
 Despues de completar la instalacion del pi-hole y haber seleccionado cada apartado al final tendremos que seleccionar una contraseña para el pi-hole y sera necesaria para abrir el pi-hole dentro de el navegador. Ahola despues de hacer todoslos anteriores pasos tenemos que escribir des de un nevegador http://IP_DEL_SERVIDOR/admin y se nos abrira la pagina de pi-hole, lo que tendremos que hacer ahora es poner el usuario que tengamos en el ubuntu server y tambien poner la contraseña que habia hablado anteriormente i despues de eso ya podremos gestionar el DNS.
 <img width="1163" height="839" alt="image" src="https://github.com/user-attachments/assets/7638eb0b-e414-40ed-bd85-08757c5488ef" />
-
-</details>
 
 <br>
 
@@ -689,13 +598,9 @@ Incidencias
 
 Una incidencia que teniamos era que el pi-hole estaba todo correctamente configurado y estabamos todo el rato intentando conseguir la ip de la maquina virtual con "ip a" pero no salia la ip, y sin la ip no podriamos acceder a la pagina web de nuetro Pi-hole. Al final el error era que nuestra maquina virtual de ubuntu server no estaba con el adaptador puente activado y eso hacia que por mucho que lo intentaramos no nos saliera la ip. Luego de activar el adaptador fuente ya todo funciono correctamente.
 
-</details>
-
 <br>
 
-<details>
-  
-<summary><h3>8.2.DHCP y DnsMasq</h3></summary>
+<h3>8.2.DHCP y DnsMasq</h3>
 
 Explicacion y funcionamiento
 -
@@ -708,13 +613,9 @@ El DHCP es un servicio que asigna automáticamente IP, puerta de enlace y DNS a 
 
 Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que vamos a utilizar es porque permite la configuración de un servidor DHCP básico para asignar direcciones IP automáticamente, Dnsmasq es una herramienta diseñada para proporcionar servicios de red esenciales como: Resolución de nombres DNS rápida y eficiente. Configuración de un servidor DHCP básico para asignar direcciones IP automáticamente.
 
-</details>
-
 <br>
 
-<details>
-  
-<summary><h3>8.3.Docker</h3></summary>
+<h3>8.3.Docker</h3>
 
 Explicacion y funcionamiento
 -
@@ -770,13 +671,9 @@ IP del servidor y puertos
 
 <img width="1585" height="44" alt="image" src="https://github.com/user-attachments/assets/66c96206-3ff5-40e7-ab61-6d5d8141c1c1" />
 
-</details>
-
 <br>
 
-<details>
-  
-<summary><h3>8.4.MySQL</h3></summary>
+<h3>8.4.MySQL</h3>
 
 Explicacion y funcionamiento
 -
@@ -872,13 +769,9 @@ IP del servidor y puertos
 
 
 
-</details>
-
 <br>
 
-<details>
-  
-<summary><h3>8.5.Nginx</h3></summary>
+<h3>8.5.Nginx</h3>
 
 Explicacion y funcionamiento
 -
@@ -901,13 +794,9 @@ IP del servidor y puertos
 
 <img width="1585" height="47" alt="image" src="https://github.com/user-attachments/assets/11451c94-6860-49ad-b445-047a7f007666" />
 
-</details>
-
 <br>
 
-<details>
-  
-<summary><h3>8.6.PHP</h3></summary>
+<h3>8.6.PHP</h3>
 
 Explicacion y funcionamiento
 -
@@ -951,8 +840,7 @@ IP del servidor y puertos
 Que apartados de la pagina web tenemos que volver dinamica
 -
 
-<details>
-<summary><h4>Pagina principal</h4></summary>
+<h4>Pagina principal</h4>
 
 -  Cuando escribas en el buscador que aparezca la musica que estas buscando.
 
@@ -960,10 +848,9 @@ Que apartados de la pagina web tenemos que volver dinamica
 
 -  Poder seleccionar el estilo de musica que quieres escuchar y que te salgan las musicas mas recientes que han sido publicadas con el mismo estilo de musica que hayas seleccionado.
 
-</details>
+<br>
 
-<details>
-<summary><h4>Mi perfil</h4></summary>
+<h4>Mi perfil</h4>
 
 -  Puedes cambiar tu foto de perfil y amigos o usuario podran verla.
 
@@ -971,10 +858,9 @@ Que apartados de la pagina web tenemos que volver dinamica
 
 -  Y desde el perfil podras hacer publicas las listas de musicas que tengas y las valoraciones que hayas hecho.
 
-</details>
+<br>
 
-<details>
-<summary><h4>Musicas</h4></summary>
+<h4>Musicas</h4>
 
 - Visualizar el artista y poder ver que otras canciones tiene publicadas dentro de nuestra web.
 
@@ -984,28 +870,25 @@ Que apartados de la pagina web tenemos que volver dinamica
 
 - Tambien por cada musica ver la letra de ella.
 
-</details>
+<br>
 
-<details>
-<summary><h4>Valoracines</h4></summary>
+<h4>Valoracines</h4>
 
 - Aqui podras visualizar todas las valoraciones hechas por usuarios acerca de una musica que escojas.
 
 - Por cada valoracion podras ver el perfil del ususario, el numero de estrellas que le a dado y un pequeño comentario.
 
-</details>
+<br>
 
-<details>
-<summary><h4>Listas de musica</h4></summary>
+<h4>Listas de musica</h4>
 
 - Poder guardar diferentes musicas dentro de una lista de reproduccion
 
 - Tambien poder hacer mas de una lista de reproduccion.
 
-</details>
+<br>
 
-<details>
-<summary><h4>Amigos</h4></summary>
+<h4>Amigos</h4>
 
 -  Des de aqui podras agregar como amigo a quien tu quieras solo poniendo el nombre del usuario.
 
@@ -1013,10 +896,9 @@ Que apartados de la pagina web tenemos que volver dinamica
 
 - Tambien podras ponerle motes a tu amigos.
 
-</details>
+<br>
 
-<details>
-<summary><h4>Configuracion</h4></summary>
+<h4>Configuracion</h4>
 
 - Podras activar o desactivar la opcion de recibir solicitudes de amistad.
 
@@ -1026,15 +908,11 @@ Que apartados de la pagina web tenemos que volver dinamica
 
 - Podras activar o desactivar la opcion de tener el perfil privado para que ningun usuario pueda ver que tienes.
 
-</details>
-
-</details>
-
 <br>
 
 <details>
   
-<summary><h3>8.7.Ffmpeg</h3></summary>
+<h3>8.7.Ffmpeg</h3>
 
 Explicacion y funcionamiento
 -
@@ -1057,13 +935,9 @@ IP del servidor y puertos
 
 
 
-</details>
-
 <br>
 
-<details>
-
-<summary><h3>8.8.TrueNAS</h3></summary>
+<h3>8.8.TrueNAS</h3>
 
 Explicacion y funcionamiento
 -
@@ -1085,41 +959,35 @@ Proceso de instalacion
 
 Ahora voy a explicar paso a paso toda su instalacion:
 
-<details>
-<summary><h4>Paso 1</h4></summary>
+<h4>Paso 1</h4>
 Ahora estamos instalando el TrueNAS dentro de una maquina virtual con la iso del Truenas.
 
 <img width="637" height="564" alt="image" src="https://github.com/user-attachments/assets/47f34bb2-9344-4fc2-94d3-270b47e2c07c" />
 
-</details>
+<br>
 
-<details>
-<summary><h4>Paso 2</h4></summary>
+<h4>Paso 2</h4>
 
 Despues de instalar el Truenas tenemos que configurarlo correctamente para mas adelante poderlo abrir dentro de un navegador.
 
 <img width="1212" height="839" alt="image" src="https://github.com/user-attachments/assets/4d9d37db-ca06-47c3-9f44-be53fc761b5b" />
 
-</details>
+<br>
 
-<details>
-<summary><h4>Paso 3</h4></summary>
+<h4>Paso 3</h4>
 
 Y tras configurarlo todo y haber accedido al TrueNAS des de navegador nos permitira crear pools de almacenamiento seguros con ZFS, gestionar copias de seguridad en la nube, 
 correr aplicaciones/plugins como Plex o Nextcloud, y virtualizar sistemas operativos.
 
 <img width="1434" height="735" alt="image" src="https://github.com/user-attachments/assets/ead62b99-b029-42fb-941a-6af1ef9e1b37" />
 
-</details>
+<br>
 
-<details>
-<summary><h4>Paso 4</h4></summary>
+<h4>Paso 4</h4>
 
 Y tras hacer toda la configuracion ahora podemos crear una nueva carpeta dentro de nuestra carpeta del proyecto y haciendo Backup a los archivos mas importantes que seria la base de datos, a la carpeta del servidor y al Portainer.
 
 <img width="1097" height="619" alt="image" src="https://github.com/user-attachments/assets/41066dae-0a6f-451b-abae-dd6b8ab048ef" />
-
-</details>
 
 <br>
 
@@ -1153,13 +1021,7 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 <br>
 
-</details>
-
-<br>
-
-<details>
-  
-<summary><h3>8.9.PfSense</h3></summary>
+<h3>8.9.PfSense</h3>
 
 Explicacion y funcionamiento
 -
@@ -1186,8 +1048,9 @@ y accedemos a el poniendo la ip de la red interna dentro de un navegador.
 
 Dentro de PfSense hemos configurado lo siguiente:
 
-<details>
-<summary><h4>Port Forward</h4></summary>
+<br>
+
+<h4>Port Forward</h4>
 
 El port forwarding sirve para acceder al router que permite a dispositivos externos en internet acceder a servicios específicos dentro de tu red local privada,
 y lo que hemos hecho a sido conectar todos los servicios que tenemos con sus respectivas ip y puertos para que todo este conectado entre si.
@@ -1200,12 +1063,9 @@ Tambien ofrece estas funciones
 
 <img width="1423" height="735" alt="image" src="https://github.com/user-attachments/assets/af6f1c80-f76e-4079-b02d-4357f47e4acf" />
 
-</details>
-
 <br>
 
-<details>
-<summary><h4>Red WAN</h4></summary>
+<h4>Red WAN</h4>
 
 Tambien hemos conectado todos los servicios a la red WAN para conectar la red a internet.
 
@@ -1221,12 +1081,9 @@ Tambien ofrece estas funciones:
 
 <img width="1421" height="735" alt="image" src="https://github.com/user-attachments/assets/30ae14c0-d1da-4004-9dd8-d19f4c5c9493" />
 
-</details>
-
 <br>
 
-<details>
-<summary><h4>Red LAN</h4></summary>
+<h4>Red LAN</h4>
 
 Y LAN conecta tus dispositivos locales al firewall.
 
@@ -1240,8 +1097,6 @@ Tambien ofrece estas funciones:
   
 <img width="1418" height="734" alt="image" src="https://github.com/user-attachments/assets/b308c873-96aa-4259-a4c7-1f401c889bed" />
 
-</details>
-
 <br>
 
 Sistema operativo y los recursos mínimos
@@ -1252,13 +1107,11 @@ Sistema operativo y los recursos mínimos
 <img width="1562" height="638" alt="image" src="https://github.com/user-attachments/assets/8bdc2c0e-0e8a-43d6-a48b-9e35f40a0711" />
 
 </details>
-
 </details>
-
-#
+  
 
 <details>
-<summary><h2>9.Diagrama Gantt</h2></summary>
+<summary><h2>Diagrama Gantt</h2></summary>
 Aqui podeis ver como lo hemos organizado y separado el Diagrama:
 <img width="1919" height="417" alt="image" src="https://github.com/user-attachments/assets/ee66626d-ab31-4546-bf3f-8af53b429077" />
 Y aqui os voy a dejar el enlace al Excel para que lo vayais viendo como se va actualizando a diario: 
@@ -1267,19 +1120,19 @@ https://alumnoifp-my.sharepoint.com/:x:/g/personal/rreyesf_student_ifp_es/EWDiyo
 
 </details>
 
-#
+  
 
 <details>
-<summary><h2>10.Conclusiones</h2></summary>
+<summary><h2>Conclusiones</h2></summary>
 
 
   
 </details>
 
-#
+  
 
 <details>
-<summary><h2>11.Webgrafia</h2></summary>
+<summary><h2>Webgrafia</h2></summary>
 Hemos utilizado estas webs para buscar informacion datos etc ect:
   
 - Esta Web la hemos utilizado para coger iconos:
@@ -1309,47 +1162,6 @@ https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365
 </div>
 
 <details>
-<summary><h2>Índice</h2></summary>
-
-- Truenas
-
-- 1.Datos generales
-
-- 2.Objetivo del plan
-
-- 3.Alcance
-
-- 4.Identificaión de activos
-
-- 5.Análisis de riesgos
-
-- 6.Escenarios de contingencia
-
-- 7.Plan de respuesta
-
-- 8.Plan de recuperación
-
-- 9.Copias de seguridad
-
-- 10.Medidas preventivas
-
-- 11.Responsables
-
-- 12.Plan de comunicación
-
-- 13.Pruebas del plan
-
-- 14.Mantenimiento del plan
-
-- 15.Mejoras futuras
-
-- 16.Conclusiones
-
-</details>
-
-#
-
-<details>
 <summary><h2>Truenas</h2></summary>
 
 El TrueNAS es un sistema operativo de almacenamiento conectado a la red (NAS) de código abierto, diseñado para convertir ordenadores en servidores de almacenamiento seguros y centralizados.
@@ -1367,8 +1179,6 @@ Principales características las principales caracteristicas por lo que utilizam
 Dentro de el TrueNAS sera donde gestionaremos toda las cosas importantes como maquinas virtuales, archivos, etc... para poder hacer copias de seguridad y asi tener todo el trabajo guardado ante algun fallo.
 
 </details>
-
-#
 
 <details>
 <summary><h2>1.Datos generales</h2></summary>
@@ -1394,7 +1204,7 @@ que incluye servicios de red con el Pi-hole y DNSmasq, un servidor web Nginx y u
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>2.Objetivo del plan</h2></summary>
@@ -1411,7 +1221,7 @@ Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que 
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>3.Alcance</h2></summary>
@@ -1432,7 +1242,7 @@ Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que 
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>4.Identificaión de activos</h2></summary>
@@ -1450,7 +1260,7 @@ Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que 
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>5.Análisis de riesgos</h2></summary>
@@ -1466,7 +1276,7 @@ Se pretende garantizar la seguridad de los avanzes que hemos hecho y evitar que 
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>6.Escenarios de contingencia</h2></summary>
@@ -1503,7 +1313,7 @@ Infección que encripte o afecte a los archivos del servidor web.
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>7.Plan de respuesta</h2></summary>
@@ -1530,7 +1340,7 @@ Infección que encripte o afecte a los archivos del servidor web.
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>8.Plan de recuperación</h2></summary>
@@ -1563,7 +1373,7 @@ A la hora de verificar que todo vuelva a la normalidad tendriamos que entrar den
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>9.Copias de seguridad</h2></summary>
@@ -1594,7 +1404,7 @@ Exportación de configuraciones de Portainer, copiado manual de archivos y snaps
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>10.Medidas preventivas</h2></summary>
@@ -1625,7 +1435,7 @@ Revisión periódica de los recursos consumidos por los contenedores.
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>11.Responsables</h2></summary>
@@ -1637,7 +1447,7 @@ Revisión periódica de los recursos consumidos por los contenedores.
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>12.Plan de comunicación</h2></summary>
@@ -1662,7 +1472,7 @@ Si estamos en classe intentar hacer que venga lo antes posible para que diga que
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>13.Pruebas del plan</h2></summary>
@@ -1681,7 +1491,7 @@ Intentar restaurar una copia de los archivos PHP en una carpeta distinta para co
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>14.Mantenimiento del plan</h2></summary>
@@ -1700,7 +1510,7 @@ Hasta que no pase algo muy grave o algo parecido creo que no haria falta actuali
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>15.Mejoras futuras</h2></summary>
@@ -1719,7 +1529,7 @@ Hasta que no pase algo muy grave o algo parecido creo que no haria falta actuali
 
 </details>
 
-#
+  
 
 <details>
 <summary><h2>16.Conclusiones</h2></summary>
@@ -1744,6 +1554,6 @@ Lo que podriamos hacer a la hora de mejorar el proyecto es apuntar todos los ava
 
 </details>
 
-#
+  
 
 </details>
