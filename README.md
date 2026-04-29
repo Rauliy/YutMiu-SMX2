@@ -542,6 +542,8 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 <h3>8.1.DNS y Pi-hole</h3>
 
+<br>
+
 Explicacion y funcionamiento
 -
   
@@ -600,6 +602,8 @@ Una incidencia que teniamos era que el pi-hole estaba todo correctamente configu
 
 <h3>8.2.DHCP y DnsMasq</h3>
 
+<br>
+
 Explicacion y funcionamiento
 -
 
@@ -614,6 +618,8 @@ Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que v
 <br>
 
 <h3>8.3.Docker</h3>
+
+<br>
 
 Explicacion y funcionamiento
 -
@@ -672,6 +678,8 @@ IP del servidor y puertos
 <br>
 
 <h3>8.4.MySQL</h3>
+
+<br>
 
 Explicacion y funcionamiento
 -
@@ -771,6 +779,8 @@ IP del servidor y puertos
 
 <h3>8.5.Nginx</h3>
 
+<br>
+
 Explicacion y funcionamiento
 -
 
@@ -785,16 +795,9 @@ Proceso de instalacion
 
 <br>
 
-IP del servidor y puertos
--
-
-
-
-<img width="1585" height="47" alt="image" src="https://github.com/user-attachments/assets/11451c94-6860-49ad-b445-047a7f007666" />
+<h3>8.6.PHP</h3>
 
 <br>
-
-<h3>8.6.PHP</h3>
 
 Explicacion y funcionamiento
 -
@@ -825,15 +828,6 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
 <img width="1551" height="735" alt="image" src="https://github.com/user-attachments/assets/3abc807d-0fb9-4ffd-a782-c7b511ceb0e5" />
 
 <br>
-
-IP del servidor y puertos
--
-
-
-
-<img width="1584" height="45" alt="image" src="https://github.com/user-attachments/assets/507dd9d2-3233-463b-a897-fd960c0596a7" />
-
-<br><br>
 
 Que apartados de la pagina web tenemos que volver dinamica
 -
@@ -912,6 +906,8 @@ Que apartados de la pagina web tenemos que volver dinamica
   
 <h3>8.7.Ffmpeg</h3>
 
+<br>
+
 Explicacion y funcionamiento
 -
 
@@ -928,14 +924,9 @@ Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es poner el 
 
 <br>
 
-IP del servidor y puertos
--
-
-
+<h3>8.8.TrueNAS</h3>
 
 <br>
-
-<h3>8.8.TrueNAS</h3>
 
 Explicacion y funcionamiento
 -
