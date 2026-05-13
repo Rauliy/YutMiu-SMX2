@@ -273,15 +273,12 @@ Lista detallada de todas las tecnologías que utilizaremos
   
 Aquí podemos ver cómo vamos a organizar la web y los servicios correspondientes:
 
-Estructura y diagrama de la red
--
-
 <h3>Estructura básica de la red</h3>
 
 Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtablas y utilidades:
 
-<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
-<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
+<img width="490" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+<img width="490" height="350" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
 <h4>Core:</h4>
 
@@ -303,88 +300,11 @@ Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtab
 
 <h3>Diagrama de la red</h3>
 
-Asi es como tenemos estructurada nuestra red implementada
+Asi es como tenemos estructurada nuestra red implementada:
 
 <img width="905" height="749" alt="image" src="https://github.com/user-attachments/assets/82f3d9ba-9db0-4032-8da3-78f2baa8cc26" />
 
-<br>
-
-Ahora vamos presentar el diagrama de la base de datos
--
-
-<h3>1.¿Qué datos son necesarios para mi aplicación?</h3>
-
-Para que mi app funcione bien necesitamos guardar varias cosas:
-
-- Usuarios → toda la info de cada persona que se registre (nombre, email, contraseña…).
-
-- Canciones → título, artista, archivo de música, duración, fecha de publicación…
-
-- Playlists → nombre de la lista, quién la creó y qué canciones contiene.
-
-- Comentarios → quién comenta, sobre qué canción, qué dice y cuándo lo hace.
-
-- Valoraciones → quién da la nota a qué canción y qué puntuación le pone.
-
-- Amigos → las relaciones entre usuarios, es decir, quién es amigo de quién.
-
-<br>
-
-<h3>2.¿Qué datos voy a pedir al usuario y qué tipos de usuarios voy a tener?</h3>
-
-Datos que voy a pedir al usuario:
-
-- Nombre de usuario
-
-- Email
-
-- Contraseña
-
-- Foto de perfil
-
-<br>
-
-Tipos de usuarios:
-
-- Usuario normal → puede escuchar música, comentar canciones, valorar y crear playlists.
-
-- Admin (opcional) → podría gestionar canciones, usuarios o comentarios si lo necesitamos.
-
-<br>
-
-<h3>3.¿Qué clave primaria voy a implantar en cada tabla y cómo las relacionaré?</h3>
-
-- Usuarios → id_usuario
-
-- Canciones → id_cancion
-
-- Playlists → id_playlist
-
-- Comentarios → id_comentario
-
-- Valoraciones → id_valoracion
-
-- Amigos → id_amigo
-
-<br>
-
-Relaciones principales:
-
-- Una playlist pertenece a un usuario, así que un usuario puede tener muchas playlists.
-
-- Una canción puede estar en muchas playlists, por eso necesitamos una tabla intermedia tipo “playlist_cancion”.
-
-- Un comentario pertenece a un usuario y a una canción, para saber quién dijo qué y dónde.
-
-- Una valoración pertenece a un usuario y a una canción, para calcular la nota media.
-
-- Una relación de amigos une dos usuarios, así podemos ver quién es amigo de quién.
-
 </details>
-
-</details>
-
-
 
 <details>
 <summary><h2>Web</h2></summary>
@@ -537,11 +457,6 @@ También ofrecemos opciones para la privacidad del usuario que son:
 <details>
 <summary><h2>Servicios</h2></summary>
 
-¿Qué función cumple exactamente cada servicio dentro de la red?
--
-
-<br>
-
 <h3>1.DNS y Pi-hole</h3>
 
 Explicacion y funcionamiento
@@ -643,7 +558,7 @@ Estos son todos los servicios que estan conectados al portainer y sus utilidades
 
 <img width="1618" height="623" alt="image" src="https://github.com/user-attachments/assets/b87d9312-b74e-419a-900e-e1c6497e500e" />
 
-<br>
+<br><br>
 
 Sistema operativo y los recursos mínimos
 -
@@ -784,7 +699,7 @@ Dentro de PHP hemos añadido el MySQL de nuestra pagina web para conectarlo y ha
 
 <img width="1551" height="735" alt="image" src="https://github.com/user-attachments/assets/3abc807d-0fb9-4ffd-a782-c7b511ceb0e5" />
 
-<br>
+<br><br>
 
 Que apartados de la pagina web tenemos que volver dinamica
 -
@@ -857,7 +772,7 @@ Que apartados de la pagina web tenemos que volver dinamica
 
 - Podras activar o desactivar la opcion de tener el perfil privado para que ningun usuario pueda ver que tienes.
 
-<br>
+<br><br>
 
 
 <h3>7.Ffmpeg</h3>
@@ -930,16 +845,14 @@ Y tras hacer toda la configuracion ahora podemos crear una nueva carpeta dentro 
 
 <img width="1097" height="619" alt="image" src="https://github.com/user-attachments/assets/41066dae-0a6f-451b-abae-dd6b8ab048ef" />
 
-<br>
+<br><br>
 
 Sistema operativo y los recursos mínimos
 -
 
-
-
 <img width="1557" height="639" alt="image" src="https://github.com/user-attachments/assets/086c4710-dfcd-4dfa-ba64-b1486abfaf16" />
 
-<br>
+<br><br>
 
 Copias de seguridad
 -
@@ -989,8 +902,6 @@ y accedemos a el poniendo la ip de la red interna dentro de un navegador.
 
 Dentro de PfSense hemos configurado lo siguiente:
 
-<br>
-
 <h4>Port Forward</h4>
 
 El port forwarding sirve para acceder al router que permite a dispositivos externos en internet acceder a servicios específicos dentro de tu red local privada,
@@ -1004,7 +915,7 @@ Tambien ofrece estas funciones
 
 <img width="1423" height="735" alt="image" src="https://github.com/user-attachments/assets/af6f1c80-f76e-4079-b02d-4357f47e4acf" />
 
-<br>
+<br><br>
 
 <h4>Red WAN</h4>
 
@@ -1022,7 +933,7 @@ Tambien ofrece estas funciones:
 
 <img width="1421" height="735" alt="image" src="https://github.com/user-attachments/assets/30ae14c0-d1da-4004-9dd8-d19f4c5c9493" />
 
-<br>
+<br><br>
 
 <h4>Red LAN</h4>
 
@@ -1038,11 +949,10 @@ Tambien ofrece estas funciones:
   
 <img width="1418" height="734" alt="image" src="https://github.com/user-attachments/assets/b308c873-96aa-4259-a4c7-1f401c889bed" />
 
-<br>
+<br><br>
 
 Sistema operativo y los recursos mínimos
 -
-
 
 
 <img width="1562" height="638" alt="image" src="https://github.com/user-attachments/assets/8bdc2c0e-0e8a-43d6-a48b-9e35f40a0711" />
