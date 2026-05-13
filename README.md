@@ -203,7 +203,7 @@ Lista de objetivos y tecnologías
 | Hardware | Procesador Intel + 8GB RAM | Última | 8080 / 3033 | Dos ordenadores: uno con Windows Server 2016 y otro con Linux Debian. Cada máquina virtual con 4GB de RAM. | — |
 | Sistema operativo | Linux Debian y Windows Server | Última | 8080 / 3033 | Linux Debian para los servicios principales y Windows Server 2016 para pruebas. | https://www.debian.org / https://www.microsoft.com |
 | Interfaz de usuario (Frontend) | HTML, CSS | HTML5 / CSS3 | 8080 / 3033 | Frontend hecho con HTML y CSS, que es lo que más dominamos. | https://developer.mozilla.org |
-| Lógica de negocio (Backend) | PHP | PHP 8.3 | 8080 / 3033 | Backend hecho con PHP, que es lo que estamos aprendiendo. | https://www.php.net |
+| Lógica de negocio (Backend) | PHP | PHP 3 | 8080 / 3033 | Backend hecho con PHP, que es lo que estamos aprendiendo. | https://www.php.net |
 | Servidor web | Apache, Nginx | Última | 8080 / 3033 | Usamos Apache porque viene en Docker y Nginx por estabilidad. | https://httpd.apache.org / https://nginx.org |
 | Base de datos | MySQL | Última | 8080 / 3033 | Usamos MySQL porque es simple de configurar y funciona bien con Docker. | https://www.mysql.com |
 | Gestor de base de datos | PHPMyAdmin | Última | 8080 / 3033 | PHPMyAdmin porque es el que mejor sabemos utilizar. | https://www.phpmyadmin.net |
@@ -540,9 +540,9 @@ También ofrecemos opciones para la privacidad del usuario que son:
 ¿Qué función cumple exactamente cada servicio dentro de la red?
 -
 
-<h3>8.1.DNS y Pi-hole</h3>
-
 <br>
+
+<h3>1.DNS y Pi-hole</h3>
 
 Explicacion y funcionamiento
 -
@@ -584,15 +584,6 @@ Despues de completar la instalacion del pi-hole y haber seleccionado cada aparta
 
 <br>
 
-IP del servidor y puertos
--
-
-
-
-<img width="1585" height="47" alt="image" src="https://github.com/user-attachments/assets/764fb92b-04ff-4eb1-a3b3-c6a53ae8cff6" />
-
-<br>
-
 Incidencias
 -
 
@@ -600,9 +591,7 @@ Una incidencia que teniamos era que el pi-hole estaba todo correctamente configu
 
 <br>
 
-<h3>8.2.DHCP y DnsMasq</h3>
-
-<br>
+<h3>2.DHCP y DnsMasq</h3>
 
 Explicacion y funcionamiento
 -
@@ -617,9 +606,7 @@ Y el Dnsmasq proporcionar servicios de red esenciales y uno de los motivos que v
 
 <br>
 
-<h3>8.3.Docker</h3>
-
-<br>
+<h3>3.Docker</h3>
 
 Explicacion y funcionamiento
 -
@@ -666,20 +653,9 @@ El sistema operativo tiene 2048 MB con 3 procesadores y con dos targetas de red,
 
 <img width="1411" height="735" alt="image" src="https://github.com/user-attachments/assets/373ca196-3988-41ca-a84f-94466c0dc6b4" />
 
-<br>
+<br><br>
 
-IP del servidor y puertos
--
-
-
-
-<img width="1585" height="44" alt="image" src="https://github.com/user-attachments/assets/66c96206-3ff5-40e7-ab61-6d5d8141c1c1" />
-
-<br>
-
-<h3>8.4.MySQL</h3>
-
-<br>
+<h3>4.MySQL</h3>
 
 Explicacion y funcionamiento
 -
@@ -767,19 +743,9 @@ CREATE TABLE lista_musica (
     FOREIGN KEY (id_musica) REFERENCES musicas(id_musica)
 );
 ```
-
 <br>
 
-IP del servidor y puertos
--
-
-
-
-<br>
-
-<h3>8.5.Nginx</h3>
-
-<br>
+<h3>5.Nginx</h3>
 
 Explicacion y funcionamiento
 -
@@ -788,16 +754,7 @@ NGINX es un software de código abierto que se utiliza para servidores web, prox
 
 <br>
 
-Proceso de instalacion
--
-
-
-
-<br>
-
-<h3>8.6.PHP</h3>
-
-<br>
+<h3>6.PHP</h3>
 
 Explicacion y funcionamiento
 -
@@ -902,11 +859,8 @@ Que apartados de la pagina web tenemos que volver dinamica
 
 <br>
 
-<details>
-  
-<h3>8.7.Ffmpeg</h3>
 
-<br>
+<h3>7.Ffmpeg</h3>
 
 Explicacion y funcionamiento
 -
@@ -922,11 +876,9 @@ Para proceder a instalar el Ffmpeg lo primero que tenemos que hacer es poner el 
 
 <img width="878" height="449" alt="image" src="https://github.com/user-attachments/assets/41cc369e-e5df-4756-a902-d48963fa1e56" />
 
-<br>
+<br><br>
 
-<h3>8.8.TrueNAS</h3>
-
-<br>
+<h3>8.TrueNAS</h3>
 
 Explicacion y funcionamiento
 -
@@ -1010,7 +962,7 @@ Actualmente todo lo que le hariamos una copia de seguridad en nuestro proyecto s
 
 <br>
 
-<h3>8.9.PfSense</h3>
+<h3>9.PfSense</h3>
 
 Explicacion y funcionamiento
 -
@@ -1332,7 +1284,7 @@ Infección que encripte o afecte a los archivos del servidor web.
   
 
 <details>
-<summary><h2>8.Plan de recuperación</h2></summary>
+<summary><h2>Plan de recuperación</h2></summary>
 
 <h3>Cómo volver a la normalidad</h3>
 
