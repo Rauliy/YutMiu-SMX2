@@ -982,9 +982,10 @@ Temp: 86ºF
 <details>
 <summary><h1>Proyecto Arduino</h1></summary>
 
-Briefing proyecto:
--
-  
+<br>
+
+<h2>Briefing proyecto:</h2>
+
 <details>
 <summary><h3>1.Presentación de la idea:</h3></summary> 
 
@@ -1011,7 +1012,7 @@ https://projecthub.arduino.cc/daryllqayyim/water-sensor-basic-13d33f
 - Ultrasonic Radar with Arduino
 https://projecthub.arduino.cc/nimishac/ultrasonic-radar-with-arduino-19baa3
 
-Al final hemos decicido hacer un coche control remoto que se pueda manejar con facilidad y al final hemos decicido hacer este proyecto ya que no tendriamos que comprar ningun componente de Arduino que no tengamos y seria mas facil de hacer que todos los diferentes proyectos.
+Al final hemos decicido hacer un coche control remoto que se pueda manejar con facilidad, tambien uno de los motivos por los que hemos escogido hacer este proyecto es porque no tendriamos que comprar ningun componente de Arduino y seria mas facil de hacer que todos los diferentes proyectos que teniamos planteado hacer.
 
 </details>
 
@@ -1187,7 +1188,9 @@ Durante el desarrollo del proyecto se utilizaremos diferentes recursos como:
 
 </details>
 
-<br>
+#
+
+<br><br>
 
 #
 
@@ -1293,6 +1296,8 @@ Un módulo receptor IR recibe señales de luz infrarroja emitidas por un control
 #
 
 <br>
+
+
 
 Diagrama de flujo
 -
