@@ -1012,7 +1012,7 @@ https://projecthub.arduino.cc/daryllqayyim/water-sensor-basic-13d33f
 - Ultrasonic Radar with Arduino
 https://projecthub.arduino.cc/nimishac/ultrasonic-radar-with-arduino-19baa3
 
-Al final hemos decicido hacer un coche control remoto que se pueda manejar con facilidad, tambien uno de los motivos por los que hemos escogido hacer este proyecto es porque no tendriamos que comprar ningun componente de Arduino y seria mas facil de hacer que todos los diferentes proyectos que teniamos planteado hacer.
+Al final hemos decicido hacer un coche control remoto que se pueda manejar con facilidad, tambien uno de los motivos por los que hemos escogido hacer este proyecto es porque no tendriamos que comprar ningun componente de Arduino ya que tenemos el pack sosyoo y seria mas facil de hacer que todos los diferentes proyectos que teniamos planteado hacer.
 
 </details>
 
@@ -1606,6 +1606,11 @@ void drawText() { // draws the texts on the screen
 ```
 </details>
 
-#
+<br>
+
+Poster
+-
+
+
 
 </details>
