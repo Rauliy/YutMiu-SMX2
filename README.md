@@ -277,8 +277,8 @@ Aquí podemos ver cómo vamos a organizar la web y los servicios correspondiente
 
 Hemos organizado la importancia de cada tabla con Core (Tabla principal), subtablas y utilidades:
 
-<img width="490" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
-<img width="490" height="350" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/012ccfd6-3bb4-4a65-8fb2-72b1384c4f94" />
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/bbdb2130-006c-4c67-b657-c5edd3c4b526" />
 
 <h4>Core:</h4>
 
@@ -452,10 +452,16 @@ También ofrecemos opciones para la privacidad del usuario que son:
 
 </details>
 
-  
 
 <details>
 <summary><h2>Servicios</h2></summary>
+
+<br>
+
+1.¿Qué función cumple exactamente este servicio dentro de la red? 
+-
+
+<br>
 
 <h3>1.DNS y Pi-hole</h3>
 
@@ -669,7 +675,7 @@ NGINX es un software de código abierto que se utiliza para servidores web, prox
 
 <br>
 
-<h3>6.PHP</h3>
+<h3>6.PHP y PhpMyAdmin</h3>
 
 Explicacion y funcionamiento
 -
@@ -957,9 +963,100 @@ Sistema operativo y los recursos mínimos
 
 <img width="1562" height="638" alt="image" src="https://github.com/user-attachments/assets/8bdc2c0e-0e8a-43d6-a48b-9e35f40a0711" />
 
+
+
+<h3>10.DigitalPlat y Cloudfare</h3>
+
+Explicacion y funcionamiento
+-
+
+- DigitalPlat:
+
+Lo hemos utilizado principalmente para obtener un dominio web gratuitos.
+
+- Cloudfare:
+
+Cloudflare es una red global de infraestructura en la nube que actúa como intermediario entre tu sitio web y los visitantes. Y nosotros solo lo hemos utilizado para conectarlo con el dominio que nos ha ofrecido DigitalPlat para poder visualizar la pagina web a traves de internet buscando http://yutmiu.dpdns.org.
+
+<br>
+
+2.¿En qué equipo se instala y qué requisitos necesita?
+-
+
+<br>
+
+<h3>Sistema operativo</h3>
+
+
+
+<br>
+
+<h3>Ip del servidor</h3>
+
+
+
+<br>
+
+<h3>Recursos minimos</h3>
+
+
+
+<br>
+
+3.¿Qué parámetros básicos debo configurar?
+-
+
+<br>
+
+<h3>Puertos</h3>
+
+
+
+<br>
+
+<h3>Directorios de trabajo</h3>
+
+
+
+<br>
+
+<h3>Rango DHCP / zonas DNS / virtual hosts</h3>
+
+
+
+<br>
+
+4.¿Cómo verifico que funciona correctamente?
+-
+
+<br>
+
+<h3>Comandos de estado</h3>
+
+
+
+<br>
+
+<h3>Pruebas des de cliente</h3>
+
+
+
+<br>
+
+<h3>Logs</h3>
+
+
+
+<br>
+
+<h3>Acceso via navegador</h3>
+
+
+
+
 </details>
-</details>
-  
+
+</details>  
 
 <details>
 <summary><h2>Diagrama Gantt</h2></summary>
