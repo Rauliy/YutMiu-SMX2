@@ -1052,8 +1052,7 @@ El principal objetivo seria hacer un coche de arduino capaz de desplazarse en di
 
 Estos seran requisitos técnicos que necesitaremos:
 
-<details>
-<summary><h4>Sistema de movimiento:</h4></summary> 
+<h4>Sistema de movimiento:</h4>
 
 - 2 o 4 motores DC
 
@@ -1063,11 +1062,9 @@ Estos seran requisitos técnicos que necesitaremos:
 
 - Chasis para el coche
 
-</details>
+<br>
 
-
-<details>
-<summary><h4>Sistema de alimentación:</h4></summary> 
+<h4>Sistema de alimentación:</h4>
 
 - Batería
 
@@ -1075,11 +1072,9 @@ Estos seran requisitos técnicos que necesitaremos:
 
 - Regulador de voltaje si es necesario
 
-</details>
+<br>
 
-
-<details>
-<summary><h4>Sistema de comunicación:</h4></summary> 
+<h4>Sistema de comunicación:</h4>
 
 Uno de los siguientes:
 
@@ -1089,10 +1084,9 @@ Uno de los siguientes:
 
 - WiFi
 
-</details>
+<br>
 
-<details>
-<summary><h4>Otros componentes necesarios:</h4></summary> 
+<h4>Otros componentes necesarios:</h4>
 
 - Cables Dupont
 
@@ -1102,18 +1096,15 @@ Uno de los siguientes:
 
 - LEDs indicadores (opcional)
 
-</details>
+<br>
 
-<details>
-<summary><h4>Sensores opcionales:</h4></summary> 
+<h4>Sensores opcionales:</h4>
 
 - Sensor ultrasónico (para evitar obstáculos)
 
 - Sensor de línea
 
 - Sensor infrarrojo
-
-</details>
 
 </details>
 
