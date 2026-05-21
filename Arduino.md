@@ -1611,6 +1611,6 @@ void drawText() { // draws the texts on the screen
 Poster
 -
 
-
+<img width="440" height="620" alt="image" src="https://github.com/user-attachments/assets/ed8952aa-52d4-44d5-a3e6-768fc93cc980" />
 
 </details>
